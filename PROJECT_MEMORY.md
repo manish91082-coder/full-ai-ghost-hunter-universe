@@ -105,3 +105,19 @@ The audit file `01_BLOCKCHAIN_UNIVERSE/05_AUDIT_002_CANONICAL_REGISTRY.md` recor
 Identity and lifecycle are now explicitly separated from trading capability. EVM networks may use numeric chain IDs; non-EVM ecosystems must retain their native identity model. ACTIVE status never implies flash liquidity, executable DEX routes or profitability. Testnet/devnet evidence cannot authorize mainnet execution.
 
 Primary verification pattern was validated for Ethereum, BNB Smart Chain, Avalanche C-Chain and Solana. Global identity verification remains incomplete.
+ 
+## O. PHASE 01.4 — FLASH-LIQUIDITY CAPABILITY MATRIX
+
+**Date:** 21 सितम्बर 2026
+
+A dedicated capability layer was added at `01_BLOCKCHAIN_UNIVERSE/08_FLASH_LIQUIDITY_CAPABILITY_MATRIX_v001.md` and audited in `01_BLOCKCHAIN_UNIVERSE/09_AUDIT_004_FLASH_LIQUIDITY.md`.
+
+Locked distinction:
+
+**Protocol deployment ≠ flash capability ≠ atomic composability ≠ liquidity-at-size ≠ executable arbitrage ≠ profitability.**
+
+Verified sampled patterns include Aave V3 flash loans, Aave GHO Flashmint, Morpho flash loans, Uniswap V2 flash swaps and Solana marginfi/Project 0 instruction-paired flashloans. Non-EVM mechanisms must be modeled using their native atomicity semantics.
+
+Current capability framework score is 98/100 for the sampled layer. Global coverage is not scored. Address verification, liquidity-at-size, DEX route verification and execution readiness remain open.
+
+Live trading remains STOP.
