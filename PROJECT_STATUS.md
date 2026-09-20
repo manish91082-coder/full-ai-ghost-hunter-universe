@@ -264,3 +264,16 @@ Date: 21 सितम्बर 2026
 - This is deployment evidence only, not final flash-trading eligibility.
 - Final executable chain count remains NOT DECLARED; live trading STOP.
 - Next: complete Morpho rows 28–50 and normalize chain identifiers.
+
+
+## UPDATE — PHASE 01.6 BATCH 004B / MORPHO 50-ROW RECONCILIATION
+Date: 21 सितम्बर 2026
+- Added 01_BLOCKCHAIN_UNIVERSE/20_MORPHO_50_ROW_CANONICAL_RECONCILIATION_v001.md
+- Added 01_BLOCKCHAIN_UNIVERSE/21_AUDIT_010_MORPHO_50_ROW_RECONCILIATION.md
+- Fresh line-level official source inspection reconciled all 50 Morpho Blue rows. citeturn1view0
+- Correction: the abscan row is Abstract, while Arbitrum is the separate arbiscan row. citeturn1view0turn3search1
+- Base Sepolia and Ethereum Sepolia are testnet rows and are excluded from production candidate count.
+- Morpho deployment registry reconciliation: 48 production candidates + 2 testnets.
+- This is NOT the final flash-trading chain count.
+- Live trading STOP.
+- Next: integrate 48 production candidates into the global deduplicated registry and continue other protocol families.
