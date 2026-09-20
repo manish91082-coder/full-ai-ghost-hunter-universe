@@ -91,3 +91,9 @@ The first normalized discovery seed is now stored in `01_BLOCKCHAIN_UNIVERSE/04_
 The registry is intentionally not an executable universe. Chain listing, TVL, protocol deployment or ecosystem membership do not by themselves prove flash-loan capability, atomic composability, executable venue routes or sufficient liquidity.
 
 Required next layer: primary-source identity/lifecycle verification, followed by capability matrices and network-specific address verification.
+
+## 16. Phase 01.3 — Identity + Lifecycle Verification
+
+The project now maintains a dedicated identity/lifecycle verification layer. Verification records capture canonical identity, aliases, execution model, network identifier, environment, lifecycle, evidence timestamp and confidence.
+
+Important architectural correction: the schema is execution-model aware. It does not force every ecosystem into an EVM-style numeric chain-ID model.
