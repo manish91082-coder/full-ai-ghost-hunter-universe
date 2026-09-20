@@ -346,3 +346,15 @@ Macro-batch 011 created:
 - 35_AUDIT_017_UNISWAP_MACRO_BATCH.md
 
 This batch confirms that deployment discovery can progress in consolidated batches rather than micro-turns. Downstream verification remains open. Live trading STOP.
+
+## LOG-0015 — ALU/TSU Convergence
+
+Date: 21 सितम्बर 2026
+
+Macro-batch 012 established the canonical bridge between atomic liquidity and real-time trading state. Fresh Morpho official evidence was incorporated for flash-loan semantics and market-state discovery.
+
+Created:
+- 36_UNIFIED_ATOMIC_LIQUIDITY_MARKET_STATE_SUBSTRATE_BATCH_012.md
+- 37_AUDIT_018_UNIFIED_SUBSTRATE.md
+
+The project now transitions from universe enumeration toward shared opportunity-substrate implementation. Live trading STOP.
