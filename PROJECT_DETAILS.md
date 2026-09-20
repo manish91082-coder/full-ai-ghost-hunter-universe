@@ -228,3 +228,11 @@ No collector has live wallet authority.
 The first dependency-light Python core is committed under src/ghost_hunter. It implements state envelopes, evidence hashing, append-only history, rejection/coverage counters and provider health/failover primitives. Deterministic unit-test fixtures are under tests/.
 
 This is non-trading code only.
+
+## 28. Dynamic Execution Requirement
+
+Execution is configuration/data driven. Authoritative runtime universe data is externalized. No strategy/executor source may embed chain lists, RPC URLs, contract addresses, token/pool matrices or strategy inventory as authoritative data.
+
+Runtime configuration is loaded from external inputs and fails closed when critical values are missing. Dynamic registries will later provide current universe and strategy data.
+
+This is a mandatory acceptance gate for all future execution components.
