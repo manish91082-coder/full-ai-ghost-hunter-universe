@@ -214,3 +214,11 @@ The system uses event-driven invalidation plus periodic safety scans.
 Canonical envelope fields: object type, canonical ID, network, source, observed block/time, collector/schema versions, freshness deadline, evidence, verification state, confidence and raw payload hash.
 
 ALU, TSU and route-edge contracts are defined. Static topology is separated from dynamic state. Route search is bounded and measurable. Provider failure triggers switching/fallback rather than silent opportunity deletion.
+
+## 26. Collector and State Store Foundation
+
+The collector architecture preserves raw evidence, canonical latest state, append-only history, rejection records and coverage metrics. Dynamic objects carry freshness deadlines and indexed block information where available.
+
+Provider health and fallback are first-class. Event-driven refresh is combined with periodic reconciliation and bounded retries.
+
+No collector has live wallet authority.
