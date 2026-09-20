@@ -277,3 +277,19 @@ Date: 21 सितम्बर 2026
 - This is NOT the final flash-trading chain count.
 - Live trading STOP.
 - Next: integrate 48 production candidates into the global deduplicated registry and continue other protocol families.
+
+
+## UPDATE — MACRO-BATCH EXECUTION + CHAT CONTINUITY LOCK
+
+Date: 21 सितम्बर 2026
+State: EXECUTION MODEL OPTIMIZED
+
+The project is now operated by maximum-safe macro-batches instead of micro-steps. One next means the AI project lead should complete the maximum logically related work that can safely be completed, including research, calculations, normalization, verification, tests, audits, gap discovery, integration and re-audit.
+
+The 30 roadmap phases remain architectural domains, not mandatory user turns. Related domains may be combined when dependencies permit. Safety and authorization gates remain separate.
+
+Created:
+- 00_GOVERNANCE/CHAT_CONTINUATION_PROTOCOL.md
+- 00_GOVERNANCE/MACRO_BATCH_EXECUTION_DOCTRINE.md
+
+New chats must recover state from Git, the continuation protocol, control files, latest batch and latest commit before continuing. Live trading remains STOP.
