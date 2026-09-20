@@ -77,3 +77,16 @@ Minute-level or better target, subject to block time, provider/data limits, comp
 ## Current Command
 
 **Phase 01 — Global Blockchain Universe** is next. First deliverable: evidence-backed candidate universe + verification methodology, not an unverified list.
+
+
+## L. PHASE 01 — DISCOVERY SOURCE AUDIT 001
+
+**Date:** 21 सितम्बर 2026
+
+The first evidence pass established that no single chain list is sufficient for the project's global-universe objective. DeFiLlama is useful for broad chain discovery, L2BEAT supplies a dedicated Ethereum scaling branch, and protocol documentation such as Aave must be tracked separately for deployment evidence. Discovery signals are not treated as flash-loan or execution proof.
+
+Locked Phase-01 rule:
+
+**Discovery Candidate → Capability Verification**
+
+The framework is accepted at 99/100. Factual universe completeness is not yet scored.
