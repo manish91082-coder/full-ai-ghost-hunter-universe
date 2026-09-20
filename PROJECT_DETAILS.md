@@ -119,3 +119,15 @@ Verified sampled patterns include Aave V3, Aave GHO Flashmint, Morpho, Uniswap V
 Critical architectural rule: non-EVM atomic primitives are not forced into EVM callback semantics.
 
 Next required layer: network-specific deployment/address verification and liquidity-at-size verification. No live execution is authorized.
+
+
+## 18. Phase 01.5 — Network Deployment + Address Layer
+
+The project now stores network-specific deployment records instead of protocol names alone.
+
+Required deployment identity is:
+**Network + Chain Identifier + Protocol + Version + Contract/Program Role + Address + Source + Timestamp + State**
+
+Aave uses an official maintained address-book registry; Morpho uses its official network-specific address registry; Solana Project 0 uses its official program-address documentation.
+
+The address layer remains fail-closed. Current code, capability, liquidity, fees, permissions, routes, simulation and economics must be revalidated before execution.
