@@ -79,3 +79,39 @@ The framework is accepted, but factual global coverage is not yet scored.
 Construct the normalized canonical blockchain candidate registry and begin chain-family capability verification.
 
 **Live trading remains STOP.**
+
+
+## LOG-0004 — Phase 01.2 Canonical Candidate Registry v001
+
+**Date:** 21 सितम्बर 2026  
+**Phase:** Phase 01 — Global Blockchain Universe
+
+### What changed
+Created the first normalized candidate registry and its dedicated audit.
+
+### Why
+The previous discovery framework had no canonical deduplicated record layer. Without it, ecosystem coverage could not be measured or verified safely.
+
+### Evidence
+Broad chain discovery was cross-checked using DeFiLlama and L2BEAT; Aave official deployment documentation was retained as a protocol-specific example showing that deployments must be tracked by network/version. No generic listing was treated as execution proof.
+
+### Validation
+Registry schema, evidence separation, alias policy, capability states, aggregate-bucket handling and fail-closed rules were audited.
+
+### Decision
+**Registry v001 ACCEPTED as discovery seed; NOT accepted as final global universe.**
+
+### Gaps
+- identity/lifecycle verification;
+- expansion of aggregate discovery buckets;
+- flash-liquidity verification;
+- venue/route verification;
+- contract/address verification;
+- liquidity-at-size verification;
+- freshness automation;
+- conflict registry.
+
+### Next Goal
+**PHASE 01.3 — Identity + Lifecycle Verification.**
+
+**Live trading remains STOP.**
