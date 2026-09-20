@@ -99,3 +99,9 @@ The framework is accepted at 99/100. Factual universe completeness is not yet sc
 A versioned canonical discovery seed was created at `01_BLOCKCHAIN_UNIVERSE/04_CANONICAL_CANDIDATE_REGISTRY_v001.md`. It separates chain identity from capability verification and explicitly preserves UNKNOWN/PARTIAL states. Aggregate ecosystem buckets are temporary discovery holders and cannot authorize execution.
 
 The audit file `01_BLOCKCHAIN_UNIVERSE/05_AUDIT_002_CANONICAL_REGISTRY.md` records the remaining gaps: identity/lifecycle verification, bucket expansion, flash-liquidity verification, venue verification, address verification and freshness automation.
+
+## N. PHASE 01.3 — IDENTITY + LIFECYCLE VERIFICATION
+
+Identity and lifecycle are now explicitly separated from trading capability. EVM networks may use numeric chain IDs; non-EVM ecosystems must retain their native identity model. ACTIVE status never implies flash liquidity, executable DEX routes or profitability. Testnet/devnet evidence cannot authorize mainnet execution.
+
+Primary verification pattern was validated for Ethereum, BNB Smart Chain, Avalanche C-Chain and Solana. Global identity verification remains incomplete.
