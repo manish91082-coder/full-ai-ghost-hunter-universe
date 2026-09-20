@@ -65,3 +65,20 @@ Autonomy is bounded autonomy. Deterministic safety/economic gates remain authori
 Authoritative plan: `01_BLOCKCHAIN_UNIVERSE/PHASE_01_PLAN.md`
 
 Completion requires discovery, normalization, evidence, verification states, conflict handling, gap analysis, recheck and versioned audit.
+
+
+## 13. Phase 01 Discovery Source Layer
+
+The project now has a dedicated discovery-source layer:
+
+- 01_BLOCKCHAIN_UNIVERSE/01_DISCOVERY_SOURCE_MATRIX.md
+- 01_BLOCKCHAIN_UNIVERSE/02_DISCOVERY_BATCH_001.md
+- 01_BLOCKCHAIN_UNIVERSE/03_AUDIT_001_SOURCE_DISCOVERY.md
+
+The source hierarchy separates primary/on-chain evidence, authoritative ecosystem datasets and discovery-only aggregators.
+
+## 14. Phase 01 Current State
+
+The discovery methodology has passed its first audit at 99/100. The remaining gap is freshness automation plus construction of the normalized canonical candidate registry.
+
+No factual claim of global blockchain completeness has been made at this stage.
