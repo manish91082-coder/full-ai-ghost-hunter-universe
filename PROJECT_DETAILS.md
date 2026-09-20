@@ -198,3 +198,13 @@ V2 flash swap, V3 flash, and V4 PoolManager/hook execution are separate capabili
 Dynamic pool discovery is a first-class layer. Address equality across networks does not imply network identity.
 
 The project now advances downstream without requiring a separate chat turn for each deployment record.
+
+## 24. Atomic Liquidity + Trading State Substrate
+
+ALU stores atomic liquidity source, capacity, fee, callback and repayment semantics with freshness/evidence.
+
+TSU stores venue, pool, token, fee/hook, reserves/concentrated state, quotes, gas and freshness.
+
+Opportunity composition joins ALU, asset, route graph and TSU, then requires deterministic simulation, economic and risk gates.
+
+The system uses event-driven invalidation plus periodic safety scans.
