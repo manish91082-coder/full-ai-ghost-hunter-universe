@@ -202,3 +202,8 @@ Batch 003 is a partial pass. Live trading remains STOP.
 ## T. PHASE 01.6 BATCH 004 — Morpho Registry Parse
 Date: 21 सितम्बर 2026
 Official Morpho address documentation labels Morpho Blue as 50 chains and provides per-network contract/explorer/source references. citeturn1view0 The project has now parsed 27 concrete network/address rows from the inspected official registry section. Deployment remains distinct from flash capability, live code, liquidity, venue, route, simulation and economics. Final chain count remains blocked until all gates pass. Live trading STOP.
+
+
+## U. PHASE 01.6 BATCH 004B — Morpho 50-Row Reconciliation
+Date: 21 सितम्बर 2026
+Morpho's official Morpho Blue section states 50 chains. Line-level reconciliation now accounts for all 50 rows. A prior extraction incorrectly labelled the abscan row as Arbitrum; it is Abstract, while Arbitrum is the arbiscan row. citeturn1view0turn3search1 Base Sepolia and Ethereum Sepolia are classified as testnets. Deployment registry result: 48 production candidates + 2 testnets. This remains separate from flash capability, liquidity, venue, route, simulation and economics. Final executable chain count remains undeclared.
