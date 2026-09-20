@@ -353,3 +353,23 @@ Created:
 - 39_AUDIT_019_MACHINE_ROUTE_CONTRACT.md
 
 Live trading STOP.
+
+## UPDATE — MACRO-BATCH 014
+
+Collector/state-store foundation is now frozen as the implementation target.
+
+Pipeline:
+SOURCE → FETCH → RAW CAPTURE → VALIDATE → NORMALIZE → DEDUP → FRESHNESS → CROSS-CHECK → STATE STORE → CHANGE EVENT → ROUTE INVALIDATION.
+
+Stores locked:
+Raw Evidence, Canonical State, Append-only History, Rejection, Coverage.
+
+Provider pools require health, latency, error rate, last-success and rate-limit state.
+
+Fresh Morpho documentation confirms cursor-paginated market discovery, separate dynamic state/liquidity endpoints, indexed-block metadata and explicit no-SLA/fallback guidance. citeturn0search0turn0search1turn0search4
+
+Created:
+- 40_COLLECTOR_STATE_STORE_IMPLEMENTATION_BATCH_014.md
+- 41_AUDIT_020_COLLECTOR_STATE_STORE.md
+
+Live trading STOP.
