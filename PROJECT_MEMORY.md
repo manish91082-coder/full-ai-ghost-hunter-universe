@@ -121,3 +121,25 @@ Verified sampled patterns include Aave V3 flash loans, Aave GHO Flashmint, Morph
 Current capability framework score is 98/100 for the sampled layer. Global coverage is not scored. Address verification, liquidity-at-size, DEX route verification and execution readiness remain open.
 
 Live trading remains STOP.
+
+
+## P. PHASE 01.5 — NETWORK-SPECIFIC DEPLOYMENT + ADDRESS VERIFICATION
+
+**Date:** 21 सितम्बर 2026
+
+A network-specific deployment/address layer was added at `01_BLOCKCHAIN_UNIVERSE/10_NETWORK_DEPLOYMENT_ADDRESS_VERIFICATION_v001.md` and audited in `01_BLOCKCHAIN_UNIVERSE/11_AUDIT_005_DEPLOYMENT_ADDRESS.md`.
+
+Verified sampled deployment records:
+- Aave V3 Ethereum Core
+- Aave V3 Arbitrum
+- Aave V3 Base
+- Morpho Blue Ethereum
+- Morpho Blue Arbitrum
+- Morpho Blue Base
+- Project 0 / marginfi v2 Solana Mainnet
+
+Locked state progression:
+
+**DISCOVERED → ADDRESS_VERIFIED → CODE_VERIFIED → CAPABILITY_VERIFIED → LIQUIDITY_VERIFIED → ROUTE_VERIFIED → SIMULATED → ECONOMICALLY_ELIGIBLE → EXECUTION_AUTHORIZED**
+
+A deployment address alone can never authorize execution. Live trading remains STOP.
