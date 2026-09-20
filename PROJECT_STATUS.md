@@ -328,3 +328,28 @@ Created:
 The next implementation layer is no longer simple deployment enumeration. It is the shared market/opportunity substrate.
 
 Live trading STOP.
+
+## UPDATE — MACRO-BATCH 013
+
+Date: 21 सितम्बर 2026
+
+The ALU/TSU design is now frozen as a machine implementation contract.
+
+New contracts:
+- canonical state envelope with provenance, block, freshness and schema metadata
+- ALU record
+- TSU record
+- route-edge record
+- static topology graph vs dynamic state graph
+- bounded route search with searched/pruned-space accounting
+- event-driven invalidation plus periodic fallback
+- provider fallback and direct on-chain execution revalidation
+- fail-closed economic/risk gates
+
+Fresh Morpho documentation confirms separate discovery/state/liquidity endpoints, indexed-block metadata, API no-SLA/fallback guidance, and chain-aware Midnight market discovery. citeturn0search0turn0search1turn0search6
+
+Created:
+- 38_MACHINE_MARKET_STATE_ROUTE_GRAPH_CONTRACT_BATCH_013.md
+- 39_AUDIT_019_MACHINE_ROUTE_CONTRACT.md
+
+Live trading STOP.
