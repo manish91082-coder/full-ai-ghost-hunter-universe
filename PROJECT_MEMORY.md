@@ -243,3 +243,17 @@ TVL is not executable liquidity. Available, borrowable, route-usable and profita
 Morpho Blue and Midnight are separate atomic-liquidity adapters.
 
 Live trading STOP.
+
+## VIII. MACRO-BATCH 013 — MACHINE SUBSTRATE CONTRACT FREEZE
+
+Date: 21 सितम्बर 2026
+
+Locked: every state object carries provenance, observed block, freshness deadline, schema version and verification state.
+
+Locked: static topology and dynamic market state are separate.
+
+Locked: route search must report searched_space and pruned_space; exhaustive claims without coverage accounting are invalid.
+
+Locked: external APIs are accelerators; execution-critical facts require direct on-chain revalidation.
+
+Live trading STOP.
