@@ -92,3 +92,28 @@ The final goal remains unchanged:
 
 ### Next
 Build the normalized canonical blockchain candidate registry and begin capability verification.
+
+
+## UPDATE — PHASE 01.2 / CANONICAL CANDIDATE REGISTRY v001
+
+**Date:** 21 सितम्बर 2026  
+**State:** 🟢 Registry Seed Accepted / Capability Verification Pending
+
+### Files Added
+- 01_BLOCKCHAIN_UNIVERSE/04_CANONICAL_CANDIDATE_REGISTRY_v001.md
+- 01_BLOCKCHAIN_UNIVERSE/05_AUDIT_002_CANONICAL_REGISTRY.md
+
+### Result
+A normalized candidate registry now exists with 40 seed records/branches. Aggregate discovery buckets are explicitly marked non-canonical and must be expanded before completeness can be claimed.
+
+### Audit
+Registry structure/discipline: **PASS WITH REQUIRED FOLLOW-UPS**.  
+Global factual completeness: **NOT SCORED**.  
+Flash-liquidity verification: **PENDING**.  
+Venue/address/liquidity verification: **PENDING**.
+
+### Decision
+The registry is the canonical **discovery seed**, not the final executable universe. Live trading remains STOP.
+
+### Next
+**PHASE 01.3 — Identity + Lifecycle Verification**, then flash-liquidity and venue capability verification.
