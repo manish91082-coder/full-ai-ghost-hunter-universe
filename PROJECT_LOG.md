@@ -316,3 +316,20 @@ Fresh official line-level source: Morpho addresses page, Morpho Blue section lab
 Correction: abscan row = Abstract, arbiscan row = Arbitrum. Independent adapter corroborates Abstract and Pharos mappings. citeturn3search1
 Result: 50 source rows reconciled, 48 classified production candidates and 2 testnets. Final Ghost Hunter chain count remains open.
 Live trading STOP.
+
+
+## LOG-0013 — Macro-Batch Execution + Cross-Chat Continuity Governance
+
+Date: 21 सितम्बर 2026
+
+Problem: micro-step progression creates unnecessary chat turns and context-window/handoff friction.
+
+Decision: adopt maximum-safe macro-batch execution. One next now authorizes the AI project lead to complete the maximum logically related work that can safely be completed internally, including research, calculations, normalization, verification, tests, audits, gap discovery, integration and re-audit.
+
+Durable artifacts:
+- 00_GOVERNANCE/CHAT_CONTINUATION_PROTOCOL.md
+- 00_GOVERNANCE/MACRO_BATCH_EXECUTION_DOCTRINE.md
+
+GitHub repository state is the durable source of truth for new chats. Phase compression is allowed; verification and safety gates are not.
+
+Phase 01 remains active. Uniswap deployment discovery is admitted but exhaustive parsing and downstream capability/liquidity/route/simulation/economic verification remain open. Final executable chain count remains undeclared. Live trading STOP.
