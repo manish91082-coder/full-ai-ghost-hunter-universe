@@ -391,3 +391,23 @@ Added:
 The implementation includes canonical state envelopes, SHA-256 evidence hashing, append-only history, rejection/coverage tracking, provider health/failover primitives and deterministic ingestion.
 
 Repository-level test execution is NOT yet claimed. Live trading remains STOP.
+
+## UPDATE — MACRO-BATCH 016
+
+Date: 21 Sept 2026
+
+USER DIRECTIVE LOCKED AS PROJECT INVARIANT: execution must be dynamic, not hardcoded.
+
+Added:
+- src/ghost_hunter/runtime_config.py
+- tests/test_runtime_config.py
+- 44_MACRO_BATCH_016_DYNAMIC_EXECUTION_CONFIG_CONTRACT.md
+- 45_AUDIT_022_DYNAMIC_EXECUTION_CONFIG.md
+
+Runtime configuration now externalizes environment, state store, provider registry, universe registry, strategy registry, economic gate, route/search budgets and other execution inputs. Missing critical configuration fails closed.
+
+Static source may define algorithms, schemas and safety invariants, but authoritative chains, RPC endpoints, addresses, tokens, pools, strategies and runtime parameters must come from external/versioned registries or current on-chain state.
+
+Fresh official documentation supports external provider selection and dynamic/paginated market state with freshness metadata. citeturn0search0turn0search1turn0search3
+
+Live trading STOP.
