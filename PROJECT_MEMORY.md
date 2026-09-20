@@ -257,3 +257,15 @@ Locked: route search must report searched_space and pruned_space; exhaustive cla
 Locked: external APIs are accelerators; execution-critical facts require direct on-chain revalidation.
 
 Live trading STOP.
+
+## IX. MACRO-BATCH 014 — COLLECTOR/STATE-STORE FOUNDATION
+
+Locked ingestion pipeline: fetch → raw evidence → validate → normalize → dedup → freshness → cross-check → canonical state → change event.
+
+Locked stores: raw evidence, canonical state, append-only history, rejection and coverage.
+
+Provider pools must fail over without silently dropping candidates.
+
+No missing critical state may be replaced with zero.
+
+Live trading STOP.
