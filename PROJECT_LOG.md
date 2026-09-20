@@ -1,8 +1,6 @@
 # 🧾 PROJECT LOG
 
-> यह file chronological project history के लिए है। प्रत्येक महत्वपूर्ण project iteration में नया entry append किया जाएगा। Existing history को बिना कारण rewrite नहीं किया जाएगा।
-
----
+> Chronological history. Important project iterations are appended; history is not silently rewritten.
 
 ## LOG-0001 — Project Initialization
 
@@ -11,73 +9,40 @@
 **Repository:** `manish91082-coder/full-ai-ghost-hunter-universe`  
 **Branch:** `main`
 
-### Source State Verified
+Initial repository and project control structure were verified/established. Live hunting remained STOPPED.
 
-GitHub से repository metadata और root contents verify किए गए।
+## LOG-0002 — Governance & Command Doctrine Locked
 
-Observed baseline:
+**Date:** 20 सितम्बर 2026  
+**Phase:** Phase 0 — Governance Lock / Pre-Phase-01
 
-- Repository: `manish91082-coder/full-ai-ghost-hunter-universe`
-- Default branch: `main`
-- Visibility: Public
-- Initial repository content: `README.md`
-- Initial commit: `aa5c633bf8bfc3c42f780f5750493b9463de4bff`
+### New Files
 
-### User-Defined Project Goal Captured
+- `00_GOVERNANCE/OPERATING_DOCTRINE.md`
+- `01_BLOCKCHAIN_UNIVERSE/PHASE_01_PLAN.md`
 
-Project का final direction:
+### Locked Decisions
 
-**दुनिया की उन सभी blockchain ecosystems पर जहाँ flash-loan trading संभव हो, fully AI-based, highly automated, self-decision-capable, lightweight, zero-cost-first trading/hunting system बनाना।**
+- Military-grade discipline.
+- Surgical change control.
+- Aviation-grade safety discipline.
+- Zero-trust.
+- Zero-cost-first.
+- AI-first but not AI-trust.
+- Fail-closed.
+- Precompute-first.
+- Parallel/event-driven hunting.
+- Minute-level hunting target subject to technical constraints.
+- Mathematical saturation before phase completion.
+- > USD 0.20 expected net-profit threshold after applicable measured costs.
+- Live trading STOP until readiness gates pass.
 
-Required coverage:
+### Next Action
 
-- blockchain universe;
-- flash-loan support;
-- pairs;
-- token/pool/router/factory addresses;
-- static information precomputation;
-- complete strategy universe;
-- known + novel + out-of-the-box strategy research;
-- continuous hunting target;
-- minute-level operation target;
-- evidence-backed verification;
-- zero-trust architecture;
-- failure/revert prevention;
-- net-profit gate.
+Begin Phase 01 Global Blockchain Universe with evidence-backed discovery and verification.
 
-### Economic Constraint Captured
+## Future Logging Contract
 
-Configured project requirement:
+Every material iteration records:
 
-**Trade only when net profit > USD 0.20 after applicable expenses/costs.**
-
-If execution is expected to fail, revert, or produce unacceptable economics, transaction must not execute.
-
-### Repository Operating Rule Captured
-
-Project implementation और project memory के लिए यही repository single source-of-truth रहेगी:
-
-`manish91082-coder/full-ai-ghost-hunter-universe`
-
-### Control Files Established
-
-- `README.md`
-- `PROJECT_STATUS.md`
-- `PROJECT_MEMORY.md`
-- `PROJECT_DETAILS.md`
-- `PROJECT_LOG.md`
-
-### Current Decision
-
-**Live hunting remains STOPPED.**
-
-Initialization के बाद अगला research objective blockchain universe discovery और flash-loan capability verification है।
-
----
-
-## LOGGING RULE FOR FUTURE ITERATIONS
-
-हर important response/iteration के बाद, जब project state materially बदलती है, निम्न information integrate की जाएगी:
-
-**What changed → Why → Evidence → Validation → Decision → Files changed → Current progress → Current blockers → Next goal**
-
+**What changed → Why → Evidence → Validation → Decision → Files changed → Progress → Blockers → Next goal**
