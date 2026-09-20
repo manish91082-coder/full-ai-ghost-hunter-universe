@@ -231,3 +231,15 @@ Uniswap has been consolidated from fragmented deployment research into one canon
 Fresh official evidence was cross-checked. Exhaustive 1,022-record parsing remains a data-engineering workstream and no longer blocks architectural progress.
 
 Live trading STOP.
+
+## VII. MACRO-BATCH 012 — ALU/TSU CONVERGENCE
+
+Date: 21 सितम्बर 2026
+
+Locked architecture: Atomic Liquidity Universe (ALU) and Trading State Universe (TSU) are independent but composable. An executable opportunity requires atomic source + asset + route + current market state + deterministic simulation + economics + risk.
+
+TVL is not executable liquidity. Available, borrowable, route-usable and profitable liquidity are separate states.
+
+Morpho Blue and Midnight are separate atomic-liquidity adapters.
+
+Live trading STOP.
