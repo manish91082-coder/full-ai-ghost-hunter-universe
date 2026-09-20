@@ -208,3 +208,9 @@ TSU stores venue, pool, token, fee/hook, reserves/concentrated state, quotes, ga
 Opportunity composition joins ALU, asset, route graph and TSU, then requires deterministic simulation, economic and risk gates.
 
 The system uses event-driven invalidation plus periodic safety scans.
+
+## 25. Machine Market-State and Route-Graph Contracts
+
+Canonical envelope fields: object type, canonical ID, network, source, observed block/time, collector/schema versions, freshness deadline, evidence, verification state, confidence and raw payload hash.
+
+ALU, TSU and route-edge contracts are defined. Static topology is separated from dynamic state. Route search is bounded and measurable. Provider failure triggers switching/fallback rather than silent opportunity deletion.
