@@ -163,3 +163,37 @@ Final formula remains:
 **FINAL_EXECUTABLE_CHAINS = UNION(all verified flash-liquidity deployment networks) ∩ verified executable trading networks ∩ executable atomic-composition networks**
 
 Live trading remains STOP.
+
+
+## S. PHASE 01.6 BATCH 003 — Canonical Protocol × Network Matrix
+
+**Date:** 21 सितम्बर 2026
+
+The project now has a dedicated canonical protocol×network matrix at:
+01_BLOCKCHAIN_UNIVERSE/16_PROTOCOL_NETWORK_MATRIX_BATCH_003_v001.md
+
+Audit:
+01_BLOCKCHAIN_UNIVERSE/17_AUDIT_008_PROTOCOL_NETWORK_MATRIX.md
+
+Locked architectural rule:
+
+**Protocol deployment ≠ flash capability ≠ live code state ≠ liquidity-at-size ≠ trading venue ≠ executable route ≠ simulation ≠ profitability.**
+
+Fresh official evidence materially expanded the deployment candidate universe. Morpho's official address registry states Morpho Blue is deployed on 50 chains. Aave, Venus, Radiant and Euler each provide additional network-specific deployment evidence. citeturn2view0turn0search4turn3search0turn1search13turn4search0
+
+### Count Discipline
+Protocol-specific network counts are never additive. Canonical network identity is deduplicated across all protocols before the final Ghost Hunter count is computed.
+
+### Final Count Contract
+The final executable chain count remains undeclared until:
+- all relevant protocol families are discovered;
+- deployment networks are normalized;
+- atomic flash capability is verified per deployment;
+- live code/interface is verified;
+- current liquidity/capacity is measured;
+- executable trading venues/routes are verified;
+- deterministic simulation passes;
+- economic gate exceeds USD 0.20 net after applicable measured costs;
+- freshness/conflicts/lifecycle checks pass.
+
+Batch 003 is a partial pass. Live trading remains STOP.
