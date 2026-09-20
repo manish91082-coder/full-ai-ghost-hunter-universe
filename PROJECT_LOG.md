@@ -333,3 +333,16 @@ Durable artifacts:
 GitHub repository state is the durable source of truth for new chats. Phase compression is allowed; verification and safety gates are not.
 
 Phase 01 remains active. Uniswap deployment discovery is admitted but exhaustive parsing and downstream capability/liquidity/route/simulation/economic verification remain open. Final executable chain count remains undeclared. Live trading STOP.
+
+
+## LOG-0014 — Uniswap Macro-Batch Consolidation
+
+Date: 21 सितम्बर 2026
+
+Fresh official Uniswap sources were cross-checked. The deployment universe is now modeled as V2/V3/V4 × network × contract role × address, with dynamic pools and V4 hooks separated from static deployment state.
+
+Macro-batch 011 created:
+- 34_UNISWAP_MACRO_BATCH_011_MATRIX_CAPABILITY_GATES.md
+- 35_AUDIT_017_UNISWAP_MACRO_BATCH.md
+
+This batch confirms that deployment discovery can progress in consolidated batches rather than micro-turns. Downstream verification remains open. Live trading STOP.
