@@ -144,3 +144,22 @@ Locked state progression:
 
 A deployment address alone can never authorize execution. Live trading remains STOP.
 \n\n## Q. PHASE 01.6 — LIVE CODE + CAPABILITY + LIQUIDITY VERIFICATION BATCH 001\n\n**Date:** 21 सितम्बर 2026\n\nLocked correction: the project must maintain separate counts for:\n\n1. discovery candidate networks;\n2. verified flash-liquidity-capable networks;\n3. verified flash-trading executable networks.\n\nOnly #3 is the final Ghost Hunter trading-universe count.\n\nFresh official evidence currently gives a **27-network provisional candidate set**. This is a checkpoint only, not a claim that the world has exactly 27 flash-trading chains.\n\nFinal count rule:\n**FINAL = UNION(verified flash-liquidity networks ∩ verified executable trading networks)**\n\nNo protocol deployment list, TVL list, explorer address, or DEX list alone can authorize a network as final.\n\nThe final count must be generated from a canonical deduplicated registry after exhaustive protocol/chain discovery, direct state verification, venue intersection, freshness checks and conflict handling.\n\nLive trading remains STOP.\n
+
+## R. PHASE 01.6 BATCH 002 — Protocol Universe Expansion
+
+**Date:** 21 सितम्बर 2026
+
+Locked: the 27-network checkpoint is a lower-bound evidence checkpoint only. It is neither the final count nor a ceiling.
+
+New protocol families formally added to the discovery registry:
+- Balancer Vault
+- Venus Protocol
+- Radiant Capital
+- Euler EVK/EVC
+
+Final network count remains undeclared until each protocol's production deployment set is enumerated, normalized, intersected with verified trading venues, and passed through current capability/liquidity checks.
+
+Final formula remains:
+**FINAL_EXECUTABLE_CHAINS = UNION(all verified flash-liquidity deployment networks) ∩ verified executable trading networks ∩ executable atomic-composition networks**
+
+Live trading remains STOP.
