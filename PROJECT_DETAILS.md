@@ -97,3 +97,25 @@ Required next layer: primary-source identity/lifecycle verification, followed by
 The project now maintains a dedicated identity/lifecycle verification layer. Verification records capture canonical identity, aliases, execution model, network identifier, environment, lifecycle, evidence timestamp and confidence.
 
 Important architectural correction: the schema is execution-model aware. It does not force every ecosystem into an EVM-style numeric chain-ID model.
+ 
+## 17. Phase 01.4 — Flash-Liquidity Capability Layer
+
+The project now has a dedicated flash-liquidity capability matrix and audit.
+
+The capability model separates:
+- protocol deployment;
+- flash-loan / flash-swap / flash-mint primitive;
+- atomicity;
+- callback or instruction ordering;
+- repayment semantics;
+- fee/capacity configuration;
+- liquidity source;
+- composability;
+- network-specific deployment;
+- execution readiness.
+
+Verified sampled patterns include Aave V3, Aave GHO Flashmint, Morpho, Uniswap V2 flash swaps and Solana marginfi/Project 0.
+
+Critical architectural rule: non-EVM atomic primitives are not forced into EVM callback semantics.
+
+Next required layer: network-specific deployment/address verification and liquidity-at-size verification. No live execution is authorized.
