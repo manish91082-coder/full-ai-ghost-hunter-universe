@@ -373,3 +373,21 @@ Created:
 - 41_AUDIT_020_COLLECTOR_STATE_STORE.md
 
 Live trading STOP.
+
+## UPDATE — MACRO-BATCH 015
+
+Date: 21 Sept 2026
+
+FIRST RUNNABLE NON-TRADING CORE CREATED.
+
+Added:
+- src/ghost_hunter/__init__.py
+- src/ghost_hunter/state_store.py
+- src/ghost_hunter/collector.py
+- tests/test_state_store.py
+- 01_BLOCKCHAIN_UNIVERSE/42_IMPLEMENTATION_BATCH_015_COLLECTOR_STATE_STORE_CODE.md
+- 01_BLOCKCHAIN_UNIVERSE/43_AUDIT_021_COLLECTOR_STATE_STORE_CODE.md
+
+The implementation includes canonical state envelopes, SHA-256 evidence hashing, append-only history, rejection/coverage tracking, provider health/failover primitives and deterministic ingestion.
+
+Repository-level test execution is NOT yet claimed. Live trading remains STOP.
