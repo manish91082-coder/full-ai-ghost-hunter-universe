@@ -187,3 +187,14 @@ Execution doctrine: 00_GOVERNANCE/MACRO_BATCH_EXECUTION_DOCTRINE.md
 Routine project decisions are owned by the AI project lead. The intended normal user command is next.
 
 Speed is obtained through batch parsing, parallel research, machine-readable registries, precomputed static state, incremental verification, automated audits and event-driven architecture, not by removing quality gates.
+
+
+## 23. Uniswap Canonical Downstream Model
+
+Uniswap is represented as protocol version × network × contract role × address, followed by code/interface/capability/pool/liquidity/route/simulation/economic/security gates.
+
+V2 flash swap, V3 flash, and V4 PoolManager/hook execution are separate capability flags.
+
+Dynamic pool discovery is a first-class layer. Address equality across networks does not imply network identity.
+
+The project now advances downstream without requiring a separate chat turn for each deployment record.
