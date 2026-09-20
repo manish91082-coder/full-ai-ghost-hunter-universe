@@ -370,3 +370,15 @@ Created:
 - 39_AUDIT_019_MACHINE_ROUTE_CONTRACT.md
 
 Next engineering target: collectors and route graph implementation. Live trading STOP.
+
+## LOG-0017 — Collector/State Store Foundation
+
+Date: 21 Sept 2026
+
+Macro-batch 014 established the implementation contract for collectors and normalized state storage. Fresh Morpho documentation was used to validate pagination, separated state/liquidity endpoints, indexed-block handling and provider fallback.
+
+Created:
+- 40_COLLECTOR_STATE_STORE_IMPLEMENTATION_BATCH_014.md
+- 41_AUDIT_020_COLLECTOR_STATE_STORE.md
+
+Next target: first executable non-trading collector/state-store code with replay tests. Live trading STOP.
