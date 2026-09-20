@@ -106,3 +106,15 @@ Final executable chain count: **NOT DECLARED**.
 Next controlled step: **complete Morpho rows 28–50, then build the deduplicated network counter before moving to the next protocol family.**
 
 Live trading: STOP.
+
+
+## CORRECTION APPEND — Registry Label Reconciliation
+Date: 21 सितम्बर 2026
+
+Fresh line-level inspection of Morpho's official address page exposed an important correction to the first extraction: the address at lines 94–96 is linked to abscan.org, so that row is Abstract, not Arbitrum. Arbitrum is the subsequent row at lines 99–101 with arbiscan.io. citeturn1view0
+
+The previously extracted 27-row artifact remains historical and is not overwritten. The corrected canonical 50-row reconciliation is stored in the next artifact.
+
+Additional independent evidence from DeFiLlama's maintained Morpho adapter identifies CHAIN.ABSTRACT with the same Morpho Blue address 0xc85CE8... and identifies Pharos with 0x18573f..., corroborating the label reconciliation. citeturn3search1
+
+Rule: source rendering ambiguity must never be silently converted into a canonical identity. When corrected, preserve the original extraction and append the correction.
