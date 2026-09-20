@@ -90,3 +90,12 @@ Locked Phase-01 rule:
 **Discovery Candidate → Capability Verification**
 
 The framework is accepted at 99/100. Factual universe completeness is not yet scored.
+
+
+## M. PHASE 01.2 — CANONICAL CANDIDATE REGISTRY v001
+
+**Date:** 21 सितम्बर 2026
+
+A versioned canonical discovery seed was created at `01_BLOCKCHAIN_UNIVERSE/04_CANONICAL_CANDIDATE_REGISTRY_v001.md`. It separates chain identity from capability verification and explicitly preserves UNKNOWN/PARTIAL states. Aggregate ecosystem buckets are temporary discovery holders and cannot authorize execution.
+
+The audit file `01_BLOCKCHAIN_UNIVERSE/05_AUDIT_002_CANONICAL_REGISTRY.md` records the remaining gaps: identity/lifecycle verification, bucket expansion, flash-liquidity verification, venue verification, address verification and freshness automation.
