@@ -137,3 +137,34 @@ Flash-liquidity verification: **NOT STARTED IN THIS STEP**.
 
 ### Next
 **PHASE 01.4 — FLASH-LIQUIDITY CAPABILITY MATRIX.**
+ 
+## UPDATE — PHASE 01.4 / FLASH-LIQUIDITY CAPABILITY MATRIX v001
+
+**Date:** 21 सितम्बर 2026  
+**State:** 🟢 Partial Capability Verification Pass / Global Coverage Pending
+
+### Files Added
+- 01_BLOCKCHAIN_UNIVERSE/08_FLASH_LIQUIDITY_CAPABILITY_MATRIX_v001.md
+- 01_BLOCKCHAIN_UNIVERSE/09_AUDIT_004_FLASH_LIQUIDITY.md
+
+### Verified Capability Patterns
+- Aave V3 flash loans across an evidenced multi-network EVM scope.
+- Aave GHO Flashmint as an atomic-equivalent flash-liquidity primitive.
+- Morpho flash loans with callback and revert-on-repayment-failure semantics.
+- Uniswap V2 flash swaps with same-transaction callback/invariant enforcement.
+- marginfi/Project 0 Solana instruction-paired flashloans with atomic end-state health validation.
+
+### Audit
+Sampled capability framework: **98/100**.  
+Global protocol completeness: **NOT SCORED**.  
+Address readiness: **0/10 by design**.  
+Liquidity-at-size: **0/10 by design**.  
+Execution readiness: **0/100**.
+
+### Important Correction
+Flash liquidity, protocol deployment, liquidity-at-size, executable route and profitability are separate gates. A verified primitive does not authorize execution.
+
+### Next
+**PHASE 01.5 — NETWORK-SPECIFIC FLASH-LIQUIDITY DEPLOYMENT + ADDRESS VERIFICATION.**
+
+Live trading remains 🛑 STOP.
