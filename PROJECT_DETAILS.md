@@ -140,3 +140,26 @@ The protocol universe was expanded beyond the initial Aave/Morpho/Uniswap/Projec
 The project now treats protocol discovery and network discovery as separate axes. This prevents a deployment on one network from being incorrectly generalized to all networks, and prevents a chain list from being treated as proof of flash-trading capability.
 
 The canonical future artifact is a mechanically generated protocol×network×primitive×deployment×trading-venue matrix.
+
+
+## 21. Phase 01.6 Batch 003 — Canonical Protocol × Network Matrix
+
+A dedicated matrix has been created at 01_BLOCKCHAIN_UNIVERSE/16_PROTOCOL_NETWORK_MATRIX_BATCH_003_v001.md and audited at 01_BLOCKCHAIN_UNIVERSE/17_AUDIT_008_PROTOCOL_NETWORK_MATRIX.md.
+
+The matrix now records deployment evidence by protocol and network while preserving separate states for flash capability, code, liquidity, venue, route, simulation and economics.
+
+Fresh source evidence:
+- Aave current production deployment list. citeturn0search4
+- Morpho official 50-chain Morpho Blue address registry. citeturn2view0
+- Venus production subgraph deployment set. citeturn3search0
+- Euler production network set. citeturn4search0
+- Radiant v3 core origin/deposit networks and v1 deprecation. citeturn1search13turn1search5
+- Project 0 Solana flashloan/arbitrage semantics. citeturn0search2
+
+### Important Specification Correction
+Protocol-specific deployment counts are not additive. Network aliases are normalized and one blockchain is counted once regardless of how many flash-liquidity protocols deploy there.
+
+### Final Count
+No final executable chain count is declared yet. The remaining gates are exhaustive protocol/address parsing, direct code verification, current flash capacity, DEX/venue intersection, route verification, deterministic simulation, freshness and conflict reconciliation.
+
+Next controlled artifact: Batch 004 exhaustive deployment registry parsing.
