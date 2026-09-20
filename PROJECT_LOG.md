@@ -382,3 +382,19 @@ Created:
 - 41_AUDIT_020_COLLECTOR_STATE_STORE.md
 
 Next target: first executable non-trading collector/state-store code with replay tests. Live trading STOP.
+
+## LOG-0018 — First Runnable Collector/State Store Core
+
+Date: 21 Sept 2026
+
+Macro-batch 015 crossed the architecture-to-code boundary.
+
+Created:
+- src/ghost_hunter/__init__.py
+- src/ghost_hunter/state_store.py
+- src/ghost_hunter/collector.py
+- tests/test_state_store.py
+- 42_IMPLEMENTATION_BATCH_015_COLLECTOR_STATE_STORE_CODE.md
+- 43_AUDIT_021_COLLECTOR_STATE_STORE_CODE.md
+
+Repository-level test execution remains pending and is not claimed. Live trading STOP.
