@@ -207,3 +207,16 @@ Official Morpho address documentation labels Morpho Blue as 50 chains and provid
 ## U. PHASE 01.6 BATCH 004B — Morpho 50-Row Reconciliation
 Date: 21 सितम्बर 2026
 Morpho's official Morpho Blue section states 50 chains. Line-level reconciliation now accounts for all 50 rows. A prior extraction incorrectly labelled the abscan row as Arbitrum; it is Abstract, while Arbitrum is the arbiscan row. citeturn1view0turn3search1 Base Sepolia and Ethereum Sepolia are classified as testnets. Deployment registry result: 48 production candidates + 2 testnets. This remains separate from flash capability, liquidity, venue, route, simulation and economics. Final executable chain count remains undeclared.
+
+
+## V. MACRO-BATCH EXECUTION + CROSS-CHAT CONTINUITY LOCK
+
+Date: 21 सितम्बर 2026
+
+The project now uses maximum-safe macro-batch execution. One next means one meaningful macro-batch, not one micro-task.
+
+The 30 roadmap phases are architectural capability domains. Related domains may be progressed together when dependencies permit. Evidence, zero-trust, verification, deterministic simulation, risk, economics, security and saturation gates remain mandatory.
+
+GitHub is the durable continuation source. A new chat must read 00_GOVERNANCE/CHAT_CONTINUATION_PROTOCOL.md plus the control files and latest commit before continuing.
+
+Live trading remains STOP.
