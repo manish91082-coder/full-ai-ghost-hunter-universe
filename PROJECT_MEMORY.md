@@ -1,139 +1,79 @@
 # 🧠 PROJECT MEMORY
 
-यह file project की long-term, decision-level memory है। यहाँ केवल durable principles, locked requirements, architectural decisions और validated corrections रखे जाएँगे।
+यह file project की durable memory है: locked principles, requirements और validated architectural decisions.
 
-## A. Project Identity
+## Project Identity
 
-**नाम:** FULL AI GHOST HUNTER UNIVERSE
+**FULL AI GHOST HUNTER UNIVERSE**
 
-**Mission:** दुनिया के उन blockchain ecosystems के लिए AI-native autonomous flash-loan trading/arbitrage research and execution infrastructure बनाना जहाँ तकनीकी रूप से flash loans और executable trading paths उपलब्ध हों।
+Mission: relevant blockchain ecosystems में AI-native autonomous flash-loan trading/arbitrage research and execution infrastructure बनाना।
 
-## B. Final Objective
+## Final Objective
 
-System को end-state में:
+- multi-chain;
+- AI-based orchestration;
+- bounded autonomous decision-making;
+- lightweight;
+- zero-cost-first;
+- continuous hunting;
+- known + composed + novel strategy research;
+- evidence-backed self-improvement;
+- transaction-level validation before live execution।
 
-- multi-chain होना है;
-- fully AI-based orchestration रखना है;
-- high automation रखना है;
-- autonomous decision-making करना है, लेकिन defined safety/economic constraints के भीतर;
-- lightweight रहना है;
-- zero-cost-first infrastructure पर चलने की क्षमता रखनी है;
-- continuously hunt करना है;
-- known, documented और newly generated strategy space को systematically explore करना है;
-- evidence-backed self-improvement रखना है;
-- live execution से पहले transaction-level safety और economics verify करना है।
+## Economic Rules
 
-## C. Economic Rules
+**Primary threshold:** applicable measured costs/expenses घटाने के बाद net opportunity profit **USD 0.20 से अधिक** होना चाहिए।
 
-**Primary execution threshold:** all applicable measured costs/expenses घटाने के बाद net opportunity profit **USD 0.20 से अधिक** होना चाहिए।
+Revert, failure, stale critical data, unsafe path, insufficient liquidity या negative/uncertain economics → **DO NOT EXECUTE**.
 
-**Failure rule:** यदि execution path revert, fail, materially stale, unsafe, insufficiently liquid, or economically negative है, तो transaction execute नहीं किया जाएगा।
+“Zero-gas-loss” एक engineering objective है, universal guarantee नहीं।
 
-**Zero-gas-loss objective:** system design का लक्ष्य execution economics को इस प्रकार gate करना है कि configured trade बिना acceptable cost coverage के submit न हो। यह requirement है, किसी भी chain/provider पर पहले से guaranteed property नहीं।
-
-## D. Verification Rules
+## Verification Rules
 
 1. Evidence required.
 2. Provenance required.
 3. Unknown ≠ verified.
 4. Estimated ≠ confirmed.
 5. Cached ≠ current.
-6. Single-source critical facts को automatically trusted नहीं किया जाएगा।
-7. Contract/address data को network-specific verification के साथ रखना होगा।
-8. Important execution assumptions को simulation/observability से validate करना होगा।
-9. Research output को implementation truth तभी बनाया जाएगा जब required validation passes।
-10. Contradictions को suppress नहीं किया जाएगा; explicit conflict record बनेगा।
+6. Critical facts को single source से automatically trusted नहीं किया जाएगा.
+7. Contract/address data network-specific verification के साथ रहेगा.
+8. Execution assumptions simulation/observability से validate होंगे.
+9. Contradictions explicit conflict records बनेंगे.
 
-## E. Zero-Trust Rules
+## Zero-Trust Scope
 
-Zero-trust applies to:
+RPCs, APIs, DEX metadata, price feeds, model outputs, strategy hypotheses, liquidity claims, token metadata, addresses, route estimates, gas estimates और external datasets सभी untrusted-by-default हैं।
 
-- RPC providers
-- public/private APIs
-- DEX metadata
-- price feeds
-- model outputs
-- strategy hypotheses
-- liquidity claims
-- token metadata
-- contract addresses
-- route estimates
-- gas estimates
-- external datasets
+## Universe Completeness
 
-हर critical dependency के लिए fallback, freshness, validation और failure behavior defined होगा।
+**Blockchain → Flash Liquidity → DEX/Venue → Factory/Router → Pool → Pair → Token → Route → Strategy → Execution Path**
 
-## F. Universe Completeness Principle
+Static information को live hunting से पहले verified store में preload करना है जहाँ feasible हो।
 
-Project को केवल popular chains या popular DEXs तक सीमित नहीं करना है।
+## Strategy-Space Principle
 
-Coverage dimensions:
+Known, composed, multi-venue, multi-hop, dislocation, liquidation-adjacent where applicable, market-microstructure where appropriate, AI-generated और out-of-the-box hypotheses को systematic coverage मिलेगा। Covered तभी जब definition, prerequisites, validation method और execution feasibility state documented हो।
 
-**Blockchain → Flash Loan Venue → DEX/Venue → Factory/Router → Pool → Pair → Token → Route → Strategy → Execution Path**
+## Cadence
 
-जहाँ static information पहले से निकाली जा सकती है, उसे live hunting से पहले verified data store में preload करने की योजना है।
+Minute-level or better target, subject to block time, provider/data limits, compute, freshness, safety and economics.
 
-## G. Strategy-Space Principle
+## Governance Lock — 20 सितम्बर 2026
 
-Strategy research में निम्न सभी classes को systematic inventory मिलेगा:
+- Military-grade discipline.
+- Surgical change discipline.
+- Aviation-grade pre-flight/redundancy/abort discipline.
+- Zero-trust architecture.
+- Zero-cost-first architecture.
+- AI-first with deterministic validation.
+- Fail-closed.
+- Precompute-first.
+- Parallel/event-driven strategy execution.
+- Mathematical saturation criteria.
+- Material iterations synchronize project control files.
+- Live trading STOP until readiness gates pass.
+- Profit threshold remains > USD 0.20 after applicable measured costs.
 
-- known arbitrage patterns
-- multi-DEX arbitrage
-- multi-pool routing
-- triangular/multi-hop structures
-- cross-venue price dislocations
-- liquidation-adjacent opportunities जहाँ protocol rules अनुमति दें
-- oracle/market microstructure based opportunities जहाँ legally/technically appropriate और executable हों
-- novel combinations generated by AI
-- out-of-the-box hypotheses
+## Current Command
 
-किसी strategy को “covered” तभी माना जाएगा जब उसका documented definition, prerequisites, validation method और execution feasibility state मौजूद हो।
-
-## H. Cadence Principle
-
-Target hunting cadence: **minute-level or better**, subject to:
-
-- chain block times
-- RPC/provider limits
-- data freshness
-- compute capacity
-- execution safety
-- rate limits
-- economic viability
-
-“Every minute” एक target operating requirement है, blanket technical guarantee नहीं।
-
-## I. Language Principle
-
-Project documentation, findings, decisions, status और logs **Hindi-first** में होंगे। Canonical technical identifiers अंग्रेज़ी में रह सकते हैं।
-
-## J. Repository Principle
-
-**Single project repository:** `manish91082-coder/full-ai-ghost-hunter-universe`
-
-Project implementation के लिए दूसरा repository target नहीं किया जाएगा जब तक user explicitly scope change न करे।
-
-## K. Change Control
-
-हर महत्वपूर्ण iteration में:
-
-1. current state verify;
-2. gaps/missing pieces identify;
-3. corrections/add-ons decide;
-4. evidence record;
-5. implementation change;
-6. tests/validation;
-7. status update;
-8. memory/details/log integration.
-
-## L. Live-Trading Lock
-
-जब तक readiness gates पास नहीं होते:
-
-**LIVE TRADING = STOP**
-
-No real-fund execution is authorized by this initialization.
-
-## M. Initial Memory Entry
-
-20 सितम्बर 2026 को project repository को formal control-document baseline के साथ initialize किया गया। यह पहला durable project memory checkpoint है।
+**Phase 01 — Global Blockchain Universe** is next. First deliverable: evidence-backed candidate universe + verification methodology, not an unverified list.
