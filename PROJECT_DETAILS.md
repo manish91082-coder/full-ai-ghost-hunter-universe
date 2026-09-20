@@ -171,3 +171,19 @@ The canonical registry now has a dedicated Morpho parsing artifact. Official doc
 
 ## 23. Phase 01.6 Batch 004B — Morpho 50-Row Canonical Reconciliation
 The full Morpho Blue source section has been structurally reconciled into 50 rows. The abscan row is corrected to Abstract; Arbitrum is separately bound to arbiscan. Base Sepolia and Ethereum Sepolia are testnet records. citeturn1view0turn3search1 Production candidate count from this Morpho registry = 48, pending lifecycle and execution verification. This is not the final global chain count.
+
+
+## 22. Macro-Batch Execution Architecture
+
+The project is upgraded from micro-step progression to maximum-safe macro-batches.
+
+Execution unit: Macro Objective -> Parallel Research -> Normalize -> Verify -> Test -> Audit -> Gap Expansion -> Integrate -> Re-test -> Re-audit -> Saturate -> Freeze.
+
+The 30 roadmap phases are architectural domains. Multiple related phases may be progressed in one macro-batch when dependencies permit. Safety and authorization gates cannot be bypassed.
+
+Authoritative continuation file: 00_GOVERNANCE/CHAT_CONTINUATION_PROTOCOL.md
+Execution doctrine: 00_GOVERNANCE/MACRO_BATCH_EXECUTION_DOCTRINE.md
+
+Routine project decisions are owned by the AI project lead. The intended normal user command is next.
+
+Speed is obtained through batch parsing, parallel research, machine-readable registries, precomputed static state, incremental verification, automated audits and event-driven architecture, not by removing quality gates.
