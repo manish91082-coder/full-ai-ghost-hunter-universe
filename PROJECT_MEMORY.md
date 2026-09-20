@@ -281,3 +281,29 @@ Locked safety boundary: no RPC/network calls, private keys, wallet operations, t
 State store semantics: raw evidence hash → normalized envelope → current state + append-only history; rejection and coverage are explicit.
 
 Test fixtures are committed, but execution verification remains a separate gate.
+
+## XI. MACRO-BATCH 016 — DYNAMIC EXECUTION INVARIANT
+
+Date: 21 Sept 2026
+
+Permanent project rule: execution code must not hardcode authoritative runtime universe data.
+
+Dynamic at runtime:
+- chains
+- RPC/provider endpoints
+- protocol/contract addresses
+- tokens/pools/pairs
+- fee tiers
+- strategy registry
+- gas/liquidity/freshness parameters
+- route/search budgets
+- economic threshold representation
+- execution permissions and kill switch
+
+Source code may contain algorithms, schemas and immutable safety invariants only.
+
+Missing or contradictory critical configuration = FAIL CLOSED.
+
+Future execution acceptance test: changing runtime registry/configuration must change behavior without source-code changes.
+
+Live trading STOP.
