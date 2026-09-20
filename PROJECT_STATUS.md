@@ -312,3 +312,19 @@ Key architecture lock: canonical contract identity is (network_id, protocol_vers
 Current downstream blockers remain bytecode, interface, pool state, liquidity-at-size, routes, deterministic simulation, economics and execution authorization.
 
 Live trading STOP.
+
+## UPDATE — MACRO-BATCH 012 INTEGRATION
+
+Date: 21 सितम्बर 2026
+
+A unified Atomic Liquidity Universe (ALU) and Trading State Universe (TSU) has been defined. The project now has a canonical bridge from flash liquidity and market state to opportunity candidates, simulation, economics, risk and execution.
+
+Fresh Morpho evidence confirms atomic flash-loan semantics and an API capable of market/state discovery including liquidity and utilization. citeturn0search0turn0search2
+
+Created:
+- 01_BLOCKCHAIN_UNIVERSE/36_UNIFIED_ATOMIC_LIQUIDITY_MARKET_STATE_SUBSTRATE_BATCH_012.md
+- 01_BLOCKCHAIN_UNIVERSE/37_AUDIT_018_UNIFIED_SUBSTRATE.md
+
+The next implementation layer is no longer simple deployment enumeration. It is the shared market/opportunity substrate.
+
+Live trading STOP.
