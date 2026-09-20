@@ -82,3 +82,12 @@ The source hierarchy separates primary/on-chain evidence, authoritative ecosyste
 The discovery methodology has passed its first audit at 99/100. The remaining gap is freshness automation plus construction of the normalized canonical candidate registry.
 
 No factual claim of global blockchain completeness has been made at this stage.
+
+
+## 15. Phase 01.2 — Canonical Candidate Registry
+
+The first normalized discovery seed is now stored in `01_BLOCKCHAIN_UNIVERSE/04_CANONICAL_CANDIDATE_REGISTRY_v001.md` and audited in `01_BLOCKCHAIN_UNIVERSE/05_AUDIT_002_CANONICAL_REGISTRY.md`.
+
+The registry is intentionally not an executable universe. Chain listing, TVL, protocol deployment or ecosystem membership do not by themselves prove flash-loan capability, atomic composability, executable venue routes or sufficient liquidity.
+
+Required next layer: primary-source identity/lifecycle verification, followed by capability matrices and network-specific address verification.
