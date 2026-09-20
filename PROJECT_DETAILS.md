@@ -222,3 +222,9 @@ The collector architecture preserves raw evidence, canonical latest state, appen
 Provider health and fallback are first-class. Event-driven refresh is combined with periodic reconciliation and bounded retries.
 
 No collector has live wallet authority.
+
+## 27. First Runnable Collector/State Store Core
+
+The first dependency-light Python core is committed under src/ghost_hunter. It implements state envelopes, evidence hashing, append-only history, rejection/coverage counters and provider health/failover primitives. Deterministic unit-test fixtures are under tests/.
+
+This is non-trading code only.
