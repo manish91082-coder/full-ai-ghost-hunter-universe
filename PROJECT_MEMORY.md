@@ -220,3 +220,14 @@ The 30 roadmap phases are architectural capability domains. Related domains may 
 GitHub is the durable continuation source. A new chat must read 00_GOVERNANCE/CHAT_CONTINUATION_PROTOCOL.md plus the control files and latest commit before continuing.
 
 Live trading remains STOP.
+
+
+## VI. MACRO-BATCH 011 — UNISWAP CONSOLIDATION
+
+Date: 21 सितम्बर 2026
+
+Uniswap has been consolidated from fragmented deployment research into one canonical downstream-ready model. V2/V3/V4 are separate capability families; dynamic pools and V4 hooks are separate state layers; contract identity is network + version + role + address.
+
+Fresh official evidence was cross-checked. Exhaustive 1,022-record parsing remains a data-engineering workstream and no longer blocks architectural progress.
+
+Live trading STOP.
