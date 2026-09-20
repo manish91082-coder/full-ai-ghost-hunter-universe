@@ -163,3 +163,7 @@ Protocol-specific deployment counts are not additive. Network aliases are normal
 No final executable chain count is declared yet. The remaining gates are exhaustive protocol/address parsing, direct code verification, current flash capacity, DEX/venue intersection, route verification, deterministic simulation, freshness and conflict reconciliation.
 
 Next controlled artifact: Batch 004 exhaustive deployment registry parsing.
+
+
+## 22. Phase 01.6 Batch 004 — Morpho 50-Chain Registry Parse
+The canonical registry now has a dedicated Morpho parsing artifact. Official documentation declares 50 Morpho Blue chains and exposes network-specific contract addresses. citeturn1view0 27 concrete records were directly parsed in this batch. Remaining 23 rows, chain identifiers, live code, flash capability, liquidity, venue and route verification remain open.
