@@ -293,3 +293,22 @@ Created:
 - 00_GOVERNANCE/MACRO_BATCH_EXECUTION_DOCTRINE.md
 
 New chats must recover state from Git, the continuation protocol, control files, latest batch and latest commit before continuing. Live trading remains STOP.
+
+
+## UPDATE — MACRO-BATCH 011 INTEGRATION
+
+Date: 21 सितम्बर 2026
+
+Uniswap deployment work has been consolidated into a downstream-ready canonical model covering V2/V3/V4, network-specific contract identity, dynamic pool state and capability gates.
+
+Fresh official evidence confirms the unified Uniswap registry currently exposes 1,022 deployments and V4 PoolManager on 24 networks. The official version-specific documentation was cross-checked for V2, V3 and V4 mappings. citeturn0search3turn0search0turn0search1
+
+Created:
+- 01_BLOCKCHAIN_UNIVERSE/34_UNISWAP_MACRO_BATCH_011_MATRIX_CAPABILITY_GATES.md
+- 01_BLOCKCHAIN_UNIVERSE/35_AUDIT_017_UNISWAP_MACRO_BATCH.md
+
+Key architecture lock: canonical contract identity is (network_id, protocol_version, contract_role, address), never address alone.
+
+Current downstream blockers remain bytecode, interface, pool state, liquidity-at-size, routes, deterministic simulation, economics and execution authorization.
+
+Live trading STOP.
