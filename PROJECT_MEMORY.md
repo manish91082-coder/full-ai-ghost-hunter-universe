@@ -269,3 +269,15 @@ Provider pools must fail over without silently dropping candidates.
 No missing critical state may be replaced with zero.
 
 Live trading STOP.
+
+## X. MACRO-BATCH 015 — FIRST RUNNABLE COLLECTOR CORE
+
+Date: 21 Sept 2026
+
+First non-trading Python implementation committed.
+
+Locked safety boundary: no RPC/network calls, private keys, wallet operations, transaction construction or transaction submission.
+
+State store semantics: raw evidence hash → normalized envelope → current state + append-only history; rejection and coverage are explicit.
+
+Test fixtures are committed, but execution verification remains a separate gate.
