@@ -358,3 +358,15 @@ Created:
 - 37_AUDIT_018_UNIFIED_SUBSTRATE.md
 
 The project now transitions from universe enumeration toward shared opportunity-substrate implementation. Live trading STOP.
+
+## LOG-0016 — Machine Route Contract Freeze
+
+Date: 21 सितम्बर 2026
+
+Macro-batch 013 converted the unified ALU/TSU architecture into machine implementation contracts. Morpho current API behavior was used as a concrete evidence case for pagination, dynamic state, liquidity, indexed blocks and provider fallback.
+
+Created:
+- 38_MACHINE_MARKET_STATE_ROUTE_GRAPH_CONTRACT_BATCH_013.md
+- 39_AUDIT_019_MACHINE_ROUTE_CONTRACT.md
+
+Next engineering target: collectors and route graph implementation. Live trading STOP.
