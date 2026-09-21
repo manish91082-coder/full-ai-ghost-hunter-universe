@@ -1165,3 +1165,24 @@ Audit 048: PARTIAL PASS. Classification coverage is complete for the retained 41
 
 G02-G29 remain BLOCKED. LIVE TRADING = STOP.
 Next: primary verification of the highest-materiality candidate/alias/execution-plane queues, then formal G01 exit review.
+
+
+## UPDATE — G01 BATCH 043 / HIGH-INFORMATION DEX PRIMARY VERIFICATION
+
+Date: 21 September 2026  
+State: 🟢 PARTIAL PRIMARY VERIFICATION PASS / G01 STILL ACTIVE
+
+### Completed
+Six high-information DEX semantic candidates were verified against current official primary sources: **Arbitrum One (eip155:42161), Arbitrum Nova (eip155:42170), Bitcoin Mainnet (bitcoin:mainnet), NEAR Mainnet (near:mainnet), Litecoin Mainnet (litecoin:mainnet), and XRP Ledger Mainnet (xrpl:mainnet).**
+
+Arbitrum's official chain information explicitly lists Arbitrum One and Nova as production chains with 42161 and 42170, while Sepolia is testnet. citeturn3view0 Bitcoin's official developer documentation distinguishes Mainnet from Testnet/Regtest. citeturn1search0turn1search3 NEAR documentation exposes mainnet configuration and RPC usage. citeturn1search6turn1search7 Litecoin and XRPL official sources confirm their production network identities. citeturn1search1turn0search0
+
+### Canonical State
+- Records: **72**
+- Unique canonical keys: **72**
+- Duplicates: **0**
+- Live trading: 🛑 STOP
+- G02-G29: BLOCKED
+
+### Next Objective
+Continue the bounded G01 primary-verification cycle, then perform adversarial denominator closure and formal G01 exit review. No G02 transition before saturation evidence passes.
