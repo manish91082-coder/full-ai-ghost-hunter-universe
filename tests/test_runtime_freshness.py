@@ -1,8 +1,8 @@
 import pytest
 
-from src.ghost_hunter.registry import RegistryError
-from src.ghost_hunter.rpc_transport import RpcObservation
-from src.ghost_hunter.runtime_freshness import (
+from ghost_hunter.registry import RegistryError
+from ghost_hunter.rpc_transport import RpcObservation
+from ghost_hunter.runtime_freshness import (
     FreshnessPolicy,
     parse_hex_block,
     require_revalidated,
