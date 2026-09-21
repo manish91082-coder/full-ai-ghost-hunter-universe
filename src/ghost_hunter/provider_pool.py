@@ -65,6 +65,7 @@ class ProviderPool:
         h.last_error = error
 
     def _health(self, provider_id: str, network_id: str) -> ProviderHealth:
-        if provider_id not in self.health:
+        key = (provider_id, network_id)
+        if key not in self.health:
             raise RegistryError("unknown provider identity")
-        return self.health[provider_id]
+        return self.health[key]
