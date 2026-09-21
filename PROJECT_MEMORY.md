@@ -382,3 +382,16 @@ Permanent project memory:
 - The earlier 27-network figure is historical only and is not the current discovery denominator or final count.
 - No final executable-chain integer may be declared before G01 closure criteria pass.
 - Live trading remains STOP.
+
+## UPDATE — G01 SOURCE-UNION NORMALIZATION / MACRO-BATCH 019
+
+Date: 21 September 2026
+
+Durable rule:
+- Discovery inputs must be normalized against all currently authoritative source unions before being counted as new chains.
+- Exact/alias overlap is preserved as provenance and must not inflate the canonical count.
+- Current join point: 21 inputs reviewed, 10 confirmed overlaps, 11 provisional new candidates.
+- The new-candidate figure remains provisional until DEX-derived deployment registries and native ecosystem registries are joined.
+- Execution-plane metadata must remain distinct for networks such as Sei and Injective.
+- Non-EVM identities such as Sui and NEAR must not be forced into EVM numeric chain IDs.
+- G01 remains the only primary saturation gate; live trading remains STOP.
