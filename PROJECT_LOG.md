@@ -176,3 +176,8 @@ High-information DEX primary verification completed for Arbitrum One, Arbitrum N
 ## 2026-09-21 — G01 BATCH 044
 
 Primary verification advanced three high-information DEX labels: Cosmos Hub (cosmoshub-4), Sui Mainnet, and Starknet Mainnet. Canonical state advanced from 72 to 74 with zero duplicate canonical keys. G01 remains ACTIVE, G02 remains BLOCKED, and live trading remains STOP. Audit 050 = PARTIAL PASS.
+
+
+## 2026-09-21 — G01 BATCH 044
+
+Execution-plane primary verification cycle completed. Astar Network was promoted as eip155:592 from official primary evidence. Neo N3 versus Neo X was explicitly kept separate, and IOTA was not promoted without exact identity evidence. Canonical state advanced from 72 to 75 records with zero duplicates. Audit 050 = PARTIAL PASS. G01 remains ACTIVE; G02 BLOCKED; live trading STOP.
