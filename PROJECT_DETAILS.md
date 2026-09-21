@@ -504,3 +504,12 @@ The runtime substrate now includes a read-only JSON-RPC transport over the exter
 This layer has no transaction construction, signing or submission capability. RPC observations remain non-authoritative until provider/network identity, block/state freshness, provenance and post-switch revalidation are satisfied.
 
 G02 remains ACTIVE / NOT SATURATED. G03-G29 remain BLOCKED. Live trading remains STOP.
+
+
+## G02 MACRO-BATCH 014 — RUNTIME FRESHNESS + REVALIDATION
+
+Date: 21 September 2026
+
+The runtime substrate now includes an explicit freshness policy and post-provider-switch revalidation contract. Stale block observations and state disagreement fail closed. This remains an observation-safety layer only; it does not create execution authority.
+
+G02 remains ACTIVE / NOT SATURATED. G03-G29 remain BLOCKED. Live trading remains STOP.
