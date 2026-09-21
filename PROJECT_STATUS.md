@@ -411,3 +411,55 @@ Static source may define algorithms, schemas and safety invariants, but authorit
 Fresh official documentation supports external provider selection and dynamic/paginated market state with freshness metadata. citeturn0search0turn0search1turn0search3
 
 Live trading STOP.
+
+## UPDATE — MACRO-BATCH 017
+
+Date: 21 September 2026
+
+State: 🟢 Dynamic Registry Boundary Implemented / Runtime Loader Pending
+
+### Completed
+Added:
+- src/ghost_hunter/registry.py
+- tests/test_registry.py
+- 01_BLOCKCHAIN_UNIVERSE/46_MACRO_BATCH_017_DYNAMIC_REGISTRY_INTERFACE_AND_REPLAY.md
+- 01_BLOCKCHAIN_UNIVERSE/47_AUDIT_023_DYNAMIC_REGISTRY_INTERFACE.md
+
+The implementation converts the dynamic-execution invariant into a code-level registry contract. Runtime authority is represented by versioned external snapshots with provenance, payload hashes, lifecycle status and manifest identity.
+
+### New Fail-Closed Gates
+- missing registry identity → reject
+- invalid hash → reject
+- duplicate canonical identity → reject
+- unauthorized registry version → reject
+- retired/quarantined state cannot silently become executable
+- registry data is not treated as proof of current on-chain state
+
+### Acceptance Test Direction
+The required replay property is now explicit:
+
+**same executable + different valid runtime snapshot → different resulting state/opportunity universe**
+
+This must be proven before any execution component is authorized.
+
+### Audit
+Macro-Batch 017 narrow objective: **ACCEPTED**.
+Broader final-goal saturation: **NOT REACHED**.
+
+Pending:
+- runtime-backed loader
+- signed manifest verification
+- dynamic provider registry
+- dynamic chain/contract registry
+- current on-chain state collectors
+- route graph
+- deterministic simulator
+- economic/risk gates
+- live authorization
+
+Fresh external evidence confirms that Morpho separates paginated market discovery from dynamic state/liquidity and exposes indexed-block metadata; Morpho also recommends fallback mechanisms because its API has no SLA. web3.py documents runtime provider configuration and provider types. citeturn0search1turn0search2turn0search3turn0search0
+
+**Live trading remains 🛑 STOP.**
+
+### Next Macro Objective
+**MACRO-BATCH 018 — runtime-backed registry loader + signed/versioned manifest verification + provider registry adapter + replay substitution test.**
