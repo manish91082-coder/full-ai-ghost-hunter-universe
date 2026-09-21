@@ -1,6 +1,6 @@
 {
   "schema_version": "g02.atomic.capital.deployment.registry.v1",
-  "revision": 2,
+  "revision": 3,
   "as_of": "2026-09-21",
   "canonical_role": "CURRENT_MATERIALIZED_STATE",
   "authority": "G02_DEPLOYMENT_ENUMERATION_AND_DYNAMIC_STATE_BOUNDARY",
@@ -709,8 +709,8 @@
       "market_variant": null,
       "deployment_status": "PRIMARY_MAINNET_PROGRAM_CONFIRMED",
       "contract_role": "MARGINFI_PROGRAM",
-      "contract_or_program": null,
-      "address_verification_state": "PENDING_PRIMARY_ADDRESS_MATERIALIZATION",
+      "contract_or_program": "MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA",
+      "address_verification_state": "PRIMARY_SOURCE_ADDRESS_VERIFIED",
       "bytecode_evidence_state": "PENDING_RUNTIME_PROGRAM_HASH",
       "abi_evidence_state": "PRIMARY_IDL_OR_SDK_REQUIRED",
       "capability_state": "VERIFIED_FLASH_LOAN_PRIMITIVE",
@@ -721,13 +721,14 @@
       "callback_state": "INSTRUCTION_BRACKET_NOT_CPI",
       "repayment_state": "END_INSTRUCTION_FINAL_HEALTH_CHECK",
       "atomicity_state": "VERIFIED_SAME_TRANSACTION",
-      "freshness_state": "CURRENT_DOCS; RUNTIME_PROGRAM_STATE_REQUIRED",
+      "freshness_state": "CURRENT_MAINNET_PROGRAM; RUNTIME_PROGRAM_STATE_REQUIRED",
       "provenance": [
         "https://docs.marginfi.com/guides/flashloans",
-        "https://docs.marginfi.com/protocol-overview/fees",
-        "https://docs.marginfi.com/protocol-overview/program-addresses"
+        "https://docs.marginfi.com/protocol-overview/program-addresses",
+        "https://docs.marginfi.com/typescript-sdk/program-upgrade"
       ],
-      "execution_eligibility": "NEVER_FROM_RESEARCH"
+      "execution_eligibility": "NEVER_FROM_RESEARCH",
+      "address_evidence_source": "Official Project 0 / marginfi program address; current 2026-08-25 program upgrade evidence also confirms mainnet production program ID."
     },
     {
       "id": "G02-DEP-0024",
@@ -767,8 +768,8 @@
       "market_variant": "Dai ERC-3156 Flash Mint",
       "deployment_status": "PRIMARY_PRODUCTION_MODULE_DOCUMENTED",
       "contract_role": "DAI_FLASH_MODULE",
-      "contract_or_program": null,
-      "address_verification_state": "PENDING_PRIMARY_CHAINLOG_MATERIALIZATION",
+      "contract_or_program": "0x60744434d6339a6B27d73d9Eda62b6F66a0a04FA",
+      "address_verification_state": "PRIMARY_SOURCE_ADDRESS_VERIFIED",
       "bytecode_evidence_state": "PENDING_RUNTIME_CODE_HASH",
       "abi_evidence_state": "ERC3156_PRIMARY_SEMANTICS",
       "capability_state": "VERIFIED_FLASH_MINT",
@@ -781,10 +782,12 @@
       "atomicity_state": "VERIFIED_SAME_TRANSACTION",
       "freshness_state": "CURRENT_DOCS; RUNTIME_STATE_REQUIRED",
       "provenance": [
-        "https://developers.skyeco.com/protocol/liquidity/dai-flash-mint/",
-        "https://eips.ethereum.org/EIPS/eip-3156"
+        "https://github.com/sky-ecosystem/spells-mainnet/blob/master/src/test/addresses_mainnet.sol",
+        "https://github.com/sky-ecosystem/dss-flash",
+        "https://github.com/sky-ecosystem/governance-manual/blob/main/module-index/module-flash-mint-module.md"
       ],
-      "execution_eligibility": "NEVER_FROM_RESEARCH"
+      "execution_eligibility": "NEVER_FROM_RESEARCH",
+      "address_evidence_source": "Current Sky ecosystem mainnet address source identifies MCD_FLASH at this address; legacy MCD_FLASH is retained in source but not promoted as current."
     },
     {
       "id": "G02-DEP-0026",
@@ -796,8 +799,8 @@
       "market_variant": "Vat Dai Flash Mint",
       "deployment_status": "PRIMARY_PRODUCTION_MODULE_DOCUMENTED",
       "contract_role": "VAT_DAI_FLASH_MODULE",
-      "contract_or_program": null,
-      "address_verification_state": "PENDING_PRIMARY_CHAINLOG_MATERIALIZATION",
+      "contract_or_program": "0x60744434d6339a6B27d73d9Eda62b6F66a0a04FA",
+      "address_verification_state": "PRIMARY_SOURCE_ADDRESS_VERIFIED",
       "bytecode_evidence_state": "PENDING_RUNTIME_CODE_HASH",
       "abi_evidence_state": "PRIMARY_INTERFACE_VERIFIED",
       "capability_state": "VERIFIED_VAT_FLASH_MINT",
@@ -810,9 +813,11 @@
       "atomicity_state": "VERIFIED_SAME_TRANSACTION",
       "freshness_state": "CURRENT_DOCS; RUNTIME_STATE_REQUIRED",
       "provenance": [
-        "https://developers.skyeco.com/protocol/liquidity/dai-flash-mint/"
+        "https://github.com/sky-ecosystem/spells-mainnet/blob/master/src/test/addresses_mainnet.sol",
+        "https://github.com/sky-ecosystem/dss-flash"
       ],
-      "execution_eligibility": "NEVER_FROM_RESEARCH"
+      "execution_eligibility": "NEVER_FROM_RESEARCH",
+      "address_evidence_source": "Same current MCD_FLASH module exposes the VAT-Dai flash path; current Sky address source used for contract identity."
     },
     {
       "id": "G02-DEP-0027",
@@ -820,12 +825,12 @@
       "protocol": "Venus",
       "protocol_version": "V4",
       "deployment_scope": "CORE_POOL_FLASHLOAN_SURFACE",
-      "network_id": "VENUS_PRODUCTION_SURFACE",
+      "network_id": "eip155:56",
       "market_variant": "Core Pool",
       "deployment_status": "PRIMARY_FLASHLOAN_CAPABILITY_DOCUMENTED",
       "contract_role": "CORE_POOL",
-      "contract_or_program": null,
-      "address_verification_state": "PENDING_PRIMARY_DEPLOYMENT_ENUMERATION",
+      "contract_or_program": "0xfd36e2c2a6789db23113685031d7f16329158384",
+      "address_verification_state": "PRIMARY_SOURCE_ADDRESS_VERIFIED",
       "bytecode_evidence_state": "PENDING_RUNTIME_CODE_HASH",
       "abi_evidence_state": "PRIMARY_INTERFACE_VERIFIED",
       "capability_state": "VERIFIED_MULTI_ASSET_FLASH_LOAN",
@@ -836,11 +841,15 @@
       "callback_state": "executeOperation",
       "repayment_state": "PROTOCOL_DEFINED_END_STATE",
       "atomicity_state": "VERIFIED_ATOMIC_OPERATION",
-      "freshness_state": "CURRENT_DOCS; RUNTIME_ENABLEMENT_REQUIRED",
+      "freshness_state": "CURRENT_CORE_POOL_REFERENCE; RUNTIME_ENABLEMENT_REQUIRED",
       "provenance": [
-        "https://docs-v4.venus.io/technical-reference/reference-technical-articles/flashloan-core-pool"
+        "https://docs-v4.venus.io/technical-reference/reference-technical-articles/flashloan-core-pool",
+        "https://docs-v4.venus.io/technical-reference/reference-technical-articles/diamond-comptroller",
+        "https://docs-v4.venus.io/deployed-contracts/funds"
       ],
-      "execution_eligibility": "NEVER_FROM_RESEARCH"
+      "execution_eligibility": "NEVER_FROM_RESEARCH",
+      "network_key": "bnb-chain-core-pool",
+      "address_evidence_source": "Official Venus technical reference identifies the Core Pool Comptroller Unitroller on BNB Chain; flash-loan enablement/initiator authorization remain runtime state."
     },
     {
       "id": "G02-DEP-0028",
@@ -876,12 +885,12 @@
       "protocol": "Balancer",
       "protocol_version": "V2",
       "deployment_scope": "VAULT_FLASHLOAN_SURFACE",
-      "network_id": "BALANCER_V2_OFFICIAL_DEPLOYMENT_SURFACE",
-      "market_variant": null,
+      "network_id": "eip155:1",
+      "market_variant": "Ethereum Mainnet / V2 Vault",
       "deployment_status": "PRIMARY_INTERFACE_CONFIRMED",
       "contract_role": "VAULT",
-      "contract_or_program": null,
-      "address_verification_state": "PENDING_PER_NETWORK_DEPLOYMENT_ENUMERATION",
+      "contract_or_program": "0xBA12222222228d8Ba445958a75a0704d566BF2C8",
+      "address_verification_state": "PRIMARY_SOURCE_ADDRESS_VERIFIED",
       "bytecode_evidence_state": "PENDING_RUNTIME_CODE_HASH",
       "abi_evidence_state": "PRIMARY_INTERFACE_VERIFIED",
       "capability_state": "VERIFIED_FLASH_LOAN",
@@ -894,9 +903,12 @@
       "atomicity_state": "VERIFIED_SAME_TRANSACTION",
       "freshness_state": "DEPLOYMENT_AND_BALANCE_RUNTIME_REQUIRED",
       "provenance": [
-        "https://github.com/balancer/balancer-v2-monorepo/blob/master/pkg/interfaces/contracts/vault/IVault.sol"
+        "https://github.com/balancer/docs-developers/blob/main/resources/flash-loans.md",
+        "https://github.com/balancer/docs-developers/blob/main/references/valuing-balancer-lp-tokens/deployment-addresses.md"
       ],
-      "execution_eligibility": "NEVER_FROM_RESEARCH"
+      "execution_eligibility": "NEVER_FROM_RESEARCH",
+      "network_key": "ethereum-v2-vault",
+      "address_evidence_source": "Official Balancer documentation lists the V2 Vault address and flashLoan interface."
     },
     {
       "id": "G02-DEP-0030",
@@ -925,6 +937,130 @@
         "https://aave.com/docs/resources/addresses"
       ],
       "execution_eligibility": "NEVER_FROM_RESEARCH"
+    },
+    {
+      "id": "G02-DEP-0031",
+      "mechanism_id": "ALU-0007",
+      "protocol": "Balancer",
+      "protocol_version": "V2",
+      "deployment_scope": "VAULT_FLASHLOAN_SURFACE",
+      "network_id": "eip155:137",
+      "market_variant": "Polygon / V2 Vault",
+      "deployment_status": "PRIMARY_INTERFACE_CONFIRMED",
+      "contract_role": "VAULT",
+      "contract_or_program": "0xBA12222222228d8Ba445958a75a0704d566BF2C8",
+      "address_verification_state": "PRIMARY_SOURCE_ADDRESS_VERIFIED",
+      "bytecode_evidence_state": "PENDING_RUNTIME_CODE_HASH",
+      "abi_evidence_state": "PRIMARY_INTERFACE_VERIFIED",
+      "capability_state": "VERIFIED_FLASH_LOAN",
+      "asset_scope_state": "MULTI_TOKEN",
+      "capacity_state": "DYNAMIC_VAULT_TOKEN_BALANCE",
+      "fee_state": "DYNAMIC_PROTOCOL_FEE",
+      "authorization_state": "CURRENT_VAULT_RULES_REQUIRED",
+      "callback_state": "receiveFlashLoan",
+      "repayment_state": "TOKENS_PLUS_FEE_BEFORE_COMPLETION",
+      "atomicity_state": "VERIFIED_SAME_TRANSACTION",
+      "freshness_state": "DEPLOYMENT_AND_BALANCE_RUNTIME_REQUIRED",
+      "provenance": [
+        "https://github.com/balancer/docs-developers/blob/main/resources/flash-loans.md",
+        "https://github.com/balancer/docs-developers/blob/main/references/valuing-balancer-lp-tokens/deployment-addresses.md"
+      ],
+      "execution_eligibility": "NEVER_FROM_RESEARCH",
+      "network_key": "polygon-v2-vault",
+      "address_evidence_source": "Official Balancer deployment-address documentation lists the V2 Vault on this network."
+    },
+    {
+      "id": "G02-DEP-0032",
+      "mechanism_id": "ALU-0007",
+      "protocol": "Balancer",
+      "protocol_version": "V2",
+      "deployment_scope": "VAULT_FLASHLOAN_SURFACE",
+      "network_id": "eip155:42161",
+      "market_variant": "Arbitrum / V2 Vault",
+      "deployment_status": "PRIMARY_INTERFACE_CONFIRMED",
+      "contract_role": "VAULT",
+      "contract_or_program": "0xBA12222222228d8Ba445958a75a0704d566BF2C8",
+      "address_verification_state": "PRIMARY_SOURCE_ADDRESS_VERIFIED",
+      "bytecode_evidence_state": "PENDING_RUNTIME_CODE_HASH",
+      "abi_evidence_state": "PRIMARY_INTERFACE_VERIFIED",
+      "capability_state": "VERIFIED_FLASH_LOAN",
+      "asset_scope_state": "MULTI_TOKEN",
+      "capacity_state": "DYNAMIC_VAULT_TOKEN_BALANCE",
+      "fee_state": "DYNAMIC_PROTOCOL_FEE",
+      "authorization_state": "CURRENT_VAULT_RULES_REQUIRED",
+      "callback_state": "receiveFlashLoan",
+      "repayment_state": "TOKENS_PLUS_FEE_BEFORE_COMPLETION",
+      "atomicity_state": "VERIFIED_SAME_TRANSACTION",
+      "freshness_state": "DEPLOYMENT_AND_BALANCE_RUNTIME_REQUIRED",
+      "provenance": [
+        "https://github.com/balancer/docs-developers/blob/main/resources/flash-loans.md",
+        "https://github.com/balancer/docs-developers/blob/main/references/valuing-balancer-lp-tokens/deployment-addresses.md"
+      ],
+      "execution_eligibility": "NEVER_FROM_RESEARCH",
+      "network_key": "arbitrum-v2-vault",
+      "address_evidence_source": "Official Balancer deployment-address documentation lists the V2 Vault on this network."
+    },
+    {
+      "id": "G02-DEP-0033",
+      "mechanism_id": "ALU-0007",
+      "protocol": "Balancer",
+      "protocol_version": "V2",
+      "deployment_scope": "VAULT_FLASHLOAN_SURFACE",
+      "network_id": "eip155:10",
+      "market_variant": "Optimism / V2 Vault",
+      "deployment_status": "PRIMARY_INTERFACE_CONFIRMED",
+      "contract_role": "VAULT",
+      "contract_or_program": "0xBA12222222228d8Ba445958a75a0704d566BF2C8",
+      "address_verification_state": "PRIMARY_SOURCE_ADDRESS_VERIFIED",
+      "bytecode_evidence_state": "PENDING_RUNTIME_CODE_HASH",
+      "abi_evidence_state": "PRIMARY_INTERFACE_VERIFIED",
+      "capability_state": "VERIFIED_FLASH_LOAN",
+      "asset_scope_state": "MULTI_TOKEN",
+      "capacity_state": "DYNAMIC_VAULT_TOKEN_BALANCE",
+      "fee_state": "DYNAMIC_PROTOCOL_FEE",
+      "authorization_state": "CURRENT_VAULT_RULES_REQUIRED",
+      "callback_state": "receiveFlashLoan",
+      "repayment_state": "TOKENS_PLUS_FEE_BEFORE_COMPLETION",
+      "atomicity_state": "VERIFIED_SAME_TRANSACTION",
+      "freshness_state": "DEPLOYMENT_AND_BALANCE_RUNTIME_REQUIRED",
+      "provenance": [
+        "https://github.com/balancer/docs-developers/blob/main/resources/flash-loans.md",
+        "https://github.com/balancer/docs-developers/blob/main/references/valuing-balancer-lp-tokens/deployment-addresses.md"
+      ],
+      "execution_eligibility": "NEVER_FROM_RESEARCH",
+      "network_key": "optimism-v2-vault",
+      "address_evidence_source": "Official Balancer deployment-address documentation lists the V2 Vault on this network."
+    },
+    {
+      "id": "G02-DEP-0034",
+      "mechanism_id": "ALU-0007",
+      "protocol": "Balancer",
+      "protocol_version": "V2",
+      "deployment_scope": "VAULT_FLASHLOAN_SURFACE",
+      "network_id": "eip155:100",
+      "market_variant": "Gnosis / V2 Vault",
+      "deployment_status": "PRIMARY_INTERFACE_CONFIRMED",
+      "contract_role": "VAULT",
+      "contract_or_program": "0xBA12222222228d8Ba445958a75a0704d566BF2C8",
+      "address_verification_state": "PRIMARY_SOURCE_ADDRESS_VERIFIED",
+      "bytecode_evidence_state": "PENDING_RUNTIME_CODE_HASH",
+      "abi_evidence_state": "PRIMARY_INTERFACE_VERIFIED",
+      "capability_state": "VERIFIED_FLASH_LOAN",
+      "asset_scope_state": "MULTI_TOKEN",
+      "capacity_state": "DYNAMIC_VAULT_TOKEN_BALANCE",
+      "fee_state": "DYNAMIC_PROTOCOL_FEE",
+      "authorization_state": "CURRENT_VAULT_RULES_REQUIRED",
+      "callback_state": "receiveFlashLoan",
+      "repayment_state": "TOKENS_PLUS_FEE_BEFORE_COMPLETION",
+      "atomicity_state": "VERIFIED_SAME_TRANSACTION",
+      "freshness_state": "DEPLOYMENT_AND_BALANCE_RUNTIME_REQUIRED",
+      "provenance": [
+        "https://github.com/balancer/docs-developers/blob/main/resources/flash-loans.md",
+        "https://github.com/balancer/docs-developers/blob/main/references/valuing-balancer-lp-tokens/deployment-addresses.md"
+      ],
+      "execution_eligibility": "NEVER_FROM_RESEARCH",
+      "network_key": "gnosis-v2-vault",
+      "address_evidence_source": "Official Balancer deployment-address documentation lists the V2 Vault on this network."
     }
   ],
   "coverage": {
@@ -940,6 +1076,6 @@
     "enablement_authorization": true,
     "adversarial_discovery": true
   },
-  "address_materialization_batch": "AAVE_PRIMARY_SOURCE_BATCH_001",
-  "address_materialization_notes": "Only addresses directly present in the cited primary Aave governance deployment inventory were promoted. EtherFi, Plasma, Fantom and Harmony remain pending where this source did not provide a current Pool address. Runtime code hash and live state remain pending for every record."
+  "address_materialization_batch": "PRIMARY_ADDRESS_BATCH_005",
+  "address_materialization_notes": "Batch 005 materialized official primary-source addresses for marginfi mainnet, current Sky MCD_FLASH, Venus BNB Core Pool reference, and Balancer V2 Vault on Ethereum, Polygon, Arbitrum, Optimism and Gnosis. No runtime bytecode hash, live capacity, current fee or enablement authorization is implied."
 }
