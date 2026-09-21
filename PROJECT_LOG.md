@@ -145,3 +145,13 @@
 - Current canonical state: 62 records / 62 unique keys / 0 duplicates.
 - Audit 046: PARTIAL PASS; G01 remains ACTIVE / NOT SATURATED.
 - Next focus is material DEX/native-source denominator closure, not broad rediscovery.
+
+## 2026-09-21 - Macro-Batch 041
+
+**DEX + Native Denominator Targeted Cycle**
+
+- Primary-verified Kava, opBNB and Cardano from official documentation.
+- Resolved Klaytn as a Kaia continuity/alias relationship instead of creating a duplicate canonical chain.
+- Current canonical state: 65 records / 65 unique keys / 0 duplicates.
+- Audit 047: PARTIAL PASS; G01 remains ACTIVE / NOT SATURATED.
+- Remaining work is bounded semantic denominator closure, not broad rediscovery.
