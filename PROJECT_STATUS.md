@@ -604,3 +604,22 @@ Current-source execution, full native extraction, complete DEX-derived union, di
 Execute the externalized source manifest against current primary/secondary payloads, build raw + normalized candidate datasets, reconcile overlaps/exclusions/conflicts, and only then determine whether G01 can approach saturation.
 
 Live trading remains STOP.
+
+
+## UPDATE — DATA LIFECYCLE / ANTI-DUPLICATION LOCK
+
+Date: 21 September 2026
+State: 🟢 CANONICAL-STATE GOVERNANCE LOCKED
+
+The project now explicitly separates **append-only historical evidence** from **deduplicated current canonical state**.
+
+### Permanent rule
+Old evidence is never silently deleted or overwritten. However, ordinary new discoveries must NOT create duplicate current records or a new full registry file. New observations are normalized, identity-resolved, deduplicated and merged into the current canonical registry in place. Git history preserves previous versions.
+
+### G01 implementation
+01_BLOCKCHAIN_UNIVERSE/data/G01_SOURCE_UNION_REGISTRY_v001.json has been upgraded in place to version v002 and marked CURRENT_MATERIALIZED_STATE. Existing records remain, with canonical record keys added. No historical Git state was deleted.
+
+### Next
+Run the duplicate/identity anomaly audit over the current G01 materialized state, then continue uncovered native + DEX discovery and merge only deltas into the same canonical state.
+
+Live trading remains STOP.
