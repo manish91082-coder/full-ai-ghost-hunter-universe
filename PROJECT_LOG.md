@@ -359,3 +359,15 @@ G02 remains ACTIVE / NOT SATURATED. G03-G29 remain BLOCKED. Execution authority 
 - Added primary-source Silo market discovery evidence and recorded that permissionless markets prevent API/UI enumeration from being treated as a complete deployment denominator.
 - No production RPC observation or CI success is claimed.
 - G02 remains ACTIVE / NOT SATURATED; G03-G29 blocked; execution NONE; live trading STOP.
+
+
+## 2026-09-21 — G02 CI FAILURE ROOT-CAUSE CORRECTION
+
+- Audited repository from G01 final exit through current main.
+- Confirmed current G02 machine-state validation inputs are internally consistent: 21 mechanisms, 38 deployments, zero duplicate deployment identity keys, zero execution-eligibility violations.
+- Identified stale failover test expectation after Batch 015 changed RpcTransport.call() to in-request provider retry.
+- Hardened CI with explicit pytest installation, PYTHONPATH=src, and python -m pytest -q.
+- Corrected test_failure_rotates_provider to expect same-request success through p2.
+- Added Audit 068.
+- Fresh push-triggered CI result is not claimed because the available connector does not expose those main push runs.
+- G02 remains ACTIVE / NOT SATURATED; execution NONE; live trading STOP.
