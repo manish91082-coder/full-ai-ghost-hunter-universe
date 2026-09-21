@@ -1445,3 +1445,27 @@ Added:
 - 02_FLASH_LOAN_UNIVERSE/18_AUDIT_062_G02_PAIR_DEPLOYMENT_BOUNDARY.md
 
 G02 remains ACTIVE / NOT SATURATED. Live trading STOP. Execution authority NONE.
+
+
+## UPDATE — MACRO-BATCH 018 / RUNTIME REGISTRY + PROVIDER ADAPTER
+
+Date: 21 September 2026
+State: 🟢 RUNTIME SUBSTRATE INCREMENT / G02 CONTINUES
+
+Implemented:
+- external SHA-256 verified runtime snapshot loader;
+- authorized-version and duplicate-identity fail-closed validation;
+- runtime-only provider endpoint registry with deterministic priority selection;
+- missing-provider fail-closed behavior;
+- replay fixture proving the same loader can project different valid runtime snapshots without source changes.
+
+Added:
+- src/ghost_hunter/runtime_registry.py
+- src/ghost_hunter/provider_registry.py
+- tests/test_runtime_registry.py
+- 01_BLOCKCHAIN_UNIVERSE/48_MACRO_BATCH_018_RUNTIME_REGISTRY_PROVIDER_ADAPTER.md
+- 01_BLOCKCHAIN_UNIVERSE/49_AUDIT_024_RUNTIME_REGISTRY_PROVIDER_ADAPTER.md
+
+Explicitly pending: cryptographic signature verification, live RPC collection, on-chain code/state, market/pair enumeration, live capacity, fees and freshness.
+
+G02 remains ACTIVE / NOT SATURATED. G03-G29 remain BLOCKED. Execution authority NONE. Live trading STOP.
