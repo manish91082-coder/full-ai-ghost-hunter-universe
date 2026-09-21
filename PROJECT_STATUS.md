@@ -856,3 +856,26 @@ The machine-runnable DEX discovery path was executed successfully through GitHub
 Normalize and reconcile the 419-label observation surface, verify identities/lifecycle with primary evidence, classify aliases/conflicts/non-chain labels, search native/independent surfaces for missed networks, then perform adversarial missed-network audit and final denominator analysis.
 
 Live trading remains **STOP**.
+
+
+## UPDATE — MACRO-BATCH 031 / DEX LABEL RECONCILIATION QUEUE
+
+**Date:** 21 September 2026  
+**State:** 🟡 G01 ACTIVE / NOT SATURATED
+
+The corrected 419-label DEX observation surface is now governed by an explicit reconciliation contract. The 383 unmatched labels remain unresolved observations and are not promoted to canonical blockchain identities.
+
+Added:
+- `01_BLOCKCHAIN_UNIVERSE/74_G01_DEX_LABEL_RECONCILIATION_BATCH_031.md`
+- `01_BLOCKCHAIN_UNIVERSE/75_AUDIT_037_G01_DEX_LABEL_RECONCILIATION.md`
+- `scripts/reconcile_g01_dex_labels.py`
+- `tests/test_reconcile_g01_dex_labels.py`
+
+The classifier conservatively separates likely aliases, possible execution-plane variants, possible network candidates and UNKNOWN observations. It never grants canonical identity or execution authorization from name similarity.
+
+The reconciliation tool and fixture tests are authored but repository execution of these new tests is not claimed yet.
+
+### Next
+Use the queue to resolve high-information aliases and execution-plane variants with primary network sources, then continue systematic primary verification and adversarial missed-network discovery.
+
+Live trading remains **STOP**.
