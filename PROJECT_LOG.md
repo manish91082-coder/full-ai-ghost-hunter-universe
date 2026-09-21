@@ -53,3 +53,18 @@
 - Identity evidence remains separate from flash capability, DEX execution, liquidity, route, simulation, economics and authorization.
 - Added Batch 033 and Audit 039.
 - G01 remains ACTIVE / NOT SATURATED; G02-G29 blocked; live trading STOP.
+
+
+## 2026-09-21 - Macro-Batch 034
+
+**G01 Native Registry Reconciliation Contract**
+
+- Added machine-readable native reconciliation manifest.
+- Added Batch 034 and Audit 040.
+- Locked independent native source families, lifecycle rules, native identifier preservation, execution-plane handling and semantic deduplication.
+- Primary-source anchors strengthened for Fuel Ignition, Berachain, Hedera Mainnet and Powerloom Mainnet V2.
+- No flash-liquidity, route, profitability or execution authorization inferred.
+- G01 remains ACTIVE / NOT SATURATED.
+- G02-G29 remain BLOCKED.
+- LIVE TRADING remains STOP.
+- Next: materialize and reconcile the current Cosmos production subset against the existing 57-record source-union.
