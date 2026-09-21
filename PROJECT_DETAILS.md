@@ -318,3 +318,15 @@ G01 discovery coverage was expanded using independent current discovery surfaces
 Batch 018 promoted 21 concrete candidates from discovery signals into individually trackable G01 records. They remain DISCOVERED only.
 
 The next authoritative G01 task is source-union normalization plus primary identity/lifecycle verification, followed by exclusion/retired reconciliation and a final deduplicated discovery counter. Dependent gates remain blocked by governance until G01 is frozen.
+
+## 33. G01 Source-Union Normalization — Macro-Batch 019
+
+Date: 21 September 2026
+
+Machine-readable registry added at 01_BLOCKCHAIN_UNIVERSE/data/G01_SOURCE_UNION_REGISTRY_v001.json.
+
+Macro-Batch 019 reviewed 21 discovery inputs and confirmed 10 overlaps against the current seed/Morpho reconciliation. Eleven remain newly introduced at the current join point, subject to further DEX-derived and native-registry joins.
+
+Primary identity/lifecycle evidence has been strengthened for multiple candidates while keeping unresolved identifiers explicitly partial/unknown. The source-union layer is evidence/provenance only and never execution authorization.
+
+Next G01 layer: union with DEX/native ecosystem registries, full lifecycle and retired-state reconciliation, exclusions, freshness and final deduplicated discovery denominator.
