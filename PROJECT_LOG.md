@@ -114,3 +114,14 @@
 - This is a bounded targeted cycle under the new saturation exit control.
 - Audit 043 pending CI observation.
 - G01 remains ACTIVE / NOT SATURATED; G02-G29 BLOCKED; LIVE TRADING STOP.
+
+## 2026-09-21 - Macro-Batch 038
+
+**High-Information Primary Verification**
+
+- Observed and audited Batch 037 queue: 225 records.
+- Resolved Cosmos Hub and XRPL EVM as primary-evidenced mainnet candidates.
+- Preserved native identifiers and avoided EIP-155 coercion.
+- Kept Gateway/Wormchain and Gravitybridge as relationship-review items.
+- Did not blindly promote the 217 primary-review queue.
+- Audit 044: PARTIAL PASS; G01 remains ACTIVE / NOT SATURATED.
