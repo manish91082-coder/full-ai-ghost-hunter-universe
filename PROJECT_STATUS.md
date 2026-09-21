@@ -1517,3 +1517,47 @@ The new tests use deterministic injected transport fixtures, not live public RPC
 
 ### Next Macro Objective
 Bind the transport to a runtime freshness contract, then use the read-only substrate to materialize market/pair denominators and current code/liquidity/fee state. Never promote observation into execution authority without all required gates.
+
+
+## UPDATE — G02 MACRO-BATCH 014 / RUNTIME FRESHNESS + REVALIDATION
+
+Date: 21 September 2026
+State: 🟡 G02 ACTIVE / NOT SATURATED
+
+Added:
+- `src/ghost_hunter/runtime_freshness.py`
+- `tests/test_runtime_freshness.py`
+- `02_FLASH_LOAN_UNIVERSE/21_G02_RUNTIME_FRESHNESS_REVALIDATION_BATCH_014.md`
+- `02_FLASH_LOAN_UNIVERSE/22_AUDIT_064_G02_RUNTIME_FRESHNESS_REVALIDATION.md`
+
+### Completed
+- Explicit maximum block-lag freshness policy.
+- Fail-closed block-number validation.
+- Hexadecimal JSON-RPC block parsing.
+- Same-network and same-method post-switch revalidation contract.
+- State disagreement after provider switching fails closed.
+- No authoritative chain, endpoint, address, token, pool or execution constants added.
+
+### Current boundary
+The contract is implemented and covered by deterministic fixture tests, but no live production RPC result is claimed. Freshness validation proves only observation freshness/consistency, not liquidity, profitability, execution authorization or executable code identity.
+
+### G02 state
+- Provider pool: IMPLEMENTED
+- Read-only RPC transport: IMPLEMENTED
+- Quorum: IMPLEMENTED
+- Freshness contract: IMPLEMENTED
+- Post-switch revalidation contract: IMPLEMENTED
+- Live RPC evidence: PENDING
+- Provider/network identity proof: PENDING
+- Silo market enumeration: PENDING
+- QuickSwap/PancakeSwap pair enumeration: PENDING
+- Code identity: PENDING
+- Live capacity/liquidity: PENDING
+- Current fee: PENDING
+- G02 saturation: NOT SATURATED
+- G03-G29: BLOCKED
+- Execution authority: NONE
+- Live trading: STOP
+
+### Next Macro Objective
+Use the now-closed observation safety substrate to materialize current runtime market/pair denominators, starting with Silo V3 market enumeration and QuickSwap/PancakeSwap V2 pair enumeration, while preserving fail-closed freshness and revalidation.
