@@ -12,3 +12,17 @@
 - Preserved raw payload hash and workflow artifact metadata.
 - G01 remains ACTIVE / NOT SATURATED; live execution STOP.
 - Next: semantic reconciliation and primary identity/lifecycle verification of the observed DEX chain surface.
+
+
+## 2026-09-21 — Macro-Batch 031
+
+**G01 DEX Label Reconciliation Queue**
+
+- Preserved all 383 unmatched DEX chain labels as explicit unresolved observations.
+- Added deterministic reconciliation classifier and fixture tests.
+- Conservative classes prevent name similarity from becoming blockchain identity.
+- No unresolved DEX label promoted to canonical state.
+- G01 remains ACTIVE / NOT SATURATED.
+- New classifier tests are authored but not claimed as executed yet.
+- Next: primary-source resolution of aliases/execution-plane variants, then systematic candidate verification and adversarial missed-network audit.
+- Live trading remains STOP.
