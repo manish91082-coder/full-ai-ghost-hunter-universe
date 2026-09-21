@@ -579,3 +579,28 @@ Solana and TRON production/test identities were explicitly normalized. Solana Ma
 
 Next: full production extraction from native registries, source-union deduplication, DEX-derived network union, lifecycle/exclusion reconciliation and final G01 denominator.
 Live trading remains STOP.
+
+## UPDATE — G01 MACRO-BATCH 021 / NATIVE PRODUCTION EXTRACTION + DEX UNION CONTRACT
+
+Date: 21 September 2026
+State: 🟢 EXTRACTION CONTRACT READY / G01 NOT SATURATED
+
+### Added
+- 01_BLOCKCHAIN_UNIVERSE/data/G01_NATIVE_PRODUCTION_EXTRACTION_MANIFEST_v001.json
+- 01_BLOCKCHAIN_UNIVERSE/54_G01_NATIVE_PRODUCTION_EXTRACTION_AND_DEX_UNION_BATCH_021.md
+- 01_BLOCKCHAIN_UNIVERSE/55_AUDIT_027_G01_NATIVE_PRODUCTION_EXTRACTION_AND_DEX_UNION.md
+- src/ghost_hunter/g01_source_extractor.py
+- tests/test_g01_source_extractor.py
+
+### Result
+G01 now has a repeatable, externalized extraction contract for Cosmos production records, non-Cosmos discovery, DeFiLlama chain discovery and DEX-derived network candidates. Authoritative runtime universe data remains outside source code.
+
+### Audit
+AUDIT 027 = PARTIAL PASS.
+Machine extraction/union contract: PASS.
+Current-source execution, full native extraction, complete DEX-derived union, direct verification and final deduplicated denominator: PENDING.
+
+### Next Objective
+Execute the externalized source manifest against current primary/secondary payloads, build raw + normalized candidate datasets, reconcile overlaps/exclusions/conflicts, and only then determine whether G01 can approach saturation.
+
+Live trading remains STOP.
