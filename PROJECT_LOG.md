@@ -456,3 +456,29 @@ web3.py documents runtime provider configuration and HTTP/WebSocket/IPC provider
 Proceed to Macro-Batch 018: runtime-backed registry loader + signed/versioned manifest verification + provider registry adapter + replay substitution test.
 
 Live trading remains STOP.
+
+
+## LOG-0021 — NO-DRIFT SATURATION CONTROL LOCK
+
+Date: 21 September 2026
+
+### User directive
+Permanent project discipline was explicitly reinforced: military-grade, surgical-grade and aviation-grade error prevention; zero drift; one saturation domain at a time; durable continuity across chat limits; speed through parallelism/precompute rather than skipped verification.
+
+### Created
+- 00_GOVERNANCE/NO_DRIFT_SATURATION_CONTROL_CHARTER_v1.0.md
+- 00_GOVERNANCE/SATURATION_GATE_REGISTER_v1.0.md
+
+### Decision
+G01 Global Blockchain Universe is now the only primary saturation gate authorized for advancement.
+
+G02-G29 remain blocked/design-only until prerequisites are frozen according to the gate register.
+
+### Continuity
+Every material macro-batch must synchronize PROJECT_STATUS, PROJECT_MEMORY when durable rules change, PROJECT_DETAILS when specifications change, PROJECT_LOG, latest batch/audit artifact and next objective.
+
+### Performance
+Hot-path low-latency decision architecture is locked as a target. Discovery/research/heavy processing stays off the hot path. Latency must be measured, not assumed.
+
+### Safety
+Existing implementation remains non-trading infrastructure. Live trading remains STOP.
