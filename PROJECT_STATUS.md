@@ -1200,3 +1200,25 @@ Canonical records: **74**, unique keys **74**, duplicates **0**. Non-EVM identit
 G01 remains ACTIVE. G02-G29 remain BLOCKED. Live trading remains STOP.
 
 Next objective: continue bounded primary verification and then adversarial denominator closure + formal G01 exit review.
+
+
+## UPDATE — G01 BATCH 044 / EXECUTION-PLANE PRIMARY VERIFICATION
+
+Date: 21 September 2026  
+State: 🟢 PARTIAL PRIMARY VERIFICATION PASS / G01 ACTIVE
+
+### Completed
+Astar Network was verified as a production network with EVM execution identity **eip155:592** from official Astar documentation. citeturn0search2turn0search3
+
+Neo N3 was explicitly kept distinct from Neo X, and IOTA was not promoted without exact DEX-label identity evidence. This prevents execution-plane false merges.
+
+### Canonical State
+- Records: **75**
+- Unique canonical keys: **75**
+- Duplicates: **0**
+- G01: ACTIVE
+- G02-G29: BLOCKED
+- Live trading: 🛑 STOP
+
+### Next Objective
+Continue bounded verification of remaining material execution-plane and alias candidates, then close the native denominator and perform the adversarial G01 exit review.
