@@ -18,7 +18,11 @@
     "infer_chain_identity": false,
     "infer_flash_capability": false,
     "infer_executable_trading": false,
-    "exclude_testnets_only_after_identity_verification": true
+    "exclude_testnets_only_after_identity_verification": true,
+    "machine_readable_protocol_endpoint": "/protocols",
+    "machine_readable_chain_surface_endpoint": "/chains",
+    "relationship_output": "protocol × chain observation",
+    "identity_resolution": "downstream primary-evidence gate"
   },
   "observed_uncovered_candidates": [
     "Spark",
@@ -48,5 +52,7 @@
     "Rendered dashboard is a discovery surface, not a complete machine-readable canonical dataset in this artifact.",
     "Some DEX labels may be protocol/venue names rather than independent chains and require relationship-level classification.",
     "Cross-chain protocols such as Chainflip must not be converted into a chain record merely because they operate across chains."
-  ]
+  ],
+  "last_contract_update": "2026-09-21",
+  "record_count": 49
 }
