@@ -1260,3 +1260,17 @@ Current official ZKsync documentation enumerates **12 Elastic Network mainnet ch
 Current state: **92 records, 92 unique keys, 0 duplicates**. G01 ACTIVE, G02-G29 BLOCKED, live trading STOP.
 
 Next: independent high-information source-family reconciliation, then adversarial global denominator review.
+
+
+## UPDATE — MAXIMUM MACRO MODE LOCK
+
+Date: 21 September 2026  
+State: 🔒 GOVERNANCE LOCKED / G01 ACTIVE
+
+Per user direction, the project operating mode is now **MAXIMUM MACRO MODE**. Every `next` is treated as one maximum-safe macro execution for the active gate. Logically related discovery, verification, reconciliation, testing, audit and saturation work must be completed in the same response whenever safely executable. Artificial micro-batching is prohibited.
+
+The FINAL GOAL remains the controlling anchor in every response: build the globally comprehensive, evidence-backed, dynamically configured autonomous flash-loan/atomic-liquidity arbitrage hunting ecosystem, with safe economic gating and live execution only after readiness gates pass.
+
+A genuine external dependency, evidence limitation, rate limit, execution-window boundary, human authorization or safety gate may stop a macro-cycle. Such a boundary must be recorded exactly and never disguised as completion.
+
+Current G01 state remains ACTIVE / NOT SATURATED. Canonical records: **92**, unique keys **92**, duplicates **0**. G02-G29 BLOCKED. LIVE TRADING STOP.
