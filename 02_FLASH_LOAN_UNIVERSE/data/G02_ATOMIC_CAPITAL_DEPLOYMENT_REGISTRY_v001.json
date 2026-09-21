@@ -1,6 +1,6 @@
 {
   "schema_version": "g02.atomic.capital.deployment.registry.v1",
-  "revision": 1,
+  "revision": 2,
   "as_of": "2026-09-21",
   "canonical_role": "CURRENT_MATERIALIZED_STATE",
   "authority": "G02_DEPLOYMENT_ENUMERATION_AND_DYNAMIC_STATE_BOUNDARY",
@@ -18,8 +18,8 @@
       "market_variant": "Ethereum Core / V3",
       "deployment_status": "PRIMARY_DEPLOYMENT_SURFACE_CONFIRMED",
       "contract_role": "AAVE_POOL_SURFACE",
-      "contract_or_program": null,
-      "address_verification_state": "PENDING_PRIMARY_ADDRESS_MATERIALIZATION",
+      "contract_or_program": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
+      "address_verification_state": "PRIMARY_SOURCE_ADDRESS_VERIFIED",
       "bytecode_evidence_state": "PENDING_RUNTIME_CODE_HASH",
       "abi_evidence_state": "PRIMARY_INTERFACE_AVAILABLE",
       "capability_state": "FLASH_LOAN_PRIMITIVE_VERIFIED; CURRENT_POOL_ADDRESS_REQUIRES_JOIN",
@@ -33,9 +33,11 @@
       "freshness_state": "DEPLOYMENT_SURFACE_CURRENT; RUNTIME_STATE_REQUIRED",
       "provenance": [
         "https://aave.com/docs/resources/addresses",
-        "https://aave.com/help/aave-101/introduction-to-aave"
+        "https://aave.com/help/aave-101/introduction-to-aave",
+        "https://governance.aave.com/t/arfc-adopt-the-seal-safe-harbor-agreement/23059"
       ],
-      "execution_eligibility": "NEVER_FROM_RESEARCH"
+      "execution_eligibility": "NEVER_FROM_RESEARCH",
+      "address_evidence_source": "Aave Governance SEAL Safe Harbor deployment inventory (2025-09-02), corroborating official Aave current deployment network list"
     },
     {
       "id": "G02-DEP-0002",
@@ -48,8 +50,8 @@
       "market_variant": "Ethereum Prime / V3",
       "deployment_status": "PRIMARY_DEPLOYMENT_SURFACE_CONFIRMED",
       "contract_role": "AAVE_POOL_SURFACE",
-      "contract_or_program": null,
-      "address_verification_state": "PENDING_PRIMARY_ADDRESS_MATERIALIZATION",
+      "contract_or_program": "0x4e033931ad43597d96D6bcc25c280717730B58B1",
+      "address_verification_state": "PRIMARY_SOURCE_ADDRESS_VERIFIED",
       "bytecode_evidence_state": "PENDING_RUNTIME_CODE_HASH",
       "abi_evidence_state": "PRIMARY_INTERFACE_AVAILABLE",
       "capability_state": "FLASH_LOAN_PRIMITIVE_VERIFIED; CURRENT_POOL_ADDRESS_REQUIRES_JOIN",
@@ -63,9 +65,11 @@
       "freshness_state": "DEPLOYMENT_SURFACE_CURRENT; RUNTIME_STATE_REQUIRED",
       "provenance": [
         "https://aave.com/docs/resources/addresses",
-        "https://aave.com/help/aave-101/introduction-to-aave"
+        "https://aave.com/help/aave-101/introduction-to-aave",
+        "https://governance.aave.com/t/arfc-adopt-the-seal-safe-harbor-agreement/23059"
       ],
-      "execution_eligibility": "NEVER_FROM_RESEARCH"
+      "execution_eligibility": "NEVER_FROM_RESEARCH",
+      "address_evidence_source": "Aave Governance SEAL Safe Harbor deployment inventory (2025-09-02), corroborating official Aave current deployment network list"
     },
     {
       "id": "G02-DEP-0003",
@@ -108,8 +112,8 @@
       "market_variant": "Polygon / V3",
       "deployment_status": "PRIMARY_DEPLOYMENT_SURFACE_CONFIRMED",
       "contract_role": "AAVE_POOL_SURFACE",
-      "contract_or_program": null,
-      "address_verification_state": "PENDING_PRIMARY_ADDRESS_MATERIALIZATION",
+      "contract_or_program": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
+      "address_verification_state": "PRIMARY_SOURCE_ADDRESS_VERIFIED",
       "bytecode_evidence_state": "PENDING_RUNTIME_CODE_HASH",
       "abi_evidence_state": "PRIMARY_INTERFACE_AVAILABLE",
       "capability_state": "FLASH_LOAN_PRIMITIVE_VERIFIED; CURRENT_POOL_ADDRESS_REQUIRES_JOIN",
@@ -123,9 +127,11 @@
       "freshness_state": "DEPLOYMENT_SURFACE_CURRENT; RUNTIME_STATE_REQUIRED",
       "provenance": [
         "https://aave.com/docs/resources/addresses",
-        "https://aave.com/help/aave-101/introduction-to-aave"
+        "https://aave.com/help/aave-101/introduction-to-aave",
+        "https://governance.aave.com/t/arfc-adopt-the-seal-safe-harbor-agreement/23059"
       ],
-      "execution_eligibility": "NEVER_FROM_RESEARCH"
+      "execution_eligibility": "NEVER_FROM_RESEARCH",
+      "address_evidence_source": "Aave Governance SEAL Safe Harbor deployment inventory (2025-09-02), corroborating official Aave current deployment network list"
     },
     {
       "id": "G02-DEP-0005",
@@ -138,8 +144,8 @@
       "market_variant": "Avalanche C-Chain / V3",
       "deployment_status": "PRIMARY_DEPLOYMENT_SURFACE_CONFIRMED",
       "contract_role": "AAVE_POOL_SURFACE",
-      "contract_or_program": null,
-      "address_verification_state": "PENDING_PRIMARY_ADDRESS_MATERIALIZATION",
+      "contract_or_program": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
+      "address_verification_state": "PRIMARY_SOURCE_ADDRESS_VERIFIED",
       "bytecode_evidence_state": "PENDING_RUNTIME_CODE_HASH",
       "abi_evidence_state": "PRIMARY_INTERFACE_AVAILABLE",
       "capability_state": "FLASH_LOAN_PRIMITIVE_VERIFIED; CURRENT_POOL_ADDRESS_REQUIRES_JOIN",
@@ -153,9 +159,11 @@
       "freshness_state": "DEPLOYMENT_SURFACE_CURRENT; RUNTIME_STATE_REQUIRED",
       "provenance": [
         "https://aave.com/docs/resources/addresses",
-        "https://aave.com/help/aave-101/introduction-to-aave"
+        "https://aave.com/help/aave-101/introduction-to-aave",
+        "https://governance.aave.com/t/arfc-adopt-the-seal-safe-harbor-agreement/23059"
       ],
-      "execution_eligibility": "NEVER_FROM_RESEARCH"
+      "execution_eligibility": "NEVER_FROM_RESEARCH",
+      "address_evidence_source": "Aave Governance SEAL Safe Harbor deployment inventory (2025-09-02), corroborating official Aave current deployment network list"
     },
     {
       "id": "G02-DEP-0006",
@@ -168,8 +176,8 @@
       "market_variant": "Arbitrum / V3",
       "deployment_status": "PRIMARY_DEPLOYMENT_SURFACE_CONFIRMED",
       "contract_role": "AAVE_POOL_SURFACE",
-      "contract_or_program": null,
-      "address_verification_state": "PENDING_PRIMARY_ADDRESS_MATERIALIZATION",
+      "contract_or_program": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
+      "address_verification_state": "PRIMARY_SOURCE_ADDRESS_VERIFIED",
       "bytecode_evidence_state": "PENDING_RUNTIME_CODE_HASH",
       "abi_evidence_state": "PRIMARY_INTERFACE_AVAILABLE",
       "capability_state": "FLASH_LOAN_PRIMITIVE_VERIFIED; CURRENT_POOL_ADDRESS_REQUIRES_JOIN",
@@ -183,9 +191,11 @@
       "freshness_state": "DEPLOYMENT_SURFACE_CURRENT; RUNTIME_STATE_REQUIRED",
       "provenance": [
         "https://aave.com/docs/resources/addresses",
-        "https://aave.com/help/aave-101/introduction-to-aave"
+        "https://aave.com/help/aave-101/introduction-to-aave",
+        "https://governance.aave.com/t/arfc-adopt-the-seal-safe-harbor-agreement/23059"
       ],
-      "execution_eligibility": "NEVER_FROM_RESEARCH"
+      "execution_eligibility": "NEVER_FROM_RESEARCH",
+      "address_evidence_source": "Aave Governance SEAL Safe Harbor deployment inventory (2025-09-02), corroborating official Aave current deployment network list"
     },
     {
       "id": "G02-DEP-0007",
@@ -198,8 +208,8 @@
       "market_variant": "Optimism / V3",
       "deployment_status": "PRIMARY_DEPLOYMENT_SURFACE_CONFIRMED",
       "contract_role": "AAVE_POOL_SURFACE",
-      "contract_or_program": null,
-      "address_verification_state": "PENDING_PRIMARY_ADDRESS_MATERIALIZATION",
+      "contract_or_program": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
+      "address_verification_state": "PRIMARY_SOURCE_ADDRESS_VERIFIED",
       "bytecode_evidence_state": "PENDING_RUNTIME_CODE_HASH",
       "abi_evidence_state": "PRIMARY_INTERFACE_AVAILABLE",
       "capability_state": "FLASH_LOAN_PRIMITIVE_VERIFIED; CURRENT_POOL_ADDRESS_REQUIRES_JOIN",
@@ -213,9 +223,11 @@
       "freshness_state": "DEPLOYMENT_SURFACE_CURRENT; RUNTIME_STATE_REQUIRED",
       "provenance": [
         "https://aave.com/docs/resources/addresses",
-        "https://aave.com/help/aave-101/introduction-to-aave"
+        "https://aave.com/help/aave-101/introduction-to-aave",
+        "https://governance.aave.com/t/arfc-adopt-the-seal-safe-harbor-agreement/23059"
       ],
-      "execution_eligibility": "NEVER_FROM_RESEARCH"
+      "execution_eligibility": "NEVER_FROM_RESEARCH",
+      "address_evidence_source": "Aave Governance SEAL Safe Harbor deployment inventory (2025-09-02), corroborating official Aave current deployment network list"
     },
     {
       "id": "G02-DEP-0008",
@@ -228,8 +240,8 @@
       "market_variant": "Base / V3",
       "deployment_status": "PRIMARY_DEPLOYMENT_SURFACE_CONFIRMED",
       "contract_role": "AAVE_POOL_SURFACE",
-      "contract_or_program": null,
-      "address_verification_state": "PENDING_PRIMARY_ADDRESS_MATERIALIZATION",
+      "contract_or_program": "0xA238Dd80C259a72e81d7e4664a9801593F98d1c5",
+      "address_verification_state": "PRIMARY_SOURCE_ADDRESS_VERIFIED",
       "bytecode_evidence_state": "PENDING_RUNTIME_CODE_HASH",
       "abi_evidence_state": "PRIMARY_INTERFACE_AVAILABLE",
       "capability_state": "FLASH_LOAN_PRIMITIVE_VERIFIED; CURRENT_POOL_ADDRESS_REQUIRES_JOIN",
@@ -243,9 +255,11 @@
       "freshness_state": "DEPLOYMENT_SURFACE_CURRENT; RUNTIME_STATE_REQUIRED",
       "provenance": [
         "https://aave.com/docs/resources/addresses",
-        "https://aave.com/help/aave-101/introduction-to-aave"
+        "https://aave.com/help/aave-101/introduction-to-aave",
+        "https://governance.aave.com/t/arfc-adopt-the-seal-safe-harbor-agreement/23059"
       ],
-      "execution_eligibility": "NEVER_FROM_RESEARCH"
+      "execution_eligibility": "NEVER_FROM_RESEARCH",
+      "address_evidence_source": "Aave Governance SEAL Safe Harbor deployment inventory (2025-09-02), corroborating official Aave current deployment network list"
     },
     {
       "id": "G02-DEP-0009",
@@ -258,8 +272,8 @@
       "market_variant": "BNB Chain / V3",
       "deployment_status": "PRIMARY_DEPLOYMENT_SURFACE_CONFIRMED",
       "contract_role": "AAVE_POOL_SURFACE",
-      "contract_or_program": null,
-      "address_verification_state": "PENDING_PRIMARY_ADDRESS_MATERIALIZATION",
+      "contract_or_program": "0x6807dc923806fE8Fd134338EABCA509979a7e0cB",
+      "address_verification_state": "PRIMARY_SOURCE_ADDRESS_VERIFIED",
       "bytecode_evidence_state": "PENDING_RUNTIME_CODE_HASH",
       "abi_evidence_state": "PRIMARY_INTERFACE_AVAILABLE",
       "capability_state": "FLASH_LOAN_PRIMITIVE_VERIFIED; CURRENT_POOL_ADDRESS_REQUIRES_JOIN",
@@ -273,9 +287,11 @@
       "freshness_state": "DEPLOYMENT_SURFACE_CURRENT; RUNTIME_STATE_REQUIRED",
       "provenance": [
         "https://aave.com/docs/resources/addresses",
-        "https://aave.com/help/aave-101/introduction-to-aave"
+        "https://aave.com/help/aave-101/introduction-to-aave",
+        "https://governance.aave.com/t/arfc-adopt-the-seal-safe-harbor-agreement/23059"
       ],
-      "execution_eligibility": "NEVER_FROM_RESEARCH"
+      "execution_eligibility": "NEVER_FROM_RESEARCH",
+      "address_evidence_source": "Aave Governance SEAL Safe Harbor deployment inventory (2025-09-02), corroborating official Aave current deployment network list"
     },
     {
       "id": "G02-DEP-0010",
@@ -288,8 +304,8 @@
       "market_variant": "Scroll / V3",
       "deployment_status": "PRIMARY_DEPLOYMENT_SURFACE_CONFIRMED",
       "contract_role": "AAVE_POOL_SURFACE",
-      "contract_or_program": null,
-      "address_verification_state": "PENDING_PRIMARY_ADDRESS_MATERIALIZATION",
+      "contract_or_program": "0x11fCfe756c05AD438e312a7fd934381537D3cFfe",
+      "address_verification_state": "PRIMARY_SOURCE_ADDRESS_VERIFIED",
       "bytecode_evidence_state": "PENDING_RUNTIME_CODE_HASH",
       "abi_evidence_state": "PRIMARY_INTERFACE_AVAILABLE",
       "capability_state": "FLASH_LOAN_PRIMITIVE_VERIFIED; CURRENT_POOL_ADDRESS_REQUIRES_JOIN",
@@ -303,9 +319,11 @@
       "freshness_state": "DEPLOYMENT_SURFACE_CURRENT; RUNTIME_STATE_REQUIRED",
       "provenance": [
         "https://aave.com/docs/resources/addresses",
-        "https://aave.com/help/aave-101/introduction-to-aave"
+        "https://aave.com/help/aave-101/introduction-to-aave",
+        "https://governance.aave.com/t/arfc-adopt-the-seal-safe-harbor-agreement/23059"
       ],
-      "execution_eligibility": "NEVER_FROM_RESEARCH"
+      "execution_eligibility": "NEVER_FROM_RESEARCH",
+      "address_evidence_source": "Aave Governance SEAL Safe Harbor deployment inventory (2025-09-02), corroborating official Aave current deployment network list"
     },
     {
       "id": "G02-DEP-0011",
@@ -318,8 +336,8 @@
       "market_variant": "Metis / V3",
       "deployment_status": "PRIMARY_DEPLOYMENT_SURFACE_CONFIRMED",
       "contract_role": "AAVE_POOL_SURFACE",
-      "contract_or_program": null,
-      "address_verification_state": "PENDING_PRIMARY_ADDRESS_MATERIALIZATION",
+      "contract_or_program": "0x90df02551bB792286e8D4f13E0e357b4Bf1D6a57",
+      "address_verification_state": "PRIMARY_SOURCE_ADDRESS_VERIFIED",
       "bytecode_evidence_state": "PENDING_RUNTIME_CODE_HASH",
       "abi_evidence_state": "PRIMARY_INTERFACE_AVAILABLE",
       "capability_state": "FLASH_LOAN_PRIMITIVE_VERIFIED; CURRENT_POOL_ADDRESS_REQUIRES_JOIN",
@@ -333,9 +351,11 @@
       "freshness_state": "DEPLOYMENT_SURFACE_CURRENT; RUNTIME_STATE_REQUIRED",
       "provenance": [
         "https://aave.com/docs/resources/addresses",
-        "https://aave.com/help/aave-101/introduction-to-aave"
+        "https://aave.com/help/aave-101/introduction-to-aave",
+        "https://governance.aave.com/t/arfc-adopt-the-seal-safe-harbor-agreement/23059"
       ],
-      "execution_eligibility": "NEVER_FROM_RESEARCH"
+      "execution_eligibility": "NEVER_FROM_RESEARCH",
+      "address_evidence_source": "Aave Governance SEAL Safe Harbor deployment inventory (2025-09-02), corroborating official Aave current deployment network list"
     },
     {
       "id": "G02-DEP-0012",
@@ -348,8 +368,8 @@
       "market_variant": "Gnosis / V3",
       "deployment_status": "PRIMARY_DEPLOYMENT_SURFACE_CONFIRMED",
       "contract_role": "AAVE_POOL_SURFACE",
-      "contract_or_program": null,
-      "address_verification_state": "PENDING_PRIMARY_ADDRESS_MATERIALIZATION",
+      "contract_or_program": "0xb50201558B00496A145fE76f7424749556E326D8",
+      "address_verification_state": "PRIMARY_SOURCE_ADDRESS_VERIFIED",
       "bytecode_evidence_state": "PENDING_RUNTIME_CODE_HASH",
       "abi_evidence_state": "PRIMARY_INTERFACE_AVAILABLE",
       "capability_state": "FLASH_LOAN_PRIMITIVE_VERIFIED; CURRENT_POOL_ADDRESS_REQUIRES_JOIN",
@@ -363,9 +383,11 @@
       "freshness_state": "DEPLOYMENT_SURFACE_CURRENT; RUNTIME_STATE_REQUIRED",
       "provenance": [
         "https://aave.com/docs/resources/addresses",
-        "https://aave.com/help/aave-101/introduction-to-aave"
+        "https://aave.com/help/aave-101/introduction-to-aave",
+        "https://governance.aave.com/t/arfc-adopt-the-seal-safe-harbor-agreement/23059"
       ],
-      "execution_eligibility": "NEVER_FROM_RESEARCH"
+      "execution_eligibility": "NEVER_FROM_RESEARCH",
+      "address_evidence_source": "Aave Governance SEAL Safe Harbor deployment inventory (2025-09-02), corroborating official Aave current deployment network list"
     },
     {
       "id": "G02-DEP-0013",
@@ -378,8 +400,8 @@
       "market_variant": "ZKsync Era / V3",
       "deployment_status": "PRIMARY_DEPLOYMENT_SURFACE_CONFIRMED",
       "contract_role": "AAVE_POOL_SURFACE",
-      "contract_or_program": null,
-      "address_verification_state": "PENDING_PRIMARY_ADDRESS_MATERIALIZATION",
+      "contract_or_program": "0x78e30497a3c7527d953c6B1E3541b021A98Ac43c",
+      "address_verification_state": "PRIMARY_SOURCE_ADDRESS_VERIFIED",
       "bytecode_evidence_state": "PENDING_RUNTIME_CODE_HASH",
       "abi_evidence_state": "PRIMARY_INTERFACE_AVAILABLE",
       "capability_state": "FLASH_LOAN_PRIMITIVE_VERIFIED; CURRENT_POOL_ADDRESS_REQUIRES_JOIN",
@@ -393,9 +415,11 @@
       "freshness_state": "DEPLOYMENT_SURFACE_CURRENT; RUNTIME_STATE_REQUIRED",
       "provenance": [
         "https://aave.com/docs/resources/addresses",
-        "https://aave.com/help/aave-101/introduction-to-aave"
+        "https://aave.com/help/aave-101/introduction-to-aave",
+        "https://governance.aave.com/t/arfc-adopt-the-seal-safe-harbor-agreement/23059"
       ],
-      "execution_eligibility": "NEVER_FROM_RESEARCH"
+      "execution_eligibility": "NEVER_FROM_RESEARCH",
+      "address_evidence_source": "Aave Governance SEAL Safe Harbor deployment inventory (2025-09-02), corroborating official Aave current deployment network list"
     },
     {
       "id": "G02-DEP-0014",
@@ -408,8 +432,8 @@
       "market_variant": "Linea / V3",
       "deployment_status": "PRIMARY_DEPLOYMENT_SURFACE_CONFIRMED",
       "contract_role": "AAVE_POOL_SURFACE",
-      "contract_or_program": null,
-      "address_verification_state": "PENDING_PRIMARY_ADDRESS_MATERIALIZATION",
+      "contract_or_program": "0xc47b8C00b0f69a36fa203Ffeac0334874574a8Ac",
+      "address_verification_state": "PRIMARY_SOURCE_ADDRESS_VERIFIED",
       "bytecode_evidence_state": "PENDING_RUNTIME_CODE_HASH",
       "abi_evidence_state": "PRIMARY_INTERFACE_AVAILABLE",
       "capability_state": "FLASH_LOAN_PRIMITIVE_VERIFIED; CURRENT_POOL_ADDRESS_REQUIRES_JOIN",
@@ -423,9 +447,11 @@
       "freshness_state": "DEPLOYMENT_SURFACE_CURRENT; RUNTIME_STATE_REQUIRED",
       "provenance": [
         "https://aave.com/docs/resources/addresses",
-        "https://aave.com/help/aave-101/introduction-to-aave"
+        "https://aave.com/help/aave-101/introduction-to-aave",
+        "https://governance.aave.com/t/arfc-adopt-the-seal-safe-harbor-agreement/23059"
       ],
-      "execution_eligibility": "NEVER_FROM_RESEARCH"
+      "execution_eligibility": "NEVER_FROM_RESEARCH",
+      "address_evidence_source": "Aave Governance SEAL Safe Harbor deployment inventory (2025-09-02), corroborating official Aave current deployment network list"
     },
     {
       "id": "G02-DEP-0015",
@@ -438,8 +464,8 @@
       "market_variant": "Sonic / V3",
       "deployment_status": "PRIMARY_DEPLOYMENT_SURFACE_CONFIRMED",
       "contract_role": "AAVE_POOL_SURFACE",
-      "contract_or_program": null,
-      "address_verification_state": "PENDING_PRIMARY_ADDRESS_MATERIALIZATION",
+      "contract_or_program": "0x5362dBb1e601abF3a4c14c22ffEdA64042E5eAA3",
+      "address_verification_state": "PRIMARY_SOURCE_ADDRESS_VERIFIED",
       "bytecode_evidence_state": "PENDING_RUNTIME_CODE_HASH",
       "abi_evidence_state": "PRIMARY_INTERFACE_AVAILABLE",
       "capability_state": "FLASH_LOAN_PRIMITIVE_VERIFIED; CURRENT_POOL_ADDRESS_REQUIRES_JOIN",
@@ -453,9 +479,11 @@
       "freshness_state": "DEPLOYMENT_SURFACE_CURRENT; RUNTIME_STATE_REQUIRED",
       "provenance": [
         "https://aave.com/docs/resources/addresses",
-        "https://aave.com/help/aave-101/introduction-to-aave"
+        "https://aave.com/help/aave-101/introduction-to-aave",
+        "https://governance.aave.com/t/arfc-adopt-the-seal-safe-harbor-agreement/23059"
       ],
-      "execution_eligibility": "NEVER_FROM_RESEARCH"
+      "execution_eligibility": "NEVER_FROM_RESEARCH",
+      "address_evidence_source": "Aave Governance SEAL Safe Harbor deployment inventory (2025-09-02), corroborating official Aave current deployment network list"
     },
     {
       "id": "G02-DEP-0016",
@@ -468,8 +496,8 @@
       "market_variant": "Celo / V3",
       "deployment_status": "PRIMARY_DEPLOYMENT_SURFACE_CONFIRMED",
       "contract_role": "AAVE_POOL_SURFACE",
-      "contract_or_program": null,
-      "address_verification_state": "PENDING_PRIMARY_ADDRESS_MATERIALIZATION",
+      "contract_or_program": "0x3E59A31363E2ad014dcbc521c4a0d5757d9f3402",
+      "address_verification_state": "PRIMARY_SOURCE_ADDRESS_VERIFIED",
       "bytecode_evidence_state": "PENDING_RUNTIME_CODE_HASH",
       "abi_evidence_state": "PRIMARY_INTERFACE_AVAILABLE",
       "capability_state": "FLASH_LOAN_PRIMITIVE_VERIFIED; CURRENT_POOL_ADDRESS_REQUIRES_JOIN",
@@ -483,9 +511,11 @@
       "freshness_state": "DEPLOYMENT_SURFACE_CURRENT; RUNTIME_STATE_REQUIRED",
       "provenance": [
         "https://aave.com/docs/resources/addresses",
-        "https://aave.com/help/aave-101/introduction-to-aave"
+        "https://aave.com/help/aave-101/introduction-to-aave",
+        "https://governance.aave.com/t/arfc-adopt-the-seal-safe-harbor-agreement/23059"
       ],
-      "execution_eligibility": "NEVER_FROM_RESEARCH"
+      "execution_eligibility": "NEVER_FROM_RESEARCH",
+      "address_evidence_source": "Aave Governance SEAL Safe Harbor deployment inventory (2025-09-02), corroborating official Aave current deployment network list"
     },
     {
       "id": "G02-DEP-0017",
@@ -498,8 +528,8 @@
       "market_variant": "Soneium / V3",
       "deployment_status": "PRIMARY_DEPLOYMENT_SURFACE_CONFIRMED",
       "contract_role": "AAVE_POOL_SURFACE",
-      "contract_or_program": null,
-      "address_verification_state": "PENDING_PRIMARY_ADDRESS_MATERIALIZATION",
+      "contract_or_program": "0xDd3d7A7d03D9fD9ef45f3E587287922eF65CA38B",
+      "address_verification_state": "PRIMARY_SOURCE_ADDRESS_VERIFIED",
       "bytecode_evidence_state": "PENDING_RUNTIME_CODE_HASH",
       "abi_evidence_state": "PRIMARY_INTERFACE_AVAILABLE",
       "capability_state": "FLASH_LOAN_PRIMITIVE_VERIFIED; CURRENT_POOL_ADDRESS_REQUIRES_JOIN",
@@ -513,9 +543,11 @@
       "freshness_state": "DEPLOYMENT_SURFACE_CURRENT; RUNTIME_STATE_REQUIRED",
       "provenance": [
         "https://aave.com/docs/resources/addresses",
-        "https://aave.com/help/aave-101/introduction-to-aave"
+        "https://aave.com/help/aave-101/introduction-to-aave",
+        "https://governance.aave.com/t/arfc-adopt-the-seal-safe-harbor-agreement/23059"
       ],
-      "execution_eligibility": "NEVER_FROM_RESEARCH"
+      "execution_eligibility": "NEVER_FROM_RESEARCH",
+      "address_evidence_source": "Aave Governance SEAL Safe Harbor deployment inventory (2025-09-02), corroborating official Aave current deployment network list"
     },
     {
       "id": "G02-DEP-0018",
@@ -617,8 +649,8 @@
       "market_variant": "Flashmint Facilitator",
       "deployment_status": "PRIMARY_FACILITATOR_SET_CONFIRMED",
       "contract_role": "GHO_FLASHMINT_FACILITATOR",
-      "contract_or_program": null,
-      "address_verification_state": "PENDING_PRIMARY_ADDRESS_MATERIALIZATION",
+      "contract_or_program": "0xb639D208Bcf0589D54FaC24E655C79EC529762B8",
+      "address_verification_state": "PRIMARY_SOURCE_ADDRESS_VERIFIED",
       "bytecode_evidence_state": "PENDING_RUNTIME_CODE_HASH",
       "abi_evidence_state": "PRIMARY_SEMANTICS_VERIFIED",
       "capability_state": "VERIFIED_FLASHMINT_FACILITATOR",
@@ -631,9 +663,11 @@
       "atomicity_state": "VERIFIED_SAME_TRANSACTION",
       "freshness_state": "CURRENT_FACILITATOR_SET; RUNTIME_BUCKET_REQUIRED",
       "provenance": [
-        "https://aave.com/help/gho-stablecoin/facilitators"
+        "https://aave.com/help/gho-stablecoin/facilitators",
+        "https://governance.aave.com/t/arfc-adopt-the-seal-safe-harbor-agreement/23059"
       ],
-      "execution_eligibility": "NEVER_FROM_RESEARCH"
+      "execution_eligibility": "NEVER_FROM_RESEARCH",
+      "address_evidence_source": "Aave Governance deployment inventory"
     },
     {
       "id": "G02-DEP-0022",
@@ -905,5 +939,7 @@
     "live_fees": true,
     "enablement_authorization": true,
     "adversarial_discovery": true
-  }
+  },
+  "address_materialization_batch": "AAVE_PRIMARY_SOURCE_BATCH_001",
+  "address_materialization_notes": "Only addresses directly present in the cited primary Aave governance deployment inventory were promoted. EtherFi, Plasma, Fantom and Harmony remain pending where this source did not provide a current Pool address. Runtime code hash and live state remain pending for every record."
 }
