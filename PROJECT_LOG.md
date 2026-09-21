@@ -578,3 +578,20 @@ Audit 026 = PARTIAL PASS.
 G01 remains ACTIVE / NOT SATURATED. Dependent gates remain blocked. Live trading STOP.
 
 Next: full native production extraction + union normalization + DEX-derived network union.
+
+## LOG-0026 — G01 NATIVE PRODUCTION EXTRACTION + DEX UNION / MACRO-BATCH 021
+
+Date: 21 September 2026
+
+Objective: convert native ecosystem source surfaces into a repeatable, externalized extraction and DEX-derived union contract without claiming premature saturation.
+
+Created:
+- 01_BLOCKCHAIN_UNIVERSE/data/G01_NATIVE_PRODUCTION_EXTRACTION_MANIFEST_v001.json
+- 01_BLOCKCHAIN_UNIVERSE/54_G01_NATIVE_PRODUCTION_EXTRACTION_AND_DEX_UNION_BATCH_021.md
+- 01_BLOCKCHAIN_UNIVERSE/55_AUDIT_027_G01_NATIVE_PRODUCTION_EXTRACTION_AND_DEX_UNION.md
+- src/ghost_hunter/g01_source_extractor.py
+- tests/test_g01_source_extractor.py
+
+Result: extraction/normalization contract PASS; factual G01 saturation remains open pending current-source execution, full union, verification, exclusions and final denominator.
+
+Live trading STOP.
