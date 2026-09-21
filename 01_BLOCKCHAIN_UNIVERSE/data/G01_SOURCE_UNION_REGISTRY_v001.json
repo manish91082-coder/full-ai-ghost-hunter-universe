@@ -1,6 +1,6 @@
 {
   "registry": "G01_SOURCE_UNION",
-  "version": "v001",
+  "version": "v002",
   "observed_at": "2026-09-21",
   "status": "NORMALIZED_NOT_FROZEN",
   "repository": "manish91082-coder/full-ai-ghost-hunter-universe",
@@ -19,7 +19,8 @@
       "mainnet_identifier": "304",
       "evidence": [
         "https://github.com/dasa522/lighter/blob/main/docs/TRADING.md"
-      ]
+      ],
+      "canonical_record_key": "BC-036"
     },
     {
       "input_name": "RISE",
@@ -30,7 +31,8 @@
       "mainnet_identifier": null,
       "evidence": [
         "https://docs.risechain.com/docs"
-      ]
+      ],
+      "canonical_record_key": "MORPHO-ROW-36"
     },
     {
       "input_name": "Fuel Ignition",
@@ -42,7 +44,8 @@
       "evidence": [
         "https://docs.fuel.network/docs/verified-addresses/",
         "https://docs.fuel.network/guides/user-quickstart/"
-      ]
+      ],
+      "canonical_record_key": "fuel-ignition"
     },
     {
       "input_name": "Reya",
@@ -54,7 +57,8 @@
       "evidence": [
         "https://docs.reya.xyz/",
         "https://docs.reya.xyz/introducting-reya-network/the-structure-of-reya-network"
-      ]
+      ],
+      "canonical_record_key": "reya-network"
     },
     {
       "input_name": "Abstract",
@@ -66,7 +70,8 @@
       "evidence": [
         "https://github.com/manish91082-coder/full-ai-ghost-hunter-universe/blob/main/01_BLOCKCHAIN_UNIVERSE/20_MORPHO_50_ROW_CANONICAL_RECONCILIATION_v001.md",
         "https://main.net/status/abstract/"
-      ]
+      ],
+      "canonical_record_key": "MORPHO-ROW-03"
     },
     {
       "input_name": "PlayBlock",
@@ -77,7 +82,8 @@
       "mainnet_identifier": "1829",
       "evidence": [
         "https://deepwiki.com/playnance-games/PlayBlock/6-integration-and-apis"
-      ]
+      ],
+      "canonical_record_key": "playblock"
     },
     {
       "input_name": "EDU Chain",
@@ -88,7 +94,8 @@
       "mainnet_identifier": "41923",
       "evidence": [
         "https://devdocs.educhain.xyz/"
-      ]
+      ],
+      "canonical_record_key": "edu-chain"
     },
     {
       "input_name": "Eclipse",
@@ -100,7 +107,8 @@
       "evidence": [
         "https://docs.eclipse.xyz/",
         "https://docs.eclipse.xyz/developers/oracles/switchboard"
-      ]
+      ],
+      "canonical_record_key": "eclipse"
     },
     {
       "input_name": "Plume Network",
@@ -111,7 +119,8 @@
       "mainnet_identifier": "98866",
       "evidence": [
         "https://docs.plume.org/plume/developers/network-information"
-      ]
+      ],
+      "canonical_record_key": "MORPHO-ROW-34"
     },
     {
       "input_name": "Xai",
@@ -122,7 +131,8 @@
       "mainnet_identifier": "660279",
       "evidence": [
         "https://xai-foundation.gitbook.io/xai-network/build-on-xai/xai-chains-and-parameters/connect-to-xai-mainnet"
-      ]
+      ],
+      "canonical_record_key": "xai"
     },
     {
       "input_name": "Powerloom",
@@ -133,7 +143,8 @@
       "mainnet_identifier": "7869",
       "evidence": [
         "https://docs.powerloom.io/chain-migration/info/"
-      ]
+      ],
+      "canonical_record_key": "powerloom"
     },
     {
       "input_name": "Gravity",
@@ -144,7 +155,8 @@
       "mainnet_identifier": "127001",
       "evidence": [
         "https://www.galxe.com/blog/gravity-alpha-mainnet-completing-the-transition-to-gravity-l1"
-      ]
+      ],
+      "canonical_record_key": "gravity-l1"
     },
     {
       "input_name": "Sei",
@@ -156,7 +168,8 @@
       "evidence": [
         "https://www.docs.sei.io/evm/networks",
         "https://www.docs.sei.io/learn/dev-chains"
-      ]
+      ],
+      "canonical_record_key": "MORPHO-ROW-39"
     },
     {
       "input_name": "Berachain",
@@ -167,7 +180,8 @@
       "mainnet_identifier": "80094",
       "evidence": [
         "https://docs.berachain.com/build/getting-started/common-resources"
-      ]
+      ],
+      "canonical_record_key": "berachain"
     },
     {
       "input_name": "Kaia",
@@ -178,7 +192,8 @@
       "mainnet_identifier": "8217",
       "evidence": [
         "https://docs.kaia.io/build/get-started/foundation-setup/"
-      ]
+      ],
+      "canonical_record_key": "MORPHO-ROW-23"
     },
     {
       "input_name": "Hedera",
@@ -190,7 +205,8 @@
       "evidence": [
         "https://docs.hedera.com/evm/development/deploying",
         "https://docs.hedera.com/operators/json-rpc"
-      ]
+      ],
+      "canonical_record_key": "hedera-mainnet"
     },
     {
       "input_name": "Starknet",
@@ -201,7 +217,8 @@
       "mainnet_identifier": "SN_MAIN",
       "evidence": [
         "https://github.com/api-evangelist/starknet/blob/main/apis.yml"
-      ]
+      ],
+      "canonical_record_key": "starknet"
     },
     {
       "input_name": "Aptos",
@@ -212,7 +229,8 @@
       "mainnet_identifier": "1",
       "evidence": [
         "https://github.com/aptos-labs/aptos-core/blob/main/types/src/chain_id.rs"
-      ]
+      ],
+      "canonical_record_key": "BC-028"
     },
     {
       "input_name": "Sui",
@@ -224,7 +242,8 @@
       "evidence": [
         "https://docs.sui.io/paper/sui-lutris.pdf",
         "https://www.alchemy.com/docs/chains/sui/sui-api-endpoints/sui-get-chain-identifier"
-      ]
+      ],
+      "canonical_record_key": "BC-029"
     },
     {
       "input_name": "Near Protocol",
@@ -235,7 +254,8 @@
       "mainnet_identifier": "mainnet",
       "evidence": [
         "https://github.com/near/near-cli/blob/master/README.md"
-      ]
+      ],
+      "canonical_record_key": "BC-027"
     },
     {
       "input_name": "Injective",
@@ -247,7 +267,8 @@
       "evidence": [
         "https://docs.injective.network/infra/join-a-network",
         "https://injective.com/multivm"
-      ]
+      ],
+      "canonical_record_key": "BC-026"
     }
   ],
   "normalization_rules": [
@@ -258,5 +279,12 @@
     "EVM numeric chain IDs are not fabricated for non-EVM execution models.",
     "Testnet/devnet identifiers never promote a production identity.",
     "Protocol deployment overlap is evidence/provenance, not a second chain count."
-  ]
+  ],
+  "canonical_role": "CURRENT_MATERIALIZED_STATE",
+  "authority": "AUTHORITATIVE_CURRENT_G01_SOURCE_UNION_AFTER_DEDUP",
+  "historical_versioning": "Git commit history; do not create new full-registry files for ordinary updates",
+  "duplicate_policy": "semantic identity resolution before merge; one canonical record per canonical identity",
+  "provenance_policy": "source evidence remains referenced per record; conflicting observations are preserved outside the canonical object",
+  "last_materialized_update": "2026-09-21",
+  "record_count": 21
 }
