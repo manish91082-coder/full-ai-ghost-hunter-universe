@@ -196,3 +196,8 @@ Current official ZKsync Elastic Network mainnet documentation was used to primar
 ## 2026-09-21 — G01 BATCH 047
 
 Reconciled the current official ZKsync Elastic Network denominator. Official source lists 12 mainnet chains. Individual identities remain separate and the Elastic Network is modeled as a relationship layer only. Canonical state now 92 records with zero duplicates. Audit 053 = PASS for this source family; G01 remains globally PARTIAL. Live trading STOP.
+
+
+## 2026-09-21 — GOVERNANCE LOCK: MAXIMUM MACRO MODE
+
+User-directed operating mode locked: one `next` means maximum useful safe work for the active gate in one response/execution window. Artificial micro-batching is prohibited. Final-goal alignment is mandatory for every macro-batch. Bounded saturation, zero-trust evidence, deduplication, fail-closed safety and gate order remain unchanged. G01 ACTIVE; G02-G29 BLOCKED; live trading STOP.
