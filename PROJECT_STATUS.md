@@ -1619,3 +1619,27 @@ Implemented and recorded:
 
 ### Next Macro Objective
 Obtain verified runtime observations against the external V2 factory set where provider access permits, while separately closing Silo V3 market-level enumeration and the remaining G02 adversarial denominator gaps.
+
+
+## UPDATE — G02 MACRO-BATCH 017 — V2 ENUMERATION CONSISTENCY + EXTERNAL FACTORY INPUTS
+
+Date: 21 September 2026
+
+Implemented and recorded:
+- V2 factory enumeration now fails closed on provider changes inside one logical snapshot.
+- Enumeration is bracketed by opening/closing block observations and accepted freshness policy.
+- Factory-reported pair count and enumerated count are recorded and must match; safety bounds never truncate silently.
+- Pair runtime bytecode is observed through eth_getCode and represented by a SHA-256 evidence digest.
+- QuickSwap Polygon V2 and PancakeSwap BNB Smart Chain V2 factory/router inputs are externalized into 02_FLASH_LOAN_UNIVERSE/data/G02_V2_FACTORY_RUNTIME_CONFIG_v001.json.
+- Deterministic tests were added for completeness, runtime code evidence and provider consistency.
+
+### Gate State
+- G02: ACTIVE / NOT SATURATED
+- G03-G29: BLOCKED
+- Execution authority: NONE
+- Live trading: STOP
+- Production RPC evidence: NOT YET OBSERVED
+- GitHub CI success: NOT CLAIMED
+
+### Next Macro Objective
+Obtain verified runtime observations against the external V2 factory set where provider access permits, while separately closing Silo V3 market-level enumeration and the remaining G02 adversarial denominator gaps.
