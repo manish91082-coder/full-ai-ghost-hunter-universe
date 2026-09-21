@@ -981,6 +981,20 @@
       "canonical_record_key": "cardano-mainnet",
       "lifecycle": "mainnet",
       "note": "Official Cardano docs distinguish production mainnet from preview/pre-production test environments. Native Cardano identity is preserved; no EVM coercion."
+    },
+    {
+      "input_name": "Optimism",
+      "normalized_name": "OP Mainnet",
+      "match": null,
+      "state": "NEW_CANDIDATE",
+      "identity_state": "PRIMARY_VERIFIED",
+      "mainnet_identifier": "eip155:10",
+      "evidence": [
+        "https://docs.optimism.io/rust/kona/sdk/protocol/registry"
+      ],
+      "canonical_record_key": "optimism-mainnet",
+      "lifecycle": "mainnet",
+      "note": "Official Optimism registry identifies OP Mainnet with chain ID 10. Identity only; no flash liquidity, route or execution authorization inferred."
     }
   ],
   "normalization_rules": [
@@ -998,19 +1012,19 @@
   "duplicate_policy": "semantic identity resolution before merge; one canonical record per canonical identity",
   "provenance_policy": "source evidence remains referenced per record; conflicting observations are preserved outside the canonical object",
   "last_materialized_update": "2026-09-21",
-  "record_count": 65,
+  "record_count": 66,
   "current_state_accounting": {
     "as_of": "2026-09-21",
-    "total_records": 65,
+    "total_records": 66,
     "state_counts": {
       "MATCH_EXISTING": 10,
-      "NEW_CANDIDATE": 55
+      "NEW_CANDIDATE": 56
     },
-    "canonical_record_key_count": 65,
+    "canonical_record_key_count": 66,
     "duplicate_canonical_record_key_count": 0,
     "note": "Current-state accounting computed from records[]; historical join-point metadata is separate.",
-    "controlling_batch": "G01_DEX_NATIVE_DENOMINATOR_TARGETED_CYCLE_BATCH_041",
-    "audit": "AUDIT_047_G01_DEX_NATIVE_DENOMINATOR_TARGETED_CYCLE"
+    "controlling_batch": "G01_DEX_SEMANTIC_TRIAGE_AND_PRIMARY_DELTA_BATCH_042",
+    "audit": "AUDIT_048_G01_DEX_SEMANTIC_TRIAGE_AND_PRIMARY_DELTA"
   },
   "updated_by": "G01_HIGH_INFORMATION_PRIMARY_VERIFICATION_BATCH_038"
 }
