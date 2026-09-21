@@ -298,3 +298,21 @@ G02 remains active and fail-closed.
 Added the fail-closed provider pool contract. Runtime provider identities are selected per network, ordered by health/failure state and configured priority, cooled down after failure, and recovered after success. Empty/all-unavailable conditions fail closed. Network transport remains intentionally outside this policy layer.
 
 This is a runtime architecture increment only. Cross-provider quorum, freshness, live RPC collection and automatic opportunity rescan remain pending.
+
+
+## UPDATE — G02 MACRO-BATCH 015 — RPC FAILOVER BOUNDARY
+
+Date: 21 September 2026
+
+The read-only RPC substrate now performs deterministic provider failover within one logical observation request. A provider failure is recorded and the next eligible provider for the same network is attempted. Exhaustion fails closed. Quorum observation can continue across the available provider set until the requested successful observation count is met or capacity is exhausted.
+
+This is transport recovery only. Provider switching does not establish state continuity. Freshness, provenance, network identity and post-switch revalidation remain mandatory.
+
+Added:
+- 02_FLASH_LOAN_UNIVERSE/23_G02_RPC_FAILOVER_BOUNDARY_BATCH_015.md
+- 02_FLASH_LOAN_UNIVERSE/24_AUDIT_065_G02_RPC_FAILOVER_BOUNDARY.md
+
+G02 remains ACTIVE / NOT SATURATED.
+G03-G29 remain BLOCKED.
+Execution authority remains NONE.
+Live trading remains STOP.
