@@ -1,4 +1,3 @@
-import io
 import json
 
 import pytest
@@ -69,6 +68,7 @@ def test_quorum_disagreement_fails_closed():
     with pytest.raises(RegistryError):
         RpcTransport(p, opener=opener).quorum_call("net:1", "eth_blockNumber", quorum=2)
 
+
 def test_call_retries_within_same_request_after_provider_failure():
     p = pool()
     calls = []
@@ -91,10 +91,13 @@ def test_quorum_fails_closed_when_provider_capacity_is_insufficient_after_failur
     with pytest.raises(RegistryError):
         RpcTransport(p, opener=opener).quorum_call("net:1", "eth_blockNumber", quorum=2)
 
-def test_v2_pair_enumerator_decodes_pair_address():
+
+def test_v2_pair_enumerator_requires_provider_consistency_and_records_completeness():
     from ghost_hunter.v2_pair_enumerator import V2PairEnumerator
     from ghost_hunter.runtime_freshness import FreshnessPolicy
+
     p = pool()
+
     def opener(request, timeout):
         body = request.data.decode()
         if "574f2ba3" in body:
@@ -106,6 +109,70 @@ def test_v2_pair_enumerator_decodes_pair_address():
         else:
             result = "0x" + "0"*24 + "1111111111111111111111111111111111111111"
         return Response({"jsonrpc": "2.0", "id": 1, "result": result})
-    pairs = V2PairEnumerator(RpcTransport(p, opener=opener), FreshnessPolicy()).enumerate_pairs(
-        "net:1", "0x" + "1"*40, max_pairs=10)
+
+    enumerator = V2PairEnumerator(RpcTransport(p, opener=opener), FreshnessPolicy())
+    pairs = enumerator.enumerate_pairs("net:1", "0x" + "1"*40, max_pairs=10)
+
     assert pairs[0].pair_address.lower() == "0x1234567890abcdef1234567890abcdef12345678"
+    assert enumerator.last_completeness is not None
+    assert enumerator.last_completeness.factory_reported_count == 1
+    assert enumerator.last_completeness.enumerated_count == 1
+    assert enumerator.last_completeness.start_block == 32
+    assert enumerator.last_completeness.end_block == 32
+    assert enumerator.last_completeness.provider_id == "p1"
+
+
+def test_v2_pair_state_observes_code_and_records_digest():
+    from ghost_hunter.v2_pair_enumerator import V2PairEnumerator
+    from ghost_hunter.runtime_freshness import FreshnessPolicy
+
+    p = pool()
+
+    def opener(request, timeout):
+        body = request.data.decode()
+        if "eth_blockNumber" in body:
+            result = "0x20"
+        elif "eth_getCode" in body:
+            result = "0x60016000"
+        elif "0dfe1681" in body:
+            result = "0x" + "0"*24 + "1"*40
+        elif "d21220a7" in body:
+            result = "0x" + "0"*24 + "2"*40
+        elif "0902f1ac" in body:
+            result = "0x" + "1".zfill(64) + "0".zfill(64) + "0".zfill(64)
+        else:
+            result = "0x"
+        return Response({"jsonrpc": "2.0", "id": 1, "result": result})
+
+    state = V2PairEnumerator(RpcTransport(p, opener=opener), FreshnessPolicy()).read_pair_state(
+        "net:1", "0x" + "3"*40
+    )
+
+    assert state.token0.lower() == "0x" + "1"*40
+    assert state.token1.lower() == "0x" + "2"*40
+    assert state.reserve0 == 1
+    assert state.reserve1 == 0
+    assert len(state.bytecode_sha256) == 64
+
+
+def test_v2_pair_state_fails_closed_on_provider_switch():
+    from ghost_hunter.v2_pair_enumerator import V2PairEnumerator
+    from ghost_hunter.runtime_freshness import FreshnessPolicy
+
+    p = pool()
+    calls = {"count": 0}
+
+    def opener(request, timeout):
+        calls["count"] += 1
+        body = request.data.decode()
+        if calls["count"] == 1:
+            result = "0x20"
+            return Response({"jsonrpc": "2.0", "id": 1, "result": result})
+        if request.full_url.endswith("/1"):
+            raise OSError("provider failure")
+        return Response({"jsonrpc": "2.0", "id": 1, "result": "0x20"})
+
+    with pytest.raises(RegistryError):
+        V2PairEnumerator(
+            RpcTransport(p, opener=opener), FreshnessPolicy()
+        ).read_pair_state("net:1", "0x" + "3"*40)
