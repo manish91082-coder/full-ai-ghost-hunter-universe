@@ -41,3 +41,15 @@
 - Identity verification is not capability or execution authorization.
 - G01 remains ACTIVE / NOT SATURATED; G02-G29 blocked; live trading STOP.
 - Next: systematic primary verification of the remaining DEX label queue, native-source gap scan and adversarial missed-network audit.
+
+
+## 2026-09-21 - Macro-Batch 033
+
+**G01 Primary Evidence Strengthening**
+
+- Added primary-source network/platform evidence for Lighter, RISE, Starknet, Sui and NEAR.
+- Updated current G01 registry in place without creating a duplicate registry.
+- Did not fabricate or promote unsupported chain identifiers.
+- Identity evidence remains separate from flash capability, DEX execution, liquidity, route, simulation, economics and authorization.
+- Added Batch 033 and Audit 039.
+- G01 remains ACTIVE / NOT SATURATED; G02-G29 blocked; live trading STOP.
