@@ -1137,6 +1137,113 @@
       "capability_state": "NOT_VERIFIED",
       "canonical_record_key": "astar-mainnet",
       "note": "Official Astar documentation identifies Astar Network mainnet and EVM chain ID 592. Identity/lifecycle only; flash liquidity, venues, routes and execution remain separate gates."
+    },
+    {
+      "input_name": "Cronos zkEVM",
+      "normalized_name": "Cronos zkEVM",
+      "state": "NEW_CANDIDATE",
+      "identity_state": "VERIFIED_PRIMARY",
+      "mainnet_identifier": "eip155:388",
+      "evidence": [
+        "https://github.com/crypto-org-chain/chain-main/discussions/442"
+      ],
+      "source_class": "S1_OFFICIAL_NETWORK_DOCUMENTATION",
+      "lifecycle": "mainnet",
+      "capability_state": "NOT_VERIFIED",
+      "canonical_record_key": "cronos-zkevm-mainnet",
+      "note": "Official Cronos network information identifies Cronos zkEVM Mainnet with chain ID 388 and separately identifies its testnet. This is a distinct EVM execution plane from Cronos EVM 25; no flash/execution capability inferred."
+    },
+    {
+      "input_name": "Immutable zkEVM",
+      "normalized_name": "Immutable zkEVM Mainnet",
+      "state": "NEW_CANDIDATE",
+      "identity_state": "VERIFIED_PRIMARY",
+      "mainnet_identifier": "eip155:13371",
+      "evidence": [
+        "https://docs.immutable.com/v1/tutorials/zkevm/deploy-contracts/",
+        "https://devsupport.immutable.com/v1/products/zkevm/blockchain-data/polling/chains/"
+      ],
+      "source_class": "S1_OFFICIAL_NETWORK_DOCUMENTATION",
+      "lifecycle": "mainnet",
+      "capability_state": "NOT_VERIFIED",
+      "canonical_record_key": "immutable-zkevm-mainnet",
+      "note": "Immutable official documentation identifies imtbl-zkevm-mainnet with chain ID 13371 and separately identifies testnet 13473. Identity/execution-plane only; trading and flash capability remain downstream."
+    },
+    {
+      "input_name": "IOTA EVM",
+      "normalized_name": "IOTA EVM Mainnet",
+      "state": "NEW_CANDIDATE",
+      "identity_state": "VERIFIED_PRIMARY",
+      "mainnet_identifier": "eip155:8822",
+      "evidence": [
+        "https://www.iota.org/products/evm"
+      ],
+      "source_class": "S1_OFFICIAL_NETWORK_DOCUMENTATION",
+      "lifecycle": "mainnet",
+      "capability_state": "NOT_VERIFIED",
+      "canonical_record_key": "iota-evm-mainnet",
+      "note": "Official IOTA source describes IOTA EVM as an EVM-compatible smart-contract chain on IOTA Mainnet and lists chain ID 8822. Identity only; no flash liquidity or execution authorization inferred."
+    },
+    {
+      "input_name": "Ontology EVM",
+      "normalized_name": "Ontology MainNet EVM",
+      "state": "NEW_CANDIDATE",
+      "identity_state": "VERIFIED_PRIMARY",
+      "mainnet_identifier": "eip155:58",
+      "evidence": [
+        "https://docs.ont.io/guides-and-tutorials/development-guides/smart-contract-dev/evm-contract/development-environment-and-tools"
+      ],
+      "source_class": "S1_OFFICIAL_NETWORK_DOCUMENTATION",
+      "lifecycle": "mainnet",
+      "capability_state": "NOT_VERIFIED",
+      "canonical_record_key": "ontology-mainnet-evm",
+      "note": "Official Ontology developer documentation identifies Ontology MainNet with EVM chain ID 58 and separates testnet 5851. Identity only; flash liquidity, venues and routes remain unverified."
+    },
+    {
+      "input_name": "Polygon zkEVM",
+      "normalized_name": "Polygon zkEVM Mainnet",
+      "state": "NEW_CANDIDATE",
+      "identity_state": "PRIMARY_VERIFIED",
+      "mainnet_identifier": "eip155:1101",
+      "evidence": [
+        "https://gov.uniswap.org/t/official-uniswap-v3-deployments-list/24323"
+      ],
+      "source_class": "S1_OFFICIAL_PROTOCOL_DEPLOYMENT_REGISTRY",
+      "lifecycle": "mainnet",
+      "capability_state": "NOT_VERIFIED",
+      "canonical_record_key": "polygon-zkevm-mainnet",
+      "note": "Uniswap governance's official deployment list identifies Polygon zkEVM with chain ID 1101 and a deployed V3 factory. This verifies a production execution/venue surface, not flash liquidity or current profitability."
+    },
+    {
+      "input_name": "EOS EVM",
+      "normalized_name": "EOS EVM Mainnet",
+      "state": "NEW_CANDIDATE",
+      "identity_state": "VERIFIED_PRIMARY",
+      "mainnet_identifier": "eip155:17777",
+      "evidence": [
+        "https://eosnetwork.com/resources/eos-evm-mainnet-is-live-2/"
+      ],
+      "source_class": "S1_OFFICIAL_NETWORK_DOCUMENTATION",
+      "lifecycle": "mainnet",
+      "capability_state": "NOT_VERIFIED",
+      "canonical_record_key": "eos-evm-mainnet",
+      "note": "Official EOS Network announcement states EOS EVM Mainnet is live and gives chain ID 17777. EVM identity only; flash liquidity and executable arbitrage remain downstream gates."
+    },
+    {
+      "input_name": "Neo X",
+      "normalized_name": "Neo X MainNet",
+      "state": "NEW_CANDIDATE",
+      "identity_state": "VERIFIED_PRIMARY",
+      "mainnet_identifier": "eip155:47763",
+      "evidence": [
+        "https://neo.org/blog/details/4311",
+        "https://x.neo.org/"
+      ],
+      "source_class": "S1_OFFICIAL_NETWORK_DOCUMENTATION",
+      "lifecycle": "mainnet",
+      "capability_state": "NOT_VERIFIED",
+      "canonical_record_key": "neo-x-mainnet",
+      "note": "Official Neo source states Neo X MainNet launched and is EVM-compatible; current chain ID 47763 is corroborated by Chainlink's official documentation surface. No flash/trading capability inferred."
     }
   ],
   "normalization_rules": [
@@ -1154,19 +1261,19 @@
   "duplicate_policy": "semantic identity resolution before merge; one canonical record per canonical identity",
   "provenance_policy": "source evidence remains referenced per record; conflicting observations are preserved outside the canonical object",
   "last_materialized_update": "2026-09-21",
-  "record_count": 75,
+  "record_count": 82,
   "current_state_accounting": {
     "as_of": "2026-09-21",
-    "total_records": 75,
+    "total_records": 82,
     "state_counts": {
       "MATCH_EXISTING": 10,
-      "NEW_CANDIDATE": 65
+      "NEW_CANDIDATE": 72
     },
-    "canonical_record_key_count": 75,
+    "canonical_record_key_count": 82,
     "duplicate_canonical_record_key_count": 0,
     "note": "Current-state accounting computed from records[]; historical join-point metadata is separate.",
-    "controlling_batch": "G01_EXECUTION_PLANE_PRIMARY_VERIFICATION_BATCH_044",
-    "audit": "AUDIT_050_G01_EXECUTION_PLANE_PRIMARY_VERIFICATION"
+    "controlling_batch": "G01_EXECUTION_PLANE_PRIMARY_VERIFICATION_BATCH_045",
+    "audit": "AUDIT_051_G01_EXECUTION_PLANE_PRIMARY_VERIFICATION"
   },
-  "updated_by": "G01_EXECUTION_PLANE_PRIMARY_VERIFICATION_BATCH_044"
+  "updated_by": "G01_EXECUTION_PLANE_PRIMARY_VERIFICATION_BATCH_045"
 }
