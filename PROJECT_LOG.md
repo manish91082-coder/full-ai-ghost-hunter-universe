@@ -103,3 +103,14 @@
 - Defined mandatory evidence, denominator, materiality, bounded targeted cycles, exit review, freeze-and-advance, carry-forward unknown and controlled re-entry states.
 - Locked maximum-useful-work-per-next behavior to prevent artificial micro-batching.
 - Current G01 remains ACTIVE / NOT SATURATED; future cycles must target material unresolved gaps rather than repeat broad discovery.
+
+## 2026-09-21 - Macro-Batch 037
+
+**Cosmos Semantic Reconciliation Queue**
+
+- Added deterministic conservative queue builder and CI workflow.
+- Reuses the pinned Cosmos source and current canonical G01 registry.
+- Identity promotion remains prohibited; canonical registry is read-only.
+- This is a bounded targeted cycle under the new saturation exit control.
+- Audit 043 pending CI observation.
+- G01 remains ACTIVE / NOT SATURATED; G02-G29 BLOCKED; LIVE TRADING STOP.
