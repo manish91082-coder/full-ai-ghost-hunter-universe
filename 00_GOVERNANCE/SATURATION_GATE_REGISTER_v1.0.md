@@ -125,3 +125,25 @@ When a gate closes, its artifact version is frozen. Later discoveries create a n
 **G01 is the only primary saturation gate authorized for advancement.**
 
 Existing implementation artifacts remain preserved as non-trading infrastructure. They do not constitute saturation evidence and do not permit skipping G01.
+
+
+## G01 UPDATE — MACRO-BATCH 018
+
+Date: 21 September 2026
+
+Created:
+- 01_BLOCKCHAIN_UNIVERSE/48_G01_GLOBAL_CHAIN_DISCOVERY_EXPANSION_BATCH_018.md
+- 01_BLOCKCHAIN_UNIVERSE/49_AUDIT_024_G01_GLOBAL_CHAIN_DISCOVERY_EXPANSION.md
+
+Fresh discovery denominators now explicitly include:
+- DeFiLlama chain/DEX discovery surface;
+- CoinGecko 100+ network discovery surface;
+- L2BEAT scaling/activity surface;
+- protocol-derived deployment surfaces;
+- DEX-derived deployment surfaces.
+
+Batch 018 added 21 individually named discovery candidates and preserved the rule that source denominators are not additive.
+
+G01 remains ACTIVE / NOT SATURATED because primary identity/lifecycle verification, native ecosystem registry sweep, source-union normalization, exclusion reconciliation, freshness and final deduplicated counter remain open.
+
+No dependent gate is promoted. Live trading remains STOP.
