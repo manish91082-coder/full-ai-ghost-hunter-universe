@@ -995,6 +995,100 @@
       "canonical_record_key": "optimism-mainnet",
       "lifecycle": "mainnet",
       "note": "Official Optimism registry identifies OP Mainnet with chain ID 10. Identity only; no flash liquidity, route or execution authorization inferred."
+    },
+    {
+      "input_name": "Arbitrum One",
+      "normalized_name": "Arbitrum One",
+      "state": "NEW_CANDIDATE",
+      "identity_state": "VERIFIED_PRIMARY",
+      "mainnet_identifier": "eip155:42161",
+      "evidence": [
+        "https://docs.arbitrum.io/for-devs/dev-tools-and-resources/chain-info"
+      ],
+      "source_class": "S1_OFFICIAL_NETWORK_DOCUMENTATION",
+      "lifecycle": "mainnet",
+      "capability_state": "NOT_VERIFIED",
+      "canonical_record_key": "arbitrum-one",
+      "note": "Official Arbitrum chain information lists Arbitrum One as production with chain ID 42161. Identity/lifecycle only; flash liquidity, venues, routes, liquidity-at-size and execution remain separate gates."
+    },
+    {
+      "input_name": "Arbitrum Nova",
+      "normalized_name": "Arbitrum Nova",
+      "state": "NEW_CANDIDATE",
+      "identity_state": "VERIFIED_PRIMARY",
+      "mainnet_identifier": "eip155:42170",
+      "evidence": [
+        "https://docs.arbitrum.io/for-devs/dev-tools-and-resources/chain-info"
+      ],
+      "source_class": "S1_OFFICIAL_NETWORK_DOCUMENTATION",
+      "lifecycle": "mainnet",
+      "capability_state": "NOT_VERIFIED",
+      "canonical_record_key": "arbitrum-nova",
+      "note": "Official Arbitrum chain information lists Arbitrum Nova as production with chain ID 42170. Identity/lifecycle only; downstream capability and execution gates remain open."
+    },
+    {
+      "input_name": "Bitcoin",
+      "normalized_name": "Bitcoin Mainnet",
+      "state": "NEW_CANDIDATE",
+      "identity_state": "VERIFIED_PRIMARY",
+      "mainnet_identifier": "bitcoin:mainnet",
+      "evidence": [
+        "https://developer.bitcoin.org/glossary.html",
+        "https://developer.bitcoin.org/reference/p2p_networking.html"
+      ],
+      "source_class": "S1_OFFICIAL_NETWORK_DOCUMENTATION",
+      "lifecycle": "mainnet",
+      "capability_state": "NOT_VERIFIED",
+      "canonical_record_key": "bitcoin-mainnet",
+      "note": "Official Bitcoin developer documentation distinguishes Mainnet as the production network and separates it from Testnet/Regtest. Native identity preserved; arbitrage/atomic-liquidity capability remains unverified."
+    },
+    {
+      "input_name": "NEAR",
+      "normalized_name": "NEAR Mainnet",
+      "state": "NEW_CANDIDATE",
+      "identity_state": "VERIFIED_PRIMARY",
+      "mainnet_identifier": "near:mainnet",
+      "evidence": [
+        "https://docs.near.org/data-infrastructure/tutorials/running-near-lake/run-lake-indexer",
+        "https://docs.near.org/tutorials/intents/swap"
+      ],
+      "source_class": "S1_OFFICIAL_NETWORK_DOCUMENTATION",
+      "lifecycle": "mainnet",
+      "capability_state": "NOT_VERIFIED",
+      "canonical_record_key": "near-mainnet",
+      "note": "Official NEAR documentation explicitly supports mainnet configuration and mainnet RPC usage. Native identity preserved; flash/atomic liquidity, venues, routes and execution remain separate gates."
+    },
+    {
+      "input_name": "Litecoin",
+      "normalized_name": "Litecoin Mainnet",
+      "state": "NEW_CANDIDATE",
+      "identity_state": "VERIFIED_PRIMARY",
+      "mainnet_identifier": "litecoin:mainnet",
+      "evidence": [
+        "https://litecoin.org/",
+        "https://dev.litecoin.org/"
+      ],
+      "source_class": "S1_OFFICIAL_NETWORK_DOCUMENTATION",
+      "lifecycle": "mainnet",
+      "capability_state": "NOT_VERIFIED",
+      "canonical_record_key": "litecoin-mainnet",
+      "note": "Official Litecoin sources identify Litecoin as a production open-source P2P blockchain/payment network. Native identity preserved; atomic liquidity, executable venues and arbitrage capability remain unverified."
+    },
+    {
+      "input_name": "XRP Ledger",
+      "normalized_name": "XRP Ledger Mainnet",
+      "state": "NEW_CANDIDATE",
+      "identity_state": "VERIFIED_PRIMARY",
+      "mainnet_identifier": "xrpl:mainnet",
+      "evidence": [
+        "https://xrpl.org/docs/concepts/networks-and-servers/parallel-networks",
+        "https://xrpl.org/docs/introduction/what-is-the-xrp-ledger"
+      ],
+      "source_class": "S1_OFFICIAL_NETWORK_DOCUMENTATION",
+      "lifecycle": "mainnet",
+      "capability_state": "NOT_VERIFIED",
+      "canonical_record_key": "xrpl-mainnet",
+      "note": "Official XRPL documentation identifies one production XRP Ledger network, Mainnet, and distinguishes Testnet/Devnet. Native identity preserved; DEX/atomic-liquidity/execution capability remains separate."
     }
   ],
   "normalization_rules": [
@@ -1012,19 +1106,19 @@
   "duplicate_policy": "semantic identity resolution before merge; one canonical record per canonical identity",
   "provenance_policy": "source evidence remains referenced per record; conflicting observations are preserved outside the canonical object",
   "last_materialized_update": "2026-09-21",
-  "record_count": 66,
+  "record_count": 72,
   "current_state_accounting": {
     "as_of": "2026-09-21",
-    "total_records": 66,
+    "total_records": 72,
     "state_counts": {
       "MATCH_EXISTING": 10,
-      "NEW_CANDIDATE": 56
+      "NEW_CANDIDATE": 62
     },
-    "canonical_record_key_count": 66,
+    "canonical_record_key_count": 72,
     "duplicate_canonical_record_key_count": 0,
     "note": "Current-state accounting computed from records[]; historical join-point metadata is separate.",
-    "controlling_batch": "G01_DEX_SEMANTIC_TRIAGE_AND_PRIMARY_DELTA_BATCH_042",
-    "audit": "AUDIT_048_G01_DEX_SEMANTIC_TRIAGE_AND_PRIMARY_DELTA"
+    "controlling_batch": "G01_DEX_HIGH_INFORMATION_PRIMARY_VERIFICATION_BATCH_043",
+    "audit": "AUDIT_049_G01_DEX_HIGH_INFORMATION_PRIMARY_VERIFICATION"
   },
-  "updated_by": "G01_HIGH_INFORMATION_PRIMARY_VERIFICATION_BATCH_038"
+  "updated_by": "G01_DEX_HIGH_INFORMATION_PRIMARY_VERIFICATION_BATCH_043"
 }
