@@ -155,3 +155,14 @@
 - Current canonical state: 65 records / 65 unique keys / 0 duplicates.
 - Audit 047: PARTIAL PASS; G01 remains ACTIVE / NOT SATURATED.
 - Remaining work is bounded semantic denominator closure, not broad rediscovery.
+
+## 2026-09-21 - Macro-Batch 042
+
+**DEX Semantic Triage + Primary Delta**
+
+- Classified all 419 retained DEX labels into explicit conservative triage states.
+- Primary-verified Optimism / OP Mainnet / eip155:10.
+- No blind promotion of unresolved high-information labels.
+- Current canonical state: 66 records / 66 unique keys / 0 duplicates.
+- Audit 048: PARTIAL PASS.
+- G01 remains ACTIVE / NOT SATURATED; next focus is material primary identity/lifecycle verification.
