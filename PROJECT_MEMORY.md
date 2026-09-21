@@ -563,3 +563,10 @@ For V2-style factory enumeration and pair-state observation, all logical market 
 Date: 21 September 2026
 
 Silo V3 API/UI discovery is a candidate source only. Because Silo markets are permissionless, discovery must be followed by runtime deployment, code, market-structure, liquidity/configuration and freshness verification. API presence never grants execution eligibility.
+
+
+## DURABLE RULE — CI MUST REPRODUCE THE ACTUAL RUNTIME CONTRACT — 21 September 2026
+
+When a runtime transport contract changes, all existing tests that encode the previous behavior must be re-audited in the same macro-cycle. In particular, in-request provider failover means a failed first provider may produce a successful observation from the next provider; tests must not still expect an exception from the logical request.
+
+CI must explicitly install its test dependencies and define the import path for a src-layout Python project. A passing local assumption is not sufficient for authoritative GitHub CI.
