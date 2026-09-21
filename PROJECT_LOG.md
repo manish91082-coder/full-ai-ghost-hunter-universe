@@ -618,3 +618,29 @@ Rule: evidence/history grows append-only; canonical state is deduplicated and up
 Next: duplicate/identity anomaly audit, then uncovered native + DEX discovery merged into the same canonical state.
 
 Live trading STOP.
+
+
+## LOG-0028 — G01 AI RESEARCH + DATA INTEROPERABILITY GOVERNANCE / MACRO-BATCH 022
+
+Date: 21 September 2026
+
+### Objective
+Make project data clean, deduplicated, machine-actionable and reusable by this AI and independent future AI models without hidden context or conversational drift.
+
+### Created
+- 00_GOVERNANCE/AI_RESEARCH_DATA_INTEROPERABILITY_CONSTITUTION_v1.0.md
+- 00_GOVERNANCE/DATA_SCHEMA_AND_AI_ACCESS_CONTRACT_v1.0.md
+- 00_GOVERNANCE/DATA_DOMAIN_REGISTRY_v1.0.json
+- 01_BLOCKCHAIN_UNIVERSE/56_G01_AI_RESEARCH_DATA_GOVERNANCE_SATURATION_BATCH_022.md
+- 01_BLOCKCHAIN_UNIVERSE/57_AUDIT_028_G01_AI_RESEARCH_DATA_GOVERNANCE.md
+
+### Locked
+Two-plane data lifecycle, one current canonical path per domain, semantic deduplication, stable identities, explicit states, provenance, freshness, typed relationships, role-separated AI research, cross-model compatibility and adversarial testing.
+
+### Audit
+AUDIT 028 = CONTROL LAYER ACCEPTED. Factual G01 saturation remains open.
+
+### Next
+Duplicate/identity anomaly audit against the current canonical state, followed by uncovered native + DEX discovery delta merge and full re-audit.
+
+Live trading STOP.
