@@ -181,3 +181,8 @@ Primary verification advanced three high-information DEX labels: Cosmos Hub (cos
 ## 2026-09-21 — G01 BATCH 044
 
 Execution-plane primary verification cycle completed. Astar Network was promoted as eip155:592 from official primary evidence. Neo N3 versus Neo X was explicitly kept separate, and IOTA was not promoted without exact identity evidence. Canonical state advanced from 72 to 75 records with zero duplicates. Audit 050 = PARTIAL PASS. G01 remains ACTIVE; G02 BLOCKED; live trading STOP.
+
+
+## 2026-09-21 — G01 BATCH 045
+
+Seven execution-plane DEX candidates were primary-verified: Cronos zkEVM, Immutable zkEVM, IOTA EVM, Ontology EVM, Polygon zkEVM, EOS EVM and Neo X. Astar zkEVM was retained as historical/superseded rather than promoted after its documented transition toward Soneium. Canonical state advanced from 75 to 82 records with zero duplicates. Audit 051 = PARTIAL PASS. G01 ACTIVE; G02 BLOCKED; live trading STOP.
