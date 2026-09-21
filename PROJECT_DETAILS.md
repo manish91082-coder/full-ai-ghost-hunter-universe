@@ -264,3 +264,33 @@ A valid runtime snapshot substitution must change resulting state/opportunity co
 This becomes a mandatory acceptance gate before execution architecture is allowed to advance toward live authorization.
 
 Live trading remains STOP.
+
+
+## 30. NO-DRIFT SATURATION CONTROL ARCHITECTURE
+
+Date: 21 September 2026
+
+The project specification is now governed by two permanent artifacts:
+- 00_GOVERNANCE/NO_DRIFT_SATURATION_CONTROL_CHARTER_v1.0.md
+- 00_GOVERNANCE/SATURATION_GATE_REGISTER_v1.0.md
+
+### Locked progression
+G00 Governance is frozen.
+G01 Global Blockchain Universe is active and must be saturated before dependent universe domains are treated as authoritative.
+G02-G29 are blocked or design-only according to the gate register.
+
+### Chain-wise storage
+Each blockchain receives a dedicated namespace with identity, RPC, flash liquidity, protocols, DEX, contracts, ABI, tokens, pools, pairs, liquidity, market state, quotes, routes, strategies, evidence, audits and snapshots.
+
+### Static/dynamic separation
+Verified topology and slow-changing facts are precomputed. Current market/execution state remains dynamic and freshness-bound.
+
+### Provider rotation
+Provider pools use explicit health states, adaptive cooldown/retest and recovery. Temporary failure is not permanent blacklist. Persistent/security failures may enter quarantine with evidence.
+
+### Performance architecture
+Heavy discovery, AI research and historical processing stay off the hot path. The live decision substrate uses precomputed indexes, hot state caches, incremental invalidation and parallel workers. Final latency must be measured under real provider/chain constraints.
+
+### Acceptance rule
+No downstream domain is declared saturated merely because files or code exist. Evidence-backed gate closure is mandatory.
+
