@@ -14,18 +14,17 @@
     "LIKELY_ALIAS_CANDIDATE": 13
   },
   "primary_verified_this_cycle": [
-    "Optimism"
-  ],
-  "canonical_promotions": 1,
-  "not_promoted": [
-    "Arbitrum",
+    "Arbitrum One",
     "Arbitrum Nova",
     "Bitcoin",
+    "NEAR",
+    "Litecoin",
+    "XRP Ledger"
+  ],
+  "canonical_promotions": 6,
+  "not_promoted": [
     "Bittensor",
     "Cosmos",
-    "Ripple",
-    "Litecoin",
-    "Near",
     "Osmosis",
     "Thorchain",
     "ZetaChain",
@@ -39,6 +38,7 @@
     "Execution-plane labels are not merged automatically.",
     "Alias candidates require primary identity evidence.",
     "Unknown/non-chain labels remain unresolved.",
-    "DEX presence does not imply flash liquidity, executable routes, liquidity-at-size, profitability or authorization."
+    "DEX presence does not imply flash liquidity, executable routes, liquidity-at-size, profitability or authorization.",
+    "High-information labels may be promoted only after current official primary evidence; promotion does not infer execution capability."
   ]
 }
