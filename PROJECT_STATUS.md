@@ -918,3 +918,23 @@ Live trading remains **STOP**.
 ### Next Macro Objective
 
 Continue systematic primary verification of the unresolved DEX label queue, prioritize aliases/execution-plane variants, then reconcile against native ecosystem sources and execute the adversarial missed-network audit before final G01 denominator analysis.
+
+
+## UPDATE - MACRO-BATCH 033 / PRIMARY EVIDENCE STRENGTHENING
+
+Date: 21 September 2026
+State: G01 ACTIVE / NOT SATURATED
+
+Primary-source evidence was strengthened for Lighter, RISE, Starknet, Sui and NEAR. The current registry was updated in place. No unsupported chain IDs were invented or promoted. Official sources establish production/network execution evidence for these records, while identity namespaces and exact identifiers remain subject to direct verification where still unresolved. citeturn3search9turn3search10turn3search8turn3search6turn3search0
+
+Added:
+- 01_BLOCKCHAIN_UNIVERSE/78_G01_PRIMARY_IDENTITY_VERIFICATION_BATCH_033.md
+- 01_BLOCKCHAIN_UNIVERSE/79_AUDIT_039_G01_PRIMARY_IDENTITY_VERIFICATION.md
+
+G01 remains ACTIVE / NOT SATURATED. The 419-label DEX surface is still a discovery denominator, not a verified blockchain denominator. Remaining obligations are primary verification, alias/execution-plane reconciliation, native-source gap scan, adversarial missed-network audit and final deduplicated production denominator.
+
+G02-G29 remain BLOCKED.
+LIVE TRADING remains STOP.
+
+### Next Macro Objective
+Continue primary verification of unresolved labels, then execute independent native-registry reconciliation and adversarial missed-network discovery before G01 denominator freeze.
