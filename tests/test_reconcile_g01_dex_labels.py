@@ -1,4 +1,4 @@
-from ghost_hunter.reconcile_g01_dex_labels import classify, norm
+from scripts.reconcile_g01_dex_labels import classify, norm
 
 def test_alias_hint_is_not_promotion():
     state, suggested = classify("Plume Mainnet", set())
