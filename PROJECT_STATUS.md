@@ -1643,3 +1643,25 @@ Implemented and recorded:
 
 ### Next Macro Objective
 Obtain verified runtime observations against the external V2 factory set where provider access permits, while separately closing Silo V3 market-level enumeration and the remaining G02 adversarial denominator gaps.
+
+
+## UPDATE — G02 MACRO-BATCH 018 — COHERENT V2 BLOCK SNAPSHOT + SILO DISCOVERY BOUNDARY
+
+Date: 21 September 2026
+
+Implemented:
+- V2 factory count and allPairs observations are pinned to the captured opening block instead of moving latest state.
+- V2 pair state code, token and reserve reads are pinned to the captured opening block.
+- Duplicate pair identity from a factory fails closed.
+- Added a Silo V3 discovery-only parser with provenance and duplicate identity validation.
+- Recorded primary-source Silo evidence: the official API exposes V3 silo/vault data, while Silo markets are permissionless and therefore API/UI discovery cannot be treated as a complete deployment denominator. Runtime verification remains mandatory.
+
+Gate remains:
+- G02 ACTIVE / NOT SATURATED
+- G03-G29 BLOCKED
+- Execution authority NONE
+- Live trading STOP
+- Production RPC evidence NOT YET OBSERVED
+- GitHub CI success NOT CLAIMED
+
+Next: bind Silo discovery candidates to runtime deployment/code/state verification and obtain actual provider-backed observations for the external V2 factory set.
