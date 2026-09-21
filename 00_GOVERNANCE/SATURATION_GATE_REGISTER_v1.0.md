@@ -147,3 +147,18 @@ Batch 018 added 21 individually named discovery candidates and preserved the rul
 G01 remains ACTIVE / NOT SATURATED because primary identity/lifecycle verification, native ecosystem registry sweep, source-union normalization, exclusion reconciliation, freshness and final deduplicated counter remain open.
 
 No dependent gate is promoted. Live trading remains STOP.
+
+## G01 UPDATE — MACRO-BATCH 019
+
+Date: 21 September 2026
+
+Created:
+- 01_BLOCKCHAIN_UNIVERSE/data/G01_SOURCE_UNION_REGISTRY_v001.json
+- 01_BLOCKCHAIN_UNIVERSE/50_G01_SOURCE_UNION_NORMALIZATION_BATCH_019.md
+- 01_BLOCKCHAIN_UNIVERSE/51_AUDIT_025_G01_SOURCE_UNION_NORMALIZATION.md
+
+Normalization result at current join point: 21 input records reviewed; 10 confirmed overlaps with existing canonical/Morpho records; 11 provisional new candidates.
+
+Identity/lifecycle verification was materially expanded, while unresolved identifiers and lower-evidence records remain partial/provisional. DEX-derived and native-ecosystem registry unions are still required before the G01 denominator can freeze.
+
+Current state remains: G01 ACTIVE / NOT SATURATED; G02-G28 blocked; G29 active control; live trading STOP.
