@@ -1399,3 +1399,22 @@ Created:
 G02 remains ACTIVE / NOT SATURATED. The remaining exit blockers are deployment/runtime code identity, live asset capacity, current fee state, enablement/authorization, freshness, and bounded adversarial denominator closure.
 
 G03-G29 remain blocked. Live trading remains STOP.
+
+
+## UPDATE — G02 TARGETED PRIMARY-CAPABILITY VERIFICATION BATCH 008
+
+21 September 2026
+
+Targeted primary-source verification strengthened two Batch 007 candidates:
+- Silo V3: documented flash-loan capability, same-transaction repayment, dynamic market fee, and permissionless market deployment.
+- QuickSwap V2: documented flash-swap capability, atomic callback/repayment and dynamic pair reserves/fee semantics.
+
+The canonical mechanism registry now records these capability boundaries while keeping deployment, runtime code identity, capacity, fee state, authorization and freshness as separate runtime obligations.
+
+Created:
+- 02_FLASH_LOAN_UNIVERSE/13_G02_TARGETED_PRIMARY_CAPABILITY_VERIFICATION_BATCH_008.md
+- 02_FLASH_LOAN_UNIVERSE/14_AUDIT_060_G02_TARGETED_CAPABILITY_BATCH_008.md
+
+G02 remains ACTIVE / NOT SATURATED.
+G03-G29 remain blocked.
+Live trading remains STOP.
