@@ -389,3 +389,13 @@ Correction commits:
 - `60f40c4312fda05b33773f2b1d01aaf3d55f0b59` — authoritative project execution verifier
 
 The verifier now requires successful data-plane execution for the exact current main SHA before a macro-cycle can be considered verified.
+
+
+## 22 September 2026 — G02 MACRO-BATCH 019
+
+- Exact-main data-plane-ci: SUCCESS.
+- Exact-main project-execution-verifier: SUCCESS.
+- CI caught a real provider-health regression: 13 tests failed after the network-scoped health refactor because one internal health lookup and quorum accounting still used the old identity contract. Targeted fixes passed on the corrected exact-main run.
+- Verifier also exposed GitHub Actions REST propagation lag; retry logic was added so temporary API visibility does not masquerade as completion.
+- Added fail-closed G02 V2 runtime materializer and manual runtime-observation workflow using external GH_PROVIDER_RUNTIME.
+- G02 remains ACTIVE / NOT SATURATED; G03-G29 BLOCKED; execution NONE; live trading STOP.
