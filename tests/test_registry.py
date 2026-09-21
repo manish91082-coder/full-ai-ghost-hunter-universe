@@ -1,5 +1,5 @@
 import pytest
-from src.ghost_hunter.registry import RegistryEntry, RegistrySnapshot, RegistryError, validate_snapshot, require_fresh_snapshot
+from ghost_hunter.registry import RegistryEntry, RegistrySnapshot, RegistryError, validate_snapshot, require_fresh_snapshot
 
 def entry(cid="network:1"):
     return RegistryEntry("universe", cid, "1", "v1", "fixture://evidence", "2099-01-01T00:00:00Z", "0"*64)
