@@ -62,7 +62,7 @@ Final target is bounded autonomy: the system self-decides inside verified safety
 
 ## Next Objective
 
-**PHASE 01 — GLOBAL BLOCKCHAIN UNIVERSE: evidence-backed discovery and verification.**
+**G02 — ATOMIC / FLASH LIQUIDITY UNIVERSE: runtime-observable deployment, market/pair, code, capacity, fee, authorization and freshness closure before any downstream gate.**
 
 
 ## UPDATE — PHASE 01 / DISCOVERY SOURCE AUDIT 001
