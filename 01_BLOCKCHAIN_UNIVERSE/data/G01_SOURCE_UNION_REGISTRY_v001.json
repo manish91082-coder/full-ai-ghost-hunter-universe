@@ -1244,6 +1244,141 @@
       "capability_state": "NOT_VERIFIED",
       "canonical_record_key": "neo-x-mainnet",
       "note": "Official Neo source states Neo X MainNet launched and is EVM-compatible; current chain ID 47763 is corroborated by Chainlink's official documentation surface. No flash/trading capability inferred."
+    },
+    {
+      "input_name": "ADI Network",
+      "normalized_name": "ADI Network",
+      "state": "NEW_CANDIDATE",
+      "identity_state": "VERIFIED_PRIMARY",
+      "mainnet_identifier": "eip155:36900",
+      "evidence": [
+        "https://docs.zksync.io/zksync-network/environment"
+      ],
+      "source_class": "S1_OFFICIAL_NETWORK_DOCUMENTATION",
+      "lifecycle": "mainnet",
+      "capability_state": "NOT_VERIFIED",
+      "canonical_record_key": "adi-network-mainnet",
+      "note": "Official ZKsync documentation currently lists this chain in the Elastic Network mainnet-only view. Identity/lifecycle promotion only; downstream capability and execution remain separate gates."
+    },
+    {
+      "input_name": "GRVT Mainnet",
+      "normalized_name": "GRVT Mainnet",
+      "state": "NEW_CANDIDATE",
+      "identity_state": "VERIFIED_PRIMARY",
+      "mainnet_identifier": "eip155:325",
+      "evidence": [
+        "https://docs.zksync.io/zksync-network/environment"
+      ],
+      "source_class": "S1_OFFICIAL_NETWORK_DOCUMENTATION",
+      "lifecycle": "mainnet",
+      "capability_state": "NOT_VERIFIED",
+      "canonical_record_key": "grvt-mainnet",
+      "note": "Official ZKsync documentation currently lists this chain in the Elastic Network mainnet-only view. Identity/lifecycle promotion only; downstream capability and execution remain separate gates."
+    },
+    {
+      "input_name": "Lens Chain",
+      "normalized_name": "Lens Chain Mainnet",
+      "state": "NEW_CANDIDATE",
+      "identity_state": "VERIFIED_PRIMARY",
+      "mainnet_identifier": "eip155:232",
+      "evidence": [
+        "https://docs.zksync.io/zksync-network/environment"
+      ],
+      "source_class": "S1_OFFICIAL_NETWORK_DOCUMENTATION",
+      "lifecycle": "mainnet",
+      "capability_state": "NOT_VERIFIED",
+      "canonical_record_key": "lens-chain-mainnet",
+      "note": "Official ZKsync documentation currently lists this chain in the Elastic Network mainnet-only view. Identity/lifecycle promotion only; downstream capability and execution remain separate gates."
+    },
+    {
+      "input_name": "Memento ZK Chain",
+      "normalized_name": "Memento ZK Chain Mainnet",
+      "state": "NEW_CANDIDATE",
+      "identity_state": "VERIFIED_PRIMARY",
+      "mainnet_identifier": "eip155:51888",
+      "evidence": [
+        "https://docs.zksync.io/zksync-network/environment"
+      ],
+      "source_class": "S1_OFFICIAL_NETWORK_DOCUMENTATION",
+      "lifecycle": "mainnet",
+      "capability_state": "NOT_VERIFIED",
+      "canonical_record_key": "memento-zk-mainnet",
+      "note": "Official ZKsync documentation currently lists this chain in the Elastic Network mainnet-only view. Identity/lifecycle promotion only; downstream capability and execution remain separate gates."
+    },
+    {
+      "input_name": "OpenZK Mainnet",
+      "normalized_name": "OpenZK Mainnet",
+      "state": "NEW_CANDIDATE",
+      "identity_state": "VERIFIED_PRIMARY",
+      "mainnet_identifier": "eip155:1345",
+      "evidence": [
+        "https://docs.zksync.io/zksync-network/environment"
+      ],
+      "source_class": "S1_OFFICIAL_NETWORK_DOCUMENTATION",
+      "lifecycle": "mainnet",
+      "capability_state": "NOT_VERIFIED",
+      "canonical_record_key": "openzk-mainnet",
+      "note": "Official ZKsync documentation currently lists this chain in the Elastic Network mainnet-only view. Identity/lifecycle promotion only; downstream capability and execution remain separate gates."
+    },
+    {
+      "input_name": "Sophon Mainnet",
+      "normalized_name": "Sophon Mainnet",
+      "state": "NEW_CANDIDATE",
+      "identity_state": "VERIFIED_PRIMARY",
+      "mainnet_identifier": "eip155:50104",
+      "evidence": [
+        "https://docs.zksync.io/zksync-network/environment"
+      ],
+      "source_class": "S1_OFFICIAL_NETWORK_DOCUMENTATION",
+      "lifecycle": "mainnet",
+      "capability_state": "NOT_VERIFIED",
+      "canonical_record_key": "sophon-mainnet",
+      "note": "Official ZKsync documentation currently lists this chain in the Elastic Network mainnet-only view. Identity/lifecycle promotion only; downstream capability and execution remain separate gates."
+    },
+    {
+      "input_name": "Zero Network",
+      "normalized_name": "Zero Network Mainnet",
+      "state": "NEW_CANDIDATE",
+      "identity_state": "VERIFIED_PRIMARY",
+      "mainnet_identifier": "eip155:543210",
+      "evidence": [
+        "https://docs.zksync.io/zksync-network/environment"
+      ],
+      "source_class": "S1_OFFICIAL_NETWORK_DOCUMENTATION",
+      "lifecycle": "mainnet",
+      "capability_state": "NOT_VERIFIED",
+      "canonical_record_key": "zero-network-mainnet",
+      "note": "Official ZKsync documentation currently lists this chain in the Elastic Network mainnet-only view. Identity/lifecycle promotion only; downstream capability and execution remain separate gates."
+    },
+    {
+      "input_name": "ZKcandy",
+      "normalized_name": "ZKcandy Mainnet",
+      "state": "NEW_CANDIDATE",
+      "identity_state": "VERIFIED_PRIMARY",
+      "mainnet_identifier": "eip155:320",
+      "evidence": [
+        "https://docs.zksync.io/zksync-network/environment"
+      ],
+      "source_class": "S1_OFFICIAL_NETWORK_DOCUMENTATION",
+      "lifecycle": "mainnet",
+      "capability_state": "NOT_VERIFIED",
+      "canonical_record_key": "zkcandy-mainnet",
+      "note": "Official ZKsync documentation currently lists this chain in the Elastic Network mainnet-only view. Identity/lifecycle promotion only; downstream capability and execution remain separate gates."
+    },
+    {
+      "input_name": "zkXPLA",
+      "normalized_name": "zkXPLA Mainnet",
+      "state": "NEW_CANDIDATE",
+      "identity_state": "VERIFIED_PRIMARY",
+      "mainnet_identifier": "eip155:375",
+      "evidence": [
+        "https://docs.zksync.io/zksync-network/environment"
+      ],
+      "source_class": "S1_OFFICIAL_NETWORK_DOCUMENTATION",
+      "lifecycle": "mainnet",
+      "capability_state": "NOT_VERIFIED",
+      "canonical_record_key": "zkxpla-mainnet",
+      "note": "Official ZKsync documentation currently lists this chain in the Elastic Network mainnet-only view. Identity/lifecycle promotion only; downstream capability and execution remain separate gates."
     }
   ],
   "normalization_rules": [
@@ -1261,19 +1396,19 @@
   "duplicate_policy": "semantic identity resolution before merge; one canonical record per canonical identity",
   "provenance_policy": "source evidence remains referenced per record; conflicting observations are preserved outside the canonical object",
   "last_materialized_update": "2026-09-21",
-  "record_count": 82,
+  "record_count": 91,
   "current_state_accounting": {
     "as_of": "2026-09-21",
-    "total_records": 82,
+    "total_records": 91,
     "state_counts": {
       "MATCH_EXISTING": 10,
-      "NEW_CANDIDATE": 72
+      "NEW_CANDIDATE": 81
     },
-    "canonical_record_key_count": 82,
+    "canonical_record_key_count": 91,
     "duplicate_canonical_record_key_count": 0,
     "note": "Current-state accounting computed from records[]; historical join-point metadata is separate.",
-    "controlling_batch": "G01_EXECUTION_PLANE_PRIMARY_VERIFICATION_BATCH_045",
-    "audit": "AUDIT_051_G01_EXECUTION_PLANE_PRIMARY_VERIFICATION"
+    "controlling_batch": "G01_ZKSYNC_ELASTIC_NETWORK_PRIMARY_VERIFICATION_BATCH_046",
+    "audit": "AUDIT_052_G01_ZKSYNC_ELASTIC_NETWORK_PRIMARY_VERIFICATION"
   },
-  "updated_by": "G01_EXECUTION_PLANE_PRIMARY_VERIFICATION_BATCH_045"
+  "updated_by": "G01_ZKSYNC_ELASTIC_NETWORK_PRIMARY_VERIFICATION_BATCH_046"
 }
