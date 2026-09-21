@@ -29,7 +29,7 @@ class DexChainObservation:
 
 
 def _is_dex_category(value: Any) -> bool:
-    return str(value or "").strip().lower() in {"dex", "dexes", "exchange", "amm", "orderbook"}
+    return str(value or "").strip().lower() in {"dex", "dexes", "dexs", "exchange", "amm", "orderbook"}
 
 
 def extract_defillama_dex_protocol_relationships(
