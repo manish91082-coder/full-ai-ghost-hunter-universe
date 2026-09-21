@@ -550,3 +550,16 @@ A V2 pair enumeration/state observation is one coherent snapshot only when all o
 Date: 21 September 2026
 
 A V2 pair enumeration/state observation is one coherent snapshot only when all observations participating in that logical snapshot come from the same provider and fall inside an accepted block-freshness window. Provider rotation may recover transport availability, but a rotated response must not silently join an in-flight snapshot. Factory-reported count, enumerated count, opening block and closing block are mandatory completeness metadata. Safety bounds fail closed rather than truncating. Pair runtime bytecode must be observed before pair state is treated as executable-market evidence.
+
+
+## DURABLE RULE — G02 BLOCK-PINNED MARKET OBSERVATION
+
+Date: 21 September 2026
+
+For V2-style factory enumeration and pair-state observation, all logical market reads must be pinned to the captured opening block. Using latest independently for count, pair identity, code, token or reserve reads can mix block states and is therefore prohibited for a coherent snapshot. The closing block is still required for freshness-window validation. Duplicate canonical pair identity fails closed.
+
+## DURABLE RULE — SILO DISCOVERY IS NOT AUTHORITY
+
+Date: 21 September 2026
+
+Silo V3 API/UI discovery is a candidate source only. Because Silo markets are permissionless, discovery must be followed by runtime deployment, code, market-structure, liquidity/configuration and freshness verification. API presence never grants execution eligibility.
