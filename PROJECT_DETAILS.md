@@ -525,3 +525,16 @@ The change remains observation-only. No transaction construction, signing or sub
 ## SECTION 51 — G02 V2 PAIR ENUMERATION / MACRO-BATCH 016
 
 A generic read-only V2-style pair enumeration contract now bridges factory deployment identities toward runtime market-state enumeration. It is deliberately external-data driven and freshness-bound. It does not authorize execution or declare QuickSwap/PancakeSwap pair universes saturated.
+
+
+## SECTION 52 — G02 V2 ENUMERATION CONSISTENCY / MACRO-BATCH 017
+
+Date: 21 September 2026
+
+The V2 enumeration boundary was tightened to preserve coherent provider/state snapshots. Factory enumeration now captures opening and closing blocks, requires the same provider throughout the logical observation, records factory-reported versus enumerated counts, and fails closed on safety-bound overflow or count mismatch.
+
+Pair state now observes runtime bytecode with eth_getCode and stores a SHA-256 evidence digest. This is a byte-level observation artifact, not a universal code-authenticity assertion.
+
+QuickSwap Polygon V2 and PancakeSwap BNB Smart Chain V2 factory/router identities are externalized into a machine-readable runtime input file. No authoritative factory identity is embedded in executable source.
+
+This batch adds no transaction construction, signing, submission or execution authority. G02 remains ACTIVE / NOT SATURATED.
