@@ -1044,3 +1044,25 @@ G01 remains ACTIVE / NOT SATURATED because material obligations remain. The next
 New control artifact: `00_GOVERNANCE/BOUNDED_SATURATION_EXIT_REGISTER_v1.0.md`
 
 G02-G29 remain BLOCKED. LIVE TRADING = STOP.
+
+## UPDATE - MACRO-BATCH 037 / COSMOS SEMANTIC RECONCILIATION QUEUE
+
+Date: 21 September 2026
+State: G01 ACTIVE / NOT SATURATED
+
+Added a machine-readable bounded reconciliation workflow:
+- scripts/reconcile_g01_cosmos.py
+- .github/workflows/g01-cosmos-semantic-reconciliation.yml
+- 01_BLOCKCHAIN_UNIVERSE/86_G01_COSMOS_SEMANTIC_RECONCILIATION_QUEUE_BATCH_037.md
+- 01_BLOCKCHAIN_UNIVERSE/87_AUDIT_043_G01_COSMOS_SEMANTIC_RECONCILIATION_QUEUE.md
+
+The workflow re-materializes the pinned Cosmos production source and classifies every production observation conservatively against the current canonical registry. It never promotes identity and never mutates the canonical registry.
+
+This is explicitly a bounded targeted saturation cycle, not a broad rediscovery sweep.
+
+Audit 043: PENDING CI OBSERVATION.
+G01 remains ACTIVE / NOT SATURATED.
+G02-G29 remain BLOCKED.
+LIVE TRADING = STOP.
+
+Next objective: observe the semantic queue artifact, audit its distribution, then select a minimal high-information primary-verification set and perform G01 exit review.
