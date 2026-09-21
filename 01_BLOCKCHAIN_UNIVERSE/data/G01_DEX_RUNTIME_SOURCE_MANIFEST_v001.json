@@ -58,5 +58,22 @@
     "lifecycle_resolution": "PENDING_PRIMARY_VERIFICATION",
     "authority": "DISCOVERY_ONLY",
     "live_execution_authorized": false
+  },
+  "last_reconciliation_targeted_cycle": {
+    "batch": "G01_DEX_NATIVE_DENOMINATOR_TARGETED_CYCLE_BATCH_041",
+    "audit": "AUDIT_047_G01_DEX_NATIVE_DENOMINATOR_TARGETED_CYCLE",
+    "as_of": "2026-09-21",
+    "labels_primary_verified": [
+      "Kava",
+      "Op_Bnb",
+      "Cardano"
+    ],
+    "labels_resolved_as_alias": [
+      "Klaytn"
+    ],
+    "canonical_added": 3,
+    "canonical_duplicate_added": 0,
+    "remaining_unique_labels": 419,
+    "full_semantic_denominator_closed": false
   }
 }
