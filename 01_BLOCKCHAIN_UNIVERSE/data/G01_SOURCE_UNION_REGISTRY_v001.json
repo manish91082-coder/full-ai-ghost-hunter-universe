@@ -717,6 +717,134 @@
       "lifecycle": "UNKNOWN",
       "capability_state": "NOT_VERIFIED",
       "note": "Observed as a chain on the current DeFiLlama DEX-by-chain surface. Chain identity/lifecycle and execution capability require primary verification."
+    },
+    {
+      "input_name": "Ethereum",
+      "normalized_name": "Ethereum",
+      "match": null,
+      "state": "NEW_CANDIDATE",
+      "identity_state": "VERIFIED_PRIMARY",
+      "mainnet_identifier": "eip155:1",
+      "evidence": [
+        "https://ethereum.org/developers/docs/networks/"
+      ],
+      "canonical_record_key": "eip155:1",
+      "source_class": "S1_OFFICIAL_NETWORK_DOCUMENTATION",
+      "lifecycle": "mainnet",
+      "capability_state": "NOT_VERIFIED",
+      "note": "Primary network identity/lifecycle verified in G01 Macro-Batch 032. Flash capability, executable venues, liquidity, routes and execution remain separate gates."
+    },
+    {
+      "input_name": "Binance",
+      "normalized_name": "BNB Smart Chain",
+      "match": null,
+      "state": "NEW_CANDIDATE",
+      "identity_state": "VERIFIED_PRIMARY",
+      "mainnet_identifier": "eip155:56",
+      "evidence": [
+        "https://docs.bnbchain.org/bnb-smart-chain/developers/wallet-configuration/"
+      ],
+      "canonical_record_key": "eip155:56",
+      "source_class": "S1_OFFICIAL_NETWORK_DOCUMENTATION",
+      "lifecycle": "mainnet",
+      "capability_state": "NOT_VERIFIED",
+      "note": "Primary network identity/lifecycle verified in G01 Macro-Batch 032. Flash capability, executable venues, liquidity, routes and execution remain separate gates."
+    },
+    {
+      "input_name": "Avalanche",
+      "normalized_name": "Avalanche C-Chain",
+      "match": null,
+      "state": "NEW_CANDIDATE",
+      "identity_state": "VERIFIED_PRIMARY",
+      "mainnet_identifier": "eip155:43114",
+      "evidence": [
+        "https://docs.avax.network/docs/primary-network"
+      ],
+      "canonical_record_key": "eip155:43114",
+      "source_class": "S1_OFFICIAL_NETWORK_DOCUMENTATION",
+      "lifecycle": "mainnet",
+      "capability_state": "NOT_VERIFIED",
+      "note": "Primary network identity/lifecycle verified in G01 Macro-Batch 032. Flash capability, executable venues, liquidity, routes and execution remain separate gates."
+    },
+    {
+      "input_name": "Polygon",
+      "normalized_name": "Polygon Mainnet",
+      "match": null,
+      "state": "NEW_CANDIDATE",
+      "identity_state": "VERIFIED_PRIMARY",
+      "mainnet_identifier": "eip155:137",
+      "evidence": [
+        "https://support.polygon.technology/support/solutions/articles/82000889434-how-to-add-polygon-mainnet-on-metamask-"
+      ],
+      "canonical_record_key": "eip155:137",
+      "source_class": "S1_OFFICIAL_NETWORK_DOCUMENTATION",
+      "lifecycle": "mainnet",
+      "capability_state": "NOT_VERIFIED",
+      "note": "Primary network identity/lifecycle verified in G01 Macro-Batch 032. Flash capability, executable venues, liquidity, routes and execution remain separate gates."
+    },
+    {
+      "input_name": "Base",
+      "normalized_name": "Base Mainnet",
+      "match": null,
+      "state": "NEW_CANDIDATE",
+      "identity_state": "VERIFIED_PRIMARY",
+      "mainnet_identifier": "eip155:8453",
+      "evidence": [
+        "https://docs.base.org/base-chain/api-reference/ethereum-json-rpc-api/eth_chainId"
+      ],
+      "canonical_record_key": "eip155:8453",
+      "source_class": "S1_OFFICIAL_NETWORK_DOCUMENTATION",
+      "lifecycle": "mainnet",
+      "capability_state": "NOT_VERIFIED",
+      "note": "Primary network identity/lifecycle verified in G01 Macro-Batch 032. Flash capability, executable venues, liquidity, routes and execution remain separate gates."
+    },
+    {
+      "input_name": "zkSync Era",
+      "normalized_name": "ZKsync Era Mainnet",
+      "match": null,
+      "state": "NEW_CANDIDATE",
+      "identity_state": "VERIFIED_PRIMARY",
+      "mainnet_identifier": "eip155:324",
+      "evidence": [
+        "https://docs.zksync.io/zksync-network/zksync-era/network-details"
+      ],
+      "canonical_record_key": "eip155:324",
+      "source_class": "S1_OFFICIAL_NETWORK_DOCUMENTATION",
+      "lifecycle": "mainnet",
+      "capability_state": "NOT_VERIFIED",
+      "note": "Primary network identity/lifecycle verified in G01 Macro-Batch 032. Flash capability, executable venues, liquidity, routes and execution remain separate gates."
+    },
+    {
+      "input_name": "Tron",
+      "normalized_name": "TRON Mainnet",
+      "match": null,
+      "state": "NEW_CANDIDATE",
+      "identity_state": "VERIFIED_PRIMARY",
+      "mainnet_identifier": "tron:728126428",
+      "evidence": [
+        "https://developers.tron.network/docs/architecture-overview"
+      ],
+      "canonical_record_key": "tron:728126428",
+      "source_class": "S1_OFFICIAL_NETWORK_DOCUMENTATION",
+      "lifecycle": "mainnet",
+      "capability_state": "NOT_VERIFIED",
+      "note": "Primary network identity/lifecycle verified in G01 Macro-Batch 032. Flash capability, executable venues, liquidity, routes and execution remain separate gates."
+    },
+    {
+      "input_name": "Solana",
+      "normalized_name": "Solana Mainnet",
+      "match": null,
+      "state": "NEW_CANDIDATE",
+      "identity_state": "VERIFIED_PRIMARY",
+      "mainnet_identifier": "solana:mainnet",
+      "evidence": [
+        "https://solana.com/docs/references/clusters"
+      ],
+      "canonical_record_key": "solana:mainnet",
+      "source_class": "S1_OFFICIAL_NETWORK_DOCUMENTATION",
+      "lifecycle": "mainnet",
+      "capability_state": "NOT_VERIFIED",
+      "note": "Primary network identity/lifecycle verified in G01 Macro-Batch 032. Flash capability, executable venues, liquidity, routes and execution remain separate gates."
     }
   ],
   "normalization_rules": [
@@ -734,19 +862,19 @@
   "duplicate_policy": "semantic identity resolution before merge; one canonical record per canonical identity",
   "provenance_policy": "source evidence remains referenced per record; conflicting observations are preserved outside the canonical object",
   "last_materialized_update": "2026-09-21",
-  "record_count": 49,
+  "record_count": 57,
   "current_state_accounting": {
     "as_of": "2026-09-21",
-    "total_records": 49,
+    "total_records": 57,
     "state_counts": {
       "MATCH_EXISTING": 10,
-      "NEW_CANDIDATE": 39
+      "NEW_CANDIDATE": 47
     },
-    "canonical_record_key_count": 49,
+    "canonical_record_key_count": 57,
     "duplicate_canonical_record_key_count": 0,
     "note": "Current-state accounting is computed from records[]. The field confirmed_matches_against_current_seed_or_morpho_reconciliation=36 is preserved as historical join-point metadata and is not the current MATCH_EXISTING count.",
-    "controlling_batch": "G01_CURRENT_STATE_CONSISTENCY_BATCH_029",
-    "audit": "AUDIT_035_G01_CURRENT_STATE_CONSISTENCY"
+    "controlling_batch": "G01_PRIMARY_IDENTITY_VERIFICATION_BATCH_032",
+    "audit": "AUDIT_038_G01_PRIMARY_IDENTITY_VERIFICATION"
   },
-  "updated_by": "G01_CURRENT_STATE_CONSISTENCY_BATCH_029"
+  "updated_by": "G01_PRIMARY_IDENTITY_VERIFICATION_BATCH_032"
 }
