@@ -162,3 +162,15 @@ Normalization result at current join point: 21 input records reviewed; 10 confir
 Identity/lifecycle verification was materially expanded, while unresolved identifiers and lower-evidence records remain partial/provisional. DEX-derived and native-ecosystem registry unions are still required before the G01 denominator can freeze.
 
 Current state remains: G01 ACTIVE / NOT SATURATED; G02-G28 blocked; G29 active control; live trading STOP.
+## G01 UPDATE — MACRO-BATCH 020
+
+Date: 21 September 2026
+
+Native ecosystem source-surface expansion accepted.
+- Cosmos Chain Registry current root inspection: 290 entries; 266 named top-level directories after filtering internal/dot directories.
+- _non-cosmos source surface confirmed.
+- Solana Mainnet/Testnet/Devnet lifecycle semantics captured.
+- TRON Mainnet/Shasta/Nile lifecycle and chain IDs captured.
+- Structured mainnet examples directly inspected: Osmosis, Neutron, dYdX.
+
+G01 remains ACTIVE / NOT SATURATED. Full native extraction, DEX-derived union, lifecycle/exclusion reconciliation and final deduplicated denominator remain open.
