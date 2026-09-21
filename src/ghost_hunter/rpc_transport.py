@@ -102,7 +102,7 @@ class RpcTransport:
                                                    method, decoded["result"]))
                 self.pool.record_success(provider.provider_id)
             except Exception as exc:
-                self.pool.record_failure(provider.provider_id, now_tick=now_tick,
+                self.pool.record_failure(provider.provider_id, network_id, now_tick=now_tick,
                                          error=str(exc))
         if len(observations) < quorum:
             raise RegistryError("quorum observation unavailable")
