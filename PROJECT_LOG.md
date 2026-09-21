@@ -208,3 +208,9 @@ G01 bounded saturation exit completed. Independent discovery families were cross
 ## 2026-09-21 - G02 PRIMARY MECHANISM DISCOVERY BATCH 001
 
 G02 activated after G01 bounded freeze. Created the machine-readable Atomic Liquidity Mechanism Registry with 6 primary-verified primitive families and 3 discovery candidates. Audit 056 = PARTIAL PASS. Fees/capacity/deployments remain dynamic verification gates. G02 ACTIVE; G03-G29 BLOCKED; live trading STOP.
+
+## 2026-09-21 — G02 DEPLOYMENT × NETWORK + ADVERSARIAL MACRO-CYCLE
+
+G02 deployment/state substrate expanded without restarting G01 or duplicating the canonical Morpho 50-row evidence. Aave V3 current named deployment surface, Project 0 Solana surface, Uniswap V3 pool flash, Sky/Dai two flash-mint paths, Venus, Radiant and Balancer were integrated with explicit dynamic/pending runtime state. ERC-3156 implementation discovery, Curve flash-loan/lending surface and Aave V4 were retained as bounded adversarial discovery dimensions.
+
+Audit 057 = PARTIAL PASS / CONTINUE. Exact addresses, bytecode hashes, live capacity/fee, enablement/authorization and adversarial denominator closure remain open. G02 ACTIVE; G03-G29 BLOCKED; LIVE TRADING STOP.
