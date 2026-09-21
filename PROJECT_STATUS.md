@@ -1222,3 +1222,17 @@ Neo N3 was explicitly kept distinct from Neo X, and IOTA was not promoted withou
 
 ### Next Objective
 Continue bounded verification of remaining material execution-plane and alias candidates, then close the native denominator and perform the adversarial G01 exit review.
+
+
+## UPDATE — G01 BATCH 045 / EXECUTION-PLANE PRIMARY VERIFICATION
+
+Date: 21 September 2026  
+State: 🟢 PARTIAL PRIMARY VERIFICATION PASS / G01 ACTIVE
+
+Verified seven execution-plane candidates from official/primary evidence: **Cronos zkEVM (388), Immutable zkEVM (13371), IOTA EVM (8822), Ontology MainNet EVM (58), Polygon zkEVM (1101), EOS EVM (17777), Neo X MainNet (47763).**
+
+Astar zkEVM was deliberately not promoted as a current independent canonical network because official Astar material documents its transition toward Soneium. citeturn0search6turn0search9
+
+Canonical records: **82**, unique keys: **82**, duplicates: **0**. G01 remains ACTIVE, G02-G29 remain BLOCKED, and live trading remains STOP.
+
+Next objective: bounded verification of the remaining material queue, then adversarial denominator closure and formal G01 exit review.
