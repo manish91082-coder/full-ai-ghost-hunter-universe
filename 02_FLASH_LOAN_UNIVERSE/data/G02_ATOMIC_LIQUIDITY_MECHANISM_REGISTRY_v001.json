@@ -282,7 +282,20 @@
         "https://docs.silo.finance/docs/developers/dev-tutorials/silo-config/",
         "https://docs.silo.finance/docs/developers/resources/deployments/"
       ],
-      "source_class": "S1_PRIMARY_DISCOVERY"
+      "source_class": "S1_PRIMARY_DISCOVERY",
+      "primary_source_capability_state": "VERIFIED_DOCUMENTED_FLASH_LOAN_PRIMITIVE",
+      "primary_source_atomicity_state": "DOCUMENTED_SAME_TRANSACTION_REPAYMENT",
+      "primary_source_fee_state": "FEE_IS_PART_OF_FLASHLOAN_SETTLEMENT; CURRENT_MARKET_VALUE_RUNTIME_REQUIRED",
+      "runtime_obligations": [
+        "FACTORY/CORE DEPLOYMENT ENUMERATION",
+        "CURRENT SILO MARKET ENUMERATION",
+        "SILO0/SILO1 CODE IDENTITY",
+        "FLASHLOAN FEE",
+        "BORROWABLE LIQUIDITY",
+        "HOOK RECEIVER/CALLBACK PATH",
+        "CURRENT BLOCK FRESHNESS"
+      ],
+      "deployment_denominator_note": "Silo markets are permissionless to deploy; protocol deployment enumeration is therefore not sufficient. Market-level enumeration is required."
     },
     {
       "id": "ALU-0017",
@@ -308,7 +321,7 @@
       "execution_model": "EVM",
       "verification_state": "DISCOVERY_CANDIDATE",
       "atomicity": "SAME_TRANSACTION_REPAYMENT_REQUIRED",
-      "callback": "PAIR_FLASH_SWAP_CALLBACK_PATH_TO_VERIFY",
+      "callback": "uniswapV2Call_STYLE_PAIR_CALLBACK_TO_VERIFY_FOR_QUICKSWAP_CURRENT_INTERFACE",
       "repayment": "CORRESPONDING_PAIR_ASSET_OR_WITHDRAWN_ASSET_PLUS_FEE",
       "fee_state": "DYNAMIC_PAIR_STATE",
       "capacity_state": "DYNAMIC_PAIR_RESERVES",
@@ -316,7 +329,19 @@
       "evidence": [
         "https://docs.quickswap.exchange/technical-reference/core-concepts/flash-swaps"
       ],
-      "source_class": "S1_PRIMARY_DISCOVERY"
+      "source_class": "S1_PRIMARY_DISCOVERY",
+      "primary_source_capability_state": "VERIFIED_DOCUMENTED_FLASH_SWAP_PRIMITIVE",
+      "primary_source_atomicity_state": "VERIFIED_DOCUMENTED_ATOMIC_CALLBACK_REPAYMENT",
+      "primary_source_fee_state": "DOCUMENTED_EFFECTIVE_FEE; CURRENT_PAIR_CONFIGURATION_RUNTIME_REQUIRED",
+      "runtime_obligations": [
+        "CURRENT_FACTORY/NETWORK DEPLOYMENTS",
+        "PAIR UNIVERSE",
+        "TOKEN RESERVES",
+        "PAIR CODE IDENTITY",
+        "CURRENT FEE RULE",
+        "CALLBACK AUTHENTICITY",
+        "BLOCK FRESHNESS"
+      ]
     },
     {
       "id": "ALU-0019",
@@ -379,7 +404,7 @@
     "discovery_family": 1
   },
   "downstream_rule": "Mechanism evidence never authorizes execution. Deployment, current state, liquidity-at-size, route, simulation, risk and economics remain separate gates.",
-  "revision": 3,
+  "revision": 4,
   "execution_authority": "NONE",
   "adversarial_discovery_batch": "G02_ADVERSARIAL_DENOMINATOR_BATCH_007"
 }
