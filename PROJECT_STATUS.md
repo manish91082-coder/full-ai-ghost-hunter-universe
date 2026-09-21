@@ -1003,3 +1003,27 @@ LIVE TRADING = STOP.
 
 ### Next Macro Objective
 Complete observation of run 35574144469, audit the materialization evidence, then reconcile production observations against the current 57-record canonical source-union without duplicate growth.
+
+## UPDATE - MACRO-BATCH 036 / COSMOS MATERIALIZATION AUDIT
+
+Date: 21 September 2026
+
+Cosmos CI run 35574144469 completed SUCCESS and artifact 10627387890 was independently retrieved.
+
+Observed:
+- 439 chain.json paths
+- 439 observations loaded
+- 225 production records
+- 214 non-production records
+- 0 fetch errors
+- production JSONL SHA-256: dca8c930598943f55a99d142a4f813dcb706bf3256938a672147b26f746f0064
+
+Reconciliation against the current 57-record G01 source-union found 4 direct normalized-name overlaps: Cronos, Injective, Sei and TAC.
+
+The remaining 221 production observations are explicitly treated as a semantic reconciliation queue, NOT as 221 confirmed unique networks. No blind canonical append was performed.
+
+Audit 042: PASS for Cosmos materialization; PARTIAL for G01 saturation.
+
+G01 remains ACTIVE / NOT SATURATED. G02-G29 remain BLOCKED. LIVE TRADING = STOP.
+
+Next: machine-readable semantic reconciliation queue for the 221 Cosmos production observations.
