@@ -1,0 +1,172 @@
+{
+  "schema_version": "g02.atomic.liquidity.registry.v1",
+  "as_of": "2026-09-21",
+  "canonical_role": "CURRENT_MATERIALIZED_STATE",
+  "authority": "G02_PRIMARY_MECHANISM_DISCOVERY",
+  "execution_rule": "Research registry is externalized data. Runtime execution must read verified current registry/state and never hardcode authoritative deployment/fee/capacity data.",
+  "records": [
+    {
+      "id": "ALU-0001",
+      "protocol": "Aave V3",
+      "mechanism": "FLASH_LOAN",
+      "execution_model": "EVM",
+      "verification_state": "VERIFIED_PRIMITIVE",
+      "atomicity": "same_transaction",
+      "callback": "receiver_executeOperation",
+      "repayment": "premium_plus_principal_must_be_repaid_or_transaction_fails",
+      "fee_state": "DYNAMIC_PROTOCOL_CONFIG",
+      "capacity_state": "DYNAMIC_RESERVE_LIQUIDITY",
+      "deployment_state": "MULTI_NETWORK_REQUIRES_EXHAUSTIVE_ENUMERATION",
+      "evidence": [
+        "https://aave.com/help/aave-101/introduction-to-aave",
+        "https://governance-v2.aave.com/governance/proposal/213/"
+      ],
+      "source_class": "S1_PRIMARY"
+    },
+    {
+      "id": "ALU-0002",
+      "protocol": "Aave GHO",
+      "mechanism": "FLASH_MINT",
+      "execution_model": "EVM",
+      "verification_state": "VERIFIED_PRIMITIVE",
+      "atomicity": "same_transaction",
+      "callback": "facilitator_specific_flashmint_path",
+      "repayment": "minted_gho_repaid_in_same_transaction",
+      "fee_state": "DYNAMIC_FACILITATOR_CONFIG",
+      "capacity_state": "DYNAMIC_BUCKET_CAPACITY",
+      "deployment_state": "AAVE_GHO_ETHEREUM_PRIMITIVE",
+      "evidence": [
+        "https://aave.com/help/gho-stablecoin/facilitators",
+        "https://governance-v2.aave.com/governance/proposal/268/"
+      ],
+      "source_class": "S1_PRIMARY"
+    },
+    {
+      "id": "ALU-0003",
+      "protocol": "Morpho Blue",
+      "mechanism": "FLASH_LOAN",
+      "execution_model": "EVM",
+      "verification_state": "VERIFIED_PRIMITIVE",
+      "atomicity": "same_transaction",
+      "callback": "onMorphoFlashLoan",
+      "repayment": "morpho_pulls_approved_assets_before_transaction_completion",
+      "fee_state": "MUST_BE_READ_FROM_CURRENT_ONCHAIN_OR_PROTOCOL_STATE",
+      "capacity_state": "DYNAMIC_TOKEN_BALANCE",
+      "deployment_state": "MULTI_CHAIN_REQUIRES_REGISTRY_JOIN",
+      "evidence": [
+        "https://docs.morpho.org/learn/concepts/flashloans/"
+      ],
+      "source_class": "S1_PRIMARY"
+    },
+    {
+      "id": "ALU-0004",
+      "protocol": "Uniswap V2",
+      "mechanism": "FLASH_SWAP",
+      "execution_model": "EVM",
+      "verification_state": "VERIFIED_PRIMITIVE",
+      "atomicity": "same_transaction",
+      "callback": "uniswapV2Call",
+      "repayment": "amount_owed_must_be_paid_or_invariant_not_satisfied",
+      "fee_state": "ORIGINAL_DESIGN_30BP_SWAP_FEE_REQUIRES_CURRENT_STATE_CHECK",
+      "capacity_state": "DYNAMIC_PAIR_RESERVES",
+      "deployment_state": "MULTI_NETWORK_REQUIRES_FACTORY_ENUMERATION",
+      "evidence": [
+        "https://docs.uniswap.org/whitepaper.pdf"
+      ],
+      "source_class": "S1_PRIMARY"
+    },
+    {
+      "id": "ALU-0005",
+      "protocol": "Euler Vault Kit",
+      "mechanism": "FLASH_LOAN",
+      "execution_model": "EVM",
+      "verification_state": "VERIFIED_PRIMITIVE",
+      "atomicity": "same_transaction",
+      "callback": "vault_flashloan_callback_path",
+      "repayment": "loan_must_be_settled_before_completion",
+      "fee_state": "HOOK_DEPENDENT",
+      "capacity_state": "DYNAMIC_VAULT_LIQUIDITY_AND_HOOK_RULES",
+      "deployment_state": "MULTI_NETWORK_REQUIRES_DEPLOYMENT_ENUMERATION",
+      "evidence": [
+        "https://docs.euler.finance/euler-vault-kit-white-paper/"
+      ],
+      "source_class": "S1_PRIMARY"
+    },
+    {
+      "id": "ALU-0006",
+      "protocol": "Project 0 / marginfi",
+      "mechanism": "FLASH_LOAN",
+      "execution_model": "Solana",
+      "verification_state": "VERIFIED_PRIMITIVE",
+      "atomicity": "same_transaction",
+      "callback": "instruction_bracket_not_cpi",
+      "repayment": "end_instruction_runs_final_health_check_and_failure_reverts_transaction",
+      "fee_state": "CURRENTLY_ZERO_PER_OFFICIAL_DOC",
+      "capacity_state": "DYNAMIC_BANK_LIQUIDITY",
+      "deployment_state": "SOLANA_MAINNET_PROGRAM",
+      "evidence": [
+        "https://docs.marginfi.com/guides/flashloans",
+        "https://docs.marginfi.com/protocol-overview/fees",
+        "https://docs.marginfi.com/protocol-overview/program-addresses"
+      ],
+      "source_class": "S1_PRIMARY"
+    },
+    {
+      "id": "ALU-0007",
+      "protocol": "Balancer",
+      "mechanism": "VAULT_FLASH_LOAN",
+      "execution_model": "EVM",
+      "verification_state": "DISCOVERY_CANDIDATE",
+      "atomicity": "TO_VERIFY",
+      "callback": "TO_VERIFY",
+      "repayment": "TO_VERIFY",
+      "fee_state": "TO_VERIFY",
+      "capacity_state": "DYNAMIC_VAULT_LIQUIDITY",
+      "deployment_state": "MULTI_NETWORK_REGISTRY_REQUIRED",
+      "evidence": [
+        "https://docs.balancer.fi/"
+      ],
+      "source_class": "S1_PRIMARY_DISCOVERY"
+    },
+    {
+      "id": "ALU-0008",
+      "protocol": "Venus",
+      "mechanism": "FLASH_LOAN",
+      "execution_model": "EVM",
+      "verification_state": "DISCOVERY_CANDIDATE",
+      "atomicity": "TO_VERIFY",
+      "callback": "TO_VERIFY",
+      "repayment": "TO_VERIFY",
+      "fee_state": "TO_VERIFY",
+      "capacity_state": "DYNAMIC",
+      "deployment_state": "MULTI_NETWORK_REQUIRES_PRIMARY_ENUMERATION",
+      "evidence": [
+        "https://docs-v4.venus.io/"
+      ],
+      "source_class": "S1_PRIMARY_DISCOVERY"
+    },
+    {
+      "id": "ALU-0009",
+      "protocol": "Radiant",
+      "mechanism": "FLASH_LOAN",
+      "execution_model": "EVM",
+      "verification_state": "DISCOVERY_CANDIDATE",
+      "atomicity": "TO_VERIFY",
+      "callback": "TO_VERIFY",
+      "repayment": "TO_VERIFY",
+      "fee_state": "TO_VERIFY",
+      "capacity_state": "DYNAMIC",
+      "deployment_state": "V3_ONLY_CURRENT_VERIFICATION_REQUIRED",
+      "evidence": [
+        "https://docs.radiant.capital/"
+      ],
+      "source_class": "S1_PRIMARY_DISCOVERY"
+    }
+  ],
+  "counts": {
+    "total": 9,
+    "verified_primitive": 6,
+    "discovery_candidate": 3
+  },
+  "downstream_rule": "Verification of primitive semantics does not establish deployment availability, executable route, profitability or authorization."
+}
