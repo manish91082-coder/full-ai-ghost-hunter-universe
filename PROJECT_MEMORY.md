@@ -515,3 +515,14 @@ The runtime provider pool now has a read-only JSON-RPC transport boundary. Provi
 The transport is observation-only and must never construct, sign or submit transactions. A successful RPC response is not automatically current truth: block/state freshness, provider identity consistency and post-switch revalidation remain mandatory before the observation can become G02 runtime state.
 
 Live RPC connectivity and freshness remain pending. Live trading remains STOP.
+
+
+## DURABLE RULE — G02 FRESHNESS + POST-SWITCH REVALIDATION
+
+Date: 21 September 2026
+
+Provider rotation is not state continuity. A runtime observation must satisfy an explicit freshness policy and same-network/same-request revalidation before it can become G02 runtime truth. Provider disagreement or stale state fails closed.
+
+Freshness is a safety predicate only. It does not authorize execution and does not establish liquidity, profitability, code identity or permissions.
+
+Live trading remains STOP.
