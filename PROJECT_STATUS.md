@@ -563,3 +563,19 @@ Primary identity verification materially advanced for Fuel Ignition, EDU Chain, 
 Next: complete DEX/native-registry source union, identity/lifecycle reconciliation, exclusions, freshness and the deduplicated G01 discovery denominator.
 
 Live trading remains STOP.
+## UPDATE — G01 MACRO-BATCH 020 / NATIVE ECOSYSTEM SOURCE SURFACES
+
+Date: 21 September 2026
+State: 🟢 NATIVE SOURCE-SURFACE EXPANSION ACCEPTED / G01 NOT SATURATED
+
+Created:
+- 01_BLOCKCHAIN_UNIVERSE/data/G01_NATIVE_ECOSYSTEM_SOURCE_SURFACES_v001.json
+- 01_BLOCKCHAIN_UNIVERSE/52_G01_NATIVE_ECOSYSTEM_SOURCE_SURFACES_BATCH_020.md
+- 01_BLOCKCHAIN_UNIVERSE/53_AUDIT_026_G01_NATIVE_ECOSYSTEM_SOURCE_SURFACES.md
+
+Current Cosmos Chain Registry inspection exposes 290 root entries and 266 named top-level directories after excluding internal underscore directories and dot-prefixed entries. This is a discovery-source surface count, not a canonical production-chain count. The same registry exposes a _non-cosmos surface. citeturn0search1
+
+Solana and TRON production/test identities were explicitly normalized. Solana Mainnet is production while Devnet/Testnet are test clusters. TRON Mainnet is chain ID 728126428 while Shasta/Nile are testnets. citeturn0search0turn1search1
+
+Next: full production extraction from native registries, source-union deduplication, DEX-derived network union, lifecycle/exclusion reconciliation and final G01 denominator.
+Live trading remains STOP.
