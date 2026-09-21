@@ -1,6 +1,14 @@
-"""Generic read-only V2-style factory pair enumeration."""
+"""Generic read-only V2-style factory pair enumeration.
+
+This boundary is observation-only. Runtime factory/network/provider data must
+arrive from external configuration. No transaction construction, signing, or
+submission is performed here.
+"""
 from __future__ import annotations
+
+import hashlib
 from dataclasses import dataclass
+
 from .registry import RegistryError
 from .rpc_transport import RpcObservation, RpcTransport
 from .runtime_freshness import FreshnessPolicy, parse_hex_block, validate_block_numbers
@@ -10,6 +18,9 @@ ALL_PAIRS_SELECTOR = "0x1e3dd18b"
 GET_RESERVES_SELECTOR = "0x0902f1ac"
 TOKEN0_SELECTOR = "0x0dfe1681"
 TOKEN1_SELECTOR = "0xd21220a7"
+GET_CODE_METHOD = "eth_getCode"
+BLOCK_METHOD = "eth_blockNumber"
+CALL_METHOD = "eth_call"
 
 @dataclass(frozen=True)
 class PairDiscovery:
@@ -28,6 +39,17 @@ class PairState:
     reserve0: int
     reserve1: int
     observed_block: int
+    provider_id: str
+    bytecode_sha256: str
+
+@dataclass(frozen=True)
+class EnumerationCompleteness:
+    network_id: str
+    factory: str
+    factory_reported_count: int
+    enumerated_count: int
+    start_block: int
+    end_block: int
     provider_id: str
 
 def _word(value: str) -> str:
@@ -50,54 +72,109 @@ def _index_calldata(selector: str, index: int) -> str:
         raise RegistryError("pair index cannot be negative")
     return selector + format(index, "064x")
 
+def _bytecode_sha256(value: str) -> str:
+    if not isinstance(value, str) or not value.startswith("0x"):
+        raise RegistryError("RPC bytecode hex result required")
+    raw = value[2:]
+    if len(raw) % 2:
+        raise RegistryError("invalid bytecode hex encoding")
+    if not raw:
+        raise RegistryError("pair address has no runtime bytecode")
+    try:
+        payload = bytes.fromhex(raw)
+    except ValueError as exc:
+        raise RegistryError("invalid bytecode hex encoding") from exc
+    return hashlib.sha256(payload).hexdigest()
+
 class V2PairEnumerator:
     def __init__(self, transport: RpcTransport, freshness: FreshnessPolicy) -> None:
         self.transport = transport
         self.freshness = freshness
+        self._last_completeness: EnumerationCompleteness | None = None
+
+    @property
+    def last_completeness(self) -> EnumerationCompleteness | None:
+        return self._last_completeness
 
     def pair_count(self, network_id: str, factory: str) -> RpcObservation:
         if not factory.startswith("0x") or len(factory) != 42:
             raise RegistryError("invalid factory address")
-        return self.transport.call(network_id, "eth_call",
-            [{"to": factory, "data": ALL_PAIRS_LENGTH_SELECTOR}, "latest"])
+        return self.transport.call(
+            network_id, CALL_METHOD,
+            [{"to": factory, "data": ALL_PAIRS_LENGTH_SELECTOR}, "latest"],
+        )
 
     def enumerate_pairs(self, network_id: str, factory: str, *, max_pairs: int) -> list[PairDiscovery]:
         if max_pairs < 0:
             raise RegistryError("max_pairs must be non-negative")
+        start = self.transport.call(network_id, BLOCK_METHOD)
         count_obs = self.pair_count(network_id, factory)
         count = _uint(count_obs.result)
         if count > max_pairs:
             raise RegistryError("pair universe exceeds configured safety bound")
-        block_obs = self.transport.call(network_id, "eth_blockNumber")
-        block = parse_hex_block(block_obs.result)
-        validate_block_numbers(block, block, self.freshness)
-        result = []
+        if count_obs.provider_id != start.provider_id:
+            raise RegistryError("provider changed during enumeration preflight")
+
+        start_block = parse_hex_block(start.result)
+        result: list[PairDiscovery] = []
         for i in range(count):
-            obs = self.transport.call(network_id, "eth_call",
-                [{"to": factory, "data": _index_calldata(ALL_PAIRS_SELECTOR, i)}, "latest"])
-            result.append(PairDiscovery(network_id, factory, i, _address(obs.result),
-                                        obs.provider_id, block))
+            obs = self.transport.call(
+                network_id, CALL_METHOD,
+                [{"to": factory, "data": _index_calldata(ALL_PAIRS_SELECTOR, i)}, "latest"],
+            )
+            if obs.provider_id != start.provider_id:
+                raise RegistryError("provider changed during pair enumeration")
+            result.append(PairDiscovery(
+                network_id, factory, i, _address(obs.result),
+                obs.provider_id, start_block,
+            ))
+
+        end = self.transport.call(network_id, BLOCK_METHOD)
+        if end.provider_id != start.provider_id:
+            raise RegistryError("provider changed during enumeration postflight")
+        end_block = parse_hex_block(end.result)
+        if len(result) != count:
+            raise RegistryError("pair enumeration count mismatch")
+        validate_block_numbers(start_block, end_block, self.freshness)
+
+        self._last_completeness = EnumerationCompleteness(
+            network_id, factory, count, len(result),
+            start_block, end_block, start.provider_id,
+        )
         return result
 
     def read_pair_state(self, network_id: str, pair: str) -> PairState:
         if not pair.startswith("0x") or len(pair) != 42:
             raise RegistryError("invalid pair address")
-        before = self.transport.call(network_id, "eth_blockNumber")
-        t0 = self.transport.call(network_id, "eth_call",
-            [{"to": pair, "data": TOKEN0_SELECTOR}, "latest"])
-        t1 = self.transport.call(network_id, "eth_call",
-            [{"to": pair, "data": TOKEN1_SELECTOR}, "latest"])
-        reserves = self.transport.call(network_id, "eth_call",
-            [{"to": pair, "data": GET_RESERVES_SELECTOR}, "latest"])
-        after = self.transport.call(network_id, "eth_blockNumber")
+        before = self.transport.call(network_id, BLOCK_METHOD)
+        code = self.transport.call(network_id, GET_CODE_METHOD, [pair, "latest"])
+        t0 = self.transport.call(
+            network_id, CALL_METHOD, [{"to": pair, "data": TOKEN0_SELECTOR}, "latest"]
+        )
+        t1 = self.transport.call(
+            network_id, CALL_METHOD, [{"to": pair, "data": TOKEN1_SELECTOR}, "latest"]
+        )
+        reserves = self.transport.call(
+            network_id, CALL_METHOD, [{"to": pair, "data": GET_RESERVES_SELECTOR}, "latest"]
+        )
+        after = self.transport.call(network_id, BLOCK_METHOD)
+
+        observations = (code, t0, t1, reserves, after)
+        if any(obs.provider_id != before.provider_id for obs in observations):
+            raise RegistryError("provider changed during pair-state observation")
+
         before_block = parse_hex_block(before.result)
         after_block = parse_hex_block(after.result)
         if after_block < before_block:
             raise RegistryError("block number moved backwards")
         validate_block_numbers(before_block, after_block, self.freshness)
+
         words = _word(reserves.result)
         if len(words) < 128:
             raise RegistryError("invalid getReserves ABI result")
-        return PairState(pair, _address(t0.result), _address(t1.result),
-                         int(words[:64], 16), int(words[64:128], 16),
-                         after_block, reserves.provider_id)
+
+        return PairState(
+            pair, _address(t0.result), _address(t1.result),
+            int(words[:64], 16), int(words[64:128], 16),
+            after_block, before.provider_id, _bytecode_sha256(code.result),
+        )
