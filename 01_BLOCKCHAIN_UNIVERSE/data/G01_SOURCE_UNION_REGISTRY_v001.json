@@ -860,6 +860,36 @@
       "lifecycle": "mainnet",
       "capability_state": "NOT_VERIFIED",
       "note": "Primary network identity/lifecycle verified in G01 Macro-Batch 032. Flash capability, executable venues, liquidity, routes and execution remain separate gates."
+    },
+    {
+      "input_name": "Cosmos Hub",
+      "normalized_name": "Cosmos Hub",
+      "match": null,
+      "state": "NEW_CANDIDATE",
+      "identity_state": "PRIMARY_VERIFIED",
+      "mainnet_identifier": "cosmoshub-4",
+      "evidence": [
+        "https://github.com/cosmos/chain-registry/tree/master/cosmoshub",
+        "https://hub.cosmos.network/"
+      ],
+      "canonical_record_key": "cosmos-hub",
+      "lifecycle": "mainnet",
+      "note": "Promoted from official Cosmos Chain Registry production observation. Native chain_id preserved; no EIP-155 coercion."
+    },
+    {
+      "input_name": "XRPL EVM",
+      "normalized_name": "XRPL EVM",
+      "match": null,
+      "state": "NEW_CANDIDATE",
+      "identity_state": "PRIMARY_VERIFIED",
+      "mainnet_identifier": "xrplevm_1440000-1",
+      "evidence": [
+        "https://docs.xrplevm.org/pages/operators/resources/networks",
+        "https://docs.xrplevm.org/pages/operators/getting-started/join-the-xrplevm"
+      ],
+      "canonical_record_key": "xrpl-evm",
+      "lifecycle": "mainnet",
+      "note": "Primary XRPL EVM documentation identifies xrplevm_1440000-1 as Mainnet. Native chain identity preserved; EVM numeric chain ID is execution metadata, not substituted for native identity."
     }
   ],
   "normalization_rules": [
