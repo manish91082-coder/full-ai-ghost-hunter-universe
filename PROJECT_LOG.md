@@ -412,3 +412,47 @@ Created:
 - 45_AUDIT_022_DYNAMIC_EXECUTION_CONFIG.md
 
 Live execution remains STOP.
+
+## LOG-0020 — Macro-Batch 017 Dynamic Registry Interface
+
+Date: 21 September 2026
+
+### What changed
+Implemented the first code-level dynamic registry boundary.
+
+Created:
+- src/ghost_hunter/registry.py
+- tests/test_registry.py
+- 01_BLOCKCHAIN_UNIVERSE/46_MACRO_BATCH_017_DYNAMIC_REGISTRY_INTERFACE_AND_REPLAY.md
+- 01_BLOCKCHAIN_UNIVERSE/47_AUDIT_023_DYNAMIC_REGISTRY_INTERFACE.md
+
+### Why
+The previously locked dynamic-execution invariant needed an executable schema/validation boundary so future runtime data can replace authoritative universe inputs without source-code modification.
+
+### Validation
+The new contract validates:
+- canonical identity;
+- network identity;
+- provenance;
+- version;
+- SHA-256 manifest/payload identity;
+- lifecycle state;
+- duplicate identity;
+- authorized registry version.
+
+A source-level scan test rejects embedded RPC URLs and known execution-universe constants in the registry module.
+
+### Audit
+Macro-Batch 017 narrow objective: ACCEPTED.
+
+Broader execution readiness remains incomplete. Runtime loader, signed manifest verification, dynamic providers, on-chain collectors, route graph, deterministic simulation, economics, security and execution authorization remain pending.
+
+### Fresh evidence
+Morpho documentation currently separates cursor-paginated market discovery from dynamic market state and liquidity, with indexed-block metadata, and explicitly recommends fallback mechanisms because its API has no SLA. citeturn0search1turn0search2turn0search3
+
+web3.py documents runtime provider configuration and HTTP/WebSocket/IPC provider classes. citeturn0search0
+
+### Decision
+Proceed to Macro-Batch 018: runtime-backed registry loader + signed/versioned manifest verification + provider registry adapter + replay substitution test.
+
+Live trading remains STOP.
