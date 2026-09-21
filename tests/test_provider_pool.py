@@ -1,8 +1,8 @@
 import pytest
 
-from src.ghost_hunter.registry import RegistryError
-from src.ghost_hunter.provider_registry import ProviderEndpoint
-from src.ghost_hunter.provider_pool import ProviderPool
+from ghost_hunter.registry import RegistryError
+from ghost_hunter.provider_registry import ProviderEndpoint
+from ghost_hunter.provider_pool import ProviderPool
 
 
 def providers():
@@ -22,7 +22,7 @@ def test_failure_cools_provider_and_rotates():
     pool = ProviderPool.from_providers(providers())
     pool.record_failure("fast", now_tick=10, cooldown_ticks=3, error="timeout")
     assert pool.select("fixture:1", now_tick=10).provider_id == "slow"
-    assert pool.select("fixture:1", now_tick=13).provider_id == "fast"
+    assert [p.provider_id for p in pool.available("fixture:1", now_tick=13)] == ["slow", "fast"]
 
 
 def test_all_failed_fails_closed():
