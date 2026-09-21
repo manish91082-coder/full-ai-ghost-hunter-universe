@@ -166,3 +166,8 @@
 - Current canonical state: 66 records / 66 unique keys / 0 duplicates.
 - Audit 048: PARTIAL PASS.
 - G01 remains ACTIVE / NOT SATURATED; next focus is material primary identity/lifecycle verification.
+
+
+## 2026-09-21 — G01 BATCH 043
+
+High-information DEX primary verification completed for Arbitrum One, Arbitrum Nova, Bitcoin Mainnet, NEAR Mainnet, Litecoin Mainnet and XRP Ledger Mainnet using official primary sources. Canonical state advanced from 66 to 72 records with zero duplicate canonical keys. DEX presence remains discovery evidence only. G01 remains ACTIVE; G02 remains BLOCKED; live trading STOP. Audit 049 = PARTIAL PASS. Next: bounded primary verification of remaining material labels followed by adversarial denominator closure and G01 exit review.
