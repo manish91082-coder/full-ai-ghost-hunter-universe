@@ -18,7 +18,7 @@
     "Sui",
     "Starknet"
   ],
-  "canonical_promotions": 3,
+  "canonical_promotions": 2,
   "not_promoted": [
     "Bittensor",
     "Osmosis",
@@ -37,5 +37,8 @@
     "DEX presence does not imply flash liquidity, executable routes, liquidity-at-size, profitability or authorization.",
     "High-information labels may be promoted only after current official primary evidence; promotion does not infer execution capability.",
     "Cosmos Hub, Sui and Starknet were promoted only from official primary evidence; promotion does not infer flash liquidity or execution."
+  ],
+  "reconfirmed_this_cycle": [
+    "Cosmos"
   ]
 }
