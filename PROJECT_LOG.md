@@ -692,3 +692,18 @@ Current source-union count: **49**.
 G01 remains ACTIVE / NOT SATURATED. Live trading STOP.
 
 Next: full DEX extraction and semantic protocol→chain reconciliation, followed by native-source gap scan and adversarial coverage audit.
+
+
+## MACRO-BATCH 025 — MACHINE-READABLE DEX EXTRACTION CONTRACT
+Date: 21 September 2026
+- Added src/ghost_hunter/g01_dex_extractor.py
+- Added tests/test_g01_dex_extractor.py
+- Added 01_BLOCKCHAIN_UNIVERSE/62_G01_MACHINE_READABLE_DEX_EXTRACTION_BATCH_025.md
+- Added 01_BLOCKCHAIN_UNIVERSE/63_AUDIT_031_G01_MACHINE_READABLE_DEX_EXTRACTION.md
+- Implemented externalized DEX protocol × chain relationship extraction.
+- Preserved source/evidence metadata and prevented protocol-to-chain identity inference.
+- Fixture tests were authored; repository-wide execution is not claimed because arbitrary command execution is unavailable in the GitHub tool surface.
+- G01 remains ACTIVE / NOT SATURATED.
+- Current canonical source-union count remains 49.
+- Live trading remains STOP.
+- Next: current DEX payload materialization → 49-record union join → identity/lifecycle verification → exclusions/conflicts → adversarial missed-network audit.
