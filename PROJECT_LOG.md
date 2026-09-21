@@ -238,3 +238,15 @@ Materialized primary-source Aave Pool addresses and Aave GHO FlashMinter facilit
 - Added runtime-boundary research artifact.
 - Capacity, live bank state, bytecode identity and freshness remain unresolved.
 - G02 ACTIVE / NOT SATURATED; downstream gates blocked; live trading STOP.
+
+
+## 2026-09-21 — G02 ADVERSARIAL ATOMIC-LIQUIDITY DENOMINATOR BATCH 007
+
+- Expanded the atomic-liquidity mechanism denominator using independent primary-source protocol families.
+- Added Silo V3, SyncSwap, QuickSwap, PancakeSwap V2-style flash swap, Drift and Save/Solend as discovery candidates.
+- Save/Solend retained with explicit current/stale conflict handling; not promoted.
+- Canonical mechanism registry now 21 records: 9 verified primitives, 11 discovery candidates, 1 discovery family.
+- Added G02 adversarial denominator research and Audit 059.
+- G02 remains ACTIVE / NOT SATURATED.
+- Runtime capacity, current fees, enablement/authorization, executable code identity and freshness remain unresolved.
+- Live trading STOP; G03-G29 blocked.
