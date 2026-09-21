@@ -499,3 +499,8 @@ No capability evidence authorizes execution.
 Authoritative runtime topology and provider endpoints must never be embedded in executable source. Runtime snapshots must pass integrity and authorized-version checks before projection; duplicate or missing critical identity fails closed. Provider endpoints are runtime configuration and must support deterministic selection/fallback without becoming hardcoded universe data.
 
 Current implementation verifies SHA-256 snapshot integrity and authorized versions. Cryptographic signature/trust-root verification remains a separate mandatory gate before signed manifests can be treated as trusted authority.
+
+
+## Durable Rule — Provider Switch Requires State Revalidation
+
+RPC/provider rotation is a transport-recovery mechanism, not an authority transfer. After switching providers, current block/state, provenance and request-level consistency must be revalidated before an observation can be used for G02 runtime truth or any later execution decision. If all providers for a required network are unavailable, fail closed.
