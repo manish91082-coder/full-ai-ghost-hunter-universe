@@ -1,5 +1,5 @@
-from src.ghost_hunter.state_store import AppendOnlyStateStore, StateRecord, make_envelope
-from src.ghost_hunter.collector import Collector, ProviderPool
+from ghost_hunter.state_store import AppendOnlyStateStore, StateRecord, make_envelope
+from ghost_hunter.collector import Collector, ProviderPool
 
 def test_append_only_history():
     store = AppendOnlyStateStore()
