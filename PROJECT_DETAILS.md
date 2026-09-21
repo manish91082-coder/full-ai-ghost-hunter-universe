@@ -580,3 +580,16 @@ Required handshake:
 A stale successful run for an older SHA is not accepted. A failed or missing run is not accepted. This prevents the project from appearing to progress while GitHub Actions are actually failing or not executing the current repository state.
 
 The new verifier is observation/control-only and creates no execution authority.
+
+
+## SECTION 55 — G02 RUNTIME OBSERVATION EXECUTION CONTRACT
+
+Date: 22 September 2026
+
+Runtime input: GH_PROVIDER_RUNTIME with records provider_id|network_id|endpoint|priority, comma-separated.
+
+Path: external providers → ProviderPool → read-only RpcTransport → block-pinned V2PairEnumerator → factory completeness → pair code/token/reserve observation → bytecode SHA-256 evidence → CURRENT_RUNTIME_OBSERVATION_EVIDENCE.
+
+Fail closed on missing providers, provider exhaustion/change, stale blocks, count mismatch, safety-bound overflow, duplicate pairs, invalid bytecode or invalid ABI state.
+
+Output: 02_FLASH_LOAN_UNIVERSE/data/G02_V2_RUNTIME_OBSERVATION_v001.json. Execution authority remains NONE.
