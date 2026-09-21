@@ -215,3 +215,14 @@ Live execution remains STOP until independent readiness gates pass.
 
 ## 15. PERMANENT DECISION
 This charter is a project governance artifact. Future work must reference it. Any proposed change that weakens these controls requires explicit logged change-control and must not silently override them.
+
+
+## 16. DATA LIFECYCLE / ANTI-DUPLICATION LOCK
+
+Historical evidence is append-only, but current canonical state is NOT append-only. Current canonical materialized registries are updated in place after semantic normalization and deduplication. Git history preserves prior canonical states.
+
+One authoritative current path per major machine-readable domain is mandatory. New observations must merge into that state rather than creating full registry copies. Batch reports are delta/audit records, not dataset replicas. Duplicate-like observations must be classified as exact duplicate, alias, rebrand, distinct execution plane, related-but-distinct, conflict, false match or superseded.
+
+Authoritative runtime candidate selection must read only the current canonical state plus referenced current evidence. Historical snapshots are replay/audit inputs only.
+
+See: 00_GOVERNANCE/DATA_LIFECYCLE_DEDUPLICATION_CONTROL_v1.0.md
