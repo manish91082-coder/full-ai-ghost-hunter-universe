@@ -1469,3 +1469,12 @@ Added:
 Explicitly pending: cryptographic signature verification, live RPC collection, on-chain code/state, market/pair enumeration, live capacity, fees and freshness.
 
 G02 remains ACTIVE / NOT SATURATED. G03-G29 remain BLOCKED. Execution authority NONE. Live trading STOP.
+
+
+## UPDATE — MACRO-BATCH 019 / PROVIDER POOL ROTATION
+
+Implemented a runtime-only provider pool contract with deterministic per-network selection, failure cooldown, rotation, success recovery and fail-closed behavior when all providers are unavailable. No provider endpoint or provider universe was embedded.
+
+The policy layer deliberately performs no network I/O. After a provider switch, callers must revalidate block/state freshness and request provenance rather than assuming state continuity.
+
+Added provider-pool implementation, tests, macro-batch specification and audit. G02 remains ACTIVE / NOT SATURATED; G03-G29 BLOCKED; execution authority NONE; live trading STOP.
