@@ -526,3 +526,8 @@ Provider rotation is not state continuity. A runtime observation must satisfy an
 Freshness is a safety predicate only. It does not authorize execution and does not establish liquidity, profitability, code identity or permissions.
 
 Live trading remains STOP.
+
+
+## G02 DURABLE RULE — RPC FAILOVER
+
+A single logical observation must not be abandoned merely because its first provider fails when another eligible provider exists for the same network. Failover is transport recovery, not state continuity. Every successful post-switch observation still requires independent freshness, provenance, network identity and request-consistency validation. If all providers fail, the observation fails closed.
