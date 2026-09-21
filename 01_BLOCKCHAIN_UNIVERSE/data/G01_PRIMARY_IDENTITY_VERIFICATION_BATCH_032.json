@@ -1,0 +1,74 @@
+{
+  "schema_version": "g01.primary_identity_verification.v1",
+  "batch_id": "G01_PRIMARY_IDENTITY_VERIFICATION_BATCH_032",
+  "observed_date": "2026-09-21",
+  "authority": "discovery_and_identity_verification_only",
+  "source_observations": "DeFiLlama DEX materialization run 003",
+  "denominator_note": "Bounded high-information subset of unmatched DEX labels. Does not close the 383-label queue or establish the final G01 denominator.",
+  "records": [
+    {
+      "input_name": "Ethereum",
+      "normalized_name": "Ethereum",
+      "canonical_identifier": "eip155:1",
+      "lifecycle": "mainnet",
+      "identity_state": "VERIFIED_PRIMARY",
+      "source": "https://ethereum.org/developers/docs/networks/"
+    },
+    {
+      "input_name": "Binance",
+      "normalized_name": "BNB Smart Chain",
+      "canonical_identifier": "eip155:56",
+      "lifecycle": "mainnet",
+      "identity_state": "VERIFIED_PRIMARY",
+      "source": "https://docs.bnbchain.org/bnb-smart-chain/developers/wallet-configuration/"
+    },
+    {
+      "input_name": "Avalanche",
+      "normalized_name": "Avalanche C-Chain",
+      "canonical_identifier": "eip155:43114",
+      "lifecycle": "mainnet",
+      "identity_state": "VERIFIED_PRIMARY",
+      "source": "https://docs.avax.network/docs/primary-network"
+    },
+    {
+      "input_name": "Polygon",
+      "normalized_name": "Polygon Mainnet",
+      "canonical_identifier": "eip155:137",
+      "lifecycle": "mainnet",
+      "identity_state": "VERIFIED_PRIMARY",
+      "source": "https://support.polygon.technology/support/solutions/articles/82000889434-how-to-add-polygon-mainnet-on-metamask-"
+    },
+    {
+      "input_name": "Base",
+      "normalized_name": "Base Mainnet",
+      "canonical_identifier": "eip155:8453",
+      "lifecycle": "mainnet",
+      "identity_state": "VERIFIED_PRIMARY",
+      "source": "https://docs.base.org/base-chain/api-reference/ethereum-json-rpc-api/eth_chainId"
+    },
+    {
+      "input_name": "zkSync Era",
+      "normalized_name": "ZKsync Era Mainnet",
+      "canonical_identifier": "eip155:324",
+      "lifecycle": "mainnet",
+      "identity_state": "VERIFIED_PRIMARY",
+      "source": "https://docs.zksync.io/zksync-network/zksync-era/network-details"
+    },
+    {
+      "input_name": "Tron",
+      "normalized_name": "TRON Mainnet",
+      "canonical_identifier": "tron:728126428",
+      "lifecycle": "mainnet",
+      "identity_state": "VERIFIED_PRIMARY",
+      "source": "https://developers.tron.network/docs/architecture-overview"
+    },
+    {
+      "input_name": "Solana",
+      "normalized_name": "Solana Mainnet",
+      "canonical_identifier": "solana:mainnet",
+      "lifecycle": "mainnet",
+      "identity_state": "VERIFIED_PRIMARY",
+      "source": "https://solana.com/docs/references/clusters"
+    }
+  ]
+}
