@@ -21,8 +21,8 @@ A gate is CLOSED only when:
 | Gate | Domain | Current state |
 |---|---|---|
 | G00 | Governance | FROZEN |
-| G01 | Global Blockchain Universe | ACTIVE / NOT SATURATED |
-| G02 | Atomic/Flash Liquidity | BLOCKED BY G01 |
+| G01 | Global Blockchain Universe | FROZEN / BOUNDED EXIT PASS (AUDIT 055) |
+| G02 | Atomic/Flash Liquidity | ACTIVE / NOT SATURATED (AUDIT 056→057) |
 | G03 | Protocol Universe | BLOCKED BY G01/G02 |
 | G04 | DEX/Venues | BLOCKED |
 | G05 | Contracts/Addresses | BLOCKED |
@@ -122,7 +122,7 @@ source → observation → method → timestamp/block → normalized identity �
 When a gate closes, its artifact version is frozen. Later discoveries create a new version/change record; old evidence is never erased.
 
 ## Current command
-**G01 is the only primary saturation gate authorized for advancement.**
+**G02 is now the primary saturation gate. G01 is frozen; G03-G29 remain dependency-blocked until G02 closes.**
 
 Existing implementation artifacts remain preserved as non-trading infrastructure. They do not constitute saturation evidence and do not permit skipping G01.
 
@@ -241,3 +241,15 @@ G01 governance/data-quality completion now additionally requires:
 These are control requirements for G01 materialization and future gates, not a declaration that G01 factual universe coverage is saturated.
 
 G01 remains ACTIVE / NOT SATURATED. G02-G28 remain blocked. G29 remains active control. Live trading STOP.
+
+
+## CURRENT CONTROL RECONCILIATION — 21 SEPTEMBER 2026
+
+The historical gate map retained earlier in this file is preserved as history. The authoritative current gate state after Audit 055 and G02 activation is:
+
+- G01 = FROZEN / BOUNDED EXIT PASS (Audit 055)
+- G02 = ACTIVE / NOT SATURATED (Audit 056, Audit 057)
+- G03-G29 = BLOCKED by dependency order
+- Live trading = STOP
+
+G02 exit remains open because exact deployment addresses, direct code evidence, current capacity/fee, enablement/authorization, adversarial mechanism denominator and final bounded saturation review are unresolved.
