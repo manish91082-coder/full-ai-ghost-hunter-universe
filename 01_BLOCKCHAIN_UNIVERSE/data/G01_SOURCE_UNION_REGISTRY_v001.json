@@ -15,24 +15,30 @@
       "normalized_name": "Lighter",
       "match": "BC-036",
       "state": "MATCH_EXISTING",
-      "identity_state": "PROVISIONAL_SECONDARY",
+      "identity_state": "PRIMARY_MAINNET_PLATFORM_EVIDENCE",
       "mainnet_identifier": "304",
       "evidence": [
-        "https://github.com/dasa522/lighter/blob/main/docs/TRADING.md"
+        "https://github.com/dasa522/lighter/blob/main/docs/TRADING.md",
+        "https://docs.lighter.xyz/"
       ],
-      "canonical_record_key": "BC-036"
+      "canonical_record_key": "BC-036",
+      "lifecycle": "mainnet",
+      "note": "Macro-Batch 033 added primary-source mainnet/execution evidence. Canonical identifier is not promoted unless directly established."
     },
     {
       "input_name": "RISE",
       "normalized_name": "Rise",
       "match": "MORPHO-ROW-36",
       "state": "MATCH_EXISTING",
-      "identity_state": "PRIMARY_MAINNET_EXISTENCE",
+      "identity_state": "PRIMARY_MAINNET_PLATFORM_EVIDENCE",
       "mainnet_identifier": null,
       "evidence": [
-        "https://docs.risechain.com/docs"
+        "https://docs.risechain.com/docs",
+        "https://docs.risechain.com/"
       ],
-      "canonical_record_key": "MORPHO-ROW-36"
+      "canonical_record_key": "MORPHO-ROW-36",
+      "lifecycle": "mainnet",
+      "note": "Macro-Batch 033 added primary-source mainnet/execution evidence. Canonical identifier is not promoted unless directly established."
     },
     {
       "input_name": "Fuel Ignition",
@@ -213,12 +219,15 @@
       "normalized_name": "Starknet",
       "match": null,
       "state": "NEW_CANDIDATE",
-      "identity_state": "PRIMARY_MAINNET_EVIDENCE_PARTIAL",
+      "identity_state": "PRIMARY_MAINNET_EXECUTION_EVIDENCE",
       "mainnet_identifier": "SN_MAIN",
       "evidence": [
-        "https://github.com/api-evangelist/starknet/blob/main/apis.yml"
+        "https://github.com/api-evangelist/starknet/blob/main/apis.yml",
+        "https://docs.starknet.io/architecture-and-concepts/network-architecture/os/"
       ],
-      "canonical_record_key": "starknet"
+      "canonical_record_key": "starknet",
+      "lifecycle": "mainnet",
+      "note": "Macro-Batch 033 added primary-source mainnet/execution evidence. Canonical identifier is not promoted unless directly established."
     },
     {
       "input_name": "Aptos",
@@ -237,25 +246,31 @@
       "normalized_name": "Sui",
       "match": "BC-029",
       "state": "MATCH_EXISTING",
-      "identity_state": "PRIMARY_MAINNET_EXISTENCE",
+      "identity_state": "PRIMARY_MAINNET_EXECUTION_EVIDENCE",
       "mainnet_identifier": "native identifier queried at runtime",
       "evidence": [
         "https://docs.sui.io/paper/sui-lutris.pdf",
-        "https://www.alchemy.com/docs/chains/sui/sui-api-endpoints/sui-get-chain-identifier"
+        "https://www.alchemy.com/docs/chains/sui/sui-api-endpoints/sui-get-chain-identifier",
+        "https://docs.sui.io/"
       ],
-      "canonical_record_key": "BC-029"
+      "canonical_record_key": "BC-029",
+      "lifecycle": "mainnet",
+      "note": "Macro-Batch 033 added primary-source mainnet/execution evidence. Canonical identifier is not promoted unless directly established."
     },
     {
       "input_name": "Near Protocol",
       "normalized_name": "NEAR Protocol",
       "match": "BC-027",
       "state": "MATCH_EXISTING",
-      "identity_state": "PRIMARY_MAINNET_NETWORK_ID",
+      "identity_state": "PRIMARY_MAINNET_NETWORK_EVIDENCE",
       "mainnet_identifier": "mainnet",
       "evidence": [
-        "https://github.com/near/near-cli/blob/master/README.md"
+        "https://github.com/near/near-cli/blob/master/README.md",
+        "https://docs.near.org/data-infrastructure/tutorials/running-near-lake/run-lake-indexer"
       ],
-      "canonical_record_key": "BC-027"
+      "canonical_record_key": "BC-027",
+      "lifecycle": "mainnet",
+      "note": "Macro-Batch 033 added primary-source mainnet/execution evidence. Canonical identifier is not promoted unless directly established."
     },
     {
       "input_name": "Injective",
@@ -873,8 +888,8 @@
     "canonical_record_key_count": 57,
     "duplicate_canonical_record_key_count": 0,
     "note": "Current-state accounting is computed from records[]. The field confirmed_matches_against_current_seed_or_morpho_reconciliation=36 is preserved as historical join-point metadata and is not the current MATCH_EXISTING count.",
-    "controlling_batch": "G01_PRIMARY_IDENTITY_VERIFICATION_BATCH_032",
-    "audit": "AUDIT_038_G01_PRIMARY_IDENTITY_VERIFICATION"
+    "controlling_batch": "G01_PRIMARY_IDENTITY_VERIFICATION_BATCH_033",
+    "audit": "AUDIT_039_G01_PRIMARY_IDENTITY_VERIFICATION"
   },
-  "updated_by": "G01_PRIMARY_IDENTITY_VERIFICATION_BATCH_032"
+  "updated_by": "G01_PRIMARY_IDENTITY_VERIFICATION_BATCH_033"
 }
