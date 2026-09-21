@@ -504,3 +504,20 @@ The final decision path will use hot state/cache/index structures and keep heavy
 
 ### Live
 **LIVE TRADING = STOP.**
+
+
+## UPDATE — CANONICAL REPOSITORY IDENTITY LOCK
+
+Date: 21 September 2026
+
+**OWNER:** `manish91082-coder`
+**REPOSITORY:** `full-ai-ghost-hunter-universe`
+**BRANCH:** `main`
+
+This exact tuple is the permanent project identity. A similarly named repository, old repository, fork, experiment or archive is not interchangeable and cannot receive project writes by inference.
+
+Created: `00_GOVERNANCE/REPOSITORY_IDENTITY_LOCK_v1.0.md`
+
+Before every substantive continuation, repository identity must be verified first. If verification fails, work stops rather than switching repositories.
+
+Current primary gate remains G01 Global Blockchain Universe. Live trading remains STOP.
