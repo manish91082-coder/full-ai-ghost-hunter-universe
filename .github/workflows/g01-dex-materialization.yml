@@ -1,0 +1,34 @@
+name: G01 DEX Source Materialization
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - ".github/workflows/g01-dex-materialization.yml"
+      - "scripts/materialize_g01_dex.py"
+      - "src/ghost_hunter/g01_dex_extractor.py"
+      - "01_BLOCKCHAIN_UNIVERSE/data/G01_SOURCE_UNION_REGISTRY_v001.json"
+
+permissions:
+  contents: read
+
+jobs:
+  materialize:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout canonical repository
+        uses: actions/checkout@v4
+
+      - name: Materialize current DeFiLlama DEX source
+        run: |
+          python3 --version
+          python3 scripts/materialize_g01_dex.py             --output-dir ./g01-dex-materialization
+
+      - name: Upload immutable research evidence
+        uses: actions/upload-artifact@v4
+        with:
+          name: g01-dex-materialization
+          path: g01-dex-materialization/
+          if-no-files-found: error
+          retention-days: 30
