@@ -230,3 +230,11 @@ Materialized primary-source Aave Pool addresses and Aave GHO FlashMinter facilit
 - Adversarial atomic-mechanism denominator remains open.
 - G02 remains ACTIVE / NOT SATURATED; G03-G29 blocked; live trading STOP.
 - Next bounded objective: runtime-observable code/state verification plus adversarial mechanism closure, followed by saturation re-audit.
+
+## 2026-09-21 — G02 RUNTIME BOUNDARY BATCH 006
+
+- Materialized marginfi/P0 official flashloan capability and zero-fee evidence.
+- Added current SDK/program compatibility boundary: mainnet 0.1.11 era requires p0-ts-sdk >=2.8.0.
+- Added runtime-boundary research artifact.
+- Capacity, live bank state, bytecode identity and freshness remain unresolved.
+- G02 ACTIVE / NOT SATURATED; downstream gates blocked; live trading STOP.
