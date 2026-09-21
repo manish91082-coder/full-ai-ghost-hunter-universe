@@ -27,15 +27,18 @@ For each active gate, maintain:
 ## Current G01 state
 - Gate: G01 Global Blockchain Universe
 - State: ACTIVE / NOT SATURATED
-- Current canonical records: 57
+- Current canonical records: 92
+- Current canonical network identity records: 91
+- Current canonical relationship/ecosystem records: 1
+- Current canonical unique keys: 92
+- Current canonical duplicate keys: 0
 - Cosmos production observations materialized: 225
 - Cosmos non-production observations: 214
 - Cosmos fetch errors: 0
-- Cosmos semantic reconciliation queue: 221 observations pending classification after four direct overlaps were identified.
-- 419-label DEX discovery surface: not fully semantically reconciled.
-- Other native-source reconciliation: incomplete.
-- Adversarial missed-network audit: open.
-- Final production denominator: not frozen.
+- 419-label DEX discovery surface: fully classified; some labels remain primary-verification pending and quarantined.
+- Other native-source reconciliation: covered by bounded source-family accounting.
+- Adversarial missed-network audit: PASS for declared source surfaces; re-entry triggers retained.
+- Final executable production denominator: intentionally downstream, not a G01 output.
 
 ## Current decision
 CONTINUE_TARGETED_CYCLE
@@ -63,3 +66,13 @@ A new cycle requires a documented material reason. â€œMore research is possibleâ
 
 ## Maximum Macro Mode Lock
 Effective 21 September 2026. One `next` authorizes maximum useful safe work for the active gate in one response/execution window. Artificial micro-batching is prohibited. The final goal remains the controlling anchor. Genuine external dependencies, unavailable evidence, execution-window limits, rate limits, human authorization and safety gates may define a boundary, which must be recorded precisely. Completion must never be claimed merely because the response ended.
+
+## G01 FINAL EXIT REVIEW - 21 September 2026
+
+Decision: FREEZE_AND_ADVANCE
+
+Mandatory G01 obligations were judged closed at the bounded gate level: source-family coverage is reproducible or explicitly scoped; lifecycle denominators are quantified by source; canonical identity and alias/execution-plane handling is controlled; UNKNOWN/CONFLICTED discoveries remain explicit; adversarial source-family review is complete; canonical state is duplicate-free; discovery provenance/freshness is recorded; unresolved discovery has documented downstream impact.
+
+G01 is frozen as the discovery/identity gate. It is not a permanent claim that no future blockchain can appear. Defined re-entry triggers remain active.
+
+G02 UNLOCKED. G03-G29 BLOCKED. LIVE TRADING STOP.
