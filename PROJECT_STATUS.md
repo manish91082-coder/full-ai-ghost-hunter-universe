@@ -744,3 +744,36 @@ Next macro objective:
 Materialize the current DEX protocol × chain dataset, join the 49-record union,
 resolve identity/lifecycle with primary evidence, close exclusions/conflicts,
 and run the adversarial missed-network audit.
+
+## UPDATE — MACRO-BATCH 026 / CURRENT DEX SOURCE MATERIALIZATION CONTROL
+
+Date: 21 September 2026
+State: 🟡 Source contract frozen / complete payload fetch blocked by retrieval boundary
+
+Added:
+- 01_BLOCKCHAIN_UNIVERSE/data/G01_DEX_RUNTIME_SOURCE_MANIFEST_v001.json
+- 01_BLOCKCHAIN_UNIVERSE/64_G01_CURRENT_DEX_SOURCE_MATERIALIZATION_PLAN_BATCH_026.md
+- 01_BLOCKCHAIN_UNIVERSE/65_AUDIT_032_G01_CURRENT_DEX_SOURCE_MATERIALIZATION.md
+
+Current DeFiLlama DEX surface re-observed: 290 chains.
+Current DEX dashboard coverage re-observed: 794 DEX protocols.
+These remain discovery metrics, not canonical denominators.
+
+The complete /protocols response could not be materialized through the current
+web retrieval boundary because the response exceeds the retrieval size limit.
+No fabricated completeness claim is made.
+
+Current G01 state:
+- canonical source union: 49
+- raw current DEX payload: BLOCKED
+- complete DEX relationship denominator: BLOCKED
+- primary identity/lifecycle verification: PENDING
+- adversarial missed-network audit: PENDING
+- G01 saturation: NOT SATURATED
+- live trading: STOP
+
+Next macro objective:
+Run the external materialization contract through a supported repository/CI
+execution environment, retain the raw payload and hash, generate complete
+protocol×chain observations, then reconcile and verify against the 49-record
+canonical union.
