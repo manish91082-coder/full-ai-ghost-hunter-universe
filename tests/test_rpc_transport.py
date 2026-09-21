@@ -200,3 +200,32 @@ def test_v2_pair_enumerator_fails_closed_on_duplicate_factory_pair_identity():
         V2PairEnumerator(
             RpcTransport(p, opener=opener), FreshnessPolicy()
         ).enumerate_pairs("net:1", "0x" + "1"*40, max_pairs=10)
+
+
+def test_silo_market_discovery_is_deduplicated_and_requires_provenance():
+    from ghost_hunter.silo_market_discovery import parse_market_candidates
+
+    payload = {
+        "markets": {
+            "items": [
+                {"id": "market-1", "siloId": "0x" + "1"*40, "chainId": 1},
+                {"id": "market-2", "siloId": "0x" + "2"*40, "chainId": 42161},
+            ]
+        }
+    }
+    result = parse_market_candidates(payload, provenance="https://api-v3.silo.finance")
+    assert len(result) == 2
+    assert result[0].source == "SILO_V3_PUBLIC_API_DISCOVERY"
+
+
+def test_silo_market_discovery_fails_closed_on_duplicate_identity():
+    from ghost_hunter.silo_market_discovery import parse_market_candidates
+
+    payload = {
+        "markets": [
+            {"id": "market-1", "siloId": "0x" + "1"*40, "chainId": 1},
+            {"id": "market-1b", "siloId": "0x" + "1"*40, "chainId": 1},
+        ]
+    }
+    with pytest.raises(RegistryError):
+        parse_market_candidates(payload, provenance="https://api-v3.silo.finance")
