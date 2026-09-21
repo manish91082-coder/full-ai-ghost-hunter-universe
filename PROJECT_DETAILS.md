@@ -434,3 +434,7 @@ mechanism → network → deployment → code/interface → capability → asset
 Batch 005 intentionally stops before runtime bytecode hashes and live economic state. These are separate evidence layers and must be observed from current chain state before any downstream execution consideration.
 
 G02 remains active and unsaturated. G03-G29 remain blocked and live trading remains STOP.
+
+## SECTION 43 — G02 RUNTIME BOUNDARY BATCH 006
+
+Project 0/marginfi is now modeled with explicit capability, fee and runtime-obligation fields. The canonical model remains mechanism → network → deployment → code/interface → capability → asset → capacity → fee → authorization → atomicity → freshness → provenance. Documentation can populate capability and documented fee facts, but runtime capacity, code identity and freshness remain unresolved until observed from chain state.
