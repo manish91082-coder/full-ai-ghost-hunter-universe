@@ -907,19 +907,19 @@
   "duplicate_policy": "semantic identity resolution before merge; one canonical record per canonical identity",
   "provenance_policy": "source evidence remains referenced per record; conflicting observations are preserved outside the canonical object",
   "last_materialized_update": "2026-09-21",
-  "record_count": 57,
+  "record_count": 59,
   "current_state_accounting": {
     "as_of": "2026-09-21",
-    "total_records": 57,
+    "total_records": 59,
     "state_counts": {
       "MATCH_EXISTING": 10,
-      "NEW_CANDIDATE": 47
+      "NEW_CANDIDATE": 49
     },
-    "canonical_record_key_count": 57,
+    "canonical_record_key_count": 59,
     "duplicate_canonical_record_key_count": 0,
-    "note": "Current-state accounting is computed from records[]. The field confirmed_matches_against_current_seed_or_morpho_reconciliation=36 is preserved as historical join-point metadata and is not the current MATCH_EXISTING count.",
-    "controlling_batch": "G01_PRIMARY_IDENTITY_VERIFICATION_BATCH_033",
-    "audit": "AUDIT_039_G01_PRIMARY_IDENTITY_VERIFICATION"
+    "note": "Current-state accounting is computed from records[]. Historical join-point metadata is preserved separately and is not treated as current-state counts.",
+    "controlling_batch": "G01_HIGH_INFORMATION_PRIMARY_VERIFICATION_BATCH_038",
+    "audit": "AUDIT_044_G01_HIGH_INFORMATION_PRIMARY_VERIFICATION"
   },
-  "updated_by": "G01_PRIMARY_IDENTITY_VERIFICATION_BATCH_033"
+  "updated_by": "G01_HIGH_INFORMATION_PRIMARY_VERIFICATION_BATCH_038"
 }
