@@ -260,3 +260,16 @@ Materialized primary-source Aave Pool addresses and Aave GHO FlashMinter facilit
 - Canonical registry updated with explicit runtime obligations.
 - Added Batch 008 research artifact and Audit 060.
 - G02 remains ACTIVE / NOT SATURATED; downstream gates blocked; live trading STOP.
+
+
+## MACRO-BATCH 009 — G02 DEPLOYMENT DENOMINATOR MATERIALIZATION
+
+Date: 21 September 2026
+
+Primary-source deployment evidence was expanded for Silo V3 and QuickSwap V2. Silo current deployed versions were reconciled for Sonic, Arbitrum, Optimism, Ink and Avalanche, including SiloDeployer, implementation and factory identities. QuickSwap Polygon POS V2 router and factory were materialized and factory pair-discovery semantics were confirmed.
+
+The canonical G02 mechanism registry was updated in place to revision 5. No duplicate canonical mechanism was created. No execution authority was granted.
+
+Open obligations remain market/pair enumeration, code identity, live liquidity/capacity, fee/authorization state and freshness. Broader adversarial discovery also remains active.
+
+Audit: PARTIAL PASS / CONTINUE. G02 NOT SATURATED. Live trading STOP.
