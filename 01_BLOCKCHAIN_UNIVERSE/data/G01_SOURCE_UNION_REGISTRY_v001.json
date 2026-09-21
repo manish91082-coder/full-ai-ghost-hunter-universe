@@ -5,10 +5,10 @@
   "status": "NORMALIZED_NOT_FROZEN",
   "repository": "manish91082-coder/full-ai-ghost-hunter-universe",
   "branch": "main",
-  "input_records": 47,
+  "input_records": 49,
   "confirmed_matches_against_current_seed_or_morpho_reconciliation": 36,
-  "new_candidates_at_this_join_point": 37,
-  "note": "Expanded in place from the reconciled Morpho 50-row deployment surface. The 26 added records are new G01 discovery candidates at this join point; they are not execution-authorized. DEX-derived union and remaining native registries remain open.",
+  "new_candidates_at_this_join_point": 39,
+  "note": "Current materialized G01 source-union. Macro-batch 024 added only DEX-derived chain candidates that were not already present. The DeFiLlama surface currently exposes 290 chains and 794 DEX protocols; these are discovery denominators, not executable-chain counts. Full machine extraction and semantic reconciliation remain pending.",
   "records": [
     {
       "input_name": "Lighter",
@@ -685,6 +685,38 @@
       "lifecycle": "mainnet",
       "capability_state": "NOT_VERIFIED",
       "note": "Observed as a production/mainnet Morpho Blue deployment row in the project's reconciled 50-row source artifact; chain identity/capability/venue remain separate verification gates."
+    },
+    {
+      "input_name": "Spark",
+      "normalized_name": "Spark",
+      "match": null,
+      "state": "NEW_CANDIDATE",
+      "identity_state": "DEX_SOURCE_PRIMARY_IDENTITY_PENDING",
+      "mainnet_identifier": null,
+      "evidence": [
+        "https://defillama.com/dexs/chains"
+      ],
+      "canonical_record_key": "spark",
+      "source_class": "S3_STRUCTURED_DISCOVERY_SURFACE",
+      "lifecycle": "UNKNOWN",
+      "capability_state": "NOT_VERIFIED",
+      "note": "Observed as a chain on the current DeFiLlama DEX-by-chain surface. Chain identity/lifecycle and execution capability require primary verification."
+    },
+    {
+      "input_name": "Native",
+      "normalized_name": "Native",
+      "match": null,
+      "state": "NEW_CANDIDATE",
+      "identity_state": "DEX_SOURCE_PRIMARY_IDENTITY_PENDING",
+      "mainnet_identifier": null,
+      "evidence": [
+        "https://defillama.com/dexs/chains"
+      ],
+      "canonical_record_key": "native",
+      "source_class": "S3_STRUCTURED_DISCOVERY_SURFACE",
+      "lifecycle": "UNKNOWN",
+      "capability_state": "NOT_VERIFIED",
+      "note": "Observed as a chain on the current DeFiLlama DEX-by-chain surface. Chain identity/lifecycle and execution capability require primary verification."
     }
   ],
   "normalization_rules": [
@@ -702,5 +734,5 @@
   "duplicate_policy": "semantic identity resolution before merge; one canonical record per canonical identity",
   "provenance_policy": "source evidence remains referenced per record; conflicting observations are preserved outside the canonical object",
   "last_materialized_update": "2026-09-21",
-  "record_count": 47
+  "record_count": 49
 }
