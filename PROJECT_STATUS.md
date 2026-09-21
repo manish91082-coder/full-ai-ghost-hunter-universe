@@ -777,3 +777,31 @@ Run the external materialization contract through a supported repository/CI
 execution environment, retain the raw payload and hash, generate complete
 protocol×chain observations, then reconcile and verify against the 49-record
 canonical union.
+
+
+## UPDATE — MACRO-BATCH 027 / MACHINE-RUNNABLE DEX MATERIALIZATION
+
+**Date:** 21 September 2026
+
+### Completed
+- Added `scripts/materialize_g01_dex.py` for runtime fetching and hashing of DeFiLlama `/protocols`.
+- Added `.github/workflows/g01-dex-materialization.yml` with manual and change-triggered CI execution.
+- Added raw-payload, JSONL relationship and summary artifact contracts.
+- Preserved current canonical G01 registry as the single current-state path.
+- Preserved discovery-only and fail-closed boundaries.
+
+### Audit
+**AUDIT 033 = PARTIAL PASS.**
+The external execution path now exists, but successful CI execution and its evidence have not yet been independently verified. No complete DEX denominator claim is made.
+
+### Current State
+**G01 ACTIVE / NOT SATURATED**
+
+**Current canonical G01 source-union count: 49 records at the prior checkpoint.**
+
+**G02-G29 BLOCKED.**
+
+**Live trading: STOP.**
+
+### Next Macro Objective
+Observe and audit the first CI materialization result, retain raw payload/hash evidence, then perform complete protocol × chain reconciliation, identity/lifecycle verification, native gap scan and adversarial coverage audit.
