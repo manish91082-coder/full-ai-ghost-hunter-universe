@@ -316,3 +316,19 @@ G02 remains ACTIVE / NOT SATURATED.
 G03-G29 remain BLOCKED.
 Execution authority remains NONE.
 Live trading remains STOP.
+
+
+## UPDATE — G02 MACRO-BATCH 016 — V2 PAIR ENUMERATION BOUNDARY
+
+Date: 21 September 2026
+
+A reusable read-only V2-style pair enumeration boundary was added. It dynamically reads factory pair count and pair addresses, applies an explicit safety bound, and provides token/reserve state reads bracketed by block freshness observations.
+
+Added:
+- src/ghost_hunter/v2_pair_enumerator.py
+- 02_FLASH_LOAN_UNIVERSE/25_G02_V2_PAIR_ENUMERATION_BOUNDARY_BATCH_016.md
+- 02_FLASH_LOAN_UNIVERSE/26_AUDIT_066_G02_V2_PAIR_ENUMERATION.md
+
+The engine contains interface selectors only and does not embed authoritative chain, factory, pair, token or RPC universe data. QuickSwap/PancakeSwap production factory materialization and exhaustive runtime enumeration remain open.
+
+G02 remains ACTIVE / NOT SATURATED. G03-G29 remain BLOCKED. Execution authority NONE. Live trading STOP.
