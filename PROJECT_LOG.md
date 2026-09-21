@@ -371,3 +371,21 @@ G02 remains ACTIVE / NOT SATURATED. G03-G29 remain BLOCKED. Execution authority 
 - Added Audit 068.
 - Fresh push-triggered CI result is not claimed because the available connector does not expose those main push runs.
 - G02 remains ACTIVE / NOT SATURATED; execution NONE; live trading STOP.
+
+
+## 21 September 2026 — EXECUTION VERIFICATION CONTROL INSTALLED
+
+Observed from live GitHub Actions:
+- current main HEAD `d7b5aa5dd7b15adb03e1dba6c86dfab6cac1a6f1`
+- latest data-plane-ci run #126 failed
+- G02 machine-state validation passed
+- failure occurred during repository test collection
+- exact error: `ModuleNotFoundError: No module named 'ghost_hunter.reconcile_g01_dex_labels'`
+- root cause: the implementation is located at `scripts/reconcile_g01_dex_labels.py`, while the test imported it as a package module under `ghost_hunter`
+
+Correction commits:
+- `53311b0e182658dce782278944349a62f1269725` — test import path correction
+- `17ac34ccbcd29183a8b3e38dabc5c545b65d5f66` — stale CI run cancellation
+- `60f40c4312fda05b33773f2b1d01aaf3d55f0b59` — authoritative project execution verifier
+
+The verifier now requires successful data-plane execution for the exact current main SHA before a macro-cycle can be considered verified.
