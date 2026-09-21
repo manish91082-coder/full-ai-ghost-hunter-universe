@@ -50,3 +50,13 @@ New information is not automatically a new record. The mandatory sequence is: ca
 Macro-batch artifacts must not copy entire registries. They record deltas, coverage changes, conflicts, tests and audit results. Ordinary registry evolution updates the canonical file in place; Git history supplies historical versions.
 
 Before beginning a new batch, duplicate/identity anomalies in the current canonical state are checked so accumulated duplication cannot silently propagate into later execution phases.
+
+
+## AI/DATA INTEROPERABILITY EXECUTION LAW
+
+Every future macro-batch must apply the AI Research + Data Interoperability Constitution and Data Schema + AI Access Contract.
+
+Required internal sequence:
+MISSION/GATE PREFLIGHT → CURRENT CANONICAL READ → EVIDENCE READ → DENOMINATOR → PARALLEL DISCOVERY → CAPTURE/HASH → IDENTITY RESOLUTION → SEMANTIC DEDUP → VERIFY → CLASSIFY → MERGE CURRENT STATE → TEST → ADVERSARIAL AUDIT → GAP RESEARCH → RE-DEDUP → RE-TEST → RE-AUDIT → SATURATION CHECK → CONTROL-FILE SYNC → GIT CHECKPOINT.
+
+No AI model is allowed to infer canonical identity, zero values, production status, freshness or execution eligibility from missing fields or conversational memory.
