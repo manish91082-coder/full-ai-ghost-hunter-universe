@@ -19,7 +19,7 @@ from typing import Any
 
 SOURCE_URL = "https://api.llama.fi/protocols"
 SOURCE_ID = "defillama-free-protocols"
-DEX_CATEGORIES = {"dex", "dexes", "exchange", "amm", "orderbook"}
+DEX_CATEGORIES = {"dex", "dexes", "dexs", "exchange", "amm", "orderbook"}
 
 
 def fetch(url: str) -> bytes:
