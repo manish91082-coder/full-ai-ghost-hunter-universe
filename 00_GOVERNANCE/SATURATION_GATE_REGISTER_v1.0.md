@@ -214,3 +214,30 @@ The current G01 source-union registry was upgraded in place to v002 and marked C
 Before G01 saturation, a duplicate/identity anomaly audit is mandatory. Saturation requires one authoritative current record per canonical identity, with provenance references and bounded alias/conflict/exclusion states.
 
 G01 remains ACTIVE / NOT SATURATED. Live trading STOP.
+
+
+## G01 UPDATE — AI RESEARCH + DATA INTEROPERABILITY GOVERNANCE / MACRO-BATCH 022
+
+Date: 21 September 2026
+
+New governance contracts:
+- 00_GOVERNANCE/AI_RESEARCH_DATA_INTEROPERABILITY_CONSTITUTION_v1.0.md
+- 00_GOVERNANCE/DATA_SCHEMA_AND_AI_ACCESS_CONTRACT_v1.0.md
+- 00_GOVERNANCE/DATA_DOMAIN_REGISTRY_v1.0.json
+
+G01 governance/data-quality completion now additionally requires:
+- model-neutral schema discoverability;
+- deterministic canonical keys;
+- typed relationships;
+- explicit units/time/namespace semantics;
+- provenance addressability;
+- current-vs-historical separation;
+- duplicate regression tests;
+- cross-model compatibility tests;
+- adversarial negative tests;
+- explicit unknown/conflict/stale/quarantine handling;
+- one authoritative current path per machine-readable domain.
+
+These are control requirements for G01 materialization and future gates, not a declaration that G01 factual universe coverage is saturated.
+
+G01 remains ACTIVE / NOT SATURATED. G02-G28 remain blocked. G29 remains active control. Live trading STOP.
