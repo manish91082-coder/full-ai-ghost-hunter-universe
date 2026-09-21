@@ -734,5 +734,19 @@
   "duplicate_policy": "semantic identity resolution before merge; one canonical record per canonical identity",
   "provenance_policy": "source evidence remains referenced per record; conflicting observations are preserved outside the canonical object",
   "last_materialized_update": "2026-09-21",
-  "record_count": 49
+  "record_count": 49,
+  "current_state_accounting": {
+    "as_of": "2026-09-21",
+    "total_records": 49,
+    "state_counts": {
+      "MATCH_EXISTING": 10,
+      "NEW_CANDIDATE": 39
+    },
+    "canonical_record_key_count": 49,
+    "duplicate_canonical_record_key_count": 0,
+    "note": "Current-state accounting is computed from records[]. The field confirmed_matches_against_current_seed_or_morpho_reconciliation=36 is preserved as historical join-point metadata and is not the current MATCH_EXISTING count.",
+    "controlling_batch": "G01_CURRENT_STATE_CONSISTENCY_BATCH_029",
+    "audit": "AUDIT_035_G01_CURRENT_STATE_CONSISTENCY"
+  },
+  "updated_by": "G01_CURRENT_STATE_CONSISTENCY_BATCH_029"
 }
