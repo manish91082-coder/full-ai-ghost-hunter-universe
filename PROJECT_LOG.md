@@ -532,3 +532,27 @@ G01 remains ACTIVE / NOT SATURATED.
 Do not advance G02-G29 as authoritative. The next macro objective is source-union normalization and primary identity/lifecycle verification across the expanded G01 candidate set.
 
 Live trading STOP.
+
+## LOG-0024 — G01 SOURCE-UNION NORMALIZATION / MACRO-BATCH 019
+
+Date: 21 September 2026
+
+Objective: advance only G01 through source-union normalization and primary identity/lifecycle verification.
+
+Created:
+- 01_BLOCKCHAIN_UNIVERSE/data/G01_SOURCE_UNION_REGISTRY_v001.json
+- 01_BLOCKCHAIN_UNIVERSE/50_G01_SOURCE_UNION_NORMALIZATION_BATCH_019.md
+- 01_BLOCKCHAIN_UNIVERSE/51_AUDIT_025_G01_SOURCE_UNION_NORMALIZATION.md
+
+Result:
+- 21 discovery inputs reviewed.
+- 10 confirmed overlaps with existing canonical/Morpho records.
+- 11 provisional new candidates remain at the current join point.
+- Machine-readable registry validated as syntactically valid JSON with 21 records.
+
+Critical corrections locked: overlap does not equal a new chain; execution planes can be distinct within one ecosystem identity; non-EVM identities are not forced into EVM semantics.
+
+Audit 025 = PARTIAL PASS.
+G01 remains ACTIVE / NOT SATURATED. Dependent gates remain blocked. Live trading STOP.
+
+Next: DEX/native ecosystem union + remaining identity/lifecycle verification + exclusions/freshness + deduplicated G01 denominator.
