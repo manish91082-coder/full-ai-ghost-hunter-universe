@@ -262,3 +262,21 @@ Batch 005 materially strengthened deployment identity coverage for marginfi v2, 
 Exit remains blocked by runtime bytecode/code identity, live capacity, current fees, enablement/authorization, freshness and adversarial atomic-mechanism denominator closure. Research-derived execution authorization remains zero.
 
 Current authoritative state: G01 FROZEN / BOUNDED EXIT PASS; G02 ACTIVE / NOT SATURATED; G03-G29 BLOCKED; LIVE TRADING STOP.
+
+
+## G02 UPDATE — BATCH 007 ADVERSARIAL DENOMINATOR
+
+Batch 007 expanded the mechanism denominator with six primary-source candidates across EVM lending, EVM DEX/vault flash liquidity and Solana flash-loan paths.
+
+Exit remains blocked. The bounded saturation condition is not met because newly discovered candidates still require deployment/runtime verification and the adversarial mechanism denominator is not closed.
+
+Current G02 blockers:
+- runtime bytecode/code identity;
+- live asset capacity;
+- current fee state;
+- enablement/authorization;
+- block/slot freshness;
+- adversarial mechanism denominator closure;
+- final marginal-yield saturation review.
+
+Research-derived execution authorization remains zero. G03-G29 remain blocked. Live trading remains STOP.
