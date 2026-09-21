@@ -205,3 +205,6 @@ User-directed operating mode locked: one `next` means maximum useful safe work f
 ## 2026-09-21 - G01 FINAL SATURATION EXIT / G02 UNLOCK
 
 G01 bounded saturation exit completed. Independent discovery families were cross-checked: DeFiLlama DEX 290-chain surface and 419-label retained artifact, CoinGecko 250+ network envelope, L2BEAT scaling envelope, Cosmos native registry and official protocol deployment surfaces. No source was misused as a universal denominator. Canonical state: 92 records including 91 network identities + 1 relationship record, 92 unique keys, 0 duplicates. Audit 055 = PASS / FREEZE_AND_ADVANCE. G01 frozen, G02 unlocked, G03-G29 blocked, live trading STOP.
+## 2026-09-21 - G02 PRIMARY MECHANISM DISCOVERY BATCH 001
+
+G02 activated after G01 bounded freeze. Created the machine-readable Atomic Liquidity Mechanism Registry with 6 primary-verified primitive families and 3 discovery candidates. Audit 056 = PARTIAL PASS. Fees/capacity/deployments remain dynamic verification gates. G02 ACTIVE; G03-G29 BLOCKED; live trading STOP.
