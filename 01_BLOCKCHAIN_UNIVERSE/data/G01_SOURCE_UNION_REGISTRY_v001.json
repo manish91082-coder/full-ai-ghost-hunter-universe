@@ -1422,8 +1422,8 @@
     "canonical_record_key_count": 92,
     "duplicate_canonical_record_key_count": 0,
     "note": "Current-state accounting computed from records[]; historical join-point metadata is separate.",
-    "controlling_batch": "G01_RELATIONSHIP_AND_DENOMINATOR_RECONCILIATION_BATCH_047",
-    "audit": "AUDIT_053_G01_RELATIONSHIP_AND_DENOMINATOR_RECONCILIATION"
+    "controlling_batch": "G01_FINAL_COVERAGE_AND_SATURATION_EXIT_BATCH_049",
+    "audit": "AUDIT_055_G01_FINAL_SATURATION_EXIT"
   },
-  "updated_by": "G01_RELATIONSHIP_AND_DENOMINATOR_RECONCILIATION_BATCH_047"
+  "updated_by": "G01_FINAL_COVERAGE_AND_SATURATION_EXIT_BATCH_049"
 }
