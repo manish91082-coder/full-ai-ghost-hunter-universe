@@ -19,34 +19,23 @@ jobs:
   verify:
     runs-on: ubuntu-latest
     steps:
-      - name: Verify latest main execution state
+      - name: Verify latest completed data-plane execution for current main
         env:
           GH_TOKEN: ${{ github.token }}
-          EVENT_NAME: ${{ github.event_name }}
-          TRIGGER_SHA: ${{ github.event.workflow_run.head_sha }}
-          TRIGGER_CONCLUSION: ${{ github.event.workflow_run.conclusion }}
-          TRIGGER_RUN_ID: ${{ github.event.workflow_run.id }}
         run: |
           set -euo pipefail
 
           REPO="${GITHUB_REPOSITORY}"
-          MAIN_SHA="$(curl -fsSL -H "Accept: application/vnd.github+json" -H "Authorization: Bearer ${GH_TOKEN}" -H "X-GitHub-Api-Version: 2026-03-10" "https://api.github.com/repos/${REPO}/git/ref/heads/main" | jq -r '.object.sha')"
+          API="https://api.github.com/repos/${REPO}"
+          HEADERS=(-H "Accept: application/vnd.github+json" -H "Authorization: Bearer ${GH_TOKEN}" -H "X-GitHub-Api-Version: 2026-03-10")
 
-          if [ "${EVENT_NAME}" = "workflow_run" ]; then
-            RUN_SHA="${TRIGGER_SHA}"
-            RUN_CONCLUSION="${TRIGGER_CONCLUSION}"
-            RUN_ID="${TRIGGER_RUN_ID}"
+          MAIN_SHA="$(curl -fsSL "${HEADERS[@]}" "${API}/git/ref/heads/main" | jq -r '.object.sha')"
 
-            if [ "${RUN_SHA}" != "${MAIN_SHA}" ]; then
-              echo "STALE EXECUTION IGNORED: run ${RUN_ID} belongs to ${RUN_SHA}, current main is ${MAIN_SHA}"
-              exit 0
-            fi
-          else
-            LATEST_JSON="$(curl -fsSL -H "Accept: application/vnd.github+json" -H "Authorization: Bearer ${GH_TOKEN}" -H "X-GitHub-Api-Version: 2026-03-10" "https://api.github.com/repos/${REPO}/actions/runs?branch=main&event=push&head_sha=${MAIN_SHA}&per_page=20")"
-            RUN_SHA="$(printf '%s' "${LATEST_JSON}" | jq -r '[.workflow_runs[] | select(.name=="data-plane-ci")] | .[0].head_sha // empty')"
-            RUN_CONCLUSION="$(printf '%s' "${LATEST_JSON}" | jq -r '[.workflow_runs[] | select(.name=="data-plane-ci")] | .[0].conclusion // empty')"
-            RUN_ID="$(printf '%s' "${LATEST_JSON}" | jq -r '[.workflow_runs[] | select(.name=="data-plane-ci")] | .[0].id // empty')"
-          fi
+          RUNS_JSON="$(curl -fsSL "${HEADERS[@]}" "${API}/actions/runs?branch=main&event=push&head_sha=${MAIN_SHA}&status=completed&per_page=100")"
+
+          RUN_SHA="$(printf '%s' "${RUNS_JSON}" | jq -r '[.workflow_runs[] | select(.name=="data-plane-ci")] | sort_by(.updated_at) | last | .head_sha // empty')"
+          RUN_CONCLUSION="$(printf '%s' "${RUNS_JSON}" | jq -r '[.workflow_runs[] | select(.name=="data-plane-ci")] | sort_by(.updated_at) | last | .conclusion // empty')"
+          RUN_ID="$(printf '%s' "${RUNS_JSON}" | jq -r '[.workflow_runs[] | select(.name=="data-plane-ci")] | sort_by(.updated_at) | last | .id // empty')"
 
           echo "authoritative_main_sha=${MAIN_SHA}"
           echo "verified_data_plane_run_id=${RUN_ID:-none}"
@@ -59,4 +48,4 @@ jobs:
           test "${RUN_CONCLUSION}" = "success"
 
           echo "PROJECT EXECUTION VERIFIER: GREEN"
-          echo "The latest data-plane-ci execution completed successfully for the current main HEAD."
+          echo "The latest completed data-plane-ci execution is successful for the exact current main HEAD."
