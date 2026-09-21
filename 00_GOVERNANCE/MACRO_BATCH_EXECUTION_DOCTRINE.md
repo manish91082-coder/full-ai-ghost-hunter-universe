@@ -39,3 +39,14 @@ Every macro-batch records objective, current state, completed capability, remain
 
 ## Safety
 Fail-closed, zero-trust, live trading STOP until readiness gates pass, and expected net profit must exceed USD 0.20 after applicable measured costs. No execution on uncertain economics, stale critical data, failed simulation, insufficient liquidity or unresolved security risk.
+
+
+## DATA UPDATE DISCIPLINE
+
+Every macro-batch must distinguish **delta discovery** from **current-state materialization**.
+
+New information is not automatically a new record. The mandatory sequence is: capture evidence → normalize → identity resolution → deduplicate → merge into current canonical state → preserve provenance → test → audit.
+
+Macro-batch artifacts must not copy entire registries. They record deltas, coverage changes, conflicts, tests and audit results. Ordinary registry evolution updates the canonical file in place; Git history supplies historical versions.
+
+Before beginning a new batch, duplicate/identity anomalies in the current canonical state are checked so accumulated duplication cannot silently propagate into later execution phases.
