@@ -662,3 +662,23 @@ This is not a claim that G01 factual chain coverage is saturated. G01 remains AC
 **G01 Duplicate/Identity Anomaly Audit → current canonical cleanup → uncovered native + DEX discovery delta merge → re-test → re-audit → denominator reconciliation.**
 
 Live trading remains STOP.
+
+
+## UPDATE — G01 DUPLICATE / IDENTITY AUDIT + MORPHO DISCOVERY DELTA / MACRO-BATCH 023
+
+Date: 21 September 2026
+State: 🟢 PARTIAL PASS / G01 ACTIVE / NOT SATURATED
+
+Latest Git preflight HEAD: `8b58382a0e65376f1b050560836f9fb417abad5e`.
+
+### Result
+The current G01 source-union registry was audited for duplicate canonical keys and identity anomalies. No duplicate canonical_record_key existed in the 21-record baseline. The already-reconciled Morpho 50-row deployment surface was then joined against the current state.
+
+**26 additional production/mainnet Morpho-derived network candidates** were merged into the existing current-state registry in place. No duplicate registry file was created.
+
+All 26 are discovery candidates only: deployment-source evidence exists, but identity, flash capability, venues, liquidity-at-size, route, simulation, economics and execution remain unverified.
+
+### Next
+DEX-derived network union + native-source gap scan + semantic dedup + primary identity/lifecycle verification + adversarial coverage audit.
+
+Live trading remains STOP.
