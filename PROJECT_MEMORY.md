@@ -368,3 +368,17 @@ Permanent memory:
 - Before substantive work, verify the latest canonical Git state first.
 - If canonical verification fails, stop rather than guessing or switching.
 - All project writes must remain in the canonical repository unless explicit change control changes the repository identity.
+
+## UPDATE — G01 DISCOVERY DENOMINATOR EXPANSION / MACRO-BATCH 018
+
+Date: 21 September 2026
+
+Permanent project memory:
+- G01 remains the only primary saturation gate.
+- Discovery completeness must use multiple independent denominators, not one protocol list.
+- Current discovery surfaces include DeFiLlama chain/DEX data, CoinGecko 100+ network coverage, L2BEAT scaling/activity data, protocol deployment registries and DEX deployment registries.
+- Source denominators are not additive. They must be normalized, deduplicated and reconciled.
+- Batch 018 added 21 explicit network candidates for identity/lifecycle verification.
+- The earlier 27-network figure is historical only and is not the current discovery denominator or final count.
+- No final executable-chain integer may be declared before G01 closure criteria pass.
+- Live trading remains STOP.
