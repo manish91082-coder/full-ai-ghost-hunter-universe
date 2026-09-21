@@ -218,3 +218,15 @@ Audit 057 = PARTIAL PASS / CONTINUE. Exact addresses, bytecode hashes, live capa
 ## 2026-09-21 — G02 PRIMARY ADDRESS MATERIALIZATION BATCH 004
 
 Materialized primary-source Aave Pool addresses and Aave GHO FlashMinter facilitator address in the canonical deployment registry. No address was inferred where the source lacked a current role-specific deployment. Runtime code, capacity, fee and authorization remain open. G02 remains active.
+## 2026-09-21 — G02 PRIMARY ADDRESS + CODE/STATE BOUNDARY BATCH 005
+
+- Updated 02_FLASH_LOAN_UNIVERSE/data/G02_ATOMIC_CAPITAL_DEPLOYMENT_REGISTRY_v001.json in place to revision 3.
+- Materialized primary-source addresses for marginfi v2 Solana, current Sky MCD_FLASH, Venus BNB Core Pool and Balancer V2 Vault on Ethereum, Polygon, Arbitrum, Optimism and Gnosis.
+- Added primary-source/interface boundary research and Audit 058.
+- Canonical deployment state: 34 records / 34 unique keys / 0 duplicates.
+- Primary-source address verified: 26; address pending: 5.
+- All records remain NEVER_FROM_RESEARCH.
+- Runtime bytecode, capacity, fees, enablement, authorization and freshness remain open.
+- Adversarial atomic-mechanism denominator remains open.
+- G02 remains ACTIVE / NOT SATURATED; G03-G29 blocked; live trading STOP.
+- Next bounded objective: runtime-observable code/state verification plus adversarial mechanism closure, followed by saturation re-audit.
