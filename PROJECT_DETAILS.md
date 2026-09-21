@@ -341,3 +341,7 @@ The current Cosmos Chain Registry root inspection produced 290 entries and 266 n
 Solana Mainnet and TRON Mainnet were added as explicit native execution-model candidates, with testnet exclusion semantics captured. Osmosis, Neutron and dYdX were directly inspected as live/mainnet Cosmos records.
 
 Next authoritative G01 work is full native-registry extraction and union reconciliation, followed by DEX-derived network union and final denominator construction.
+
+## SECTION 35 — G01 NATIVE PRODUCTION EXTRACTION + DEX UNION / MACRO-BATCH 021
+
+The project now contains an externalized manifest defining current discovery inputs and extraction rules for the Cosmos Chain Registry, DeFiLlama chain discovery and DEX-derived protocol-chain discovery. A deterministic Python extraction layer and fixture tests were added. The extractor emits explicit production, non-production, unknown and discovery-only states and deduplicates only on available identity fields. Full source execution and final G01 denominator remain open.
