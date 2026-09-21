@@ -125,3 +125,13 @@
 - Kept Gateway/Wormchain and Gravitybridge as relationship-review items.
 - Did not blindly promote the 217 primary-review queue.
 - Audit 044: PARTIAL PASS; G01 remains ACTIVE / NOT SATURATED.
+
+## 2026-09-21 - Macro-Batch 039
+
+**Current-State Consistency + Exit Preflight**
+
+- Detected stale registry metadata: 57 stated vs 59 actual records.
+- Verified 59 unique canonical keys and zero duplicates.
+- Repaired current accounting in place to 59 total / 10 MATCH_EXISTING / 49 NEW_CANDIDATE.
+- Audit 045: consistency repair PASS; G01 exit preflight PARTIAL.
+- Continued targeted saturation only; no broad rediscovery.
