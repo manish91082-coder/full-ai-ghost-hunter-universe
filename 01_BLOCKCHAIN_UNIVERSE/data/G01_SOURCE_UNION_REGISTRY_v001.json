@@ -1379,6 +1379,21 @@
       "capability_state": "NOT_VERIFIED",
       "canonical_record_key": "zkxpla-mainnet",
       "note": "Official ZKsync documentation currently lists this chain in the Elastic Network mainnet-only view. Identity/lifecycle promotion only; downstream capability and execution remain separate gates."
+    },
+    {
+      "input_name": "ZKsync Elastic Network",
+      "normalized_name": "ZKsync Elastic Network aggregate",
+      "state": "RELATIONSHIP_RECORD",
+      "identity_state": "VERIFIED_PRIMARY",
+      "mainnet_identifier": "elastic-network:mainnet",
+      "evidence": [
+        "https://docs.zksync.io/zksync-network/environment"
+      ],
+      "source_class": "S1_OFFICIAL_NETWORK_DOCUMENTATION",
+      "lifecycle": "mainnet",
+      "capability_state": "NOT_VERIFIED",
+      "canonical_record_key": "zksync-elastic-network-aggregate",
+      "note": "Relationship/ecosystem record only. It never replaces individual chain identities and never authorizes execution."
     }
   ],
   "normalization_rules": [
@@ -1396,19 +1411,19 @@
   "duplicate_policy": "semantic identity resolution before merge; one canonical record per canonical identity",
   "provenance_policy": "source evidence remains referenced per record; conflicting observations are preserved outside the canonical object",
   "last_materialized_update": "2026-09-21",
-  "record_count": 91,
+  "record_count": 92,
   "current_state_accounting": {
     "as_of": "2026-09-21",
-    "total_records": 91,
+    "total_records": 92,
     "state_counts": {
       "MATCH_EXISTING": 10,
       "NEW_CANDIDATE": 81
     },
-    "canonical_record_key_count": 91,
+    "canonical_record_key_count": 92,
     "duplicate_canonical_record_key_count": 0,
     "note": "Current-state accounting computed from records[]; historical join-point metadata is separate.",
-    "controlling_batch": "G01_ZKSYNC_ELASTIC_NETWORK_PRIMARY_VERIFICATION_BATCH_046",
-    "audit": "AUDIT_052_G01_ZKSYNC_ELASTIC_NETWORK_PRIMARY_VERIFICATION"
+    "controlling_batch": "G01_RELATIONSHIP_AND_DENOMINATOR_RECONCILIATION_BATCH_047",
+    "audit": "AUDIT_053_G01_RELATIONSHIP_AND_DENOMINATOR_RECONCILIATION"
   },
-  "updated_by": "G01_ZKSYNC_ELASTIC_NETWORK_PRIMARY_VERIFICATION_BATCH_046"
+  "updated_by": "G01_RELATIONSHIP_AND_DENOMINATOR_RECONCILIATION_BATCH_047"
 }
