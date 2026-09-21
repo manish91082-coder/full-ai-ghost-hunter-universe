@@ -1,0 +1,53 @@
+{
+  "schema_version": "g01-native-production-extraction-manifest-v001",
+  "purpose": "Externalized discovery inputs and extraction rules for G01 native production-chain and DEX-derived network union.",
+  "authoritative_runtime_data": false,
+  "sources": [
+    {
+      "source_id": "cosmos_chain_registry_git",
+      "authority_class": "primary_registry",
+      "endpoint": "https://api.github.com/repos/cosmos/chain-registry/git/trees/master?recursive=1",
+      "method": "github_recursive_tree",
+      "selection": "paths ending with /chain.json",
+      "production_rule": "record.status == live AND record.network_type == mainnet",
+      "identity_fields": ["chain_name", "chain_type", "chain_id", "network_type", "status"],
+      "execution_plane_fields": ["chain_type"],
+      "notes": "Directory count is never treated as chain count. _non-cosmos records are retained for union processing."
+    },
+    {
+      "source_id": "defillama_chains",
+      "authority_class": "secondary_discovery",
+      "endpoint": "https://api.llama.fi/chains",
+      "method": "json_array",
+      "selection": "all records with non-empty name",
+      "production_rule": "retain as discovery candidate; lifecycle and canonical identity require independent verification",
+      "identity_fields": ["name", "chainId"],
+      "notes": "This is a discovery surface, not final production truth."
+    },
+    {
+      "source_id": "defillama_protocols",
+      "authority_class": "secondary_discovery",
+      "endpoint": "https://api.llama.fi/protocols",
+      "method": "json_array",
+      "selection": "protocol records whose category is DEX-like OR whose name/category is explicitly exchange/AMM/orderbook",
+      "production_rule": "extract chain names from qualifying protocol records as DEX-derived network candidates",
+      "identity_fields": ["name", "category", "chains"],
+      "notes": "DEX-derived presence is a candidate signal only; venue capability and execution eligibility remain separate gates."
+    }
+  ],
+  "normalization": {
+    "canonical_key_preference": ["CAIP-2", "native chain id", "EIP-155 numeric chain id", "verified provider-specific id"],
+    "non_evm_policy": "never coerce a native identifier into EVM semantics",
+    "alias_policy": "retain aliases as evidence; resolve to canonical identity only after verification",
+    "testnet_policy": "exclude from production denominator but preserve in exclusion registry",
+    "duplicate_policy": "deduplicate only after identity and execution-plane reconciliation"
+  },
+  "saturation_outputs": [
+    "raw source snapshot",
+    "normalized candidate records",
+    "overlap map",
+    "exclusion registry",
+    "unknown/conflict registry",
+    "final deduplicated denominator"
+  ]
+}
