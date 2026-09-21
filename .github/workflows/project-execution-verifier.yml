@@ -30,19 +30,23 @@ jobs:
           set -euo pipefail
 
           REPO="${GITHUB_REPOSITORY}"
+          MAIN_SHA="$(curl -fsSL -H "Accept: application/vnd.github+json" -H "Authorization: Bearer ${GH_TOKEN}" -H "X-GitHub-Api-Version: 2026-03-10" "https://api.github.com/repos/${REPO}/git/ref/heads/main" | jq -r '.object.sha')"
 
           if [ "${EVENT_NAME}" = "workflow_run" ]; then
             RUN_SHA="${TRIGGER_SHA}"
             RUN_CONCLUSION="${TRIGGER_CONCLUSION}"
             RUN_ID="${TRIGGER_RUN_ID}"
+
+            if [ "${RUN_SHA}" != "${MAIN_SHA}" ]; then
+              echo "STALE EXECUTION IGNORED: run ${RUN_ID} belongs to ${RUN_SHA}, current main is ${MAIN_SHA}"
+              exit 0
+            fi
           else
-            LATEST_JSON="$(curl -fsSL -H "Accept: application/vnd.github+json" -H "Authorization: Bearer ${GH_TOKEN}" -H "X-GitHub-Api-Version: 2026-03-10" "https://api.github.com/repos/${REPO}/actions/runs?branch=main&event=push&per_page=20")"
+            LATEST_JSON="$(curl -fsSL -H "Accept: application/vnd.github+json" -H "Authorization: Bearer ${GH_TOKEN}" -H "X-GitHub-Api-Version: 2026-03-10" "https://api.github.com/repos/${REPO}/actions/runs?branch=main&event=push&head_sha=${MAIN_SHA}&per_page=20")"
             RUN_SHA="$(printf '%s' "${LATEST_JSON}" | jq -r '[.workflow_runs[] | select(.name=="data-plane-ci")] | .[0].head_sha // empty')"
             RUN_CONCLUSION="$(printf '%s' "${LATEST_JSON}" | jq -r '[.workflow_runs[] | select(.name=="data-plane-ci")] | .[0].conclusion // empty')"
             RUN_ID="$(printf '%s' "${LATEST_JSON}" | jq -r '[.workflow_runs[] | select(.name=="data-plane-ci")] | .[0].id // empty')"
           fi
-
-          MAIN_SHA="$(curl -fsSL -H "Accept: application/vnd.github+json" -H "Authorization: Bearer ${GH_TOKEN}" -H "X-GitHub-Api-Version: 2026-03-10" "https://api.github.com/repos/${REPO}/git/ref/heads/main" | jq -r '.object.sha')"
 
           echo "authoritative_main_sha=${MAIN_SHA}"
           echo "verified_data_plane_run_id=${RUN_ID:-none}"
