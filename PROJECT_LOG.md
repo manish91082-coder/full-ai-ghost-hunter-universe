@@ -250,3 +250,13 @@ Materialized primary-source Aave Pool addresses and Aave GHO FlashMinter facilit
 - G02 remains ACTIVE / NOT SATURATED.
 - Runtime capacity, current fees, enablement/authorization, executable code identity and freshness remain unresolved.
 - Live trading STOP; G03-G29 blocked.
+
+
+## 2026-09-21 — G02 TARGETED PRIMARY-CAPABILITY VERIFICATION BATCH 008
+
+- Targeted Silo V3 and QuickSwap after adversarial Batch 007.
+- Silo capability and same-transaction repayment are primary-source documented; permissionless market deployment makes market-level enumeration a separate denominator.
+- QuickSwap V2 flash-swap capability and atomic callback repayment are primary-source documented; reserves and current economics remain runtime state.
+- Canonical registry updated with explicit runtime obligations.
+- Added Batch 008 research artifact and Audit 060.
+- G02 remains ACTIVE / NOT SATURATED; downstream gates blocked; live trading STOP.
