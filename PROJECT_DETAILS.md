@@ -486,3 +486,10 @@ The dynamic-execution architecture has advanced from schema-only validation towa
 Replay semantics are now represented in tests: the same loader consumes two valid snapshots and produces different runtime projections. This preserves the no-hardcoded-universe invariant.
 
 Signature trust-root verification is intentionally still open. Live RPC collection and current on-chain market state are also open. No execution authority is created by this architecture increment.
+
+
+## SECTION 49 — PROVIDER POOL ROTATION
+
+The provider layer now has an explicit deterministic rotation contract. A provider failure places that provider into cooldown; selection moves to another configured provider for the same network. If every provider is unavailable, selection fails closed. Successful providers recover their failure state.
+
+Provider switching does not establish state continuity. Every post-switch observation must independently satisfy freshness, provenance and request-consistency requirements. This rule is essential for later block-by-block hunting and prevents a failed/stale endpoint from silently causing either missed opportunities or unsafe execution.
