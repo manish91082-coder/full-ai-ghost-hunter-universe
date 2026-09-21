@@ -670,3 +670,25 @@ No duplicate current-state registry was created. G01 remains ACTIVE / NOT SATURA
 DEX-derived network union + native-source gap scan + primary identity/lifecycle verification + adversarial coverage audit.
 
 Live trading STOP.
+
+
+## LOG-0030 — G01 DEX-DERIVED NETWORK UNION / MACRO-BATCH 024
+
+Date: 21 September 2026
+
+Fresh DEX discovery evidence was joined against the current G01 state.
+
+### Completed
+- DeFiLlama DEX-by-chain discovery surface admitted into the G01 source union;
+- 290-chain and 794-DEX-protocol discovery metrics captured;
+- existing chain overlaps prevented from duplicating current canonical state;
+- Spark and Native added as new chain-level discovery candidates;
+- Chainflip retained as a separate protocol/network modeling case, not falsely promoted as a chain;
+- machine-readable DEX discovery manifest created;
+- Audit 030 completed as PARTIAL PASS.
+
+Current source-union count: **49**.
+
+G01 remains ACTIVE / NOT SATURATED. Live trading STOP.
+
+Next: full DEX extraction and semantic protocol→chain reconciliation, followed by native-source gap scan and adversarial coverage audit.
