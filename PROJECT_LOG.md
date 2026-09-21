@@ -171,3 +171,8 @@
 ## 2026-09-21 — G01 BATCH 043
 
 High-information DEX primary verification completed for Arbitrum One, Arbitrum Nova, Bitcoin Mainnet, NEAR Mainnet, Litecoin Mainnet and XRP Ledger Mainnet using official primary sources. Canonical state advanced from 66 to 72 records with zero duplicate canonical keys. DEX presence remains discovery evidence only. G01 remains ACTIVE; G02 remains BLOCKED; live trading STOP. Audit 049 = PARTIAL PASS. Next: bounded primary verification of remaining material labels followed by adversarial denominator closure and G01 exit review.
+
+
+## 2026-09-21 — G01 BATCH 044
+
+Primary verification advanced three high-information DEX labels: Cosmos Hub (cosmoshub-4), Sui Mainnet, and Starknet Mainnet. Canonical state advanced from 72 to 74 with zero duplicate canonical keys. G01 remains ACTIVE, G02 remains BLOCKED, and live trading remains STOP. Audit 050 = PARTIAL PASS.
