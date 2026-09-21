@@ -75,5 +75,20 @@
     "canonical_duplicate_added": 0,
     "remaining_unique_labels": 419,
     "full_semantic_denominator_closed": false
+  },
+  "semantic_triage": {
+    "batch": "G01_DEX_SEMANTIC_TRIAGE_AND_PRIMARY_DELTA_BATCH_042",
+    "audit": "AUDIT_048_G01_DEX_SEMANTIC_TRIAGE_AND_PRIMARY_DELTA",
+    "observed_unique_labels": 419,
+    "classification_counts": {
+      "POSSIBLE_NETWORK_CANDIDATE": 350,
+      "UNKNOWN": 26,
+      "EXECUTION_PLANE_VARIANT_CANDIDATE": 30,
+      "LIKELY_ALIAS_CANDIDATE": 13
+    },
+    "classification_complete": true,
+    "identity_verification_complete": false,
+    "canonical_promotions": 1,
+    "live_execution_authorized": false
   }
 }
