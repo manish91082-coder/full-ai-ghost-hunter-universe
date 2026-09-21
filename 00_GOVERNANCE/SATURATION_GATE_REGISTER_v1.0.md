@@ -199,3 +199,18 @@ Still open:
 - saturation audit/freeze.
 
 G01 remains ACTIVE / NOT SATURATED. G02-G28 remain blocked. Live trading STOP.
+
+
+## G01 UPDATE — DATA LIFECYCLE / ANTI-DUPLICATION LOCK
+
+Date: 21 September 2026
+
+G01 current-state materialization now follows a two-plane model:
+- evidence/history = append-only;
+- current canonical state = deduplicated and updated in place.
+
+The current G01 source-union registry was upgraded in place to v002 and marked CURRENT_MATERIALIZED_STATE. Git history preserves its prior state. No ordinary future discovery may create another full registry copy.
+
+Before G01 saturation, a duplicate/identity anomaly audit is mandatory. Saturation requires one authoritative current record per canonical identity, with provenance references and bounded alias/conflict/exclusion states.
+
+G01 remains ACTIVE / NOT SATURATED. Live trading STOP.
