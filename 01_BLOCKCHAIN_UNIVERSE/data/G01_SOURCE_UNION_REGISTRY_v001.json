@@ -935,6 +935,52 @@
       "canonical_record_key": "zetachain",
       "lifecycle": "mainnet",
       "note": "Official Cosmos Chain Registry production observation plus ZetaChain official site identifies ZetaChain as a general-purpose Layer 1. Identity verified; execution/flash capability remains downstream."
+    },
+    {
+      "input_name": "Kava",
+      "normalized_name": "Kava",
+      "match": null,
+      "state": "NEW_CANDIDATE",
+      "identity_state": "PRIMARY_VERIFIED",
+      "mainnet_identifier": "kava_2222-10",
+      "execution_plane_identifier": "eip155:2222",
+      "evidence": [
+        "https://docs.kava.io/docs/ethereum/overview/",
+        "https://docs.kava.io/docs/ethereum/metamask/",
+        "https://docs.kava.io/docs/cosmos/javascript-sdk/"
+      ],
+      "canonical_record_key": "kava",
+      "lifecycle": "mainnet",
+      "note": "Official Kava docs establish Kava mainnet and EVM-compatible execution; Cosmos chain ID kava_2222-10 is preserved separately from EVM execution ID 2222. Identity only, no flash/execution authorization."
+    },
+    {
+      "input_name": "Op_Bnb",
+      "normalized_name": "opBNB",
+      "match": null,
+      "state": "NEW_CANDIDATE",
+      "identity_state": "PRIMARY_VERIFIED",
+      "mainnet_identifier": "eip155:204",
+      "evidence": [
+        "https://docs.bnbchain.org/bnb-opbnb/get-started/network-info/"
+      ],
+      "canonical_record_key": "opbnb",
+      "lifecycle": "mainnet",
+      "note": "Official BNB Chain docs identify opBNB as BNB Smart Chain Layer 2 and mainnet chain ID 204; testnet 5611 is excluded."
+    },
+    {
+      "input_name": "Cardano",
+      "normalized_name": "Cardano",
+      "match": null,
+      "state": "NEW_CANDIDATE",
+      "identity_state": "PRIMARY_VERIFIED",
+      "mainnet_identifier": "cardano:mainnet",
+      "evidence": [
+        "https://docs.cardano.org/about-cardano/introduction",
+        "https://docs.cardano.org/cardano-testnet/about/testnet-introduction/"
+      ],
+      "canonical_record_key": "cardano-mainnet",
+      "lifecycle": "mainnet",
+      "note": "Official Cardano docs distinguish production mainnet from preview/pre-production test environments. Native Cardano identity is preserved; no EVM coercion."
     }
   ],
   "normalization_rules": [
@@ -952,19 +998,19 @@
   "duplicate_policy": "semantic identity resolution before merge; one canonical record per canonical identity",
   "provenance_policy": "source evidence remains referenced per record; conflicting observations are preserved outside the canonical object",
   "last_materialized_update": "2026-09-21",
-  "record_count": 62,
+  "record_count": 65,
   "current_state_accounting": {
     "as_of": "2026-09-21",
-    "total_records": 62,
+    "total_records": 65,
     "state_counts": {
       "MATCH_EXISTING": 10,
-      "NEW_CANDIDATE": 52
+      "NEW_CANDIDATE": 55
     },
-    "canonical_record_key_count": 62,
+    "canonical_record_key_count": 65,
     "duplicate_canonical_record_key_count": 0,
     "note": "Current-state accounting computed from records[]; historical join-point metadata is separate.",
-    "controlling_batch": "G01_ADVERSARIAL_MISSED_NETWORK_AUDIT_BATCH_040",
-    "audit": "AUDIT_046_G01_ADVERSARIAL_MISSED_NETWORK"
+    "controlling_batch": "G01_DEX_NATIVE_DENOMINATOR_TARGETED_CYCLE_BATCH_041",
+    "audit": "AUDIT_047_G01_DEX_NATIVE_DENOMINATOR_TARGETED_CYCLE"
   },
   "updated_by": "G01_HIGH_INFORMATION_PRIMARY_VERIFICATION_BATCH_038"
 }
