@@ -644,3 +644,29 @@ AUDIT 028 = CONTROL LAYER ACCEPTED. Factual G01 saturation remains open.
 Duplicate/identity anomaly audit against the current canonical state, followed by uncovered native + DEX discovery delta merge and full re-audit.
 
 Live trading STOP.
+
+
+## LOG-0029 — G01 DUPLICATE / IDENTITY AUDIT + MORPHO DISCOVERY DELTA / MACRO-BATCH 023
+
+Date: 21 September 2026
+
+Macro-batch 023 resumed G01 from the locked continuation point.
+
+### Completed
+- repository identity/latest HEAD preflight;
+- duplicate canonical-key audit of the current 21-record source union;
+- reconciliation against the already-reconciled Morpho 50-row production/testnet split;
+- in-place merge of 26 previously uncovered production/mainnet Morpho-derived candidates;
+- fail-closed separation of deployment evidence from executable capability.
+
+### New candidates
+0G, Arc, Bittensor, Camp, Citrea, Cronos, Eden, Etherlink, Flare, Gensyn, Hemi, HyperEVM, Ink, Katana, Lisk, MegaETH, Monad, Morph, Pharos, Plasma, Stable, TAC, Tempo, Unichain, XDC, Zircuit.
+
+### Audit
+AUDIT 029 = PARTIAL PASS.
+No duplicate current-state registry was created. G01 remains ACTIVE / NOT SATURATED.
+
+### Next
+DEX-derived network union + native-source gap scan + primary identity/lifecycle verification + adversarial coverage audit.
+
+Live trading STOP.
