@@ -406,3 +406,7 @@ Permanent rules added:
 - Solana lifecycle semantics distinguish Mainnet from Devnet/Testnet.
 - TRON lifecycle semantics distinguish Mainnet from Shasta/Nile and its TVM semantics must not be collapsed into generic EVM assumptions.
 - Native ecosystem discovery must be joined before final G01 saturation.
+
+## DURABLE RULE — G01 MACRO-BATCH 021
+
+G01 native production extraction is now governed by an externalized source manifest. Source code must not embed authoritative chain, RPC, contract, token, pool, pair or strategy universes. Cosmos records are production candidates only when status=live and network_type=mainnet. DEX-derived network presence is discovery-only until independently verified. Source denominators are never additive. Testnets, devnets, aliases, duplicates and conflicts remain explicitly represented rather than silently discarded. G01 remains the only primary saturation gate.
