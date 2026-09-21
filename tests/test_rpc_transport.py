@@ -68,3 +68,25 @@ def test_quorum_disagreement_fails_closed():
         return Response({"jsonrpc": "2.0", "id": 1, "result": result})
     with pytest.raises(RegistryError):
         RpcTransport(p, opener=opener).quorum_call("net:1", "eth_blockNumber", quorum=2)
+
+def test_call_retries_within_same_request_after_provider_failure():
+    p = pool()
+    calls = []
+    def opener(request, timeout):
+        calls.append(request.full_url)
+        if request.full_url.endswith("/1"):
+            raise OSError("timeout")
+        return Response({"jsonrpc": "2.0", "id": 1, "result": "0x12"})
+    obs = RpcTransport(p, opener=opener).call("net:1", "eth_blockNumber")
+    assert obs.provider_id == "p2"
+    assert calls == ["https://runtime.invalid/1", "https://runtime.invalid/2"]
+
+
+def test_quorum_fails_closed_when_provider_capacity_is_insufficient_after_failure():
+    p = pool()
+    def opener(request, timeout):
+        if request.full_url.endswith("/1"):
+            raise OSError("timeout")
+        return Response({"jsonrpc": "2.0", "id": 1, "result": "0x20"})
+    with pytest.raises(RegistryError):
+        RpcTransport(p, opener=opener).quorum_call("net:1", "eth_blockNumber", quorum=2)
