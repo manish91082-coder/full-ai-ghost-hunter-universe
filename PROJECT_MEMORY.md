@@ -353,3 +353,18 @@ Permanent project memory:
 - Heavy research/discovery is off the hot path; the final decision path is designed for measured low latency.
 - Live trading remains STOP.
 
+
+
+## XIV. CANONICAL REPOSITORY IDENTITY LOCK
+
+Date: 21 September 2026
+
+Permanent memory:
+- This project's canonical repository is exactly `manish91082-coder/full-ai-ghost-hunter-universe`.
+- Canonical branch is `main`.
+- Repository selection must never use name similarity.
+- A different Ghost Hunter repository is not interchangeable.
+- New chats inherit the same repository identity.
+- Before substantive work, verify the latest canonical Git state first.
+- If canonical verification fails, stop rather than guessing or switching.
+- All project writes must remain in the canonical repository unless explicit change control changes the repository identity.
