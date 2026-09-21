@@ -422,3 +422,15 @@ No deployment record authorizes execution. Runtime code, current balances, fee s
 ## SECTION 41 — G02 PRIMARY ADDRESS MATERIALIZATION BATCH 004
 
 Aave production Pool addresses were promoted where directly supported by a primary Aave governance deployment inventory. The registry retains pending state for networks not covered by that source. The Aave GHO FlashMinter facilitator address was also materialized. This batch deliberately stops before bytecode/runtime state because those are separate evidence obligations.
+## SECTION 42 — G02 PRIMARY ADDRESS + CODE/STATE BOUNDARY BATCH 005
+
+Date: 21 September 2026
+
+G02 deployment identity was strengthened using current primary sources for marginfi v2, Sky MCD_FLASH, Venus Core Pool and Balancer V2 Vault. The canonical deployment registry remains the single current materialized state and was updated in place.
+
+The G02 model remains:
+mechanism → network → deployment → code/interface → capability → asset → capacity → fee → authorization → atomicity → freshness → provenance
+
+Batch 005 intentionally stops before runtime bytecode hashes and live economic state. These are separate evidence layers and must be observed from current chain state before any downstream execution consideration.
+
+G02 remains active and unsaturated. G03-G29 remain blocked and live trading remains STOP.
