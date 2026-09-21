@@ -264,15 +264,122 @@
         "https://docs.curve.finance/"
       ],
       "source_class": "S1_PRIMARY_DISCOVERY"
+    },
+    {
+      "id": "ALU-0016",
+      "protocol": "Silo V3",
+      "mechanism": "FLASH_LOAN",
+      "execution_model": "EVM",
+      "verification_state": "DISCOVERY_CANDIDATE",
+      "atomicity": "SAME_TRANSACTION_REPAYMENT_REQUIRED",
+      "callback": "HOOK_RECEIVER_FLASH_LOAN_PATH_TO_VERIFY",
+      "repayment": "PRINCIPAL_PLUS_FLASHLOAN_FEE_BEFORE_COMPLETION",
+      "fee_state": "DYNAMIC_MARKET_CONFIG",
+      "capacity_state": "DYNAMIC_SILO_BORROWABLE_LIQUIDITY",
+      "deployment_state": "CURRENT_PRODUCTION_NETWORKS_AND_MARKET_DEPLOYMENTS_REQUIRE_ENUMERATION",
+      "evidence": [
+        "https://docs.silo.finance/docs/developers/dev-tutorials/hooks/",
+        "https://docs.silo.finance/docs/developers/dev-tutorials/silo-config/",
+        "https://docs.silo.finance/docs/developers/resources/deployments/"
+      ],
+      "source_class": "S1_PRIMARY_DISCOVERY"
+    },
+    {
+      "id": "ALU-0017",
+      "protocol": "SyncSwap",
+      "mechanism": "VAULT_FLASH_LOAN",
+      "execution_model": "EVM",
+      "verification_state": "DISCOVERY_CANDIDATE",
+      "atomicity": "TO_VERIFY",
+      "callback": "TO_VERIFY",
+      "repayment": "TO_VERIFY",
+      "fee_state": "TO_VERIFY",
+      "capacity_state": "DYNAMIC_VAULT_LIQUIDITY",
+      "deployment_state": "CURRENT_L2_DEPLOYMENTS_AND_VAULT_ADDRESSES_REQUIRE_ENUMERATION",
+      "evidence": [
+        "https://docs.syncswap.xyz/syncswap/smart-contracts/overview"
+      ],
+      "source_class": "S1_PRIMARY_DISCOVERY"
+    },
+    {
+      "id": "ALU-0018",
+      "protocol": "QuickSwap",
+      "mechanism": "FLASH_SWAP",
+      "execution_model": "EVM",
+      "verification_state": "DISCOVERY_CANDIDATE",
+      "atomicity": "SAME_TRANSACTION_REPAYMENT_REQUIRED",
+      "callback": "PAIR_FLASH_SWAP_CALLBACK_PATH_TO_VERIFY",
+      "repayment": "CORRESPONDING_PAIR_ASSET_OR_WITHDRAWN_ASSET_PLUS_FEE",
+      "fee_state": "DYNAMIC_PAIR_STATE",
+      "capacity_state": "DYNAMIC_PAIR_RESERVES",
+      "deployment_state": "CURRENT_PRODUCTION_FACTORY_AND_NETWORK_ENUMERATION_REQUIRED",
+      "evidence": [
+        "https://docs.quickswap.exchange/technical-reference/core-concepts/flash-swaps"
+      ],
+      "source_class": "S1_PRIMARY_DISCOVERY"
+    },
+    {
+      "id": "ALU-0019",
+      "protocol": "PancakeSwap",
+      "mechanism": "FLASH_SWAP",
+      "execution_model": "EVM",
+      "verification_state": "DISCOVERY_CANDIDATE",
+      "atomicity": "SAME_TRANSACTION_REPAYMENT_REQUIRED",
+      "callback": "pancakeCall",
+      "repayment": "PAIR_INVARIANT_AND_REQUIRED_INPUT_BEFORE_COMPLETION",
+      "fee_state": "DYNAMIC_PAIR_RULES",
+      "capacity_state": "DYNAMIC_PAIR_RESERVES",
+      "deployment_state": "CURRENT_V2_PRODUCTION_FACTORY_NETWORKS_REQUIRE_ENUMERATION",
+      "evidence": [
+        "https://github.com/pancakeswap/pancake-swap-periphery/blob/master/contracts/examples/ExampleFlashSwap.sol",
+        "https://docs.pancakeswap.finance/"
+      ],
+      "source_class": "S2_PRIMARY_CODE_DISCOVERY"
+    },
+    {
+      "id": "ALU-0020",
+      "protocol": "Drift",
+      "mechanism": "FLASH_LOAN",
+      "execution_model": "Solana",
+      "verification_state": "DISCOVERY_CANDIDATE",
+      "atomicity": "BEGIN_END_INSTRUCTION_SAME_TRANSACTION",
+      "callback": "WHITELISTED_TRADING_PROGRAMS_BETWEEN_BEGIN_END_SWAP",
+      "repayment": "END_SWAP_SETTLES_RESIDUAL_BORROW_AND_CAN_CROSS_ASSET",
+      "fee_state": "TO_VERIFY_CURRENT_RUNTIME",
+      "capacity_state": "DYNAMIC_SPOT_MARKET_AND_MARGIN_STATE",
+      "deployment_state": "CURRENT_SOLANA_PROGRAM_AND_SPOT_MARKET_STATE_REQUIRE_VERIFICATION",
+      "evidence": [
+        "https://www.drift.trade/updates/leveraged-swaps"
+      ],
+      "source_class": "S1_PRIMARY_DISCOVERY"
+    },
+    {
+      "id": "ALU-0021",
+      "protocol": "Save / Solend",
+      "mechanism": "FLASH_LOAN",
+      "execution_model": "Solana",
+      "verification_state": "DISCOVERY_CANDIDATE",
+      "atomicity": "FLASH_BORROW_FLASH_REPAY_SAME_TRANSACTION_PATTERN",
+      "callback": "FLASH_RECEIVER_PROGRAM_PATH",
+      "repayment": "FLASH_REPAY_INSTRUCTION_WITH_FEE",
+      "fee_state": "DYNAMIC_RESERVE_PARAMETER",
+      "capacity_state": "DYNAMIC_RESERVE_LIQUIDITY_AND_BORROW_LIMIT",
+      "deployment_state": "CURRENT_PRODUCTION_STATUS_REQUIRES_FRESH_VERIFICATION",
+      "evidence": [
+        "https://docs.save.finance/developers/flash-loans",
+        "https://docs.save.finance/protocol/parameters"
+      ],
+      "source_class": "S1_PRIMARY_DISCOVERY"
     }
   ],
   "counts": {
-    "total": 15,
+    "total": 21,
     "verified_primitive": 9,
-    "discovery_candidate": 5,
+    "discovery_candidate": 11,
     "discovery_family": 1
   },
   "downstream_rule": "Mechanism evidence never authorizes execution. Deployment, current state, liquidity-at-size, route, simulation, risk and economics remain separate gates.",
-  "revision": 2,
-  "execution_authority": "NONE"
+  "revision": 3,
+  "execution_authority": "NONE",
+  "adversarial_discovery_batch": "G02_ADVERSARIAL_DENOMINATOR_BATCH_007"
 }
