@@ -319,3 +319,27 @@ The project may advance to the next gate only when the active gate's exit criter
 **Saturation means sufficient evidence-backed closure of the defined gate, not proof that no new information can ever exist.**
 
 This rule is permanent unless changed through explicit governance change control.
+
+
+## 19. MAXIMUM MACRO MODE LOCK — 21 SEPTEMBER 2026
+
+Effective immediately, the user command `next` is a **maximum-work authorization** for the active gate. The assistant must complete, within one response/execution window, all logically related work that can be safely and reliably executed without artificial micro-batching.
+
+Required behavior:
+- retain the FINAL GOAL and active gate as the controlling objective throughout the response;
+- parallelize independent discovery, verification, reconciliation, implementation and audit work where possible;
+- absorb related findings into the same macro-cycle instead of waiting for another `next` merely to split work;
+- run the bounded saturation loop inside the macro-cycle;
+- perform exit review before returning control;
+- freeze and advance when exit criteria pass;
+- if a genuine external dependency, unavailable evidence, execution-window limit, rate limit, human authorization or safety gate prevents completion, record the exact boundary and preserve a deterministic continuation point;
+- never claim saturation or completion merely because the response ended;
+- never allow speed to weaken evidence, safety, provenance, deduplication or the final-goal dependency order.
+
+### FINAL-GOAL ANCHOR
+Every response must explicitly remain aligned to the final goal: **a globally comprehensive, evidence-backed, dynamically configured, autonomous flash-loan/atomic-liquidity arbitrage hunting ecosystem with safe economic gating, no-go execution on uncertainty, continuous opportunity coverage, and live execution only after all readiness gates pass.**
+
+Every macro-batch must state how the completed work reduces distance to that final goal. A batch that does not materially advance the active gate or an explicitly permitted non-dependent infrastructure capability is invalid progress.
+
+### NO MICRO-BATCH THEATRE
+One `next` must not be converted into a sequence of trivial commits, status-only actions, or single-candidate work when a larger safe logical unit can be completed. Bounded saturation remains mandatory, so this lock does not authorize infinite research or unverified claims.
