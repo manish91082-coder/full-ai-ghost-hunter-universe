@@ -65,3 +65,11 @@ No AI model is allowed to infer canonical identity, zero values, production stat
 ## BOUNDED SATURATION / MAXIMUM-WORK CONTROL
 
 Apply `00_GOVERNANCE/BOUNDED_SATURATION_EXIT_REGISTER_v1.0.md`. Do not continue a gate merely because additional research is possible. After each targeted cycle, perform an exit review. Freeze and advance when mandatory obligations pass and no material gap remains. If a material gap remains, perform one targeted bounded cycle rather than restarting broad discovery. The `next` command means maximum useful safe work per response, not artificial micro-batches.
+
+## 18. MAXIMUM MACRO MODE LOCK — 21 SEPTEMBER 2026
+
+One `next` is one maximum-safe macro execution for the active gate. The execution unit includes all logically related discovery, verification, implementation, testing, reconciliation, adversarial audit and saturation work that can safely fit in the current execution window. Artificial splitting is prohibited.
+
+The final-goal anchor is mandatory: every batch must materially reduce the distance to the globally comprehensive autonomous arbitrage hunting ecosystem. If completion is prevented by a genuine external dependency or execution-window boundary, record the boundary and continue from the exact checkpoint on the next command.
+
+No micro-batch theatre. No status-only progress. No premature gate advancement. No weakening of safety or evidence controls.
