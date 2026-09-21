@@ -503,3 +503,32 @@ The repository identity is now an explicit preflight gate. Name similarity is no
 All future chat threads inherit the same canonical repository identity.
 
 Live trading remains STOP.
+
+## LOG-0023 — G01 GLOBAL CHAIN DISCOVERY EXPANSION / MACRO-BATCH 018
+
+Date: 21 September 2026
+
+### Objective
+Advance only the unlocked G01 Global Blockchain Universe gate.
+
+### Created
+- 01_BLOCKCHAIN_UNIVERSE/48_G01_GLOBAL_CHAIN_DISCOVERY_EXPANSION_BATCH_018.md
+- 01_BLOCKCHAIN_UNIVERSE/49_AUDIT_024_G01_GLOBAL_CHAIN_DISCOVERY_EXPANSION.md
+
+### Result
+Fresh independent discovery surfaces were reconciled at the methodology level:
+- DeFiLlama chain/DEX discovery surface;
+- CoinGecko 100+ network discovery surface;
+- L2BEAT scaling/activity discovery surface;
+- protocol-derived and DEX-derived deployment surfaces.
+
+21 individually named network candidates were added to the G01 discovery denominator for later primary identity/lifecycle verification.
+
+### Audit
+Audit 024 = PARTIAL PASS.
+G01 remains ACTIVE / NOT SATURATED.
+
+### Decision
+Do not advance G02-G29 as authoritative. The next macro objective is source-union normalization and primary identity/lifecycle verification across the expanded G01 candidate set.
+
+Live trading STOP.
