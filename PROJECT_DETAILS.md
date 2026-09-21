@@ -560,3 +560,23 @@ The concrete test regression was in tests/test_rpc_transport.py. Batch 015 chang
 CI was also hardened so the workflow explicitly installs pytest, sets PYTHONPATH=src, and invokes python -m pytest -q.
 
 No execution authority was added. G02 remains ACTIVE / NOT SATURATED.
+
+
+## 54. EXECUTION VERIFICATION CONTRACT
+
+Date: 21 September 2026
+
+The project now distinguishes **commit existence** from **execution verification**.
+
+Required handshake:
+1. Read current authoritative `main` HEAD.
+2. Locate the latest `data-plane-ci` execution for that state.
+3. Inspect job/step result, not only the workflow name.
+4. Require conclusion `success`.
+5. Require workflow run `head_sha == current main HEAD`.
+6. Require `project-execution-verifier` GREEN.
+7. Only then close the macro-cycle and advance to the next bounded work unit.
+
+A stale successful run for an older SHA is not accepted. A failed or missing run is not accepted. This prevents the project from appearing to progress while GitHub Actions are actually failing or not executing the current repository state.
+
+The new verifier is observation/control-only and creates no execution authority.
