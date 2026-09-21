@@ -434,3 +434,11 @@ Permanent project memory:
 - Cross-model compatibility and adversarial negative tests are mandatory for authoritative data domains.
 - Mission navigation is FINAL GOAL → ACTIVE GATE → CURRENT STATE → GAP REGISTER → NEXT MACRO-BATCH.
 - G01 remains the only primary saturation gate. Live trading remains STOP.
+
+## DURABLE RULE - G01 FREEZE / G02 UNLOCK - 21 September 2026
+
+G01 Global Blockchain Universe is now FROZEN_AND_ADVANCE after bounded saturation. Freeze means the evidence-backed discovery/identity envelope is sufficiently closed, duplicate-free and audited for downstream use. It does not claim permanent absolute world completeness and does not freeze dynamic market state.
+
+All 419 DEX chain labels remain fully classified; labels without primary identity proof remain discovery-only quarantine and are excluded from execution eligibility until independently verified. G01 reopens only on defined re-entry triggers.
+
+G02 Flash-Loan / Atomic-Liquidity Universe is now the active primary gate. G03-G29 remain blocked. Live trading remains STOP.
