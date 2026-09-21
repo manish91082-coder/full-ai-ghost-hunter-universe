@@ -95,3 +95,11 @@
 - No blind canonical merge performed.
 - Audit 042: PASS for materialization, PARTIAL for G01 saturation.
 - G01 ACTIVE / NOT SATURATED; G02-G29 BLOCKED; LIVE TRADING STOP.
+
+
+## 2026-09-21 - Governance Update: Bounded Saturation / Exit Control
+
+- Added permanent bounded-saturation rules to prevent both premature exit and infinite saturation loops.
+- Defined mandatory evidence, denominator, materiality, bounded targeted cycles, exit review, freeze-and-advance, carry-forward unknown and controlled re-entry states.
+- Locked maximum-useful-work-per-next behavior to prevent artificial micro-batching.
+- Current G01 remains ACTIVE / NOT SATURATED; future cycles must target material unresolved gaps rather than repeat broad discovery.
