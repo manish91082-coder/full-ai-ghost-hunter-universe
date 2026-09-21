@@ -108,13 +108,6 @@ class V2PairEnumerator:
         if max_pairs < 0:
             raise RegistryError("max_pairs must be non-negative")
         start = self.transport.call(network_id, BLOCK_METHOD)
-        count_obs = self.pair_count(network_id, factory)
-        count = _uint(count_obs.result)
-        if count > max_pairs:
-            raise RegistryError("pair universe exceeds configured safety bound")
-        if count_obs.provider_id != start.provider_id:
-            raise RegistryError("provider changed during enumeration preflight")
-
         start_block = parse_hex_block(start.result)
         block_tag = "0x" + format(start_block, "x")
         count_obs = self.transport.call(
