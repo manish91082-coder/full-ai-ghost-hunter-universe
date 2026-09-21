@@ -214,3 +214,7 @@ G02 activated after G01 bounded freeze. Created the machine-readable Atomic Liqu
 G02 deployment/state substrate expanded without restarting G01 or duplicating the canonical Morpho 50-row evidence. Aave V3 current named deployment surface, Project 0 Solana surface, Uniswap V3 pool flash, Sky/Dai two flash-mint paths, Venus, Radiant and Balancer were integrated with explicit dynamic/pending runtime state. ERC-3156 implementation discovery, Curve flash-loan/lending surface and Aave V4 were retained as bounded adversarial discovery dimensions.
 
 Audit 057 = PARTIAL PASS / CONTINUE. Exact addresses, bytecode hashes, live capacity/fee, enablement/authorization and adversarial denominator closure remain open. G02 ACTIVE; G03-G29 BLOCKED; LIVE TRADING STOP.
+
+## 2026-09-21 — G02 PRIMARY ADDRESS MATERIALIZATION BATCH 004
+
+Materialized primary-source Aave Pool addresses and Aave GHO FlashMinter facilitator address in the canonical deployment registry. No address was inferred where the source lacked a current role-specific deployment. Runtime code, capacity, fee and authorization remain open. G02 remains active.
