@@ -59,7 +59,7 @@ class ProviderPool:
                        error: str | None = None) -> None:
         if cooldown_ticks < 1:
             raise RegistryError("cooldown_ticks must be positive")
-        h = self._health(provider_id)
+        h = self._health(provider_id, network_id)
         h.failures += 1
         h.cooldown_until = now_tick + cooldown_ticks
         h.last_error = error
