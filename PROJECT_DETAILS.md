@@ -520,3 +520,8 @@ G02 remains ACTIVE / NOT SATURATED. G03-G29 remain BLOCKED. Live trading remains
 The read-only JSON-RPC substrate now retries within a logical observation request across the configured provider pool. Quorum collection also walks the available provider set until quorum is reached or capacity is exhausted. This closes a concrete transport-recovery gap while preserving zero-trust state semantics.
 
 The change remains observation-only. No transaction construction, signing or submission capability exists. Live market/pair denominators and runtime state remain open.
+
+
+## SECTION 51 — G02 V2 PAIR ENUMERATION / MACRO-BATCH 016
+
+A generic read-only V2-style pair enumeration contract now bridges factory deployment identities toward runtime market-state enumeration. It is deliberately external-data driven and freshness-bound. It does not authorize execution or declare QuickSwap/PancakeSwap pair universes saturated.
