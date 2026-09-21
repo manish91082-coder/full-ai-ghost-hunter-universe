@@ -276,7 +276,7 @@
       "repayment": "PRINCIPAL_PLUS_FLASHLOAN_FEE_BEFORE_COMPLETION",
       "fee_state": "DYNAMIC_MARKET_CONFIG",
       "capacity_state": "DYNAMIC_SILO_BORROWABLE_LIQUIDITY",
-      "deployment_state": "CURRENT_PRODUCTION_NETWORKS_AND_MARKET_DEPLOYMENTS_REQUIRE_ENUMERATION",
+      "deployment_state": "PRIMARY_DEPLOYMENT_DENOMINATOR_PARTIALLY_MATERIALIZED; MARKET_ENUMERATION_REQUIRED",
       "evidence": [
         "https://docs.silo.finance/docs/developers/dev-tutorials/hooks/",
         "https://docs.silo.finance/docs/developers/dev-tutorials/silo-config/",
@@ -295,7 +295,50 @@
         "HOOK RECEIVER/CALLBACK PATH",
         "CURRENT BLOCK FRESHNESS"
       ],
-      "deployment_denominator_note": "Silo markets are permissionless to deploy; protocol deployment enumeration is therefore not sufficient. Market-level enumeration is required."
+      "deployment_denominator_note": "Silo markets are permissionless to deploy; protocol deployment enumeration is therefore not sufficient. Market-level enumeration is required.",
+      "primary_deployment_evidence": {
+        "networks": [
+          "Sonic",
+          "Arbitrum",
+          "Optimism",
+          "Ink",
+          "Avalanche"
+        ],
+        "source": "https://github.com/silo-finance/silo-contracts-v3/blob/develop/silo-core/docs/DeployedSiloVersions.md",
+        "current_versions": {
+          "Sonic": {
+            "version": "3.5.0",
+            "deployer": "0x2Efa5cB0B72f625465aeAc4B84AC90C8b4519C23",
+            "implementation": "0x435Ab368F5fCCcc71554f4A8ac5F5b922bC4Dc06",
+            "factory": "0x4e9dE3a64c911A37f7EB2fCb06D1e68c3cBe9203"
+          },
+          "Arbitrum": {
+            "version": "3.5.0",
+            "deployer": "0xc95Cce9e3A23d8c1c51a61CeAa5ee5927BA9F521",
+            "implementation": "0x9b550BF0351986342959d4447c5851e570766238",
+            "factory": "0x384DC7759d35313F0b567D42bf2f611B285B657C"
+          },
+          "Optimism": {
+            "version": "3.5.0",
+            "deployer": "0x6225eF6256f945f490204D7F71e80B0FF84523dD",
+            "implementation": "0x7ef3055d2B76214Df9Ae74D42944e2917D08Bd78",
+            "factory": "0xFa773e2c7df79B43dc4BCdAe398c5DCA94236BC5"
+          },
+          "Ink": {
+            "version": "3.5.0",
+            "deployer": "0xb59605f42A1c564aacc9387132Ad712295b21E55",
+            "implementation": "0xd3De080436b9d38DC315944c16d89C050C414Fed",
+            "factory": "0xD13921239e3832FDC4141FDE544D3D058B529A5D"
+          },
+          "Avalanche": {
+            "version": "3.8.0",
+            "deployer": "0x3D1FE4DA8812f506f65FfD5e61E2c3f6A01cCD39",
+            "implementation": "0x2C7E816323B2E3894EB98d53B2cbec659aE26441",
+            "factory": "0x92cECB67Ed267FF98026F814D813fDF3054C6Ff9"
+          }
+        }
+      },
+      "market_denominator_status": "OPEN"
     },
     {
       "id": "ALU-0017",
@@ -325,7 +368,7 @@
       "repayment": "CORRESPONDING_PAIR_ASSET_OR_WITHDRAWN_ASSET_PLUS_FEE",
       "fee_state": "DYNAMIC_PAIR_STATE",
       "capacity_state": "DYNAMIC_PAIR_RESERVES",
-      "deployment_state": "CURRENT_PRODUCTION_FACTORY_AND_NETWORK_ENUMERATION_REQUIRED",
+      "deployment_state": "PRIMARY_POLYGON_V2_FACTORY_MATERIALIZED; ALL_PRODUCTION_NETWORK_ENUMERATION_REQUIRED",
       "evidence": [
         "https://docs.quickswap.exchange/technical-reference/core-concepts/flash-swaps"
       ],
@@ -341,7 +384,14 @@
         "CURRENT FEE RULE",
         "CALLBACK AUTHENTICITY",
         "BLOCK FRESHNESS"
-      ]
+      ],
+      "primary_deployment_evidence": {
+        "network": "Polygon POS V2",
+        "router": "0xa5E0829CaCEd8fFDD4De3c43696c57F7D7A678ff",
+        "factory": "0x5757371414417b8C6CAad45bAeF941aBc7d3Ab32",
+        "source": "https://docs.quickswap.exchange/overview/contracts-and-addresses"
+      },
+      "pair_discovery_state": "FACTORY_PAIRCREATED_GETPAIR_ALLPAIRS_DOCUMENTED; CURRENT_PAIR_UNIVERSE_RUNTIME_ENUMERATION_REQUIRED"
     },
     {
       "id": "ALU-0019",
@@ -404,7 +454,8 @@
     "discovery_family": 1
   },
   "downstream_rule": "Mechanism evidence never authorizes execution. Deployment, current state, liquidity-at-size, route, simulation, risk and economics remain separate gates.",
-  "revision": 4,
+  "revision": 5,
   "execution_authority": "NONE",
-  "adversarial_discovery_batch": "G02_ADVERSARIAL_DENOMINATOR_BATCH_007"
+  "adversarial_discovery_batch": "G02_ADVERSARIAL_DENOMINATOR_BATCH_007",
+  "batch_009": "Silo V3 and QuickSwap V2 deployment denominator materialization"
 }
