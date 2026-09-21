@@ -1083,3 +1083,20 @@ No EIP-155 coercion was used for native identity. Gateway/Wormchain and Gravityb
 
 Audit 044: PARTIAL PASS. Exit decision: CONTINUE_TARGETED_CYCLE.
 G02-G29 remain BLOCKED. LIVE TRADING = STOP.
+
+
+## UPDATE - MACRO-BATCH 039 / CURRENT-STATE CONSISTENCY + EXIT PREFLIGHT
+
+Date: 21 September 2026
+State: G01 ACTIVE / NOT SATURATED
+
+Found and repaired a stale metadata defect in the current canonical G01 registry. Actual records were 59 with 59 unique canonical keys, but metadata still said 57 / 47 NEW_CANDIDATE. No duplicate canonical identity existed.
+
+Corrected accounting in place: 59 total, 59 unique keys, 10 MATCH_EXISTING, 49 NEW_CANDIDATE.
+
+Audit 045: PASS for consistency repair; G01 exit preflight PARTIAL.
+
+This batch confirms the bounded-saturation rule: one real defect justified targeted work; broad rediscovery was not started.
+
+G02-G29 remain BLOCKED. LIVE TRADING = STOP.
+Next: adversarial missed-network audit and materiality-based G01 exit review.
