@@ -58,5 +58,8 @@
   "reconfirmed_this_cycle": [
     "Cosmos",
     "Astar zkEVM"
+  ],
+  "reconciliation_findings": [
+    "Official ZKsync mainnet table currently lists 12 mainnet chains; ecosystem identity must not replace per-chain canonical identities."
   ]
 }
