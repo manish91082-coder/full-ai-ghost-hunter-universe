@@ -395,3 +395,14 @@ Durable rule:
 - Execution-plane metadata must remain distinct for networks such as Sei and Injective.
 - Non-EVM identities such as Sui and NEAR must not be forced into EVM numeric chain IDs.
 - G01 remains the only primary saturation gate; live trading remains STOP.
+## UPDATE — G01 NATIVE ECOSYSTEM SOURCE SURFACES / MACRO-BATCH 020
+
+Date: 21 September 2026
+
+Permanent rules added:
+- G01 must not be EVM-centric. Native execution models require independent discovery surfaces.
+- Cosmos Chain Registry is a high-value structured source surface and includes a non-Cosmos subregistry.
+- Source-surface directory counts are never treated as canonical production-chain counts.
+- Solana lifecycle semantics distinguish Mainnet from Devnet/Testnet.
+- TRON lifecycle semantics distinguish Mainnet from Shasta/Nile and its TVM semantics must not be collapsed into generic EVM assumptions.
+- Native ecosystem discovery must be joined before final G01 saturation.
