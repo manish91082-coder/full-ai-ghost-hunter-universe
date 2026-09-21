@@ -2,10 +2,10 @@ import json
 
 import pytest
 
-from src.ghost_hunter.registry import RegistryError
-from src.ghost_hunter.provider_registry import ProviderEndpoint
-from src.ghost_hunter.provider_pool import ProviderPool
-from src.ghost_hunter.rpc_transport import RpcTransport
+from ghost_hunter.registry import RegistryError
+from ghost_hunter.provider_registry import ProviderEndpoint
+from ghost_hunter.provider_pool import ProviderPool
+from ghost_hunter.rpc_transport import RpcTransport
 
 
 class Response:
