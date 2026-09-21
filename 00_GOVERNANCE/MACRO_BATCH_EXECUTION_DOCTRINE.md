@@ -60,3 +60,8 @@ Required internal sequence:
 MISSION/GATE PREFLIGHT → CURRENT CANONICAL READ → EVIDENCE READ → DENOMINATOR → PARALLEL DISCOVERY → CAPTURE/HASH → IDENTITY RESOLUTION → SEMANTIC DEDUP → VERIFY → CLASSIFY → MERGE CURRENT STATE → TEST → ADVERSARIAL AUDIT → GAP RESEARCH → RE-DEDUP → RE-TEST → RE-AUDIT → SATURATION CHECK → CONTROL-FILE SYNC → GIT CHECKPOINT.
 
 No AI model is allowed to infer canonical identity, zero values, production status, freshness or execution eligibility from missing fields or conversational memory.
+
+
+## BOUNDED SATURATION / MAXIMUM-WORK CONTROL
+
+Apply `00_GOVERNANCE/BOUNDED_SATURATION_EXIT_REGISTER_v1.0.md`. Do not continue a gate merely because additional research is possible. After each targeted cycle, perform an exit review. Freeze and advance when mandatory obligations pass and no material gap remains. If a material gap remains, perform one targeted bounded cycle rather than restarting broad discovery. The `next` command means maximum useful safe work per response, not artificial micro-batches.
