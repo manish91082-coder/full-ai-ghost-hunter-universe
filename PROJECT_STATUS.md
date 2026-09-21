@@ -829,3 +829,30 @@ No DEX materialization result has been promoted. GitHub Actions execution remain
 Obtain observable DEX materialization evidence, then reconcile protocol×chain observations against the current 49-record union, perform identity/lifecycle verification, native gap discovery and adversarial missed-network audit.
 
 Live trading remains **STOP**.
+
+
+## UPDATE — MACRO-BATCH 030 / DEX SOURCE MATERIALIZATION SUCCESS
+
+**Date:** 21 September 2026  
+**State:** 🟡 G01 ACTIVE / NOT SATURATED
+
+The machine-runnable DEX discovery path was executed successfully through GitHub Actions. The first run exposed a source-schema/category spelling mismatch: live DeFiLlama data uses **Dexs**, while the extractor did not recognize that exact spelling. The extractor and materializer were corrected and rerun successfully.
+
+### Corrected Materialization
+- Source protocol rows: **8,315**
+- DEX-category rows: **2,106**
+- Unique protocol×chain observations: **3,346**
+- Unique chain labels: **419**
+- Name-level overlap with current 49-record G01 union: **36**
+- Name-level unmatched labels: **383**
+- Raw payload SHA-256: `901e709098d11404dff8dc5afae1decb29d8281155f177169b38e071529a877a`
+- Workflow run: `35565925917`
+- Artifact ID: `10623718283`
+
+### Interpretation
+419 labels are discovery observations, not 419 verified blockchains. The 383 unmatched labels require semantic identity/lifecycle reconciliation before any canonical promotion. No flash-liquidity, executable venue, liquidity-at-size, route, simulation, economic or execution authorization is inferred.
+
+### Next
+Normalize and reconcile the 419-label observation surface, verify identities/lifecycle with primary evidence, classify aliases/conflicts/non-chain labels, search native/independent surfaces for missed networks, then perform adversarial missed-network audit and final denominator analysis.
+
+Live trading remains **STOP**.
