@@ -536,3 +536,10 @@ A single logical observation must not be abandoned merely because its first prov
 ## G02 DURABLE RULE — V2 PAIR ENUMERATION
 
 Factory-level deployment evidence is not pair-state evidence. For V2-style venues, current pair truth must be derived from the runtime factory pair denominator, followed by pair code identity, token identity, reserves/liquidity, fee/callback rules and freshness. Enumeration must use an explicit safety/saturation bound and fail closed rather than silently truncate the universe.
+
+
+## DURABLE RULE — G02 COHERENT V2 SNAPSHOT
+
+Date: 21 September 2026
+
+A V2 pair enumeration/state observation is one coherent snapshot only when all observations participating in that logical snapshot come from the same provider and fall inside an accepted block-freshness window. Provider rotation may recover transport availability, but a rotated response must not silently join an in-flight snapshot. Factory-reported count, enumerated count, opening block and closing block are mandatory completeness metadata. Safety bounds fail closed rather than truncating. Pair runtime bytecode must be observed before pair state is treated as executable-market evidence.
