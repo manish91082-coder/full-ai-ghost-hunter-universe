@@ -282,3 +282,12 @@ Primary deployment identities were materialized for QuickSwap V2 on Polygon and 
 Runtime pair enumeration, code identity, reserves, fee state, callback authenticity and freshness remain open. No research evidence authorizes execution.
 
 Audit 062: PARTIAL PASS / CONTINUE. G02 NOT SATURATED. Live trading STOP.
+
+
+## MACRO-BATCH 018 — RUNTIME REGISTRY + PROVIDER ADAPTER
+
+Implemented the previously identified runtime architecture foundation: external snapshot loading with SHA-256 integrity checking, authorized-version validation, duplicate identity rejection, runtime-only provider configuration and deterministic provider selection. Added replay coverage showing that valid external snapshot substitution changes projected runtime state without modifying executable source.
+
+No provider endpoint or authoritative chain/contract/pair universe was embedded. Signature verification remains pending, and no live RPC/on-chain result is claimed because repository workflow status currently exposes no run/status evidence.
+
+G02 remains active and fail-closed.
