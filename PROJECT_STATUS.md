@@ -1340,3 +1340,33 @@ Date: 21 September 2026
 Primary-source Aave deployment addresses were materialized in-place for the production records where the cited Aave governance deployment inventory provides the Pool address. Ethereum Core/Prime, Polygon, Avalanche, Arbitrum, Optimism, Base, BNB Chain, Scroll, Metis, Gnosis, ZKsync Era, Linea, Sonic, Celo and Soneium were promoted with explicit provenance. EtherFi, Plasma, Fantom and Harmony remain pending where this source did not provide a current Pool address. Aave GHO FlashMinter facilitator address was also materialized. Runtime code hashes, live capacity, fees, enablement and current authorization remain pending.
 
 The distinction is now explicit: primary-source address evidence is not runtime execution evidence.
+## UPDATE — G02 PRIMARY ADDRESS + CODE/STATE BOUNDARY BATCH 005
+
+**Date:** 21 September 2026
+
+The G02 deployment registry was updated in place with primary-source production identities for marginfi v2 Solana mainnet, current Sky MCD_FLASH, Venus BNB Core Pool, and Balancer V2 Vault deployments across Ethereum, Polygon, Arbitrum, Optimism and Gnosis.
+
+### Canonical state
+- Deployment records: **34**
+- Unique deployment keys: **34**
+- Duplicate keys: **0**
+- Primary-source address verified: **26**
+- Address pending: **5**
+- Research-derived execution authorization: **0**
+- All deployment records: **NEVER_FROM_RESEARCH**
+
+### New evidence boundary
+Primary source/interface evidence was strengthened for Balancer flashLoan/repayment semantics, Sky DssFlash, marginfi current program identity, and Venus Core Pool controls. Runtime bytecode, proxy implementation, live capacity, live fee, enablement, authorization and freshness remain separate obligations.
+
+### Gate state
+**G01 = FROZEN / BOUNDED EXIT PASS**
+**G02 = ACTIVE / NOT SATURATED**
+**G03-G29 = BLOCKED**
+**LIVE TRADING = STOP**
+
+### Current G02 bottleneck
+Move from deployment identity to runtime-verifiable state: code identity → capability → asset capacity → fee → authorization/enablement → freshness, while closing the adversarial atomic-mechanism denominator.
+
+Added:
+- 02_FLASH_LOAN_UNIVERSE/08_G02_PRIMARY_ADDRESS_CODE_STATE_BOUNDARY_BATCH_005.md
+- 02_FLASH_LOAN_UNIVERSE/09_AUDIT_058_G02_PRIMARY_ADDRESS_BATCH_005.md
