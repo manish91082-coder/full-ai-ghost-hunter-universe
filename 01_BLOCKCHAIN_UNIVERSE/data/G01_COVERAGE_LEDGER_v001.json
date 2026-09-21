@@ -1,0 +1,100 @@
+{
+  "schema_version": "g01.coverage.ledger.v1",
+  "as_of": "2026-09-21",
+  "gate": "G01",
+  "gate_state": "FROZEN_AND_ADVANCE",
+  "final_goal_anchor": "Globally comprehensive, evidence-backed, dynamically configured autonomous flash-loan/atomic-liquidity arbitrage hunting ecosystem with deterministic simulation, economic/risk gates and live execution only after readiness.",
+  "canonical_state": {
+    "total_records": 92,
+    "network_identity_records": 91,
+    "relationship_records": 1,
+    "unique_canonical_keys": 92,
+    "duplicate_canonical_keys": 0
+  },
+  "source_families": [
+    {
+      "source": "DeFiLlama DEX chain dashboard",
+      "observed_current_chain_count": 290,
+      "role": "broad DEX discovery denominator",
+      "status": "REPRODUCIBLE_DISCOVERY"
+    },
+    {
+      "source": "DeFiLlama protocol materialization",
+      "protocol_rows": 8315,
+      "dex_category_rows": 2106,
+      "unique_protocol_chain_observations": 3346,
+      "unique_chain_labels": 419,
+      "role": "DEX discovery label denominator",
+      "status": "MATERIALIZED_AND_HASHED"
+    },
+    {
+      "source": "CoinGecko supported networks",
+      "current_network_envelope": "250+",
+      "role": "independent broad network cross-check",
+      "status": "CURRENT_WEB_SOURCE"
+    },
+    {
+      "source": "L2BEAT scaling data",
+      "rollups": 23,
+      "validiums_optimiums": 4,
+      "others": 74,
+      "total_tracked_entries": 101,
+      "role": "independent scaling ecosystem cross-check; not a global chain denominator",
+      "status": "CURRENT_WEB_SOURCE"
+    },
+    {
+      "source": "Cosmos Chain Registry",
+      "chain_json_paths": 439,
+      "production_mainnet": 225,
+      "non_production": 214,
+      "fetch_errors": 0,
+      "role": "native ecosystem structured denominator",
+      "status": "MATERIALIZED_AND_OBSERVED"
+    },
+    {
+      "source": "Official protocol deployment registries",
+      "examples": [
+        "Aave",
+        "Morpho",
+        "Balancer",
+        "Uniswap",
+        "Venus",
+        "Radiant",
+        "Euler",
+        "Project 0"
+      ],
+      "role": "protocol-derived discovery surface",
+      "status": "CROSS_CHECKED"
+    }
+  ],
+  "reconciliation": {
+    "duplicate_free": true,
+    "identity_semantics": "network/execution-plane/native identity preserved",
+    "alias_rebrand_policy": "explicit relationship or superseded state",
+    "unresolved_discovery_policy": "retain as UNKNOWN/QUARANTINED discovery records; exclude from execution eligibility until independently verified",
+    "dex_label_classification_complete": true,
+    "primary_identity_verified_for_all_discovery_labels": false,
+    "absolute_global_chain_integer_claimed": false
+  },
+  "exit_obligations": {
+    "declared_source_families_reproducible": true,
+    "lifecycle_and_production_denominators_quantified_by_source": true,
+    "semantic_duplicate_alias_execution_plane_reconciliation_sufficient_for_current_canonical_state": true,
+    "unknown_conflicted_explicitly_accounted": true,
+    "adversarial_missed_network_review_complete_for_declared_source_surfaces": true,
+    "canonical_state_duplicate_free": true,
+    "provenance_and_freshness_obligations_for_discovery_sources": true,
+    "audit_reproducibility_pass": true,
+    "remaining_uncertainty_downstream_impact_documented": true
+  },
+  "downstream_boundary": "G01 freeze does not assert flash liquidity, executable venue, pool, route, liquidity-at-size, simulation, profitability, risk or live execution. Those are G02+ gates.",
+  "reentry_triggers": [
+    "new authoritative discovery source family",
+    "material identity contradiction",
+    "new production network discovered",
+    "freshness expiry",
+    "downstream contradiction",
+    "security/execution-plane change",
+    "scheduled revalidation"
+  ]
+}
