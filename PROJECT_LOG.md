@@ -707,3 +707,14 @@ Date: 21 September 2026
 - Current canonical source-union count remains 49.
 - Live trading remains STOP.
 - Next: current DEX payload materialization → 49-record union join → identity/lifecycle verification → exclusions/conflicts → adversarial missed-network audit.
+
+## MACRO-BATCH 026 — CURRENT DEX SOURCE MATERIALIZATION CONTROL
+Date: 21 September 2026
+- Added G01_DEX_RUNTIME_SOURCE_MANIFEST_v001.json.
+- Added Batch 026 and Audit 032.
+- Re-observed current DeFiLlama discovery metrics: 290 DEX chains and 794 DEX protocols.
+- Complete /protocols payload fetch is blocked by the available web retrieval size boundary.
+- No complete-denominator claim was made.
+- G01 remains ACTIVE / NOT SATURATED.
+- Live trading remains STOP.
+- Next: materialize raw /protocols through supported external execution/CI, hash and retain evidence, then perform complete union reconciliation.
