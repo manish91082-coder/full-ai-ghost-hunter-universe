@@ -504,3 +504,14 @@ Current implementation verifies SHA-256 snapshot integrity and authorized versio
 ## Durable Rule — Provider Switch Requires State Revalidation
 
 RPC/provider rotation is a transport-recovery mechanism, not an authority transfer. After switching providers, current block/state, provenance and request-level consistency must be revalidated before an observation can be used for G02 runtime truth or any later execution decision. If all providers for a required network are unavailable, fail closed.
+
+
+## DURABLE RULE — READ-ONLY RPC TRANSPORT + QUORUM
+
+Date: 21 September 2026
+
+The runtime provider pool now has a read-only JSON-RPC transport boundary. Provider endpoints remain external runtime configuration. Transport failures rotate providers through the fail-closed pool; provider disagreement during quorum observation fails closed.
+
+The transport is observation-only and must never construct, sign or submit transactions. A successful RPC response is not automatically current truth: block/state freshness, provider identity consistency and post-switch revalidation remain mandatory before the observation can become G02 runtime state.
+
+Live RPC connectivity and freshness remain pending. Live trading remains STOP.
