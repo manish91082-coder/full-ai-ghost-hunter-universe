@@ -1100,3 +1100,23 @@ This batch confirms the bounded-saturation rule: one real defect justified targe
 
 G02-G29 remain BLOCKED. LIVE TRADING = STOP.
 Next: adversarial missed-network audit and materiality-based G01 exit review.
+
+
+## UPDATE - MACRO-BATCH 040 / ADVERSARIAL MISSED-NETWORK AUDIT
+
+Date: 21 September 2026
+State: G01 ACTIVE / NOT SATURATED
+
+Adversarial audit challenged the assumption that the Cosmos Chain Registry could serve as a global blockchain denominator. It cannot; its own documentation scopes it to Cosmos-SDK chains with assetlists for non-Cosmos networks. Therefore multi-surface reconciliation remains mandatory.
+
+Three high-information production candidates were primary-verified and promoted in place:
+- Osmosis / osmosis-1
+- THORChain / thorchain-1
+- ZetaChain / zetachain_7000-1
+
+Current canonical registry: 62 records, 62 unique canonical keys, 0 duplicates; 10 MATCH_EXISTING and 52 NEW_CANDIDATE.
+
+Audit 046: PARTIAL PASS. G01 exit remains blocked by the unresolved DEX 419-label semantic denominator, incomplete native-source reconciliation and remaining high-value candidate queue.
+
+G02-G29 remain BLOCKED. LIVE TRADING = STOP.
+Next: close material DEX/native-source denominator gaps, then perform formal G01 exit review.
