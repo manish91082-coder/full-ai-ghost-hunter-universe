@@ -410,3 +410,8 @@ Permanent rules added:
 ## DURABLE RULE — G01 MACRO-BATCH 021
 
 G01 native production extraction is now governed by an externalized source manifest. Source code must not embed authoritative chain, RPC, contract, token, pool, pair or strategy universes. Cosmos records are production candidates only when status=live and network_type=mainnet. DEX-derived network presence is discovery-only until independently verified. Source denominators are never additive. Testnets, devnets, aliases, duplicates and conflicts remain explicitly represented rather than silently discarded. G01 remains the only primary saturation gate.
+
+
+## DURABLE RULE — CANONICAL STATE VS HISTORICAL EVIDENCE
+
+Permanent distinction locked: evidence/history is append-only; current canonical/materialized state is deduplicated and updated in place. Git history provides historical versions, so ordinary updates must not create registry_v002/v003/final/latest copies. Every future next must detect duplicate/identity anomalies before discovery, search uncovered/stale/conflicted space, normalize and merge findings into the current canonical state, preserve provenance, then test/audit. Batch reports must contain deltas, not full registry copies. Historical snapshots are replay/audit inputs only and never current execution candidates.
