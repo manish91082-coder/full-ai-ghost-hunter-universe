@@ -334,3 +334,22 @@ New mandatory replay invariant:
 Next required capability: runtime-backed registry loading, signed/versioned manifest verification and provider-registry adaptation.
 
 Live trading remains STOP.
+
+
+## XIII. NO-DRIFT SATURATION CONTROL LOCK
+
+Date: 21 September 2026
+
+Permanent project memory:
+- One saturation gate at a time.
+- G01 Global Blockchain Universe is the current and only primary advancement gate.
+- Dependent domains remain blocked until prerequisite saturation is frozen.
+- No conversational drift, no premature completion claim, no status-only progress.
+- Every durable decision must be synchronized into repository control files.
+- Existing code is preserved but does not override saturation gates.
+- Saturation requires discovery denominator + evidence + verification + testing + audit + gap closure + freeze.
+- Chain-wise data is mandatory; large datasets are split into bounded machine-readable parts with human-readable audit indexes.
+- RPC temporary failures use cooldown/retest/recovery, not permanent blacklist, unless persistent/security evidence justifies quarantine.
+- Heavy research/discovery is off the hot path; the final decision path is designed for measured low latency.
+- Live trading remains STOP.
+
