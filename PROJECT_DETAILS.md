@@ -477,3 +477,12 @@ The canonical G02 mechanism registry was updated in place to revision 5. Researc
 Batch 010 adds primary deployment identities for QuickSwap V2 Polygon and PancakeSwap V2 BNB Smart Chain. Factory-level pair enumeration is explicitly separated from current pair state. The canonical deployment registry was updated in place to revision 5.
 
 Four deployment records were added: QuickSwap factory/router and PancakeSwap factory/router. All remain NEVER_FROM_RESEARCH. Pair enumeration, code identity, live liquidity, fee state, callback authenticity and freshness remain unresolved.
+
+
+## SECTION 48 — RUNTIME REGISTRY + PROVIDER ADAPTER
+
+The dynamic-execution architecture has advanced from schema-only validation toward an executable external-data boundary. Runtime snapshots are loaded from external files and checked by SHA-256 before authorized-version validation. Provider endpoints are runtime configuration, not source constants, and provider selection is deterministic by network and priority.
+
+Replay semantics are now represented in tests: the same loader consumes two valid snapshots and produces different runtime projections. This preserves the no-hardcoded-universe invariant.
+
+Signature trust-root verification is intentionally still open. Live RPC collection and current on-chain market state are also open. No execution authority is created by this architecture increment.
