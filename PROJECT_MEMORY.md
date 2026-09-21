@@ -492,3 +492,10 @@ For protocols with permissionless market/pair deployment, protocol-level deploym
 Silo V3 is the explicit reference case: flash-loan capability can be primary-source verified while each permissionlessly deployed market remains a separate runtime enumeration obligation. QuickSwap V2 similarly requires pair-level state, not merely factory-level existence.
 
 No capability evidence authorizes execution.
+
+
+## Durable Rule — Runtime Authority Must Remain External
+
+Authoritative runtime topology and provider endpoints must never be embedded in executable source. Runtime snapshots must pass integrity and authorized-version checks before projection; duplicate or missing critical identity fails closed. Provider endpoints are runtime configuration and must support deterministic selection/fallback without becoming hardcoded universe data.
+
+Current implementation verifies SHA-256 snapshot integrity and authorized versions. Cryptographic signature/trust-root verification remains a separate mandatory gate before signed manifests can be treated as trusted authority.
