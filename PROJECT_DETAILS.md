@@ -236,3 +236,31 @@ Execution is configuration/data driven. Authoritative runtime universe data is e
 Runtime configuration is loaded from external inputs and fails closed when critical values are missing. Dynamic registries will later provide current universe and strategy data.
 
 This is a mandatory acceptance gate for all future execution components.
+
+## 29. Dynamic Registry Contract
+
+Macro-Batch 017 converted the dynamic-execution requirement into a machine-level registry boundary.
+
+The source layer defines only schemas and validation. Authoritative runtime universe data must arrive through external/versioned snapshots.
+
+Registry records require:
+- registry type;
+- canonical ID;
+- network ID;
+- version;
+- source/provenance reference;
+- observation timestamp;
+- payload hash;
+- lifecycle status.
+
+Registry snapshots require a manifest hash and version. Duplicate canonical identities, invalid hashes, invalid lifecycle states and unauthorized versions fail closed.
+
+The registry is not current-state proof. Current on-chain state, freshness and execution-critical facts remain separate verification layers.
+
+### Replay Acceptance Criterion
+
+A valid runtime snapshot substitution must change resulting state/opportunity coverage without changing executable source code.
+
+This becomes a mandatory acceptance gate before execution architecture is allowed to advance toward live authorization.
+
+Live trading remains STOP.
