@@ -307,3 +307,30 @@ Missing or contradictory critical configuration = FAIL CLOSED.
 Future execution acceptance test: changing runtime registry/configuration must change behavior without source-code changes.
 
 Live trading STOP.
+
+## XII. MACRO-BATCH 017 — DYNAMIC REGISTRY CONTRACT
+
+Date: 21 September 2026
+
+The dynamic-execution requirement has now crossed from documentation/configuration into a code-level registry boundary.
+
+Added:
+- src/ghost_hunter/registry.py
+- tests/test_registry.py
+- 01_BLOCKCHAIN_UNIVERSE/46_MACRO_BATCH_017_DYNAMIC_REGISTRY_INTERFACE_AND_REPLAY.md
+- 01_BLOCKCHAIN_UNIVERSE/47_AUDIT_023_DYNAMIC_REGISTRY_INTERFACE.md
+
+Locked:
+- authoritative runtime universe data is represented by external/versioned registry snapshots;
+- registry entries carry canonical identity, network identity, version, provenance, observed time, payload hash and lifecycle status;
+- duplicate canonical identities fail closed;
+- unauthorized registry versions fail closed;
+- registry status ACTIVE/RETIRED/QUARANTINED is explicit;
+- registry data remains topology/configuration authority only and does not replace current on-chain verification.
+
+New mandatory replay invariant:
+**same executable + different valid runtime snapshot must produce different resulting state/opportunity universe without source-code changes.**
+
+Next required capability: runtime-backed registry loading, signed/versioned manifest verification and provider-registry adaptation.
+
+Live trading remains STOP.
