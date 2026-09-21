@@ -382,3 +382,13 @@ AI research is logically decomposed into discovery, source criticism, identity r
 Cross-model compatibility is a required acceptance test. Model-specific adapters may optimize retrieval but may not redefine canonical meaning.
 
 This architecture is a control/data-quality layer, not factual G01 saturation. G01 remains active until the factual denominator, verification, exclusions, freshness and audit obligations close.
+
+## SECTION 38 - G01 FINAL SATURATION EXIT / G02 HANDOFF
+
+Date: 21 September 2026
+
+G01 is frozen after a bounded exit review across independent discovery families. The authoritative state is a deduplicated canonical identity layer plus explicit discovery/quarantine queues with provenance and downstream impact. Current state: 92 records, including 91 network identities and 1 relationship record; 92 unique keys; 0 duplicates.
+
+The 419-label DEX surface has complete classification coverage. Unverified labels remain outside execution eligibility until primary evidence promotes them. This preserves discovery recall without polluting the execution plane.
+
+G02 is now the active gate: Flash-Loan / Atomic-Liquidity Universe.
