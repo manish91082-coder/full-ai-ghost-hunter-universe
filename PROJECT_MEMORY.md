@@ -442,3 +442,12 @@ G01 Global Blockchain Universe is now FROZEN_AND_ADVANCE after bounded saturatio
 All 419 DEX chain labels remain fully classified; labels without primary identity proof remain discovery-only quarantine and are excluded from execution eligibility until independently verified. G01 reopens only on defined re-entry triggers.
 
 G02 Flash-Loan / Atomic-Liquidity Universe is now the active primary gate. G03-G29 remain blocked. Live trading remains STOP.
+## DURABLE RULE - G02 ACTIVE - 21 September 2026
+
+G02 Flash-Loan / Atomic-Liquidity Universe is now the active primary gate after G01 freeze.
+
+Atomic-liquidity mechanisms are represented as typed primitives. A generic flash-loan boolean is forbidden. Mechanism semantics, deployment identity, code/ABI evidence, fee behavior, capacity and current availability are independent fields.
+
+Known primary-verified primitive families currently include Aave V3, Aave GHO Flashmint, Morpho Blue, Uniswap V2 flash swaps, Euler EVK and Project 0/marginfi. Balancer, Venus and Radiant are retained as discovery candidates pending verification.
+
+Research data is externalized; runtime execution must read current verified state and fail closed on missing or stale critical data. Live trading remains STOP.
