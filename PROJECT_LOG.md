@@ -718,3 +718,22 @@ Date: 21 September 2026
 - G01 remains ACTIVE / NOT SATURATED.
 - Live trading remains STOP.
 - Next: materialize raw /protocols through supported external execution/CI, hash and retain evidence, then perform complete union reconciliation.
+
+
+## LOG-0031 — G01 MACHINE-RUNNABLE DEX MATERIALIZATION / MACRO-BATCH 027
+
+Date: 21 September 2026
+
+The previous G01 bottleneck was external execution of the current DeFiLlama `/protocols` payload. A reproducible GitHub Actions materialization path was added without introducing runtime universe constants or execution permissions.
+
+Created:
+- scripts/materialize_g01_dex.py
+- .github/workflows/g01-dex-materialization.yml
+- 01_BLOCKCHAIN_UNIVERSE/66_G01_MACHINE_RUNNABLE_DEX_MATERIALIZATION_BATCH_027.md
+- 01_BLOCKCHAIN_UNIVERSE/67_AUDIT_033_G01_MACHINE_RUNNABLE_DEX_MATERIALIZATION.md
+
+The materializer fetches the public source at runtime, hashes the exact payload, emits DEX protocol × chain JSONL observations and a summary, and uploads raw evidence as a CI artifact. It does not mutate the current canonical registry and does not authorize execution.
+
+Important: workflow creation is not execution proof. CI success, raw payload integrity, complete relationship extraction, identity/lifecycle verification and final denominator reconciliation remain pending.
+
+G01 remains ACTIVE / NOT SATURATED. Live trading STOP.
