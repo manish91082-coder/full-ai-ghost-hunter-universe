@@ -345,3 +345,15 @@ Next authoritative G01 work is full native-registry extraction and union reconci
 ## SECTION 35 — G01 NATIVE PRODUCTION EXTRACTION + DEX UNION / MACRO-BATCH 021
 
 The project now contains an externalized manifest defining current discovery inputs and extraction rules for the Cosmos Chain Registry, DeFiLlama chain discovery and DEX-derived protocol-chain discovery. A deterministic Python extraction layer and fixture tests were added. The extractor emits explicit production, non-production, unknown and discovery-only states and deduplicates only on available identity fields. Full source execution and final G01 denominator remain open.
+
+
+## SECTION 36 — DATA LIFECYCLE / ANTI-DUPLICATION ARCHITECTURE
+
+The project now has two explicit data planes:
+
+1. **Evidence plane:** append-only source observations, hashes, provenance, timestamps/blocks, conflicts and historical snapshots.
+2. **Canonical materialized plane:** one deduplicated current record per canonical identity, updated in place.
+
+Git commit history preserves prior canonical states. New full registry files are prohibited for ordinary state evolution. Macro-batch artifacts are delta/audit records and must not reproduce complete datasets.
+
+G01 source-union registry was upgraded in place to v002 with CURRENT_MATERIALIZED_STATE role and canonical record keys. This is a governance correction, not a deletion of historical data.
