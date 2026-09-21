@@ -682,3 +682,27 @@ All 26 are discovery candidates only: deployment-source evidence exists, but ide
 DEX-derived network union + native-source gap scan + semantic dedup + primary identity/lifecycle verification + adversarial coverage audit.
 
 Live trading remains STOP.
+
+
+## UPDATE — G01 DEX-DERIVED NETWORK UNION / MACRO-BATCH 024
+
+Date: 21 September 2026
+State: 🟢 PARTIAL PASS / G01 ACTIVE / NOT SATURATED
+
+### Fresh discovery surface
+Current DeFiLlama DEX-by-chain surface reports 290 chains; its DEX dashboard reports 794 DEX protocols. These are discovery surfaces, not the canonical production denominator. citeturn1view0turn0search13
+
+### Result
+Semantic reconciliation added two previously uncovered chain-level candidates to the current canonical state: **Spark** and **Native**. Existing chain overlaps were not duplicated. Chainflip was explicitly kept out of the chain registry because it represents a cross-chain protocol with its own Substrate-based State Chain rather than a simple DEX-chain identity. citeturn2search13
+
+Current G01 source-union record count: **49**.
+
+Created:
+- 01_BLOCKCHAIN_UNIVERSE/data/G01_DEX_DISCOVERY_SURFACE_MANIFEST_v001.json
+- 01_BLOCKCHAIN_UNIVERSE/60_G01_DEX_DERIVED_NETWORK_UNION_BATCH_024.md
+- 01_BLOCKCHAIN_UNIVERSE/61_AUDIT_030_G01_DEX_DERIVED_NETWORK_UNION.md
+
+### Next
+Full machine-readable DEX extraction + protocol→chain relationship reconciliation + native-source gap join + adversarial missed-network audit.
+
+Live trading remains STOP.
