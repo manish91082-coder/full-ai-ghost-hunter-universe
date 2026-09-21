@@ -483,3 +483,12 @@ Primary-source discovery must attack multiple mechanism families independently: 
 New discovery candidates are evidence-bearing hypotheses only until deployment, code identity, capability, asset capacity, fee, authorization/enablement and freshness are independently verified. Historical/current source conflicts must remain explicit rather than silently resolved.
 
 Current mechanism registry after Batch 007: 21 records = 9 verified primitives + 11 discovery candidates + 1 discovery family. Execution authority remains NONE.
+
+
+## G02 Durable Rule — Market-Level Atomic Liquidity Denominators
+
+For protocols with permissionless market/pair deployment, protocol-level deployment enumeration is not sufficient for G02. The canonical denominator must distinguish protocol deployment, market/pair deployment, executable code identity and live liquidity state.
+
+Silo V3 is the explicit reference case: flash-loan capability can be primary-source verified while each permissionlessly deployed market remains a separate runtime enumeration obligation. QuickSwap V2 similarly requires pair-level state, not merely factory-level existence.
+
+No capability evidence authorizes execution.
