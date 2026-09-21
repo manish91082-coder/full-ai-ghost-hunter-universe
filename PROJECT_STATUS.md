@@ -1376,3 +1376,26 @@ Added:
 21 September 2026. High-value runtime-boundary evidence was materialized for Project 0 / marginfi: official current program identity, atomic flashloan semantics, zero documented flashloan fee, and current SDK/program compatibility obligations. Capacity, live bank state, executable bytecode identity and slot freshness remain runtime-observation obligations.
 
 G02 remains ACTIVE / NOT SATURATED. G03-G29 blocked. Live trading STOP.
+
+
+## UPDATE — G02 ADVERSARIAL ATOMIC-LIQUIDITY DENOMINATOR BATCH 007
+
+Date: 21 September 2026
+
+Primary-source adversarial discovery expanded the mechanism denominator with six new candidates:
+Silo V3, SyncSwap, QuickSwap, PancakeSwap V2-style flash swap, Drift Solana flash-loan path, and Save/Solend.
+
+Canonical mechanism registry is now 21 records:
+- 9 VERIFIED_PRIMITIVE
+- 11 DISCOVERY_CANDIDATE
+- 1 DISCOVERY_FAMILY
+
+Batch 007 is a discovery expansion only. No candidate is execution-authorized. Save/Solend remains explicitly conflict/staleness-sensitive and is not promoted.
+
+Created:
+- 02_FLASH_LOAN_UNIVERSE/11_G02_ADVERSARIAL_ATOMIC_LIQUIDITY_DENOMINATOR_BATCH_007.md
+- 02_FLASH_LOAN_UNIVERSE/12_AUDIT_059_G02_ADVERSARIAL_DENOMINATOR.md
+
+G02 remains ACTIVE / NOT SATURATED. The remaining exit blockers are deployment/runtime code identity, live asset capacity, current fee state, enablement/authorization, freshness, and bounded adversarial denominator closure.
+
+G03-G29 remain blocked. Live trading remains STOP.
