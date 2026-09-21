@@ -273,3 +273,12 @@ The canonical G02 mechanism registry was updated in place to revision 5. No dupl
 Open obligations remain market/pair enumeration, code identity, live liquidity/capacity, fee/authorization state and freshness. Broader adversarial discovery also remains active.
 
 Audit: PARTIAL PASS / CONTINUE. G02 NOT SATURATED. Live trading STOP.
+
+
+## MACRO-BATCH 010 — QUICKSWAP + PANCAKESWAP PAIR DEPLOYMENT BOUNDARY
+
+Primary deployment identities were materialized for QuickSwap V2 on Polygon and PancakeSwap V2 on BNB Smart Chain. Factory pair enumeration semantics were captured. The canonical deployment registry was updated in place from revision 4 to revision 5 with four records.
+
+Runtime pair enumeration, code identity, reserves, fee state, callback authenticity and freshness remain open. No research evidence authorizes execution.
+
+Audit 062: PARTIAL PASS / CONTINUE. G02 NOT SATURATED. Live trading STOP.
