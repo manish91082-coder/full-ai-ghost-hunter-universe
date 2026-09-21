@@ -1,0 +1,262 @@
+{
+  "registry": "G01_SOURCE_UNION",
+  "version": "v001",
+  "observed_at": "2026-09-21",
+  "status": "NORMALIZED_NOT_FROZEN",
+  "repository": "manish91082-coder/full-ai-ghost-hunter-universe",
+  "branch": "main",
+  "input_records": 21,
+  "confirmed_matches_against_current_seed_or_morpho_reconciliation": 10,
+  "new_candidates_at_this_join_point": 11,
+  "note": "The 11 new-candidate result is provisional until DEX-derived deployment surfaces and remaining native ecosystem registries are joined.",
+  "records": [
+    {
+      "input_name": "Lighter",
+      "normalized_name": "Lighter",
+      "match": "BC-036",
+      "state": "MATCH_EXISTING",
+      "identity_state": "PROVISIONAL_SECONDARY",
+      "mainnet_identifier": "304",
+      "evidence": [
+        "https://github.com/dasa522/lighter/blob/main/docs/TRADING.md"
+      ]
+    },
+    {
+      "input_name": "RISE",
+      "normalized_name": "Rise",
+      "match": "MORPHO-ROW-36",
+      "state": "MATCH_EXISTING",
+      "identity_state": "PRIMARY_MAINNET_EXISTENCE",
+      "mainnet_identifier": null,
+      "evidence": [
+        "https://docs.risechain.com/docs"
+      ]
+    },
+    {
+      "input_name": "Fuel Ignition",
+      "normalized_name": "Fuel Ignition",
+      "match": null,
+      "state": "NEW_CANDIDATE",
+      "identity_state": "PRIMARY_VERIFIED",
+      "mainnet_identifier": "9889",
+      "evidence": [
+        "https://docs.fuel.network/docs/verified-addresses/",
+        "https://docs.fuel.network/guides/user-quickstart/"
+      ]
+    },
+    {
+      "input_name": "Reya",
+      "normalized_name": "Reya Network",
+      "match": null,
+      "state": "NEW_CANDIDATE",
+      "identity_state": "PRIMARY_MAINNET_EXISTENCE",
+      "mainnet_identifier": null,
+      "evidence": [
+        "https://docs.reya.xyz/",
+        "https://docs.reya.xyz/introducting-reya-network/the-structure-of-reya-network"
+      ]
+    },
+    {
+      "input_name": "Abstract",
+      "normalized_name": "Abstract",
+      "match": "MORPHO-ROW-03",
+      "state": "MATCH_EXISTING",
+      "identity_state": "SECONDARY_ID_VERIFICATION",
+      "mainnet_identifier": "2741",
+      "evidence": [
+        "https://github.com/manish91082-coder/full-ai-ghost-hunter-universe/blob/main/01_BLOCKCHAIN_UNIVERSE/20_MORPHO_50_ROW_CANONICAL_RECONCILIATION_v001.md",
+        "https://main.net/status/abstract/"
+      ]
+    },
+    {
+      "input_name": "PlayBlock",
+      "normalized_name": "PlayBlock",
+      "match": null,
+      "state": "NEW_CANDIDATE",
+      "identity_state": "SECONDARY_PROVISIONAL",
+      "mainnet_identifier": "1829",
+      "evidence": [
+        "https://deepwiki.com/playnance-games/PlayBlock/6-integration-and-apis"
+      ]
+    },
+    {
+      "input_name": "EDU Chain",
+      "normalized_name": "EDU Chain",
+      "match": null,
+      "state": "NEW_CANDIDATE",
+      "identity_state": "PRIMARY_VERIFIED",
+      "mainnet_identifier": "41923",
+      "evidence": [
+        "https://devdocs.educhain.xyz/"
+      ]
+    },
+    {
+      "input_name": "Eclipse",
+      "normalized_name": "Eclipse",
+      "match": null,
+      "state": "NEW_CANDIDATE",
+      "identity_state": "PRIMARY_MAINNET_EXISTENCE",
+      "mainnet_identifier": null,
+      "evidence": [
+        "https://docs.eclipse.xyz/",
+        "https://docs.eclipse.xyz/developers/oracles/switchboard"
+      ]
+    },
+    {
+      "input_name": "Plume Network",
+      "normalized_name": "Plume",
+      "match": "MORPHO-ROW-34",
+      "state": "MATCH_EXISTING",
+      "identity_state": "PRIMARY_VERIFIED",
+      "mainnet_identifier": "98866",
+      "evidence": [
+        "https://docs.plume.org/plume/developers/network-information"
+      ]
+    },
+    {
+      "input_name": "Xai",
+      "normalized_name": "Xai",
+      "match": null,
+      "state": "NEW_CANDIDATE",
+      "identity_state": "PRIMARY_VERIFIED",
+      "mainnet_identifier": "660279",
+      "evidence": [
+        "https://xai-foundation.gitbook.io/xai-network/build-on-xai/xai-chains-and-parameters/connect-to-xai-mainnet"
+      ]
+    },
+    {
+      "input_name": "Powerloom",
+      "normalized_name": "Powerloom",
+      "match": null,
+      "state": "NEW_CANDIDATE",
+      "identity_state": "PRIMARY_VERIFIED",
+      "mainnet_identifier": "7869",
+      "evidence": [
+        "https://docs.powerloom.io/chain-migration/info/"
+      ]
+    },
+    {
+      "input_name": "Gravity",
+      "normalized_name": "Gravity L1",
+      "match": null,
+      "state": "NEW_CANDIDATE",
+      "identity_state": "PRIMARY_VERIFIED",
+      "mainnet_identifier": "127001",
+      "evidence": [
+        "https://www.galxe.com/blog/gravity-alpha-mainnet-completing-the-transition-to-gravity-l1"
+      ]
+    },
+    {
+      "input_name": "Sei",
+      "normalized_name": "Sei",
+      "match": "MORPHO-ROW-39",
+      "state": "MATCH_EXISTING",
+      "identity_state": "PRIMARY_VERIFIED_EXECUTION_PLANES",
+      "mainnet_identifier": "EVM:1329; Cosmos:pacific-1",
+      "evidence": [
+        "https://www.docs.sei.io/evm/networks",
+        "https://www.docs.sei.io/learn/dev-chains"
+      ]
+    },
+    {
+      "input_name": "Berachain",
+      "normalized_name": "Berachain",
+      "match": null,
+      "state": "NEW_CANDIDATE",
+      "identity_state": "PRIMARY_VERIFIED",
+      "mainnet_identifier": "80094",
+      "evidence": [
+        "https://docs.berachain.com/build/getting-started/common-resources"
+      ]
+    },
+    {
+      "input_name": "Kaia",
+      "normalized_name": "Kaia",
+      "match": "MORPHO-ROW-23",
+      "state": "MATCH_EXISTING",
+      "identity_state": "PRIMARY_VERIFIED",
+      "mainnet_identifier": "8217",
+      "evidence": [
+        "https://docs.kaia.io/build/get-started/foundation-setup/"
+      ]
+    },
+    {
+      "input_name": "Hedera",
+      "normalized_name": "Hedera Mainnet",
+      "match": null,
+      "state": "NEW_CANDIDATE",
+      "identity_state": "PRIMARY_VERIFIED",
+      "mainnet_identifier": "295",
+      "evidence": [
+        "https://docs.hedera.com/evm/development/deploying",
+        "https://docs.hedera.com/operators/json-rpc"
+      ]
+    },
+    {
+      "input_name": "Starknet",
+      "normalized_name": "Starknet",
+      "match": null,
+      "state": "NEW_CANDIDATE",
+      "identity_state": "PRIMARY_MAINNET_EVIDENCE_PARTIAL",
+      "mainnet_identifier": "SN_MAIN",
+      "evidence": [
+        "https://github.com/api-evangelist/starknet/blob/main/apis.yml"
+      ]
+    },
+    {
+      "input_name": "Aptos",
+      "normalized_name": "Aptos",
+      "match": "BC-028",
+      "state": "MATCH_EXISTING",
+      "identity_state": "PRIMARY_VERIFIED",
+      "mainnet_identifier": "1",
+      "evidence": [
+        "https://github.com/aptos-labs/aptos-core/blob/main/types/src/chain_id.rs"
+      ]
+    },
+    {
+      "input_name": "Sui",
+      "normalized_name": "Sui",
+      "match": "BC-029",
+      "state": "MATCH_EXISTING",
+      "identity_state": "PRIMARY_MAINNET_EXISTENCE",
+      "mainnet_identifier": "native identifier queried at runtime",
+      "evidence": [
+        "https://docs.sui.io/paper/sui-lutris.pdf",
+        "https://www.alchemy.com/docs/chains/sui/sui-api-endpoints/sui-get-chain-identifier"
+      ]
+    },
+    {
+      "input_name": "Near Protocol",
+      "normalized_name": "NEAR Protocol",
+      "match": "BC-027",
+      "state": "MATCH_EXISTING",
+      "identity_state": "PRIMARY_MAINNET_NETWORK_ID",
+      "mainnet_identifier": "mainnet",
+      "evidence": [
+        "https://github.com/near/near-cli/blob/master/README.md"
+      ]
+    },
+    {
+      "input_name": "Injective",
+      "normalized_name": "Injective",
+      "match": "BC-026",
+      "state": "MATCH_EXISTING",
+      "identity_state": "PRIMARY_NATIVE_PLUS_EVM",
+      "mainnet_identifier": "native:injective-1; EVM:1776",
+      "evidence": [
+        "https://docs.injective.network/infra/join-a-network",
+        "https://injective.com/multivm"
+      ]
+    }
+  ],
+  "normalization_rules": [
+    "Case and punctuation differences do not create distinct network identities.",
+    "Aliases and rebrands are metadata attached to one canonical identity after evidence review.",
+    "An ecosystem stack such as an L2 or L3 family is not itself a canonical network.",
+    "Execution planes remain separate where a network exposes materially different native and EVM execution surfaces.",
+    "EVM numeric chain IDs are not fabricated for non-EVM execution models.",
+    "Testnet/devnet identifiers never promote a production identity.",
+    "Protocol deployment overlap is evidence/provenance, not a second chain count."
+  ]
+}
