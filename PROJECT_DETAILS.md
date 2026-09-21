@@ -513,3 +513,10 @@ Date: 21 September 2026
 The runtime substrate now includes an explicit freshness policy and post-provider-switch revalidation contract. Stale block observations and state disagreement fail closed. This remains an observation-safety layer only; it does not create execution authority.
 
 G02 remains ACTIVE / NOT SATURATED. G03-G29 remain BLOCKED. Live trading remains STOP.
+
+
+## SECTION 50 — G02 RPC FAILOVER BOUNDARY / MACRO-BATCH 015
+
+The read-only JSON-RPC substrate now retries within a logical observation request across the configured provider pool. Quorum collection also walks the available provider set until quorum is reached or capacity is exhausted. This closes a concrete transport-recovery gap while preserving zero-trust state semantics.
+
+The change remains observation-only. No transaction construction, signing or submission capability exists. Live market/pair denominators and runtime state remain open.
