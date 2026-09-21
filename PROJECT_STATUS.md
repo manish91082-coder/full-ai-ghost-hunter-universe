@@ -1299,3 +1299,17 @@ LIVE TRADING = STOP
 
 ### Goal Pull
 G01 no longer blocks the project on repetitive global discovery. The active bottleneck is now G02: discovering and verifying the actual atomic/flash liquidity mechanisms that can finance executable opportunities.
+## UPDATE - G02 PRIMARY MECHANISM DISCOVERY BATCH 001
+
+Date: 21 September 2026
+State: G02 ACTIVE / NOT SATURATED
+
+Six mechanism families are now primary-verified at primitive level: Aave V3 flash loans, Aave GHO flash mint, Morpho Blue flash loans, Uniswap V2 flash swaps, Euler EVK flash loans and Project 0/marginfi Solana flash loans. Three additional known families remain discovery candidates pending primary verification.
+
+The G02 machine-readable registry is externalized. Fees, capacities, balances and deployments are not treated as static execution truth.
+
+Current G01 state remains FROZEN_AND_ADVANCE. G02 is now the active gate; G03-G29 remain BLOCKED.
+
+LIVE TRADING = STOP
+
+Next objective: production deployment × network enumeration, direct code/ABI evidence, current capacity/fee verification, then adversarial discovery for additional atomic-liquidity primitives.
