@@ -623,3 +623,42 @@ Old evidence is never silently deleted or overwritten. However, ordinary new dis
 Run the duplicate/identity anomaly audit over the current G01 materialized state, then continue uncovered native + DEX discovery and merge only deltas into the same canonical state.
 
 Live trading remains STOP.
+
+## UPDATE — MACRO-BATCH 022 / AI RESEARCH + DATA INTEROPERABILITY GOVERNANCE
+
+Date: 21 September 2026  
+State: 🟢 CONTROL LAYER ACCEPTED / G01 FACTUAL SATURATION OPEN
+
+### Added
+- 00_GOVERNANCE/AI_RESEARCH_DATA_INTEROPERABILITY_CONSTITUTION_v1.0.md
+- 00_GOVERNANCE/DATA_SCHEMA_AND_AI_ACCESS_CONTRACT_v1.0.md
+- 00_GOVERNANCE/DATA_DOMAIN_REGISTRY_v1.0.json
+- 01_BLOCKCHAIN_UNIVERSE/56_G01_AI_RESEARCH_DATA_GOVERNANCE_SATURATION_BATCH_022.md
+- 01_BLOCKCHAIN_UNIVERSE/57_AUDIT_028_G01_AI_RESEARCH_DATA_GOVERNANCE.md
+
+### Locked
+The project now has an explicit model-neutral data contract so this AI and future independent AI models can use the same canonical state without hidden conversational context.
+
+Locked:
+- evidence/history append-only;
+- current canonical state deduplicated and updated in place;
+- one authoritative current path per machine-readable domain;
+- semantic identity and execution-context aware deduplication;
+- explicit UNKNOWN / ZERO / EMPTY / MISSING / STALE / CONFLICTED states;
+- stable IDs, namespaces, units, timestamps, provenance and freshness;
+- typed relationships instead of copied objects;
+- current-vs-historical query separation;
+- role-separated research agents;
+- cross-model compatibility tests;
+- adversarial negative tests;
+- mission navigation through FINAL GOAL → ACTIVE GATE → CURRENT STATE → GAP REGISTER → NEXT MACRO-BATCH.
+
+### Audit
+AUDIT 028: **CONTROL LAYER ACCEPTED**.
+
+This is not a claim that G01 factual chain coverage is saturated. G01 remains ACTIVE / NOT SATURATED.
+
+### Next Objective
+**G01 Duplicate/Identity Anomaly Audit → current canonical cleanup → uncovered native + DEX discovery delta merge → re-test → re-audit → denominator reconciliation.**
+
+Live trading remains STOP.
