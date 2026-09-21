@@ -1248,3 +1248,15 @@ Official ZKsync mainnet-only documentation verified nine previously unresolved e
 Canonical state: **91 records**, **91 unique keys**, **0 duplicates**. No flash-liquidity or execution capability was inferred. G01 remains ACTIVE, G02-G29 BLOCKED, live trading STOP.
 
 Next objective: continue bounded primary verification of the remaining high-materiality queue, then adversarial denominator closure and G01 exit review.
+
+
+## UPDATE — G01 BATCH 047 / RELATIONSHIP + DENOMINATOR RECONCILIATION
+
+Date: 21 September 2026  
+State: 🟢 SOURCE-FAMILY PASS / G01 GLOBAL PARTIAL
+
+Current official ZKsync documentation enumerates **12 Elastic Network mainnet chains**. Individual identities remain separate, and the Elastic Network is represented only as a relationship/ecosystem layer. citeturn0search0turn0search1
+
+Current state: **92 records, 92 unique keys, 0 duplicates**. G01 ACTIVE, G02-G29 BLOCKED, live trading STOP.
+
+Next: independent high-information source-family reconciliation, then adversarial global denominator review.
