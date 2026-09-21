@@ -482,3 +482,24 @@ Hot-path low-latency decision architecture is locked as a target. Discovery/rese
 
 ### Safety
 Existing implementation remains non-trading infrastructure. Live trading remains STOP.
+
+
+## LOG-0022 — CANONICAL REPOSITORY IDENTITY LOCK
+
+Date: 21 September 2026
+
+### User directive
+The user explicitly required that the project remain in the repository established at chat/thread start and never drift to another similarly named repository.
+
+### Permanent decision
+Canonical repository: `manish91082-coder/full-ai-ghost-hunter-universe`
+Canonical branch: `main`
+
+### Control
+Created: `00_GOVERNANCE/REPOSITORY_IDENTITY_LOCK_v1.0.md`
+
+The repository identity is now an explicit preflight gate. Name similarity is not evidence of identity. If canonical verification fails, project work stops instead of switching repositories.
+
+All future chat threads inherit the same canonical repository identity.
+
+Live trading remains STOP.
