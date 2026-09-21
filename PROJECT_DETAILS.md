@@ -357,3 +357,28 @@ The project now has two explicit data planes:
 Git commit history preserves prior canonical states. New full registry files are prohibited for ordinary state evolution. Macro-batch artifacts are delta/audit records and must not reproduce complete datasets.
 
 G01 source-union registry was upgraded in place to v002 with CURRENT_MATERIALIZED_STATE role and canonical record keys. This is a governance correction, not a deletion of historical data.
+
+
+## 37. AI RESEARCH + DATA INTEROPERABILITY ARCHITECTURE
+
+Date: 21 September 2026
+
+A model-neutral interoperability layer is now frozen as a governance contract.
+
+Created:
+- 00_GOVERNANCE/AI_RESEARCH_DATA_INTEROPERABILITY_CONSTITUTION_v1.0.md
+- 00_GOVERNANCE/DATA_SCHEMA_AND_AI_ACCESS_CONTRACT_v1.0.md
+- 00_GOVERNANCE/DATA_DOMAIN_REGISTRY_v1.0.json
+- 01_BLOCKCHAIN_UNIVERSE/56_G01_AI_RESEARCH_DATA_GOVERNANCE_SATURATION_BATCH_022.md
+- 01_BLOCKCHAIN_UNIVERSE/57_AUDIT_028_G01_AI_RESEARCH_DATA_GOVERNANCE.md
+
+### Architectural locks
+Evidence/history is append-only. Current canonical state is deduplicated and updated in place. Machine-readable canonical state is authoritative for computation; Markdown is the human audit layer.
+
+Canonical objects require stable identity, namespace, lifecycle, verification, freshness, provenance and typed relationships. Unknown, zero, empty, missing, stale and conflicted states are explicitly distinct.
+
+AI research is logically decomposed into discovery, source criticism, identity resolution, normalization, deduplication, verification, contradiction, coverage, freshness, domain specialization, data engineering, adversarial audit, reproduction, saturation, runtime safety and change control.
+
+Cross-model compatibility is a required acceptance test. Model-specific adapters may optimize retrieval but may not redefine canonical meaning.
+
+This architecture is a control/data-quality layer, not factual G01 saturation. G01 remains active until the factual denominator, verification, exclusions, freshness and audit obligations close.
