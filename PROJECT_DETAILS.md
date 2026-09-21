@@ -418,3 +418,7 @@ Research/audit state added:
 - 02_FLASH_LOAN_UNIVERSE/07_G02_ADVERSARIAL_ATOMIC_MECHANISM_DISCOVERY_BATCH_003.md
 
 No deployment record authorizes execution. Runtime code, current balances, fee state, enablement, authorization, simulation, risk and economics remain downstream/fail-closed obligations.
+
+## SECTION 41 — G02 PRIMARY ADDRESS MATERIALIZATION BATCH 004
+
+Aave production Pool addresses were promoted where directly supported by a primary Aave governance deployment inventory. The registry retains pending state for networks not covered by that source. The Aave GHO FlashMinter facilitator address was also materialized. This batch deliberately stops before bytecode/runtime state because those are separate evidence obligations.
