@@ -35,7 +35,31 @@ class RpcTransport:
              *, now_tick: int = 0) -> RpcObservation:
         if not method.strip():
             raise RegistryError("RPC method is required")
-        provider = self.pool.select(network_id, now_tick)
+        last_error: Exception | None = None
+        attempted: set[str] = set()
+        while True:
+            providers = tuple(
+                p for p in self.pool.available(network_id, now_tick)
+                if p.provider_id not in attempted
+            )
+            if not providers:
+                if last_error is not None:
+                    raise RegistryError("all providers failed for network") from last_error
+                raise RegistryError("all providers unavailable for network")
+            provider = providers[0]
+            attempted.add(provider.provider_id)
+            try:
+                decoded = self._request(provider, method, params)
+                self.pool.record_success(provider.provider_id)
+                return RpcObservation(provider.provider_id, network_id, method,
+                                      decoded["result"])
+            except Exception as exc:
+                last_error = exc
+                self.pool.record_failure(provider.provider_id, now_tick=now_tick,
+                                         error=str(exc))
+
+    def _request(self, provider: Any, method: str,
+                 params: list[Any] | None) -> dict[str, Any]:
         payload = json.dumps({
             "jsonrpc": "2.0", "id": 1, "method": method,
             "params": params or [],
@@ -45,8 +69,7 @@ class RpcTransport:
                           method="POST")
         try:
             with self._opener(request, timeout=self.timeout_seconds) as response:
-                body = response.read()
-            decoded = json.loads(body.decode("utf-8"))
+                decoded = json.loads(response.read().decode("utf-8"))
             if not isinstance(decoded, dict) or decoded.get("jsonrpc") != "2.0":
                 raise RegistryError("invalid JSON-RPC response")
             if decoded.get("id") != 1:
@@ -55,13 +78,11 @@ class RpcTransport:
                 raise RegistryError("JSON-RPC provider returned an error")
             if "result" not in decoded:
                 raise RegistryError("JSON-RPC result missing")
+            return decoded
+        except RegistryError:
+            raise
         except Exception as exc:
-            self.pool.record_failure(provider.provider_id, now_tick=now_tick, error=str(exc))
-            if isinstance(exc, RegistryError):
-                raise
             raise RegistryError("RPC transport failure") from exc
-        self.pool.record_success(provider.provider_id)
-        return RpcObservation(provider.provider_id, network_id, method, decoded["result"])
 
     def quorum_call(self, network_id: str, method: str,
                     params: list[Any] | None = None, *, now_tick: int = 0,
@@ -72,21 +93,11 @@ class RpcTransport:
         if len(providers) < quorum:
             raise RegistryError("insufficient providers for quorum")
         observations: list[RpcObservation] = []
-        for provider in providers[:quorum]:
-            payload = json.dumps({
-                "jsonrpc": "2.0", "id": 1, "method": method,
-                "params": params or [],
-            }).encode("utf-8")
-            request = Request(provider.endpoint, data=payload,
-                              headers={"Content-Type": "application/json"},
-                              method="POST")
+        for provider in providers:
+            if len(observations) >= quorum:
+                break
             try:
-                with self._opener(request, timeout=self.timeout_seconds) as response:
-                    decoded = json.loads(response.read().decode("utf-8"))
-                if (not isinstance(decoded, dict) or decoded.get("jsonrpc") != "2.0"
-                        or decoded.get("id") != 1 or "result" not in decoded
-                        or "error" in decoded):
-                    raise RegistryError("invalid quorum JSON-RPC response")
+                decoded = self._request(provider, method, params)
                 observations.append(RpcObservation(provider.provider_id, network_id,
                                                    method, decoded["result"]))
                 self.pool.record_success(provider.provider_id)
