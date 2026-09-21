@@ -332,3 +332,17 @@ Added:
 The engine contains interface selectors only and does not embed authoritative chain, factory, pair, token or RPC universe data. QuickSwap/PancakeSwap production factory materialization and exhaustive runtime enumeration remain open.
 
 G02 remains ACTIVE / NOT SATURATED. G03-G29 remain BLOCKED. Execution authority NONE. Live trading STOP.
+
+
+## 2026-09-21 — G02 MACRO-BATCH 017
+
+**V2 Enumeration Consistency + External Factory Inputs**
+
+- Tightened V2 pair enumeration to fail closed on provider changes inside one logical snapshot.
+- Added opening/closing block freshness bracketing and count-completeness accounting.
+- Added read-only eth_getCode observation with SHA-256 runtime-byte evidence digest.
+- Externalized QuickSwap Polygon V2 and PancakeSwap BNB V2 factory/router inputs into 02_FLASH_LOAN_UNIVERSE/data/G02_V2_FACTORY_RUNTIME_CONFIG_v001.json.
+- Added deterministic tests for provider consistency, code observation and completeness metadata.
+- No production RPC observation or CI success is claimed by this batch.
+- G02 remains ACTIVE / NOT SATURATED; G03-G29 blocked; execution NONE; live trading STOP.
+- Next: verified runtime factory/pair observations where available, Silo V3 market-level enumeration and adversarial denominator closure.
