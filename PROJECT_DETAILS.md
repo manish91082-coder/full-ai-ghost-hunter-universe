@@ -459,3 +459,14 @@ Silo V3: documented flash-loan capability and same-transaction repayment are now
 QuickSwap V2: documented flash-swap capability and atomic callback repayment are explicitly separated from factory/network deployment, pair enumeration, reserve state, current fee configuration and freshness.
 
 This strengthens the G02 evidence model without advancing execution or downstream gates.
+
+
+## SECTION 46 — G02 DEPLOYMENT DENOMINATOR BATCH 009
+
+Batch 009 materialized primary deployment evidence for Silo V3 and QuickSwap V2 while preserving the distinction between protocol deployment identity and executable market state.
+
+Silo V3 current deployment/version records were captured for Sonic, Arbitrum, Optimism, Ink and Avalanche. Because Silo markets are permissionless, factory/deployer evidence cannot close the market denominator; market-level enumeration and current code/state remain mandatory.
+
+QuickSwap Polygon POS V2 router/factory identity was captured from official documentation. Pair-level enumeration and runtime state remain mandatory.
+
+The canonical G02 mechanism registry was updated in place to revision 5. Research remains non-authoritative for execution.
