@@ -82,3 +82,16 @@
 - G01 remains ACTIVE / NOT SATURATED.
 - G02-G29 remain BLOCKED.
 - LIVE TRADING remains STOP.
+
+## 2026-09-21 - Macro-Batch 036
+
+**Cosmos Materialization Audit and Reconciliation**
+
+- Observed CI run 35574144469: SUCCESS.
+- Retrieved artifact 10627387890.
+- 439 chain.json paths, 225 production records, 214 non-production records, 0 fetch errors.
+- Identified 4 direct overlaps with the current 57-record G01 source-union: Cronos, Injective, Sei, TAC.
+- Classified the remaining 221 production observations as a semantic reconciliation queue, not confirmed unique networks.
+- No blind canonical merge performed.
+- Audit 042: PASS for materialization, PARTIAL for G01 saturation.
+- G01 ACTIVE / NOT SATURATED; G02-G29 BLOCKED; LIVE TRADING STOP.
