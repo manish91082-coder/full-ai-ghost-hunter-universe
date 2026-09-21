@@ -448,3 +448,14 @@ The canonical semantic chain remains:
 mechanism → network → deployment → code/interface → capability → asset → capacity → fee → authorization → atomicity → freshness → provenance.
 
 The new candidates do not authorize execution. Save/Solend is explicitly treated as a current/stale evidence conflict requiring fresh runtime verification. G02 remains active and unsaturated.
+
+
+## SECTION 45 — G02 TARGETED PRIMARY-CAPABILITY VERIFICATION BATCH 008
+
+Batch 008 established a stricter denominator boundary for atomic-liquidity protocols with permissionless markets.
+
+Silo V3: documented flash-loan capability and same-transaction repayment are now explicitly separated from permissionless market enumeration, market-level code identity, fee and liquidity state.
+
+QuickSwap V2: documented flash-swap capability and atomic callback repayment are explicitly separated from factory/network deployment, pair enumeration, reserve state, current fee configuration and freshness.
+
+This strengthens the G02 evidence model without advancing execution or downstream gates.
