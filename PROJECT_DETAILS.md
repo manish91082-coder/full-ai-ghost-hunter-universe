@@ -549,3 +549,14 @@ V2 enumeration was strengthened so factory count and pair-address reads use the 
 A Silo V3 discovery-only parser was added. It accepts externally collected market records with explicit provenance and rejects duplicate (chain, silo) identities. This is discovery evidence only. Official Silo documentation confirms that markets are permissionless and that the public API exposes V3 market data, so runtime deployment and state verification remain mandatory.
 
 No execution capability was added. G02 remains ACTIVE / NOT SATURATED.
+
+
+## SECTION — G02 CI FAILURE ROOT-CAUSE CORRECTION — 21 September 2026
+
+The G02 Actions failures were audited against the actual repository state. The machine-readable G02 registries satisfy the workflow's structural assertions: 21 mechanism records match the declared total, 38 deployment records are present, all deployment records remain NEVER_FROM_RESEARCH, and the workflow identity formula produces zero duplicate keys.
+
+The concrete test regression was in tests/test_rpc_transport.py. Batch 015 changed RpcTransport.call() to retry a logical request through another available provider, but test_failure_rotates_provider retained the pre-Batch-015 expectation that the first call raises RegistryError. The test now expects successful observation through p2.
+
+CI was also hardened so the workflow explicitly installs pytest, sets PYTHONPATH=src, and invokes python -m pytest -q.
+
+No execution authority was added. G02 remains ACTIVE / NOT SATURATED.
