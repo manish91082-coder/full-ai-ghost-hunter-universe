@@ -26,3 +26,18 @@
 - New classifier tests are authored but not claimed as executed yet.
 - Next: primary-source resolution of aliases/execution-plane variants, then systematic candidate verification and adversarial missed-network audit.
 - Live trading remains STOP.
+
+
+## 2026-09-21 — Macro-Batch 032
+
+**G01 Primary Identity Verification**
+
+- Resolved eight high-information unmatched DEX labels with primary network documentation.
+- Verified canonical identities: Ethereum eip155:1, BNB Smart Chain eip155:56, Avalanche C-Chain eip155:43114, Polygon eip155:137, Base eip155:8453, ZKsync Era eip155:324, TRON 728126428 and Solana Mainnet.
+- Explicitly separated production mainnets from testnets.
+- Preserved TRON under a distinct execution namespace because TVM is not semantically identical to EVM.
+- Merged eight verified observations into the existing current G01 source-union registry in place.
+- Current source-union: 57 records, 10 MATCH_EXISTING and 47 NEW_CANDIDATE, 0 duplicate canonical keys.
+- Identity verification is not capability or execution authorization.
+- G01 remains ACTIVE / NOT SATURATED; G02-G29 blocked; live trading STOP.
+- Next: systematic primary verification of the remaining DEX label queue, native-source gap scan and adversarial missed-network audit.
