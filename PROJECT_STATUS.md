@@ -879,3 +879,42 @@ The reconciliation tool and fixture tests are authored but repository execution 
 Use the queue to resolve high-information aliases and execution-plane variants with primary network sources, then continue systematic primary verification and adversarial missed-network discovery.
 
 Live trading remains **STOP**.
+
+
+## UPDATE — MACRO-BATCH 032 / PRIMARY IDENTITY VERIFICATION
+
+Date: 21 September 2026
+State: 🟡 G01 ACTIVE / NOT SATURATED
+
+Eight high-information unmatched DEX labels were verified against primary network documentation and merged into the current G01 source-union registry in place:
+
+- Ethereum → eip155:1
+- Binance → BNB Smart Chain → eip155:56
+- Avalanche → Avalanche C-Chain → eip155:43114
+- Polygon → Polygon Mainnet → eip155:137
+- Base → Base Mainnet → eip155:8453
+- zkSync Era → ZKsync Era Mainnet → eip155:324
+- Tron → TRON Mainnet → tron:728126428
+- Solana → Solana Mainnet → solana:mainnet
+
+Primary sources explicitly distinguish production mainnets from testnets. Ethereum, BNB Chain, Avalanche, Polygon, Base and ZKsync provide primary mainnet identifiers; TRON separates Mainnet from Shasta/Nile and Solana separates Mainnet from Devnet/Testnet. citeturn0search1turn0search3turn0search7turn0search9turn1search5turn1search1turn2search0turn2search4
+
+Current canonical G01 source-union record count: **57**.
+Current state accounting: **10 MATCH_EXISTING + 47 NEW_CANDIDATE**.
+Duplicate canonical record keys after merge: **0**.
+
+This batch advances identity/lifecycle verification only. It does not establish flash liquidity, executable DEX coverage, liquidity-at-size, routes, simulation, economics, risk, security or execution authorization. TRON remains a distinct execution namespace because TVM differs materially from EVM. citeturn2search2
+
+Added:
+- 01_BLOCKCHAIN_UNIVERSE/data/G01_PRIMARY_IDENTITY_VERIFICATION_BATCH_032.json
+- 01_BLOCKCHAIN_UNIVERSE/76_G01_PRIMARY_IDENTITY_VERIFICATION_BATCH_032.md
+- 01_BLOCKCHAIN_UNIVERSE/77_AUDIT_038_G01_PRIMARY_IDENTITY_VERIFICATION.md
+
+G01 remains **ACTIVE / NOT SATURATED**. The remaining unmatched DEX-label queue, native-source gap scan and adversarial missed-network audit remain open.
+
+G02-G29 remain BLOCKED.
+Live trading remains **STOP**.
+
+### Next Macro Objective
+
+Continue systematic primary verification of the unresolved DEX label queue, prioritize aliases/execution-plane variants, then reconcile against native ecosystem sources and execute the adversarial missed-network audit before final G01 denominator analysis.
