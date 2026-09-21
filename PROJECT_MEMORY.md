@@ -531,3 +531,8 @@ Live trading remains STOP.
 ## G02 DURABLE RULE — RPC FAILOVER
 
 A single logical observation must not be abandoned merely because its first provider fails when another eligible provider exists for the same network. Failover is transport recovery, not state continuity. Every successful post-switch observation still requires independent freshness, provenance, network identity and request-consistency validation. If all providers fail, the observation fails closed.
+
+
+## G02 DURABLE RULE — V2 PAIR ENUMERATION
+
+Factory-level deployment evidence is not pair-state evidence. For V2-style venues, current pair truth must be derived from the runtime factory pair denominator, followed by pair code identity, token identity, reserves/liquidity, fee/callback rules and freshness. Enumeration must use an explicit safety/saturation bound and fail closed rather than silently truncate the universe.
