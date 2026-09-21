@@ -1142,3 +1142,26 @@ Audit 047: PARTIAL PASS. G01 remains blocked by the unresolved 419-label semanti
 
 G02-G29 remain BLOCKED. LIVE TRADING = STOP.
 Next: continue bounded reconciliation of material DEX/native-source gaps, then formal G01 exit review.
+
+
+## UPDATE - MACRO-BATCH 042 / DEX SEMANTIC TRIAGE + PRIMARY DELTA
+
+Date: 21 September 2026
+State: G01 ACTIVE / NOT SATURATED
+
+The retained 419-label DEX materialization was re-read and all labels received a conservative triage classification. This closes classification coverage, not identity verification.
+
+Triage distribution:
+- POSSIBLE_NETWORK_CANDIDATE: 350
+- UNKNOWN: 26
+- EXECUTION_PLANE_VARIANT_CANDIDATE: 30
+- LIKELY_ALIAS_CANDIDATE: 13
+
+One high-information label, Optimism, was primary-verified as OP Mainnet / eip155:10 using official Optimism registry evidence.
+
+Current canonical registry: 66 records, 66 unique keys, 0 duplicates; 11 MATCH_EXISTING and 55 NEW_CANDIDATE.
+
+Audit 048: PARTIAL PASS. Classification coverage is complete for the retained 419-label surface, but primary identity/lifecycle verification remains incomplete.
+
+G02-G29 remain BLOCKED. LIVE TRADING = STOP.
+Next: primary verification of the highest-materiality candidate/alias/execution-plane queues, then formal G01 exit review.
