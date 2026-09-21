@@ -61,5 +61,8 @@
   ],
   "reconciliation_findings": [
     "Official ZKsync mainnet table currently lists 12 mainnet chains; ecosystem identity must not replace per-chain canonical identities."
-  ]
+  ],
+  "g01_exit_status": "FROZEN_AND_ADVANCE",
+  "execution_eligibility_boundary": "Labels without primary identity proof remain discovery/quarantine and are excluded from execution eligibility.",
+  "exit_audit": "AUDIT_055_G01_FINAL_SATURATION_EXIT"
 }
