@@ -330,3 +330,14 @@ Macro-Batch 019 reviewed 21 discovery inputs and confirmed 10 overlaps against t
 Primary identity/lifecycle evidence has been strengthened for multiple candidates while keeping unresolved identifiers explicitly partial/unknown. The source-union layer is evidence/provenance only and never execution authorization.
 
 Next G01 layer: union with DEX/native ecosystem registries, full lifecycle and retired-state reconciliation, exclusions, freshness and final deduplicated discovery denominator.
+## 34. G01 Native Ecosystem Source Surfaces — Macro-Batch 020
+
+Date: 21 September 2026
+
+Added machine-readable source-surface registry: 01_BLOCKCHAIN_UNIVERSE/data/G01_NATIVE_ECOSYSTEM_SOURCE_SURFACES_v001.json.
+
+The current Cosmos Chain Registry root inspection produced 290 entries and 266 named top-level directories after internal-directory filtering. It also exposes a _non-cosmos source surface. This is source coverage only, not final chain coverage.
+
+Solana Mainnet and TRON Mainnet were added as explicit native execution-model candidates, with testnet exclusion semantics captured. Osmosis, Neutron and dYdX were directly inspected as live/mainnet Cosmos records.
+
+Next authoritative G01 work is full native-registry extraction and union reconciliation, followed by DEX-derived network union and final denominator construction.
