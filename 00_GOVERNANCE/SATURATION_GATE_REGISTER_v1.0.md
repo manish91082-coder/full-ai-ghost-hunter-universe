@@ -253,3 +253,12 @@ The historical gate map retained earlier in this file is preserved as history. T
 - Live trading = STOP
 
 G02 exit remains open because exact deployment addresses, direct code evidence, current capacity/fee, enablement/authorization, adversarial mechanism denominator and final bounded saturation review are unresolved.
+## G02 UPDATE — BATCH 005 PRIMARY ADDRESS + CODE/STATE BOUNDARY
+
+Date: 21 September 2026
+
+Batch 005 materially strengthened deployment identity coverage for marginfi v2, Sky MCD_FLASH, Venus Core Pool and Balancer V2 Vault. Canonical deployment state is now 34 records / 34 unique keys / 0 duplicates.
+
+Exit remains blocked by runtime bytecode/code identity, live capacity, current fees, enablement/authorization, freshness and adversarial atomic-mechanism denominator closure. Research-derived execution authorization remains zero.
+
+Current authoritative state: G01 FROZEN / BOUNDED EXIT PASS; G02 ACTIVE / NOT SATURATED; G03-G29 BLOCKED; LIVE TRADING STOP.
