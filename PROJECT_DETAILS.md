@@ -399,3 +399,22 @@ Date: 21 September 2026
 G02 is active. The first normalized registry distinguishes six verified atomic-liquidity primitive families from three discovery candidates. Each primitive carries independent atomicity, callback/instruction, repayment, fee-state, capacity-state and deployment-state fields.
 
 The next G02 layer is deployment-scale enumeration and live-state verification. No mechanism-level evidence is sufficient to authorize execution.
+
+## SECTION 40 — G02 DEPLOYMENT × NETWORK + DYNAMIC STATE MACRO-CYCLE
+
+Date: 21 September 2026
+
+G02 has crossed from primitive-family discovery into a typed deployment/state substrate. The canonical model is:
+
+mechanism → network → deployment → code/interface → capability → asset → capacity → fee → authorization → atomicity → freshness → provenance.
+
+Machine-readable state added/updated:
+- 02_FLASH_LOAN_UNIVERSE/data/G02_ATOMIC_LIQUIDITY_MECHANISM_REGISTRY_v001.json (updated in place)
+- 02_FLASH_LOAN_UNIVERSE/data/G02_ATOMIC_CAPITAL_DEPLOYMENT_REGISTRY_v001.json
+
+Research/audit state added:
+- 02_FLASH_LOAN_UNIVERSE/05_G02_DEPLOYMENT_ENUMERATION_AND_DYNAMIC_STATE_BATCH_002.md
+- 02_FLASH_LOAN_UNIVERSE/06_AUDIT_057_G02_DEPLOYMENT_AND_STATE.md
+- 02_FLASH_LOAN_UNIVERSE/07_G02_ADVERSARIAL_ATOMIC_MECHANISM_DISCOVERY_BATCH_003.md
+
+No deployment record authorizes execution. Runtime code, current balances, fee state, enablement, authorization, simulation, risk and economics remain downstream/fail-closed obligations.
