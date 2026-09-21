@@ -570,3 +570,16 @@ Silo V3 API/UI discovery is a candidate source only. Because Silo markets are pe
 When a runtime transport contract changes, all existing tests that encode the previous behavior must be re-audited in the same macro-cycle. In particular, in-request provider failover means a failed first provider may produce a successful observation from the next provider; tests must not still expect an exception from the logical request.
 
 CI must explicitly install its test dependencies and define the import path for a src-layout Python project. A passing local assumption is not sufficient for authoritative GitHub CI.
+
+
+## DURABLE RULE — EXECUTION VERIFICATION HANDSHAKE
+
+Date: 21 September 2026
+
+A repository change is not considered executed/verified merely because a commit exists. The authoritative completion handshake is:
+
+`CURRENT MAIN HEAD → data-plane-ci RUN → JOB/STEP RESULT → SUCCESS CONCLUSION → RUN HEAD SHA == CURRENT MAIN HEAD → project-execution-verifier GREEN`.
+
+If any link is missing, stale, failed, cancelled, or SHA-mismatched, the macro-cycle remains OPEN and the system must diagnose/fix/re-run before downstream gate advancement.
+
+The project now has a dedicated `.github/workflows/project-execution-verifier.yml` that listens for `data-plane-ci` completion and fails closed unless the successful run belongs to the current `main` HEAD. GitHub documents `workflow_run` completion triggers and workflow conclusions, and workflow concurrency can prevent stale concurrent runs from consuming execution capacity.
