@@ -583,3 +583,14 @@ A repository change is not considered executed/verified merely because a commit 
 If any link is missing, stale, failed, cancelled, or SHA-mismatched, the macro-cycle remains OPEN and the system must diagnose/fix/re-run before downstream gate advancement.
 
 The project now has a dedicated `.github/workflows/project-execution-verifier.yml` that listens for `data-plane-ci` completion and fails closed unless the successful run belongs to the current `main` HEAD. GitHub documents `workflow_run` completion triggers and workflow conclusions, and workflow concurrency can prevent stale concurrent runs from consuming execution capacity.
+
+
+## SECTION 55 — DURABLE RULE: CURRENT-STATE EXECUTION VERIFICATION
+
+Date: 22 September 2026
+
+The project distinguishes code committed, code executed, and code verified successful for the exact current authoritative main SHA. Only the third state closes a macro-cycle.
+
+The verifier queries GitHub Actions for the exact current main SHA, requires a completed successful data-plane-ci run, and retries during REST propagation gaps. Stale success is never accepted.
+
+G02 runtime observation consumes only external provider configuration and remains evidence-only. Provider health identity is permanently (provider_id, network_id), not provider ID alone.
