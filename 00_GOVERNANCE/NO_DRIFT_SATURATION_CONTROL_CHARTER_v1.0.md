@@ -226,3 +226,30 @@ One authoritative current path per major machine-readable domain is mandatory. N
 Authoritative runtime candidate selection must read only the current canonical state plus referenced current evidence. Historical snapshots are replay/audit inputs only.
 
 See: 00_GOVERNANCE/DATA_LIFECYCLE_DEDUPLICATION_CONTROL_v1.0.md
+
+
+## 17. AI RESEARCH + DATA INTEROPERABILITY LOCK
+
+Date: 21 September 2026
+
+The project now has an explicit model-neutral AI/data interoperability constitution:
+- 00_GOVERNANCE/AI_RESEARCH_DATA_INTEROPERABILITY_CONSTITUTION_v1.0.md
+- 00_GOVERNANCE/DATA_SCHEMA_AND_AI_ACCESS_CONTRACT_v1.0.md
+- 00_GOVERNANCE/DATA_DOMAIN_REGISTRY_v1.0.json
+
+Locked principles:
+- evidence/history is append-only;
+- current canonical state is deduplicated and updated in place;
+- machine-readable canonical data is authoritative for computation;
+- Markdown is the human audit/explanation layer;
+- every authoritative object requires stable identity, provenance, verification, lifecycle and freshness semantics;
+- UNKNOWN, ZERO, EMPTY, MISSING, STALE and CONFLICTED are distinct states;
+- relationships use typed references rather than copied objects;
+- AI research is role-separated into discovery, source criticism, identity, normalization, deduplication, verification, contradiction, coverage, freshness, domain-specialist, data-engineering, adversarial-audit, reproduction, saturation, runtime-safety and change-control functions;
+- different AI models must consume the same schema without hidden conversation memory;
+- historical snapshots are replay/audit inputs only, never accidental runtime candidates;
+- cross-model compatibility and adversarial negative tests are mandatory before a data domain becomes authoritative.
+
+The design is aligned conceptually with FAIR machine-actionability and W3C PROV provenance principles. This alignment does not replace project-specific schemas or gates.
+
+G01 remains ACTIVE / NOT SATURATED. Live trading STOP.
