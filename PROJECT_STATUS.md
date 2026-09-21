@@ -970,3 +970,36 @@ G01 remains ACTIVE / NOT SATURATED. G02-G29 remain BLOCKED. LIVE TRADING = STOP.
 
 ### Next Macro Objective
 Materialize and reconcile the current Cosmos production subset without creating a duplicate current registry.
+
+## UPDATE - MACRO-BATCH 035 / COSMOS PRODUCTION MATERIALIZATION
+
+Date: 21 September 2026
+State: G01 ACTIVE / NOT SATURATED
+
+Added:
+- scripts/materialize_g01_cosmos.py
+- .github/workflows/g01-cosmos-materialization.yml
+- 01_BLOCKCHAIN_UNIVERSE/82_G01_COSMOS_PRODUCTION_MATERIALIZATION_BATCH_035.md
+- 01_BLOCKCHAIN_UNIVERSE/83_AUDIT_041_G01_COSMOS_PRODUCTION_MATERIALIZATION.md
+
+The official Cosmos Chain Registry was pinned to upstream tree SHA 810b0b68e4591078295ccce76205e970b3c002e5. The materializer discovers chain.json records, preserves native identifiers, filters production using status=live AND network_type=mainnet, retains explicit non-production/error accounting, hashes payloads, and produces JSONL evidence.
+
+CI execution is now OBSERVED IN PROGRESS:
+- workflow: G01 Cosmos Native Materialization
+- run: 35574144469
+- head: 5d2d00b997a49cbeae80fb314460836e93146722
+- job: 106252062868
+- checkout: SUCCESS
+- materialization step: IN PROGRESS
+- artifact upload: PENDING
+
+No Cosmos records have been merged into the canonical G01 registry yet. No completeness claim is made while the CI run is incomplete.
+
+Audit 041 remains PENDING OBSERVATION.
+
+G01 remains ACTIVE / NOT SATURATED.
+G02-G29 remain BLOCKED.
+LIVE TRADING = STOP.
+
+### Next Macro Objective
+Complete observation of run 35574144469, audit the materialization evidence, then reconcile production observations against the current 57-record canonical source-union without duplicate growth.
