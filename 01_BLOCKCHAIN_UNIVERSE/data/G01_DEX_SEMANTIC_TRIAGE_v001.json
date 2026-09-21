@@ -14,11 +14,9 @@
     "LIKELY_ALIAS_CANDIDATE": 13
   },
   "primary_verified_this_cycle": [
-    "Cosmos",
-    "Sui",
-    "Starknet"
+    "Astar Network"
   ],
-  "canonical_promotions": 2,
+  "canonical_promotions": 1,
   "not_promoted": [
     "Bittensor",
     "Osmosis",
@@ -27,7 +25,17 @@
     "Kava",
     "Cardano",
     "Klaytn",
-    "Op_Bnb"
+    "Op_Bnb",
+    "Astar zkEVM",
+    "Bittensor",
+    "Cronos zkEVM",
+    "DeFiChain EVM",
+    "EOS EVM",
+    "IOTA EVM",
+    "Immutable zkEVM",
+    "Neo X Mainnet",
+    "OntologyEVM",
+    "Polygon zkEVM"
   ],
   "rules": [
     "Exact canonical identity requires primary/native evidence.",
