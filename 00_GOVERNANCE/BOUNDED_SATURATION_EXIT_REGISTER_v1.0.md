@@ -59,3 +59,7 @@ New authoritative source family, material identity contradiction, material produ
 
 ## Anti-loop rule
 A new cycle requires a documented material reason. “More research is possible” is not a sufficient reason.
+
+
+## Maximum Macro Mode Lock
+Effective 21 September 2026. One `next` authorizes maximum useful safe work for the active gate in one response/execution window. Artificial micro-batching is prohibited. The final goal remains the controlling anchor. Genuine external dependencies, unavailable evidence, execution-window limits, rate limits, human authorization and safety gates may define a boundary, which must be recorded precisely. Completion must never be claimed merely because the response ended.
