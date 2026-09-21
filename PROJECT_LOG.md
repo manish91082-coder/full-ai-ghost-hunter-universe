@@ -737,3 +737,16 @@ The materializer fetches the public source at runtime, hashes the exact payload,
 Important: workflow creation is not execution proof. CI success, raw payload integrity, complete relationship extraction, identity/lifecycle verification and final denominator reconciliation remain pending.
 
 G01 remains ACTIVE / NOT SATURATED. Live trading STOP.
+
+
+## 2026-09-21 — Macro-Batch 029
+
+**G01 Current-State Consistency + Metadata Control**
+
+- Audited current source-union registry directly from main.
+- Confirmed 49 records, 10 MATCH_EXISTING, 39 NEW_CANDIDATE, 0 duplicate canonical keys.
+- Preserved historical join-point metadata while explicitly separating it from current record-state accounting.
+- No unobserved DEX materialization data promoted.
+- G01 remains ACTIVE / NOT SATURATED.
+- Live execution remains STOP.
+- Next: obtain observable DEX materialization evidence and continue identity/lifecycle/gap/adversarial saturation work.
