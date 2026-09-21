@@ -1066,3 +1066,20 @@ G02-G29 remain BLOCKED.
 LIVE TRADING = STOP.
 
 Next objective: observe the semantic queue artifact, audit its distribution, then select a minimal high-information primary-verification set and perform G01 exit review.
+
+
+## UPDATE - MACRO-BATCH 038 / HIGH-INFORMATION PRIMARY VERIFICATION
+
+Date: 21 September 2026
+State: G01 ACTIVE / NOT SATURATED
+
+Observed Batch 037 CI successfully produced 225 queue records: 4 exact/canonical overlaps, 2 execution-plane reviews, 2 protocol/execution relationship reviews, 217 primary identity reviews.
+
+Targeted primary verification resolved two high-information execution-plane candidates and promoted them into the current canonical source-union in place:
+- Cosmos Hub / native mainnet identifier cosmoshub-4
+- XRPL EVM / native mainnet identifier xrplevm_1440000-1
+
+No EIP-155 coercion was used for native identity. Gateway/Wormchain and Gravitybridge remain relationship-review items. No blind promotion of the 217 primary-review records occurred.
+
+Audit 044: PARTIAL PASS. Exit decision: CONTINUE_TARGETED_CYCLE.
+G02-G29 remain BLOCKED. LIVE TRADING = STOP.
