@@ -805,3 +805,27 @@ The external execution path now exists, but successful CI execution and its evid
 
 ### Next Macro Objective
 Observe and audit the first CI materialization result, retain raw payload/hash evidence, then perform complete protocol × chain reconciliation, identity/lifecycle verification, native gap scan and adversarial coverage audit.
+
+
+## UPDATE — MACRO-BATCH 029 / CURRENT-STATE CONSISTENCY CONTROL
+
+**Date:** 21 September 2026  
+**State:** 🟡 G01 ACTIVE / NOT SATURATED
+
+The current canonical G01 source-union registry was independently parsed and reconciled for state accounting.
+
+Current record states:
+- **49 total canonical source-union records**
+- **10 MATCH_EXISTING**
+- **39 NEW_CANDIDATE**
+- **0 duplicate canonical record keys**
+
+A historical metadata field recording **36 confirmed matches at an earlier join point** is preserved as historical context and is no longer treated as the current MATCH_EXISTING count. Current-state accounting is now explicit.
+
+### Important
+No DEX materialization result has been promoted. GitHub Actions execution remains **UNOBSERVED** through the available observation wrapper. No raw /protocols payload, hash, complete DEX relationship denominator, or verified new network is claimed from that missing evidence.
+
+### Next
+Obtain observable DEX materialization evidence, then reconcile protocol×chain observations against the current 49-record union, perform identity/lifecycle verification, native gap discovery and adversarial missed-network audit.
+
+Live trading remains **STOP**.
