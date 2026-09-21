@@ -1089,6 +1089,38 @@
       "capability_state": "NOT_VERIFIED",
       "canonical_record_key": "xrpl-mainnet",
       "note": "Official XRPL documentation identifies one production XRP Ledger network, Mainnet, and distinguishes Testnet/Devnet. Native identity preserved; DEX/atomic-liquidity/execution capability remains separate."
+    },
+    {
+      "input_name": "Sui",
+      "normalized_name": "Sui Mainnet",
+      "state": "NEW_CANDIDATE",
+      "identity_state": "PRIMARY_VERIFIED",
+      "mainnet_identifier": "sui:mainnet",
+      "evidence": [
+        "https://docs.sui.io/",
+        "https://docs.sui.io/paper/sui-lutris.pdf"
+      ],
+      "source_class": "S1_OFFICIAL_NETWORK_DOCUMENTATION",
+      "lifecycle": "mainnet",
+      "capability_state": "NOT_VERIFIED",
+      "canonical_record_key": "sui-mainnet",
+      "note": "Official Sui documentation and Sui technical material identify Sui as a production smart-contract platform with a mainnet. Native identity preserved; DEX/atomic-liquidity/execution remain separate gates."
+    },
+    {
+      "input_name": "Starknet",
+      "normalized_name": "Starknet Mainnet",
+      "state": "NEW_CANDIDATE",
+      "identity_state": "PRIMARY_VERIFIED",
+      "mainnet_identifier": "starknet:SN_MAIN",
+      "evidence": [
+        "https://docs.starknet.io/",
+        "https://docs.starknet.io/architecture-and-concepts/network-architecture/os/"
+      ],
+      "source_class": "S1_OFFICIAL_NETWORK_DOCUMENTATION",
+      "lifecycle": "mainnet",
+      "capability_state": "NOT_VERIFIED",
+      "canonical_record_key": "starknet-mainnet",
+      "note": "Official Starknet documentation describes Starknet as an L2 validity rollup and its production execution architecture. Native Starknet identity is preserved; no EVM chain ID is fabricated."
     }
   ],
   "normalization_rules": [
@@ -1106,19 +1138,19 @@
   "duplicate_policy": "semantic identity resolution before merge; one canonical record per canonical identity",
   "provenance_policy": "source evidence remains referenced per record; conflicting observations are preserved outside the canonical object",
   "last_materialized_update": "2026-09-21",
-  "record_count": 72,
+  "record_count": 74,
   "current_state_accounting": {
     "as_of": "2026-09-21",
-    "total_records": 72,
+    "total_records": 74,
     "state_counts": {
       "MATCH_EXISTING": 10,
-      "NEW_CANDIDATE": 62
+      "NEW_CANDIDATE": 64
     },
-    "canonical_record_key_count": 72,
+    "canonical_record_key_count": 74,
     "duplicate_canonical_record_key_count": 0,
     "note": "Current-state accounting computed from records[]; historical join-point metadata is separate.",
-    "controlling_batch": "G01_DEX_HIGH_INFORMATION_PRIMARY_VERIFICATION_BATCH_043",
-    "audit": "AUDIT_049_G01_DEX_HIGH_INFORMATION_PRIMARY_VERIFICATION"
+    "controlling_batch": "G01_DEX_PRIMARY_VERIFICATION_BATCH_044",
+    "audit": "AUDIT_050_G01_DEX_PRIMARY_VERIFICATION"
   },
-  "updated_by": "G01_DEX_HIGH_INFORMATION_PRIMARY_VERIFICATION_BATCH_043"
+  "updated_by": "G01_DEX_PRIMARY_VERIFICATION_BATCH_044"
 }
