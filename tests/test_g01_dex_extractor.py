@@ -7,7 +7,7 @@ from ghost_hunter.g01_dex_extractor import (
 
 def test_protocol_chain_relationships_require_dex_category():
     payload = [
-        {"name": "Example DEX", "category": "Dexes", "slug": "example", "chains": ["Ethereum", "Base", "Solana"]},
+        {"name": "Example DEX", "category": "Dexs", "slug": "example", "chains": ["Ethereum", "Base", "Solana"]},
         {"name": "Lending Example", "category": "Lending", "chains": ["Ethereum"]},
     ]
     rows = extract_defillama_dex_protocol_relationships(payload, "llama-protocols", "fixture:protocols")
