@@ -3,8 +3,8 @@
 **Project:** FULL AI GHOST HUNTER UNIVERSE  
 **Repository:** `manish91082-coder/full-ai-ghost-hunter-universe`  
 **Branch:** `main`  
-**Current Stage:** **Phase 0 — Governance Lock / Pre-Phase-01**  
-**Status:** 🟢 GOVERNANCE LOCKED / LIVE TRADING STOPPED
+**Current Stage:** **G02 — Atomic / Flash Liquidity Universe**  
+**Status:** 🟢 G02 ACTIVE / LIVE TRADING STOPPED
 
 ## Governance Locked
 
@@ -40,8 +40,8 @@ Objective: evidence-backed Global Blockchain Universe with normalized identities
 | Master roadmap | ✅ SAVED / VERIFIED |
 | Operating doctrine | ✅ LOCKED |
 | Phase 01 methodology | ✅ LOCKED |
-| Blockchain factual universe | ⏳ RESEARCH PENDING |
-| Flash-loan inventory | ⏳ Pending |
+| Blockchain factual universe | ✅ G01 FROZEN / BOUNDED EXIT PASS |
+| Flash-loan inventory | 🟢 G02 ACTIVE / PARTIAL VERIFIED |
 | DEX / venue universe | ⏳ Pending |
 | Pair / token / address universe | ⏳ Pending |
 | Strategy universe | ⏳ Pending |
@@ -1313,3 +1313,22 @@ Current G01 state remains FROZEN_AND_ADVANCE. G02 is now the active gate; G03-G2
 LIVE TRADING = STOP
 
 Next objective: production deployment × network enumeration, direct code/ABI evidence, current capacity/fee verification, then adversarial discovery for additional atomic-liquidity primitives.
+
+## UPDATE — G02 DEPLOYMENT × NETWORK + ADVERSARIAL MACRO-CYCLE
+
+Date: 21 September 2026
+
+G01 remains frozen after Audit 055. G02 is the active primary gate.
+
+Completed in this macro-cycle:
+- deployment/state boundary established as a machine-readable canonical artifact;
+- Aave V3 current deployment surface materialized as named production deployment records;
+- existing Morpho 50-chain reconciliation referenced rather than duplicated;
+- Project 0/marginfi Solana surface carried into G02 deployment state;
+- Uniswap V3 pool flash, Sky/Dai flash mint paths, Venus, Radiant and Balancer deployment surfaces represented with explicit dynamic/pending runtime fields;
+- adversarial discovery expanded to ERC-3156 implementations, Curve lending/flash-loan surfaces and Aave V4 candidate state;
+- exact addresses, bytecode, live capacity, fee, enablement and authorization remain fail-closed pending direct runtime evidence.
+
+New authoritative G02 files include the deployment registry, Audit 057 and adversarial discovery delta. Live trading remains STOP; G03-G29 remain blocked.
+
+**Current Objective:** close the remaining G02 address/code/runtime-state and adversarial denominator gaps, then perform bounded saturation/exit review.
