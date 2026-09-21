@@ -1370,3 +1370,9 @@ Move from deployment identity to runtime-verifiable state: code identity → cap
 Added:
 - 02_FLASH_LOAN_UNIVERSE/08_G02_PRIMARY_ADDRESS_CODE_STATE_BOUNDARY_BATCH_005.md
 - 02_FLASH_LOAN_UNIVERSE/09_AUDIT_058_G02_PRIMARY_ADDRESS_BATCH_005.md
+
+## UPDATE — G02 RUNTIME BOUNDARY BATCH 006
+
+21 September 2026. High-value runtime-boundary evidence was materialized for Project 0 / marginfi: official current program identity, atomic flashloan semantics, zero documented flashloan fee, and current SDK/program compatibility obligations. Capacity, live bank state, executable bytecode identity and slot freshness remain runtime-observation obligations.
+
+G02 remains ACTIVE / NOT SATURATED. G03-G29 blocked. Live trading STOP.
