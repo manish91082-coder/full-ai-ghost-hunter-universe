@@ -135,3 +135,13 @@
 - Repaired current accounting in place to 59 total / 10 MATCH_EXISTING / 49 NEW_CANDIDATE.
 - Audit 045: consistency repair PASS; G01 exit preflight PARTIAL.
 - Continued targeted saturation only; no broad rediscovery.
+
+## 2026-09-21 - Macro-Batch 040
+
+**Adversarial Missed-Network Audit**
+
+- Challenged the assumption that Cosmos Chain Registry can be the global denominator; recorded this as a material scope boundary.
+- Primary-verified and promoted Osmosis, THORChain and ZetaChain.
+- Current canonical state: 62 records / 62 unique keys / 0 duplicates.
+- Audit 046: PARTIAL PASS; G01 remains ACTIVE / NOT SATURATED.
+- Next focus is material DEX/native-source denominator closure, not broad rediscovery.
