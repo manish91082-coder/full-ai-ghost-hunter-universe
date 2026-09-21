@@ -346,3 +346,16 @@ G02 remains ACTIVE / NOT SATURATED. G03-G29 remain BLOCKED. Execution authority 
 - No production RPC observation or CI success is claimed by this batch.
 - G02 remains ACTIVE / NOT SATURATED; G03-G29 blocked; execution NONE; live trading STOP.
 - Next: verified runtime factory/pair observations where available, Silo V3 market-level enumeration and adversarial denominator closure.
+
+
+## 2026-09-21 — G02 MACRO-BATCH 018
+
+**Coherent V2 Block Snapshot + Silo Discovery Boundary**
+
+- Pinned V2 factory count and pair-address reads to the captured opening block.
+- Pinned V2 pair code, token and reserve reads to one captured block.
+- Added duplicate pair identity fail-closed handling.
+- Added Silo V3 discovery-only parser with explicit provenance and duplicate validation.
+- Added primary-source Silo market discovery evidence and recorded that permissionless markets prevent API/UI enumeration from being treated as a complete deployment denominator.
+- No production RPC observation or CI success is claimed.
+- G02 remains ACTIVE / NOT SATURATED; G03-G29 blocked; execution NONE; live trading STOP.
