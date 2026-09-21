@@ -938,3 +938,35 @@ LIVE TRADING remains STOP.
 
 ### Next Macro Objective
 Continue primary verification of unresolved labels, then execute independent native-registry reconciliation and adversarial missed-network discovery before G01 denominator freeze.
+
+
+## UPDATE - MACRO-BATCH 034 / NATIVE REGISTRY RECONCILIATION CONTRACT
+
+Date: 21 September 2026
+State: G01 ACTIVE / NOT SATURATED
+
+Added:
+- 01_BLOCKCHAIN_UNIVERSE/data/G01_NATIVE_RECONCILIATION_MANIFEST_v001.json
+- 01_BLOCKCHAIN_UNIVERSE/80_G01_NATIVE_REGISTRY_RECONCILIATION_BATCH_034.md
+- 01_BLOCKCHAIN_UNIVERSE/81_AUDIT_040_G01_NATIVE_REGISTRY_RECONCILIATION.md
+
+The batch establishes a machine-readable reconciliation contract for independent native ecosystem sources, including Cosmos Chain Registry, Solana, TRON, Hedera, Fuel, Starknet, Sui, NEAR, Aptos, Sei, Injective, Berachain and Powerloom.
+
+The contract explicitly separates source-surface counts from canonical production-chain counts, preserves native identifiers, models execution-plane variants, excludes testnets from the production denominator, and forbids capability/execution inference from network identity alone.
+
+Primary evidence anchors were recorded for Fuel Ignition, Berachain, Hedera Mainnet and Powerloom Mainnet V2. This does not establish flash liquidity, executable DEX routes, liquidity-at-size, profitability or execution authorization.
+
+Audit 040: PARTIAL PASS.
+
+G01 remains ACTIVE / NOT SATURATED. G02-G29 remain BLOCKED. LIVE TRADING = STOP.
+
+### Remaining G01 obligations
+- materialize the current Cosmos production subset;
+- reconcile native registries against the current 57-record source-union;
+- complete semantic reconciliation of the 419-label DEX discovery surface;
+- close primary-verification and conflict/unknown queues;
+- execute adversarial missed-network audit;
+- freeze only after denominator, exclusions, evidence, freshness and duplicate-free canonical-state requirements pass.
+
+### Next Macro Objective
+Materialize and reconcile the current Cosmos production subset without creating a duplicate current registry.
