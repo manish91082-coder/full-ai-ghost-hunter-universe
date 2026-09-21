@@ -451,3 +451,9 @@ Atomic-liquidity mechanisms are represented as typed primitives. A generic flash
 Known primary-verified primitive families currently include Aave V3, Aave GHO Flashmint, Morpho Blue, Uniswap V2 flash swaps, Euler EVK and Project 0/marginfi. Balancer, Venus and Radiant are retained as discovery candidates pending verification.
 
 Research data is externalized; runtime execution must read current verified state and fail closed on missing or stale critical data. Live trading remains STOP.
+
+## DURABLE RULE — G02 DEPLOYMENT / DYNAMIC STATE SEPARATION — 21 September 2026
+
+G02 atomic-capital truth is split into mechanism semantics and deployment/runtime state. Deployment evidence is never current liquidity, fee, capacity, authorization or execution permission. Canonical deployment identity uses mechanism_id + network_id + market_variant + contract_role + contract_or_program. Exact addresses require network + role + provenance. Missing/stale/contradictory critical runtime state remains fail-closed.
+
+Uniswap V3 flash, Sky/Dai ERC-3156 and Vat Dai flash mint, ERC-3156 implementation discovery, Curve lending/flash-loan discovery and Aave V4 verification are now durable G02 search dimensions. G02 remains active; G01 frozen; G03-G29 blocked; live trading STOP.
