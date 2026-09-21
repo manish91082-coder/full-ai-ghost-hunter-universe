@@ -457,3 +457,7 @@ Research data is externalized; runtime execution must read current verified stat
 G02 atomic-capital truth is split into mechanism semantics and deployment/runtime state. Deployment evidence is never current liquidity, fee, capacity, authorization or execution permission. Canonical deployment identity uses mechanism_id + network_id + market_variant + contract_role + contract_or_program. Exact addresses require network + role + provenance. Missing/stale/contradictory critical runtime state remains fail-closed.
 
 Uniswap V3 flash, Sky/Dai ERC-3156 and Vat Dai flash mint, ERC-3156 implementation discovery, Curve lending/flash-loan discovery and Aave V4 verification are now durable G02 search dimensions. G02 remains active; G01 frozen; G03-G29 blocked; live trading STOP.
+
+## DURABLE RULE — PRIMARY ADDRESS MATERIALIZATION — 21 September 2026
+
+Primary-source deployment addresses may be promoted into canonical deployment state only with network + contract role + provenance. Address verification does not imply current bytecode identity, capability enablement, liquidity, fee, authorization or execution eligibility. Records without current primary address evidence remain pending rather than inferred.
