@@ -1,6 +1,6 @@
 {
   "schema_version": "g02.atomic.capital.deployment.registry.v1",
-  "revision": 3,
+  "revision": 4,
   "as_of": "2026-09-21",
   "canonical_role": "CURRENT_MATERIALIZED_STATE",
   "authority": "G02_DEPLOYMENT_ENUMERATION_AND_DYNAMIC_STATE_BOUNDARY",
@@ -715,9 +715,9 @@
       "abi_evidence_state": "PRIMARY_IDL_OR_SDK_REQUIRED",
       "capability_state": "VERIFIED_FLASH_LOAN_PRIMITIVE",
       "asset_scope_state": "DYNAMIC_BANK_SET",
-      "capacity_state": "DYNAMIC_BANK_LIQUIDITY",
+      "capacity_state": "UNKNOWN_RUNTIME; bank-level caps/liquidity must be read from current Solana state",
       "fee_state": "CURRENTLY_ZERO_PER_OFFICIAL_DOC",
-      "authorization_state": "INSTRUCTION_ORDER_AND_PROGRAM_RULES",
+      "authorization_state": "PERMISSIONLESS_PRIMITIVE_WITH_ACCOUNT_AND_HEALTH_CONSTRAINTS; RUNTIME_ACCOUNT_STATE_REQUIRED",
       "callback_state": "INSTRUCTION_BRACKET_NOT_CPI",
       "repayment_state": "END_INSTRUCTION_FINAL_HEALTH_CHECK",
       "atomicity_state": "VERIFIED_SAME_TRANSACTION",
@@ -728,7 +728,18 @@
         "https://docs.marginfi.com/typescript-sdk/program-upgrade"
       ],
       "execution_eligibility": "NEVER_FROM_RESEARCH",
-      "address_evidence_source": "Official Project 0 / marginfi program address; current 2026-08-25 program upgrade evidence also confirms mainnet production program ID."
+      "address_evidence_source": "Official Project 0 / marginfi program address; current 2026-08-25 program upgrade evidence also confirms mainnet production program ID.",
+      "runtime_capability_state": "PRIMARY_SOURCE_CAPABILITY_VERIFIED; LIVE_BANK_STATE_REQUIRED",
+      "current_fee_state": "OFFICIAL_DOC_CURRENT_ZERO_FLASHLOAN_FEE",
+      "current_fee_evidence": "Official Project 0 flashloan guide and fee documentation state no flashloan fee.",
+      "code_interface_evidence": [
+        "https://docs.marginfi.com/guides/flashloans",
+        "https://docs.marginfi.com/typescript-sdk/flash-loans",
+        "https://docs.marginfi.com/typescript-sdk/program-upgrade",
+        "https://docs.marginfi.com/typescript-sdk/migration"
+      ],
+      "runtime_compatibility_obligation": "MAINNET_PROGRAM_0.1.11 / SDK >= 2.8.0 required for current oracle decoding; older SDK paths are invalid for current flashloan integration.",
+      "enablement_state": "UNKNOWN_RUNTIME; account/bank operational state must be read"
     },
     {
       "id": "G02-DEP-0024",
@@ -1077,5 +1088,6 @@
     "adversarial_discovery": true
   },
   "address_materialization_batch": "PRIMARY_ADDRESS_BATCH_005",
-  "address_materialization_notes": "Batch 005 materialized official primary-source addresses for marginfi mainnet, current Sky MCD_FLASH, Venus BNB Core Pool reference, and Balancer V2 Vault on Ethereum, Polygon, Arbitrum, Optimism and Gnosis. No runtime bytecode hash, live capacity, current fee or enablement authorization is implied."
+  "address_materialization_notes": "Batch 005 materialized official primary-source addresses for marginfi mainnet, current Sky MCD_FLASH, Venus BNB Core Pool reference, and Balancer V2 Vault on Ethereum, Polygon, Arbitrum, Optimism and Gnosis. No runtime bytecode hash, live capacity, current fee or enablement authorization is implied.",
+  "runtime_state_materialization_batch": "RUNTIME_BOUNDARY_BATCH_006"
 }
