@@ -308,3 +308,13 @@ This is an architectural/governance boundary, not a convenience preference.
 Repository name symmetry, historical repositories, forks and experiments cannot cause repository selection.
 
 Canonical identity must be checked before planning, reading project state for continuation, or writing project artifacts.
+
+## 32. G01 Global Chain Discovery Expansion — Macro-Batch 018
+
+Date: 21 September 2026
+
+G01 discovery coverage was expanded using independent current discovery surfaces. DeFiLlama's DEX-by-chain dataset reports 290 chains, CoinGecko documents 100+ supported on-chain networks, and L2BEAT provides an independent scaling/activity discovery surface. These datasets are deliberately treated as overlapping discovery denominators, not additive chain counts. citeturn0search9turn0search6turn3search8
+
+Batch 018 promoted 21 concrete candidates from discovery signals into individually trackable G01 records. They remain DISCOVERED only.
+
+The next authoritative G01 task is source-union normalization plus primary identity/lifecycle verification, followed by exclusion/retired reconciliation and a final deduplicated discovery counter. Dependent gates remain blocked by governance until G01 is frozen.
