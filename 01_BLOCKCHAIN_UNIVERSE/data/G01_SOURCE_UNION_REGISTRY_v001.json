@@ -5,10 +5,10 @@
   "status": "NORMALIZED_NOT_FROZEN",
   "repository": "manish91082-coder/full-ai-ghost-hunter-universe",
   "branch": "main",
-  "input_records": 21,
-  "confirmed_matches_against_current_seed_or_morpho_reconciliation": 10,
-  "new_candidates_at_this_join_point": 11,
-  "note": "The 11 new-candidate result is provisional until DEX-derived deployment surfaces and remaining native ecosystem registries are joined.",
+  "input_records": 47,
+  "confirmed_matches_against_current_seed_or_morpho_reconciliation": 36,
+  "new_candidates_at_this_join_point": 37,
+  "note": "Expanded in place from the reconciled Morpho 50-row deployment surface. The 26 added records are new G01 discovery candidates at this join point; they are not execution-authorized. DEX-derived union and remaining native registries remain open.",
   "records": [
     {
       "input_name": "Lighter",
@@ -269,6 +269,422 @@
         "https://injective.com/multivm"
       ],
       "canonical_record_key": "BC-026"
+    },
+    {
+      "input_name": "0G",
+      "normalized_name": "0G",
+      "match": null,
+      "state": "NEW_CANDIDATE",
+      "identity_state": "PRIMARY_DEPLOYMENT_SOURCE_ONLY",
+      "mainnet_identifier": null,
+      "evidence": [
+        "https://github.com/morpho-org/morpho-organization/blob/main/addresses/addresses.ts"
+      ],
+      "canonical_record_key": "0g",
+      "source_class": "S1_OFFICIAL_PROTOCOL_DEPLOYMENT_REGISTRY",
+      "lifecycle": "mainnet",
+      "capability_state": "NOT_VERIFIED",
+      "note": "Observed as a production/mainnet Morpho Blue deployment row in the project's reconciled 50-row source artifact; chain identity/capability/venue remain separate verification gates."
+    },
+    {
+      "input_name": "Arc",
+      "normalized_name": "Arc",
+      "match": null,
+      "state": "NEW_CANDIDATE",
+      "identity_state": "PRIMARY_DEPLOYMENT_SOURCE_ONLY",
+      "mainnet_identifier": null,
+      "evidence": [
+        "https://github.com/morpho-org/morpho-organization/blob/main/addresses/addresses.ts"
+      ],
+      "canonical_record_key": "arc",
+      "source_class": "S1_OFFICIAL_PROTOCOL_DEPLOYMENT_REGISTRY",
+      "lifecycle": "mainnet",
+      "capability_state": "NOT_VERIFIED",
+      "note": "Observed as a production/mainnet Morpho Blue deployment row in the project's reconciled 50-row source artifact; chain identity/capability/venue remain separate verification gates."
+    },
+    {
+      "input_name": "Bittensor",
+      "normalized_name": "Bittensor",
+      "match": null,
+      "state": "NEW_CANDIDATE",
+      "identity_state": "PRIMARY_DEPLOYMENT_SOURCE_ONLY",
+      "mainnet_identifier": null,
+      "evidence": [
+        "https://github.com/morpho-org/morpho-organization/blob/main/addresses/addresses.ts"
+      ],
+      "canonical_record_key": "bittensor",
+      "source_class": "S1_OFFICIAL_PROTOCOL_DEPLOYMENT_REGISTRY",
+      "lifecycle": "mainnet",
+      "capability_state": "NOT_VERIFIED",
+      "note": "Observed as a production/mainnet Morpho Blue deployment row in the project's reconciled 50-row source artifact; chain identity/capability/venue remain separate verification gates."
+    },
+    {
+      "input_name": "Camp",
+      "normalized_name": "Camp",
+      "match": null,
+      "state": "NEW_CANDIDATE",
+      "identity_state": "PRIMARY_DEPLOYMENT_SOURCE_ONLY",
+      "mainnet_identifier": null,
+      "evidence": [
+        "https://github.com/morpho-org/morpho-organization/blob/main/addresses/addresses.ts"
+      ],
+      "canonical_record_key": "camp",
+      "source_class": "S1_OFFICIAL_PROTOCOL_DEPLOYMENT_REGISTRY",
+      "lifecycle": "mainnet",
+      "capability_state": "NOT_VERIFIED",
+      "note": "Observed as a production/mainnet Morpho Blue deployment row in the project's reconciled 50-row source artifact; chain identity/capability/venue remain separate verification gates."
+    },
+    {
+      "input_name": "Citrea",
+      "normalized_name": "Citrea",
+      "match": null,
+      "state": "NEW_CANDIDATE",
+      "identity_state": "PRIMARY_DEPLOYMENT_SOURCE_ONLY",
+      "mainnet_identifier": null,
+      "evidence": [
+        "https://github.com/morpho-org/morpho-organization/blob/main/addresses/addresses.ts"
+      ],
+      "canonical_record_key": "citrea",
+      "source_class": "S1_OFFICIAL_PROTOCOL_DEPLOYMENT_REGISTRY",
+      "lifecycle": "mainnet",
+      "capability_state": "NOT_VERIFIED",
+      "note": "Observed as a production/mainnet Morpho Blue deployment row in the project's reconciled 50-row source artifact; chain identity/capability/venue remain separate verification gates."
+    },
+    {
+      "input_name": "Cronos",
+      "normalized_name": "Cronos",
+      "match": null,
+      "state": "NEW_CANDIDATE",
+      "identity_state": "PRIMARY_DEPLOYMENT_SOURCE_ONLY",
+      "mainnet_identifier": null,
+      "evidence": [
+        "https://github.com/morpho-org/morpho-organization/blob/main/addresses/addresses.ts"
+      ],
+      "canonical_record_key": "cronos",
+      "source_class": "S1_OFFICIAL_PROTOCOL_DEPLOYMENT_REGISTRY",
+      "lifecycle": "mainnet",
+      "capability_state": "NOT_VERIFIED",
+      "note": "Observed as a production/mainnet Morpho Blue deployment row in the project's reconciled 50-row source artifact; chain identity/capability/venue remain separate verification gates."
+    },
+    {
+      "input_name": "Eden",
+      "normalized_name": "Eden",
+      "match": null,
+      "state": "NEW_CANDIDATE",
+      "identity_state": "PRIMARY_DEPLOYMENT_SOURCE_ONLY",
+      "mainnet_identifier": null,
+      "evidence": [
+        "https://github.com/morpho-org/morpho-organization/blob/main/addresses/addresses.ts"
+      ],
+      "canonical_record_key": "eden",
+      "source_class": "S1_OFFICIAL_PROTOCOL_DEPLOYMENT_REGISTRY",
+      "lifecycle": "mainnet",
+      "capability_state": "NOT_VERIFIED",
+      "note": "Observed as a production/mainnet Morpho Blue deployment row in the project's reconciled 50-row source artifact; chain identity/capability/venue remain separate verification gates."
+    },
+    {
+      "input_name": "Etherlink",
+      "normalized_name": "Etherlink",
+      "match": null,
+      "state": "NEW_CANDIDATE",
+      "identity_state": "PRIMARY_DEPLOYMENT_SOURCE_ONLY",
+      "mainnet_identifier": null,
+      "evidence": [
+        "https://github.com/morpho-org/morpho-organization/blob/main/addresses/addresses.ts"
+      ],
+      "canonical_record_key": "etherlink",
+      "source_class": "S1_OFFICIAL_PROTOCOL_DEPLOYMENT_REGISTRY",
+      "lifecycle": "mainnet",
+      "capability_state": "NOT_VERIFIED",
+      "note": "Observed as a production/mainnet Morpho Blue deployment row in the project's reconciled 50-row source artifact; chain identity/capability/venue remain separate verification gates."
+    },
+    {
+      "input_name": "Flare",
+      "normalized_name": "Flare",
+      "match": null,
+      "state": "NEW_CANDIDATE",
+      "identity_state": "PRIMARY_DEPLOYMENT_SOURCE_ONLY",
+      "mainnet_identifier": null,
+      "evidence": [
+        "https://github.com/morpho-org/morpho-organization/blob/main/addresses/addresses.ts"
+      ],
+      "canonical_record_key": "flare",
+      "source_class": "S1_OFFICIAL_PROTOCOL_DEPLOYMENT_REGISTRY",
+      "lifecycle": "mainnet",
+      "capability_state": "NOT_VERIFIED",
+      "note": "Observed as a production/mainnet Morpho Blue deployment row in the project's reconciled 50-row source artifact; chain identity/capability/venue remain separate verification gates."
+    },
+    {
+      "input_name": "Gensyn",
+      "normalized_name": "Gensyn",
+      "match": null,
+      "state": "NEW_CANDIDATE",
+      "identity_state": "PRIMARY_DEPLOYMENT_SOURCE_ONLY",
+      "mainnet_identifier": null,
+      "evidence": [
+        "https://github.com/morpho-org/morpho-organization/blob/main/addresses/addresses.ts"
+      ],
+      "canonical_record_key": "gensyn",
+      "source_class": "S1_OFFICIAL_PROTOCOL_DEPLOYMENT_REGISTRY",
+      "lifecycle": "mainnet",
+      "capability_state": "NOT_VERIFIED",
+      "note": "Observed as a production/mainnet Morpho Blue deployment row in the project's reconciled 50-row source artifact; chain identity/capability/venue remain separate verification gates."
+    },
+    {
+      "input_name": "Hemi",
+      "normalized_name": "Hemi",
+      "match": null,
+      "state": "NEW_CANDIDATE",
+      "identity_state": "PRIMARY_DEPLOYMENT_SOURCE_ONLY",
+      "mainnet_identifier": null,
+      "evidence": [
+        "https://github.com/morpho-org/morpho-organization/blob/main/addresses/addresses.ts"
+      ],
+      "canonical_record_key": "hemi",
+      "source_class": "S1_OFFICIAL_PROTOCOL_DEPLOYMENT_REGISTRY",
+      "lifecycle": "mainnet",
+      "capability_state": "NOT_VERIFIED",
+      "note": "Observed as a production/mainnet Morpho Blue deployment row in the project's reconciled 50-row source artifact; chain identity/capability/venue remain separate verification gates."
+    },
+    {
+      "input_name": "HyperEVM",
+      "normalized_name": "HyperEVM",
+      "match": null,
+      "state": "NEW_CANDIDATE",
+      "identity_state": "PRIMARY_DEPLOYMENT_SOURCE_ONLY",
+      "mainnet_identifier": null,
+      "evidence": [
+        "https://github.com/morpho-org/morpho-organization/blob/main/addresses/addresses.ts"
+      ],
+      "canonical_record_key": "hyperevm",
+      "source_class": "S1_OFFICIAL_PROTOCOL_DEPLOYMENT_REGISTRY",
+      "lifecycle": "mainnet",
+      "capability_state": "NOT_VERIFIED",
+      "note": "Observed as a production/mainnet Morpho Blue deployment row in the project's reconciled 50-row source artifact; chain identity/capability/venue remain separate verification gates."
+    },
+    {
+      "input_name": "Ink",
+      "normalized_name": "Ink",
+      "match": null,
+      "state": "NEW_CANDIDATE",
+      "identity_state": "PRIMARY_DEPLOYMENT_SOURCE_ONLY",
+      "mainnet_identifier": null,
+      "evidence": [
+        "https://github.com/morpho-org/morpho-organization/blob/main/addresses/addresses.ts"
+      ],
+      "canonical_record_key": "ink",
+      "source_class": "S1_OFFICIAL_PROTOCOL_DEPLOYMENT_REGISTRY",
+      "lifecycle": "mainnet",
+      "capability_state": "NOT_VERIFIED",
+      "note": "Observed as a production/mainnet Morpho Blue deployment row in the project's reconciled 50-row source artifact; chain identity/capability/venue remain separate verification gates."
+    },
+    {
+      "input_name": "Katana",
+      "normalized_name": "Katana",
+      "match": null,
+      "state": "NEW_CANDIDATE",
+      "identity_state": "PRIMARY_DEPLOYMENT_SOURCE_ONLY",
+      "mainnet_identifier": null,
+      "evidence": [
+        "https://github.com/morpho-org/morpho-organization/blob/main/addresses/addresses.ts"
+      ],
+      "canonical_record_key": "katana",
+      "source_class": "S1_OFFICIAL_PROTOCOL_DEPLOYMENT_REGISTRY",
+      "lifecycle": "mainnet",
+      "capability_state": "NOT_VERIFIED",
+      "note": "Observed as a production/mainnet Morpho Blue deployment row in the project's reconciled 50-row source artifact; chain identity/capability/venue remain separate verification gates."
+    },
+    {
+      "input_name": "Lisk",
+      "normalized_name": "Lisk",
+      "match": null,
+      "state": "NEW_CANDIDATE",
+      "identity_state": "PRIMARY_DEPLOYMENT_SOURCE_ONLY",
+      "mainnet_identifier": null,
+      "evidence": [
+        "https://github.com/morpho-org/morpho-organization/blob/main/addresses/addresses.ts"
+      ],
+      "canonical_record_key": "lisk",
+      "source_class": "S1_OFFICIAL_PROTOCOL_DEPLOYMENT_REGISTRY",
+      "lifecycle": "mainnet",
+      "capability_state": "NOT_VERIFIED",
+      "note": "Observed as a production/mainnet Morpho Blue deployment row in the project's reconciled 50-row source artifact; chain identity/capability/venue remain separate verification gates."
+    },
+    {
+      "input_name": "MegaETH",
+      "normalized_name": "MegaETH",
+      "match": null,
+      "state": "NEW_CANDIDATE",
+      "identity_state": "PRIMARY_DEPLOYMENT_SOURCE_ONLY",
+      "mainnet_identifier": null,
+      "evidence": [
+        "https://github.com/morpho-org/morpho-organization/blob/main/addresses/addresses.ts"
+      ],
+      "canonical_record_key": "megaeth",
+      "source_class": "S1_OFFICIAL_PROTOCOL_DEPLOYMENT_REGISTRY",
+      "lifecycle": "mainnet",
+      "capability_state": "NOT_VERIFIED",
+      "note": "Observed as a production/mainnet Morpho Blue deployment row in the project's reconciled 50-row source artifact; chain identity/capability/venue remain separate verification gates."
+    },
+    {
+      "input_name": "Monad",
+      "normalized_name": "Monad",
+      "match": null,
+      "state": "NEW_CANDIDATE",
+      "identity_state": "PRIMARY_DEPLOYMENT_SOURCE_ONLY",
+      "mainnet_identifier": null,
+      "evidence": [
+        "https://github.com/morpho-org/morpho-organization/blob/main/addresses/addresses.ts"
+      ],
+      "canonical_record_key": "monad",
+      "source_class": "S1_OFFICIAL_PROTOCOL_DEPLOYMENT_REGISTRY",
+      "lifecycle": "mainnet",
+      "capability_state": "NOT_VERIFIED",
+      "note": "Observed as a production/mainnet Morpho Blue deployment row in the project's reconciled 50-row source artifact; chain identity/capability/venue remain separate verification gates."
+    },
+    {
+      "input_name": "Morph",
+      "normalized_name": "Morph",
+      "match": null,
+      "state": "NEW_CANDIDATE",
+      "identity_state": "PRIMARY_DEPLOYMENT_SOURCE_ONLY",
+      "mainnet_identifier": null,
+      "evidence": [
+        "https://github.com/morpho-org/morpho-organization/blob/main/addresses/addresses.ts"
+      ],
+      "canonical_record_key": "morph",
+      "source_class": "S1_OFFICIAL_PROTOCOL_DEPLOYMENT_REGISTRY",
+      "lifecycle": "mainnet",
+      "capability_state": "NOT_VERIFIED",
+      "note": "Observed as a production/mainnet Morpho Blue deployment row in the project's reconciled 50-row source artifact; chain identity/capability/venue remain separate verification gates."
+    },
+    {
+      "input_name": "Pharos",
+      "normalized_name": "Pharos",
+      "match": null,
+      "state": "NEW_CANDIDATE",
+      "identity_state": "PRIMARY_DEPLOYMENT_SOURCE_ONLY",
+      "mainnet_identifier": null,
+      "evidence": [
+        "https://github.com/morpho-org/morpho-organization/blob/main/addresses/addresses.ts"
+      ],
+      "canonical_record_key": "pharos",
+      "source_class": "S1_OFFICIAL_PROTOCOL_DEPLOYMENT_REGISTRY",
+      "lifecycle": "mainnet",
+      "capability_state": "NOT_VERIFIED",
+      "note": "Observed as a production/mainnet Morpho Blue deployment row in the project's reconciled 50-row source artifact; chain identity/capability/venue remain separate verification gates."
+    },
+    {
+      "input_name": "Plasma",
+      "normalized_name": "Plasma",
+      "match": null,
+      "state": "NEW_CANDIDATE",
+      "identity_state": "PRIMARY_DEPLOYMENT_SOURCE_ONLY",
+      "mainnet_identifier": null,
+      "evidence": [
+        "https://github.com/morpho-org/morpho-organization/blob/main/addresses/addresses.ts"
+      ],
+      "canonical_record_key": "plasma",
+      "source_class": "S1_OFFICIAL_PROTOCOL_DEPLOYMENT_REGISTRY",
+      "lifecycle": "mainnet",
+      "capability_state": "NOT_VERIFIED",
+      "note": "Observed as a production/mainnet Morpho Blue deployment row in the project's reconciled 50-row source artifact; chain identity/capability/venue remain separate verification gates."
+    },
+    {
+      "input_name": "Stable",
+      "normalized_name": "Stable",
+      "match": null,
+      "state": "NEW_CANDIDATE",
+      "identity_state": "PRIMARY_DEPLOYMENT_SOURCE_ONLY",
+      "mainnet_identifier": null,
+      "evidence": [
+        "https://github.com/morpho-org/morpho-organization/blob/main/addresses/addresses.ts"
+      ],
+      "canonical_record_key": "stable",
+      "source_class": "S1_OFFICIAL_PROTOCOL_DEPLOYMENT_REGISTRY",
+      "lifecycle": "mainnet",
+      "capability_state": "NOT_VERIFIED",
+      "note": "Observed as a production/mainnet Morpho Blue deployment row in the project's reconciled 50-row source artifact; chain identity/capability/venue remain separate verification gates."
+    },
+    {
+      "input_name": "TAC",
+      "normalized_name": "TAC",
+      "match": null,
+      "state": "NEW_CANDIDATE",
+      "identity_state": "PRIMARY_DEPLOYMENT_SOURCE_ONLY",
+      "mainnet_identifier": null,
+      "evidence": [
+        "https://github.com/morpho-org/morpho-organization/blob/main/addresses/addresses.ts"
+      ],
+      "canonical_record_key": "tac",
+      "source_class": "S1_OFFICIAL_PROTOCOL_DEPLOYMENT_REGISTRY",
+      "lifecycle": "mainnet",
+      "capability_state": "NOT_VERIFIED",
+      "note": "Observed as a production/mainnet Morpho Blue deployment row in the project's reconciled 50-row source artifact; chain identity/capability/venue remain separate verification gates."
+    },
+    {
+      "input_name": "Tempo",
+      "normalized_name": "Tempo",
+      "match": null,
+      "state": "NEW_CANDIDATE",
+      "identity_state": "PRIMARY_DEPLOYMENT_SOURCE_ONLY",
+      "mainnet_identifier": null,
+      "evidence": [
+        "https://github.com/morpho-org/morpho-organization/blob/main/addresses/addresses.ts"
+      ],
+      "canonical_record_key": "tempo",
+      "source_class": "S1_OFFICIAL_PROTOCOL_DEPLOYMENT_REGISTRY",
+      "lifecycle": "mainnet",
+      "capability_state": "NOT_VERIFIED",
+      "note": "Observed as a production/mainnet Morpho Blue deployment row in the project's reconciled 50-row source artifact; chain identity/capability/venue remain separate verification gates."
+    },
+    {
+      "input_name": "Unichain",
+      "normalized_name": "Unichain",
+      "match": null,
+      "state": "NEW_CANDIDATE",
+      "identity_state": "PRIMARY_DEPLOYMENT_SOURCE_ONLY",
+      "mainnet_identifier": null,
+      "evidence": [
+        "https://github.com/morpho-org/morpho-organization/blob/main/addresses/addresses.ts"
+      ],
+      "canonical_record_key": "unichain",
+      "source_class": "S1_OFFICIAL_PROTOCOL_DEPLOYMENT_REGISTRY",
+      "lifecycle": "mainnet",
+      "capability_state": "NOT_VERIFIED",
+      "note": "Observed as a production/mainnet Morpho Blue deployment row in the project's reconciled 50-row source artifact; chain identity/capability/venue remain separate verification gates."
+    },
+    {
+      "input_name": "XDC",
+      "normalized_name": "XDC",
+      "match": null,
+      "state": "NEW_CANDIDATE",
+      "identity_state": "PRIMARY_DEPLOYMENT_SOURCE_ONLY",
+      "mainnet_identifier": null,
+      "evidence": [
+        "https://github.com/morpho-org/morpho-organization/blob/main/addresses/addresses.ts"
+      ],
+      "canonical_record_key": "xdc",
+      "source_class": "S1_OFFICIAL_PROTOCOL_DEPLOYMENT_REGISTRY",
+      "lifecycle": "mainnet",
+      "capability_state": "NOT_VERIFIED",
+      "note": "Observed as a production/mainnet Morpho Blue deployment row in the project's reconciled 50-row source artifact; chain identity/capability/venue remain separate verification gates."
+    },
+    {
+      "input_name": "Zircuit",
+      "normalized_name": "Zircuit",
+      "match": null,
+      "state": "NEW_CANDIDATE",
+      "identity_state": "PRIMARY_DEPLOYMENT_SOURCE_ONLY",
+      "mainnet_identifier": null,
+      "evidence": [
+        "https://github.com/morpho-org/morpho-organization/blob/main/addresses/addresses.ts"
+      ],
+      "canonical_record_key": "zircuit",
+      "source_class": "S1_OFFICIAL_PROTOCOL_DEPLOYMENT_REGISTRY",
+      "lifecycle": "mainnet",
+      "capability_state": "NOT_VERIFIED",
+      "note": "Observed as a production/mainnet Morpho Blue deployment row in the project's reconciled 50-row source artifact; chain identity/capability/venue remain separate verification gates."
     }
   ],
   "normalization_rules": [
@@ -286,5 +702,5 @@
   "duplicate_policy": "semantic identity resolution before merge; one canonical record per canonical identity",
   "provenance_policy": "source evidence remains referenced per record; conflicting observations are preserved outside the canonical object",
   "last_materialized_update": "2026-09-21",
-  "record_count": 21
+  "record_count": 47
 }
