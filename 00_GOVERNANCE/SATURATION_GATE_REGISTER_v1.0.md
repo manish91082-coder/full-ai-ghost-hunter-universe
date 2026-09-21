@@ -174,3 +174,28 @@ Native ecosystem source-surface expansion accepted.
 - Structured mainnet examples directly inspected: Osmosis, Neutron, dYdX.
 
 G01 remains ACTIVE / NOT SATURATED. Full native extraction, DEX-derived union, lifecycle/exclusion reconciliation and final deduplicated denominator remain open.
+
+## G01 UPDATE — MACRO-BATCH 021
+
+Date: 21 September 2026
+
+Native production extraction and DEX-derived union now have an externalized manifest and deterministic extraction primitives.
+
+Accepted controls:
+- Cosmos production filter = status live + network_type mainnet;
+- non-EVM identity is preserved;
+- DEX-derived network presence is discovery-only;
+- source denominators are non-additive;
+- exclusions, unknowns and conflicts remain first-class;
+- authoritative runtime universe data is not embedded in source code.
+
+Still open:
+- execute current source payload extraction;
+- complete native production union;
+- complete DEX-derived network union;
+- lifecycle/exclusion/freshness reconciliation;
+- direct verification;
+- final deduplicated G01 denominator;
+- saturation audit/freeze.
+
+G01 remains ACTIVE / NOT SATURATED. G02-G28 remain blocked. Live trading STOP.
