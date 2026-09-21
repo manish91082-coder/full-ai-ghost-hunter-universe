@@ -161,12 +161,118 @@
         "https://docs.radiant.capital/"
       ],
       "source_class": "S1_PRIMARY_DISCOVERY"
+    },
+    {
+      "id": "ALU-0010",
+      "protocol": "Uniswap V3",
+      "mechanism": "FLASH_SWAP_V3",
+      "execution_model": "EVM",
+      "verification_state": "VERIFIED_PRIMITIVE",
+      "atomicity": "same_transaction",
+      "callback": "uniswapV3FlashCallback",
+      "repayment": "amounts_plus_pool_fees_by_end_transaction",
+      "fee_state": "DYNAMIC_POOL_FEE",
+      "capacity_state": "DYNAMIC_POOL_TOKEN_BALANCE",
+      "deployment_state": "MULTI_NETWORK_POOL_ENUMERATION_REQUIRED",
+      "evidence": [
+        "https://developers.uniswap.org/docs/protocols/v3/guides/flash-swaps/getting-started"
+      ],
+      "source_class": "S1_PRIMARY"
+    },
+    {
+      "id": "ALU-0011",
+      "protocol": "Sky / Dai",
+      "mechanism": "FLASH_MINT_ERC3156",
+      "execution_model": "EVM",
+      "verification_state": "VERIFIED_PRIMITIVE",
+      "atomicity": "same_transaction",
+      "callback": "onFlashLoan",
+      "repayment": "dai_principal_plus_toll",
+      "fee_state": "DYNAMIC_TOLL",
+      "capacity_state": "DYNAMIC_DEBT_CEILING",
+      "deployment_state": "ETHEREUM_MODULE_ADDRESS_REQUIRES_PRIMARY_MATERIALIZATION",
+      "evidence": [
+        "https://developers.skyeco.com/protocol/liquidity/dai-flash-mint/",
+        "https://eips.ethereum.org/EIPS/eip-3156"
+      ],
+      "source_class": "S1_PRIMARY"
+    },
+    {
+      "id": "ALU-0012",
+      "protocol": "Sky / Dai",
+      "mechanism": "FLASH_MINT_VAT_DAI",
+      "execution_model": "EVM",
+      "verification_state": "VERIFIED_PRIMITIVE",
+      "atomicity": "same_transaction",
+      "callback": "onVatDaiFlashLoan",
+      "repayment": "vat_dai_principal_plus_fee",
+      "fee_state": "DYNAMIC_TOLL",
+      "capacity_state": "DYNAMIC_DEBT_CEILING",
+      "deployment_state": "ETHEREUM_MODULE_ADDRESS_REQUIRES_PRIMARY_MATERIALIZATION",
+      "evidence": [
+        "https://developers.skyeco.com/protocol/liquidity/dai-flash-mint/"
+      ],
+      "source_class": "S1_PRIMARY"
+    },
+    {
+      "id": "ALU-0013",
+      "protocol": "ERC-3156 Ecosystem",
+      "mechanism": "ERC3156_COMPATIBLE_FLASH_LENDER_SURFACE",
+      "execution_model": "EVM",
+      "verification_state": "DISCOVERY_FAMILY",
+      "atomicity": "same_transaction_by_standard",
+      "callback": "onFlashLoan",
+      "repayment": "principal_plus_lender_fee_before_transaction_end",
+      "fee_state": "LENDER_DEFINED_DYNAMIC",
+      "capacity_state": "LENDER_DEFINED_DYNAMIC",
+      "deployment_state": "SOURCE_BYTECODE_IMPLEMENTATION_ENUMERATION_REQUIRED",
+      "evidence": [
+        "https://eips.ethereum.org/EIPS/eip-3156"
+      ],
+      "source_class": "S1_STANDARD_PLUS_DISCOVERY"
+    },
+    {
+      "id": "ALU-0014",
+      "protocol": "Aave",
+      "mechanism": "FLASH_LOAN",
+      "execution_model": "EVM",
+      "verification_state": "DISCOVERY_CANDIDATE",
+      "atomicity": "TO_VERIFY_CURRENT_LIVE_STATE",
+      "callback": "TO_VERIFY_CURRENT_INTERFACE",
+      "repayment": "TO_VERIFY_CURRENT_INTERFACE",
+      "fee_state": "DYNAMIC_V4_CONFIG",
+      "capacity_state": "DYNAMIC_SPOKE_RESERVE_STATE",
+      "deployment_state": "CURRENT_V4_DEPLOYMENTS_REQUIRE_FLASH_ENABLEMENT_VERIFICATION",
+      "evidence": [
+        "https://aave.com/docs/resources/addresses"
+      ],
+      "source_class": "S1_PRIMARY_DISCOVERY"
+    },
+    {
+      "id": "ALU-0015",
+      "protocol": "Curve Lending",
+      "mechanism": "FLASH_LOAN",
+      "execution_model": "EVM",
+      "verification_state": "DISCOVERY_CANDIDATE",
+      "atomicity": "TO_VERIFY_CURRENT_LIVE_STATE",
+      "callback": "TO_VERIFY_CURRENT_INTERFACE",
+      "repayment": "TO_VERIFY",
+      "fee_state": "TO_VERIFY",
+      "capacity_state": "DYNAMIC",
+      "deployment_state": "CURRENT_PRODUCTION_DEPLOYMENT_ENUMERATION_REQUIRED",
+      "evidence": [
+        "https://docs.curve.finance/"
+      ],
+      "source_class": "S1_PRIMARY_DISCOVERY"
     }
   ],
   "counts": {
-    "total": 9,
-    "verified_primitive": 6,
-    "discovery_candidate": 3
+    "total": 15,
+    "verified_primitive": 9,
+    "discovery_candidate": 5,
+    "discovery_family": 1
   },
-  "downstream_rule": "Verification of primitive semantics does not establish deployment availability, executable route, profitability or authorization."
+  "downstream_rule": "Mechanism evidence never authorizes execution. Deployment, current state, liquidity-at-size, route, simulation, risk and economics remain separate gates.",
+  "revision": 2,
+  "execution_authority": "NONE"
 }
