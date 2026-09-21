@@ -1332,3 +1332,11 @@ Completed in this macro-cycle:
 New authoritative G02 files include the deployment registry, Audit 057 and adversarial discovery delta. Live trading remains STOP; G03-G29 remain blocked.
 
 **Current Objective:** close the remaining G02 address/code/runtime-state and adversarial denominator gaps, then perform bounded saturation/exit review.
+
+## UPDATE — G02 PRIMARY ADDRESS MATERIALIZATION BATCH 004
+
+Date: 21 September 2026
+
+Primary-source Aave deployment addresses were materialized in-place for the production records where the cited Aave governance deployment inventory provides the Pool address. Ethereum Core/Prime, Polygon, Avalanche, Arbitrum, Optimism, Base, BNB Chain, Scroll, Metis, Gnosis, ZKsync Era, Linea, Sonic, Celo and Soneium were promoted with explicit provenance. EtherFi, Plasma, Fantom and Harmony remain pending where this source did not provide a current Pool address. Aave GHO FlashMinter facilitator address was also materialized. Runtime code hashes, live capacity, fees, enablement and current authorization remain pending.
+
+The distinction is now explicit: primary-source address evidence is not runtime execution evidence.
