@@ -538,3 +538,14 @@ Pair state now observes runtime bytecode with eth_getCode and stores a SHA-256 e
 QuickSwap Polygon V2 and PancakeSwap BNB Smart Chain V2 factory/router identities are externalized into a machine-readable runtime input file. No authoritative factory identity is embedded in executable source.
 
 This batch adds no transaction construction, signing, submission or execution authority. G02 remains ACTIVE / NOT SATURATED.
+
+
+## SECTION 53 — G02 MACRO-BATCH 018 — BLOCK-PINNED V2 + SILO DISCOVERY BOUNDARY
+
+Date: 21 September 2026
+
+V2 enumeration was strengthened so factory count and pair-address reads use the captured opening block, while pair code/token/reserve reads also use a single captured block. Closing block validation remains in place for freshness. Duplicate pair identities are rejected rather than silently canonicalized.
+
+A Silo V3 discovery-only parser was added. It accepts externally collected market records with explicit provenance and rejects duplicate (chain, silo) identities. This is discovery evidence only. Official Silo documentation confirms that markets are permissionless and that the public API exposes V3 market data, so runtime deployment and state verification remain mandatory.
+
+No execution capability was added. G02 remains ACTIVE / NOT SATURATED.
