@@ -474,3 +474,12 @@ Current G02 canonical state after Batch 005: 34 deployment records, 34 unique ca
 ## DURABLE RULE — CURRENT SOLANA PROGRAM COMPATIBILITY
 
 For marginfi/P0, current program identity and current SDK compatibility are separate evidence layers. The current documentation requires p0-ts-sdk >=2.8.0 for the 0.1.11 oracle era. A documented zero flashloan fee may be stored as protocol economics evidence, but asset capacity and operational state must still be read from current chain accounts.
+
+
+## G02 Durable Rule — Adversarial Atomic-Liquidity Denominator Batch 007
+
+Primary-source discovery must attack multiple mechanism families independently: lending flash loans, vault flash loans, V2-style flash swaps, ERC-3156 lenders, Solana instruction-paired paths and protocol-native atomic-capital mechanisms.
+
+New discovery candidates are evidence-bearing hypotheses only until deployment, code identity, capability, asset capacity, fee, authorization/enablement and freshness are independently verified. Historical/current source conflicts must remain explicit rather than silently resolved.
+
+Current mechanism registry after Batch 007: 21 records = 9 verified primitives + 11 discovery candidates + 1 discovery family. Execution authority remains NONE.
