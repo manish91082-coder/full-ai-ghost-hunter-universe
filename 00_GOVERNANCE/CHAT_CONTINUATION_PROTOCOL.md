@@ -65,3 +65,19 @@ Every material response/macro-batch must synchronize durable control state. A ne
 Existing implementation code is preserved but cannot be used as a reason to skip the saturation gates.
 
 Live trading remains STOP.
+
+
+## UPDATE — CANONICAL REPOSITORY IDENTITY LOCK
+
+Date: 21 September 2026
+
+Canonical repository: `manish91082-coder/full-ai-ghost-hunter-universe`
+Canonical branch: `main`
+
+Repository identity must be verified before every substantive continuation. Name similarity is never a valid repository-selection rule.
+
+New permanent control artifact: `00_GOVERNANCE/REPOSITORY_IDENTITY_LOCK_v1.0.md`
+
+If canonical repository verification fails, project work must STOP. Do not guess, switch, or write to another similarly named repository.
+
+All future chat threads inherit the same canonical repository identity.
