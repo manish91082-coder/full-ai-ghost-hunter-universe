@@ -3,9 +3,9 @@ import json
 
 import pytest
 
-from src.ghost_hunter.registry import RegistryError
-from src.ghost_hunter.runtime_registry import load_snapshot_file, snapshot_to_runtime_projection
-from src.ghost_hunter.provider_registry import load_provider_endpoints, choose_provider
+from ghost_hunter.registry import RegistryError
+from ghost_hunter.runtime_registry import load_snapshot_file, snapshot_to_runtime_projection
+from ghost_hunter.provider_registry import load_provider_endpoints, choose_provider
 
 
 def write_snapshot(tmp_path, canonical_id):
@@ -25,7 +25,7 @@ def write_snapshot(tmp_path, canonical_id):
         }],
     }
     raw = json.dumps(payload, sort_keys=True).encode()
-    path = tmp_path / "snapshot.json"
+    path = tmp_path / f"snapshot-{canonical_id.replace(':', '-')}.json"
     path.write_bytes(raw)
     return path, hashlib.sha256(raw).hexdigest()
 
