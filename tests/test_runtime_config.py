@@ -1,6 +1,6 @@
 import os
 import pytest
-from src.ghost_hunter.runtime_config import RuntimeConfig, ConfigurationError
+from ghost_hunter.runtime_config import RuntimeConfig, ConfigurationError
 
 def test_critical_runtime_values_are_external(monkeypatch):
     values={
