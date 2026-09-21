@@ -100,7 +100,7 @@ class RpcTransport:
                 decoded = self._request(provider, method, params)
                 observations.append(RpcObservation(provider.provider_id, network_id,
                                                    method, decoded["result"]))
-                self.pool.record_success(provider.provider_id)
+                self.pool.record_success(provider.provider_id, network_id)
             except Exception as exc:
                 self.pool.record_failure(provider.provider_id, network_id, now_tick=now_tick,
                                          error=str(exc))
