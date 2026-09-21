@@ -1,0 +1,64 @@
+name: g02-runtime-observation
+
+on:
+  workflow_dispatch:
+    inputs:
+      max_pairs:
+        description: "Maximum pairs per factory; execution fails closed above this bound"
+        required: true
+        default: "100000"
+      max_block_lag:
+        description: "Maximum accepted block lag"
+        required: true
+        default: "2"
+
+concurrency:
+  group: g02-runtime-observation
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  materialize:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    env:
+      GH_PROVIDER_RUNTIME: ${{ secrets.GH_PROVIDER_RUNTIME }}
+    steps:
+      - name: Checkout authoritative main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install test dependency
+        run: python -m pip install --disable-pip-version-check pytest
+
+      - name: Verify repository before runtime observation
+        env:
+          PYTHONPATH: src
+        run: python -m pytest -q
+
+      - name: Require external runtime providers
+        run: |
+          set -euo pipefail
+          test -n "${GH_PROVIDER_RUNTIME}"
+          echo "External provider configuration is present."
+
+      - name: Materialize G02 V2 runtime state
+        env:
+          PYTHONPATH: src
+        run: |
+          python scripts/materialize_g02_v2_runtime.py             --max-pairs "${{ inputs.max_pairs }}"             --max-block-lag "${{ inputs.max_block_lag }}"
+
+      - name: Upload runtime evidence
+        uses: actions/upload-artifact@v4
+        with:
+          name: g02-v2-runtime-observation-${{ github.run_id }}
+          path: 02_FLASH_LOAN_UNIVERSE/data/G02_V2_RUNTIME_OBSERVATION_v001.json
+          if-no-files-found: error
