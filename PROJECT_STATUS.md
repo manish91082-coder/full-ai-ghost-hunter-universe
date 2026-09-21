@@ -1186,3 +1186,17 @@ Arbitrum's official chain information explicitly lists Arbitrum One and Nova as 
 
 ### Next Objective
 Continue the bounded G01 primary-verification cycle, then perform adversarial denominator closure and formal G01 exit review. No G02 transition before saturation evidence passes.
+
+
+## UPDATE — G01 BATCH 044 / PRIMARY VERIFICATION
+
+Date: 21 September 2026  
+State: 🟢 PARTIAL PRIMARY VERIFICATION PASS / G01 ACTIVE
+
+Verified from primary sources: **Cosmos Hub (cosmoshub-4), Sui Mainnet, and Starknet Mainnet (SN_MAIN).** Cosmos Chain Registry marks Cosmos Hub live/mainnet; official Sui material identifies the production Sui network; Starknet official architecture documentation identifies the production L2 execution environment. citeturn2search0turn1search1turn1search9
+
+Canonical records: **74**, unique keys **74**, duplicates **0**. Non-EVM identity semantics remain preserved. DEX presence still does not authorize execution.
+
+G01 remains ACTIVE. G02-G29 remain BLOCKED. Live trading remains STOP.
+
+Next objective: continue bounded primary verification and then adversarial denominator closure + formal G01 exit review.
