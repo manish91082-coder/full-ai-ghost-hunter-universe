@@ -463,3 +463,44 @@ Fresh external evidence confirms that Morpho separates paginated market discover
 
 ### Next Macro Objective
 **MACRO-BATCH 018 — runtime-backed registry loader + signed/versioned manifest verification + provider registry adapter + replay substitution test.**
+
+
+## UPDATE — NO-DRIFT SATURATION CONTROL LOCK v1.0
+
+Date: 21 September 2026
+
+### User mission-control directive
+The project must operate under permanent military-grade, surgical-grade and aviation-grade discipline:
+- no drifting;
+- no premature phase switching;
+- no status-only progress;
+- no loss of continuity across chat limits;
+- one saturation gate at a time;
+- every locked decision becomes durable repository state;
+- maximum safe macro-batch execution;
+- full internal saturation loop before declaring completion.
+
+### Permanent control artifacts
+Created:
+- 00_GOVERNANCE/NO_DRIFT_SATURATION_CONTROL_CHARTER_v1.0.md
+- 00_GOVERNANCE/SATURATION_GATE_REGISTER_v1.0.md
+
+### Current gate lock
+**G01 — GLOBAL BLOCKCHAIN UNIVERSE is the only primary saturation gate authorized for advancement.**
+
+G02 onward are blocked until prerequisites are frozen. RPC and security designs may remain documented, but their data saturation cannot be treated as complete.
+
+### G01 definition of done
+G01 requires measurable discovery coverage, normalization, identity/lifecycle verification, atomic-liquidity intersection, executable trading-venue intersection, exclusion registry, alias/dedup reconciliation, freshness policy, final deduplicated counter, audit and gap closure.
+
+### Important correction
+Existing implementation artifacts are retained. They are non-trading infrastructure only and do not prove universe saturation. No downstream execution capability may use them to bypass G01.
+
+### Speed architecture lock
+Speed will come from parallel discovery, batch research, chain-wise partitioning, machine-readable registries, precompute, caching, incremental verification, event-driven invalidation and hot-path decision architecture. Quality gates are never removed for speed.
+
+### MBP / fast decision path
+The final decision path will use hot state/cache/index structures and keep heavy discovery/research off the hot path. Millisecond/fraction-of-second latency is an engineering target to be measured for eligible local stages, not an unverified promise.
+
+### Live
+**LIVE TRADING = STOP.**
