@@ -392,3 +392,10 @@ G01 is frozen after a bounded exit review across independent discovery families.
 The 419-label DEX surface has complete classification coverage. Unverified labels remain outside execution eligibility until primary evidence promotes them. This preserves discovery recall without polluting the execution plane.
 
 G02 is now the active gate: Flash-Loan / Atomic-Liquidity Universe.
+## SECTION 39 - G02 PRIMARY MECHANISM DISCOVERY
+
+Date: 21 September 2026
+
+G02 is active. The first normalized registry distinguishes six verified atomic-liquidity primitive families from three discovery candidates. Each primitive carries independent atomicity, callback/instruction, repayment, fee-state, capacity-state and deployment-state fields.
+
+The next G02 layer is deployment-scale enumeration and live-state verification. No mechanism-level evidence is sufficient to authorize execution.
