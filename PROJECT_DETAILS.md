@@ -470,3 +470,10 @@ Silo V3 current deployment/version records were captured for Sonic, Arbitrum, Op
 QuickSwap Polygon POS V2 router/factory identity was captured from official documentation. Pair-level enumeration and runtime state remain mandatory.
 
 The canonical G02 mechanism registry was updated in place to revision 5. Research remains non-authoritative for execution.
+
+
+## SECTION 47 — G02 PAIR DEPLOYMENT BOUNDARY BATCH 010
+
+Batch 010 adds primary deployment identities for QuickSwap V2 Polygon and PancakeSwap V2 BNB Smart Chain. Factory-level pair enumeration is explicitly separated from current pair state. The canonical deployment registry was updated in place to revision 5.
+
+Four deployment records were added: QuickSwap factory/router and PancakeSwap factory/router. All remain NEVER_FROM_RESEARCH. Pair enumeration, code identity, live liquidity, fee state, callback authenticity and freshness remain unresolved.
