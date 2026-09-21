@@ -1665,3 +1665,32 @@ Gate remains:
 - GitHub CI success NOT CLAIMED
 
 Next: bind Silo discovery candidates to runtime deployment/code/state verification and obtain actual provider-backed observations for the external V2 factory set.
+
+
+## UPDATE — G02 CI FAILURE ROOT-CAUSE + CORRECTION — 21 September 2026
+
+The repository Actions screenshots showed the G02 push-triggered runs failing. A full repository audit from the G01 final handoff through current main identified a concrete regression in the failover test plus CI environment hardening gaps.
+
+### Root causes found
+1. data-plane-ci invoked pytest without explicitly installing pytest.
+2. The repository uses src/ghost_hunter while several tests import ghost_hunter; CI did not define PYTHONPATH.
+3. Batch 015 changed RpcTransport.call() to retry within the same logical request, but test_failure_rotates_provider still expected the old behavior where the first call raised after provider failure.
+
+### Corrections applied
+- CI now explicitly installs pytest.
+- CI test step now uses PYTHONPATH=src and python -m pytest -q.
+- test_failure_rotates_provider now verifies same-request failover to p2.
+
+### Current machine-state audit
+- mechanisms: 21 records / declared total 21
+- deployments: 38
+- duplicate deployment identity keys under CI formula: 0
+- execution eligibility violations: 0
+
+### Verification status
+The GitHub connector available here cannot expose push-triggered main workflow runs, only its limited workflow-run surface. Therefore the fresh run after correction has NOT been declared GREEN.
+
+G02 remains ACTIVE / NOT SATURATED.
+G03-G29 remain BLOCKED.
+Execution authority NONE.
+Live trading STOP.
