@@ -415,3 +415,22 @@ G01 native production extraction is now governed by an externalized source manif
 ## DURABLE RULE — CANONICAL STATE VS HISTORICAL EVIDENCE
 
 Permanent distinction locked: evidence/history is append-only; current canonical/materialized state is deduplicated and updated in place. Git history provides historical versions, so ordinary updates must not create registry_v002/v003/final/latest copies. Every future next must detect duplicate/identity anomalies before discovery, search uncovered/stale/conflicted space, normalize and merge findings into the current canonical state, preserve provenance, then test/audit. Batch reports must contain deltas, not full registry copies. Historical snapshots are replay/audit inputs only and never current execution candidates.
+
+
+## DURABLE RULE — AI RESEARCH + DATA INTEROPERABILITY CONSTITUTION v1.0
+
+Date: 21 September 2026
+
+Permanent project memory:
+- Data has two planes: append-only evidence/history and deduplicated current canonical state.
+- One authoritative current path exists per major machine-readable domain.
+- Canonical meaning is schema-driven, model-neutral and independent of chat memory.
+- Stable canonical IDs, explicit namespaces, units, timestamps, lifecycle, verification, freshness and provenance are mandatory.
+- UNKNOWN, ZERO, EMPTY, MISSING, STALE and CONFLICTED are different states.
+- Relationships are typed references; objects are not copied between batch reports.
+- Research is role-separated across discovery, source criticism, identity, normalization, deduplication, verification, contradiction, coverage, freshness, specialist, data engineering, adversarial audit, reproduction, saturation, runtime safety and change control functions.
+- Different AI models must consume the same canonical schema without hidden mappings.
+- Historical snapshots are replay/audit inputs only and never runtime candidates.
+- Cross-model compatibility and adversarial negative tests are mandatory for authoritative data domains.
+- Mission navigation is FINAL GOAL → ACTIVE GATE → CURRENT STATE → GAP REGISTER → NEXT MACRO-BATCH.
+- G01 remains the only primary saturation gate. Live trading remains STOP.
