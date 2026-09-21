@@ -1027,3 +1027,20 @@ Audit 042: PASS for Cosmos materialization; PARTIAL for G01 saturation.
 G01 remains ACTIVE / NOT SATURATED. G02-G29 remain BLOCKED. LIVE TRADING = STOP.
 
 Next: machine-readable semantic reconciliation queue for the 221 Cosmos production observations.
+
+
+## UPDATE - BOUNDED SATURATION / EXIT CONTROL LOCK
+
+Date: 21 September 2026
+
+A permanent bounded-saturation control has been added to prevent both premature gate exit and infinite saturation loops.
+
+Rules now require a defined denominator, mandatory evidence obligations, material gap queue, bounded targeted cycles, marginal-yield review, explicit exit review, freeze-and-advance decision, and controlled post-freeze re-entry triggers.
+
+The `next` command is now explicitly maximum useful work per response. Artificial micro-batching is prohibited when logically related work can be safely completed together. A genuine external dependency, missing evidence, rate limit, human authorization or safety gate may stop work.
+
+G01 remains ACTIVE / NOT SATURATED because material obligations remain. The next work must be targeted at the highest-information unresolved G01 gaps, not broad rediscovery of the same universe.
+
+New control artifact: `00_GOVERNANCE/BOUNDED_SATURATION_EXIT_REGISTER_v1.0.md`
+
+G02-G29 remain BLOCKED. LIVE TRADING = STOP.
