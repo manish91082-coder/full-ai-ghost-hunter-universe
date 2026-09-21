@@ -176,3 +176,27 @@ def test_v2_pair_state_fails_closed_on_provider_switch():
         V2PairEnumerator(
             RpcTransport(p, opener=opener), FreshnessPolicy()
         ).read_pair_state("net:1", "0x" + "3"*40)
+
+
+def test_v2_pair_enumerator_fails_closed_on_duplicate_factory_pair_identity():
+    from ghost_hunter.v2_pair_enumerator import V2PairEnumerator
+    from ghost_hunter.runtime_freshness import FreshnessPolicy
+
+    p = pool()
+
+    def opener(request, timeout):
+        body = request.data.decode()
+        if "574f2ba3" in body:
+            result = "0x" + "2".zfill(64)
+        elif "1e3dd18b" in body:
+            result = "0x" + "0"*24 + "1234567890abcdef1234567890abcdef12345678"
+        elif "eth_blockNumber" in body:
+            result = "0x20"
+        else:
+            result = "0x" + "0"*24 + "1111111111111111111111111111111111111111"
+        return Response({"jsonrpc": "2.0", "id": 1, "result": result})
+
+    with pytest.raises(RegistryError):
+        V2PairEnumerator(
+            RpcTransport(p, opener=opener), FreshnessPolicy()
+        ).enumerate_pairs("net:1", "0x" + "1"*40, max_pairs=10)
