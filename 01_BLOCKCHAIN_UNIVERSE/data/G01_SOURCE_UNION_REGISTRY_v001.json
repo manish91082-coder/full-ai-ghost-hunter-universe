@@ -1121,6 +1121,22 @@
       "capability_state": "NOT_VERIFIED",
       "canonical_record_key": "starknet-mainnet",
       "note": "Official Starknet documentation describes Starknet as an L2 validity rollup and its production execution architecture. Native Starknet identity is preserved; no EVM chain ID is fabricated."
+    },
+    {
+      "input_name": "Astar Network",
+      "normalized_name": "Astar Network",
+      "state": "NEW_CANDIDATE",
+      "identity_state": "VERIFIED_PRIMARY",
+      "mainnet_identifier": "eip155:592",
+      "evidence": [
+        "https://docs.astar.network/docs/use/get-started/astar-evm-wallet/wallet/metamask/setup-metamask/",
+        "https://docs.astar.network/docs/learn/networks/"
+      ],
+      "source_class": "S1_OFFICIAL_NETWORK_DOCUMENTATION",
+      "lifecycle": "mainnet",
+      "capability_state": "NOT_VERIFIED",
+      "canonical_record_key": "astar-mainnet",
+      "note": "Official Astar documentation identifies Astar Network mainnet and EVM chain ID 592. Identity/lifecycle only; flash liquidity, venues, routes and execution remain separate gates."
     }
   ],
   "normalization_rules": [
@@ -1138,19 +1154,19 @@
   "duplicate_policy": "semantic identity resolution before merge; one canonical record per canonical identity",
   "provenance_policy": "source evidence remains referenced per record; conflicting observations are preserved outside the canonical object",
   "last_materialized_update": "2026-09-21",
-  "record_count": 74,
+  "record_count": 75,
   "current_state_accounting": {
     "as_of": "2026-09-21",
-    "total_records": 74,
+    "total_records": 75,
     "state_counts": {
       "MATCH_EXISTING": 10,
-      "NEW_CANDIDATE": 64
+      "NEW_CANDIDATE": 65
     },
-    "canonical_record_key_count": 74,
+    "canonical_record_key_count": 75,
     "duplicate_canonical_record_key_count": 0,
     "note": "Current-state accounting computed from records[]; historical join-point metadata is separate.",
-    "controlling_batch": "G01_DEX_PRIMARY_VERIFICATION_BATCH_044",
-    "audit": "AUDIT_050_G01_DEX_PRIMARY_VERIFICATION"
+    "controlling_batch": "G01_EXECUTION_PLANE_PRIMARY_VERIFICATION_BATCH_044",
+    "audit": "AUDIT_050_G01_EXECUTION_PLANE_PRIMARY_VERIFICATION"
   },
-  "updated_by": "G01_DEX_PRIMARY_VERIFICATION_BATCH_044"
+  "updated_by": "G01_EXECUTION_PLANE_PRIMARY_VERIFICATION_BATCH_044"
 }
