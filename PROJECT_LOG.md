@@ -556,3 +556,25 @@ Audit 025 = PARTIAL PASS.
 G01 remains ACTIVE / NOT SATURATED. Dependent gates remain blocked. Live trading STOP.
 
 Next: DEX/native ecosystem union + remaining identity/lifecycle verification + exclusions/freshness + deduplicated G01 denominator.
+## LOG-0025 — G01 NATIVE ECOSYSTEM SOURCE SURFACES / MACRO-BATCH 020
+
+Date: 21 September 2026
+
+Objective: expand G01 discovery beyond EVM-centric source surfaces.
+
+Created:
+- 01_BLOCKCHAIN_UNIVERSE/data/G01_NATIVE_ECOSYSTEM_SOURCE_SURFACES_v001.json
+- 01_BLOCKCHAIN_UNIVERSE/52_G01_NATIVE_ECOSYSTEM_SOURCE_SURFACES_BATCH_020.md
+- 01_BLOCKCHAIN_UNIVERSE/53_AUDIT_026_G01_NATIVE_ECOSYSTEM_SOURCE_SURFACES.md
+
+Result:
+- Cosmos Chain Registry source surface captured: 290 root entries, 266 named top-level directories after filtering internal/dot directories.
+- _non-cosmos source surface confirmed.
+- Solana Mainnet/Testnet/Devnet lifecycle semantics captured.
+- TRON Mainnet/Shasta/Nile lifecycle and chain IDs captured.
+- Osmosis, Neutron and dYdX mainnet identities directly inspected.
+
+Audit 026 = PARTIAL PASS.
+G01 remains ACTIVE / NOT SATURATED. Dependent gates remain blocked. Live trading STOP.
+
+Next: full native production extraction + union normalization + DEX-derived network union.
