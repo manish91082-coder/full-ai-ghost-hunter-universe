@@ -253,3 +253,69 @@ Locked principles:
 The design is aligned conceptually with FAIR machine-actionability and W3C PROV provenance principles. This alignment does not replace project-specific schemas or gates.
 
 G01 remains ACTIVE / NOT SATURATED. Live trading STOP.
+
+
+## 18. BOUNDED SATURATION / EXIT CONTROL
+
+**Effective:** 21 September 2026
+
+Saturation is a bounded gate-control mechanism, not an infinite research loop and not a reason to remain indefinitely inside one roadmap domain.
+
+### 18.1 Two forbidden failure modes
+- **Premature exit:** a gate is frozen while a material, resolvable evidence/coverage gap remains.
+- **Infinite saturation:** the same gate repeatedly re-enters discovery without a material new gap, meaningful canonical yield, new source family, contradiction, freshness event or other exit-relevant evidence.
+
+### 18.2 Saturation budget
+Every gate must maintain:
+1. mandatory evidence obligations;
+2. defined discovery/search-space denominator;
+3. high-value unresolved gap queue;
+4. materiality threshold for additional discovery;
+5. bounded additional discovery cycles;
+6. explicit exit review;
+7. controlled re-entry triggers after freeze.
+
+The number of chat turns or batch count is never a completion criterion. Conversely, additional research must not continue merely because more research is possible.
+
+### 18.3 Exit review
+After a bounded discovery cycle, evaluate:
+- required evidence obligations closed;
+- current denominator and exclusions quantified;
+- unresolved items classified as material/non-material;
+- canonical additions and corrections produced;
+- contradiction/conflict state;
+- freshness status;
+- adversarial missed-space result;
+- reproducibility and audit status;
+- marginal discovery yield.
+
+If no material gap remains and all mandatory obligations pass, FREEZE the gate and advance to the next unlocked gate.
+
+If a material gap remains, run **one targeted additional bounded cycle**. Do not restart the entire discovery universe.
+
+If the same gap repeatedly produces no material new evidence, escalate to an exit decision with explicit UNKNOWN/UNRESOLVED classification rather than looping indefinitely. UNKNOWN is not silently converted to VERIFIED, and unresolved non-critical uncertainty may be carried forward with documented downstream impact.
+
+### 18.4 Freeze is not permanent ignorance
+A frozen gate can be reopened only by defined triggers such as:
+- new authoritative source family;
+- newly observed production network/protocol;
+- material identity contradiction;
+- freshness expiry for execution-critical facts;
+- downstream evidence exposing a G01 assumption failure;
+- security or execution-plane change;
+- scheduled revalidation event.
+
+Re-entry is a controlled delta process. It does not reset the entire gate to zero.
+
+### 18.5 Maximum-work-per-next law
+The user command `next` means **maximum useful work safely executable in one response**, including independent research, implementation, testing, audit, reconciliation and control-file synchronization. Waiting for another `next` is not permitted merely to split logically related work into artificial micro-batches.
+
+A genuine external dependency, unavailable evidence, rate limit, human authorization, or safety gate may legitimately stop the batch. Status-only work is not a valid substitute when executable work remains.
+
+### 18.6 Cross-gate progress law
+The project may advance to the next gate only when the active gate's exit criteria pass. However, non-dependent infrastructure may be built in parallel when it cannot weaken the active gate or create premature execution authority. This prevents both phase drift and unnecessary serial waiting.
+
+### 18.7 Final decision rule
+**Saturation means sufficient evidence-backed closure of the defined gate, not proof that no new information can ever exist.**
+
+This rule is permanent unless changed through explicit governance change control.
