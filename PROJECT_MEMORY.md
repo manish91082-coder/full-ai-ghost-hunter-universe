@@ -470,3 +470,7 @@ Primary-source deployment addresses may be promoted into the current G02 registr
 For Solana programs, program-version transitions and instruction-layout compatibility are part of the runtime verification boundary. For EVM protocols, network remains part of identity even when a contract address is byte-for-byte reused across networks.
 
 Current G02 canonical state after Batch 005: 34 deployment records, 34 unique canonical keys, 0 duplicate keys, 26 primary-source address-verified records, 5 address-pending records. All remain NEVER_FROM_RESEARCH.
+
+## DURABLE RULE — CURRENT SOLANA PROGRAM COMPATIBILITY
+
+For marginfi/P0, current program identity and current SDK compatibility are separate evidence layers. The current documentation requires p0-ts-sdk >=2.8.0 for the 0.1.11 oracle era. A documented zero flashloan fee may be stored as protocol economics evidence, but asset capacity and operational state must still be read from current chain accounts.
