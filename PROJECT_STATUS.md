@@ -1719,3 +1719,18 @@ Current state at this update:
 - project-execution-verifier: GREEN for the exact current main HEAD
 - stale runs are ignored by the verifier and cannot masquerade as current-state success/failure
 - CI: NOT YET GREEN after the latest correction commit; fresh execution verification is required.
+
+
+## SECTION 55 — G02 MACRO-BATCH 019 — RUNTIME OBSERVATION + EXECUTION VERIFICATION HARDENING
+
+Date: 22 September 2026
+
+- Provider health is keyed by (provider_id, network_id), preventing cross-network health contamination.
+- Added scripts/materialize_g02_v2_runtime.py, a fail-closed runtime materializer for the external QuickSwap/PancakeSwap V2 factory set.
+- Added manual workflow .github/workflows/g02-runtime-observation.yml using external GH_PROVIDER_RUNTIME only.
+- Exact-current-main execution verification now retries during GitHub Actions state propagation gaps.
+- Verified exact-main data-plane-ci SUCCESS and exact-main project-execution-verifier SUCCESS before closing this macro-cycle.
+- CI caught and exposed a real regression in the provider-health refactor; targeted correction was applied and the corrected run passed.
+
+G02 remains ACTIVE / NOT SATURATED. G03-G29 remain BLOCKED. Execution authority NONE. Live trading STOP.
+Production RPC/on-chain observation, Silo runtime market enumeration, pair code authenticity, current fee/configuration, liquidity-at-size and broader adversarial denominator closure remain open.
