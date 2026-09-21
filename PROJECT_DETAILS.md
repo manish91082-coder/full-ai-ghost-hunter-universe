@@ -294,3 +294,17 @@ Heavy discovery, AI research and historical processing stay off the hot path. Th
 ### Acceptance rule
 No downstream domain is declared saturated merely because files or code exist. Evidence-backed gate closure is mandatory.
 
+
+
+## 31. CANONICAL REPOSITORY BOUNDARY
+
+Date: 21 September 2026
+
+The project has one authoritative Git boundary:
+`manish91082-coder/full-ai-ghost-hunter-universe` / `main`
+
+This is an architectural/governance boundary, not a convenience preference.
+
+Repository name symmetry, historical repositories, forks and experiments cannot cause repository selection.
+
+Canonical identity must be checked before planning, reading project state for continuation, or writing project artifacts.
