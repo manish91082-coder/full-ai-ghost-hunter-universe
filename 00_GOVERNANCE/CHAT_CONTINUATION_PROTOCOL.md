@@ -45,3 +45,23 @@ Unknown, contradictory, stale or unverified critical information remains UNKNOWN
 Phase 01 Global Blockchain Universe is active. Morpho 50-row deployment reconciliation is complete as a deployment artifact. Balancer active V2/V3 address extraction is sampled. Uniswap official deployment universe is admitted but exhaustive parsing and downstream capability/liquidity/route/simulation/economic verification remain open. Final executable chain count is NOT DECLARED. Live trading STOP.
 
 Latest known commit before this governance change: 4b0c1e3dd03be8a684e1ea9b7ed149caaec54f70.
+
+
+## UPDATE — NO-DRIFT SATURATION CONTROL LOCK v1.0
+
+Date: 21 September 2026
+
+Permanent control artifacts added:
+- 00_GOVERNANCE/NO_DRIFT_SATURATION_CONTROL_CHARTER_v1.0.md
+- 00_GOVERNANCE/SATURATION_GATE_REGISTER_v1.0.md
+
+New hard rule:
+**Only the current unlocked saturation gate may advance as the primary project objective.**
+
+G01 Global Blockchain Universe is now the only primary saturation gate authorized for advancement. Dependent gates remain BLOCKED until their prerequisites are frozen.
+
+Every material response/macro-batch must synchronize durable control state. A new chat must start from latest Git commit and the continuation/control files before making project decisions.
+
+Existing implementation code is preserved but cannot be used as a reason to skip the saturation gates.
+
+Live trading remains STOP.
