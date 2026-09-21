@@ -890,6 +890,51 @@
       "canonical_record_key": "xrpl-evm",
       "lifecycle": "mainnet",
       "note": "Primary XRPL EVM documentation identifies xrplevm_1440000-1 as Mainnet. Native chain identity preserved; EVM numeric chain ID is execution metadata, not substituted for native identity."
+    },
+    {
+      "input_name": "Osmosis",
+      "normalized_name": "Osmosis",
+      "match": null,
+      "state": "NEW_CANDIDATE",
+      "identity_state": "PRIMARY_VERIFIED",
+      "mainnet_identifier": "osmosis-1",
+      "evidence": [
+        "https://github.com/cosmos/chain-registry/blob/master/osmosis/chain.json",
+        "https://docs.osmosis.zone/"
+      ],
+      "canonical_record_key": "osmosis",
+      "lifecycle": "mainnet",
+      "note": "Official Cosmos Chain Registry marks osmosis-1 live/mainnet; official Osmosis docs identify Osmosis as a cross-chain DEX and liquidity hub. Identity verified; execution/flash capability remains downstream."
+    },
+    {
+      "input_name": "THORChain",
+      "normalized_name": "THORChain",
+      "match": null,
+      "state": "NEW_CANDIDATE",
+      "identity_state": "PRIMARY_VERIFIED",
+      "mainnet_identifier": "thorchain-1",
+      "evidence": [
+        "https://github.com/cosmos/chain-registry/blob/master/thorchain/chain.json",
+        "https://dev.thorchain.org/concepts/connecting-to-thorchain.html"
+      ],
+      "canonical_record_key": "thorchain",
+      "lifecycle": "mainnet",
+      "note": "Official Cosmos Chain Registry production observation plus THORChain official docs identify mainnet and liquidity/swap data services. This does not imply atomic/flash liquidity or arbitrage executability."
+    },
+    {
+      "input_name": "ZetaChain",
+      "normalized_name": "ZetaChain",
+      "match": null,
+      "state": "NEW_CANDIDATE",
+      "identity_state": "PRIMARY_VERIFIED",
+      "mainnet_identifier": "zetachain_7000-1",
+      "evidence": [
+        "https://github.com/cosmos/chain-registry/blob/master/zetachain/chain.json",
+        "https://www.zetachain.com/company"
+      ],
+      "canonical_record_key": "zetachain",
+      "lifecycle": "mainnet",
+      "note": "Official Cosmos Chain Registry production observation plus ZetaChain official site identifies ZetaChain as a general-purpose Layer 1. Identity verified; execution/flash capability remains downstream."
     }
   ],
   "normalization_rules": [
@@ -907,19 +952,19 @@
   "duplicate_policy": "semantic identity resolution before merge; one canonical record per canonical identity",
   "provenance_policy": "source evidence remains referenced per record; conflicting observations are preserved outside the canonical object",
   "last_materialized_update": "2026-09-21",
-  "record_count": 59,
+  "record_count": 62,
   "current_state_accounting": {
     "as_of": "2026-09-21",
-    "total_records": 59,
+    "total_records": 62,
     "state_counts": {
       "MATCH_EXISTING": 10,
-      "NEW_CANDIDATE": 49
+      "NEW_CANDIDATE": 52
     },
-    "canonical_record_key_count": 59,
+    "canonical_record_key_count": 62,
     "duplicate_canonical_record_key_count": 0,
-    "note": "Current-state accounting is computed from records[]. Historical join-point metadata is preserved separately and is not treated as current-state counts.",
-    "controlling_batch": "G01_HIGH_INFORMATION_PRIMARY_VERIFICATION_BATCH_038",
-    "audit": "AUDIT_044_G01_HIGH_INFORMATION_PRIMARY_VERIFICATION"
+    "note": "Current-state accounting computed from records[]; historical join-point metadata is separate.",
+    "controlling_batch": "G01_ADVERSARIAL_MISSED_NETWORK_AUDIT_BATCH_040",
+    "audit": "AUDIT_046_G01_ADVERSARIAL_MISSED_NETWORK"
   },
   "updated_by": "G01_HIGH_INFORMATION_PRIMARY_VERIFICATION_BATCH_038"
 }
