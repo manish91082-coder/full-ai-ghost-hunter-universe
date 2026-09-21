@@ -96,12 +96,12 @@ class V2PairEnumerator:
     def last_completeness(self) -> EnumerationCompleteness | None:
         return self._last_completeness
 
-    def pair_count(self, network_id: str, factory: str) -> RpcObservation:
+    def pair_count(self, network_id: str, factory: str, *, block_tag: str = "latest") -> RpcObservation:
         if not factory.startswith("0x") or len(factory) != 42:
             raise RegistryError("invalid factory address")
         return self.transport.call(
             network_id, CALL_METHOD,
-            [{"to": factory, "data": ALL_PAIRS_LENGTH_SELECTOR}, "latest"],
+            [{"to": factory, "data": ALL_PAIRS_LENGTH_SELECTOR}, block_tag],
         )
 
     def enumerate_pairs(self, network_id: str, factory: str, *, max_pairs: int) -> list[PairDiscovery]:
@@ -116,16 +116,32 @@ class V2PairEnumerator:
             raise RegistryError("provider changed during enumeration preflight")
 
         start_block = parse_hex_block(start.result)
+        block_tag = "0x" + format(start_block, "x")
+        count_obs = self.transport.call(
+            network_id, CALL_METHOD,
+            [{"to": factory, "data": ALL_PAIRS_LENGTH_SELECTOR}, block_tag],
+        )
+        count = _uint(count_obs.result)
+        if count > max_pairs:
+            raise RegistryError("pair universe exceeds configured safety bound")
+        if count_obs.provider_id != start.provider_id:
+            raise RegistryError("provider changed during enumeration preflight")
         result: list[PairDiscovery] = []
+        seen: set[str] = set()
         for i in range(count):
             obs = self.transport.call(
                 network_id, CALL_METHOD,
-                [{"to": factory, "data": _index_calldata(ALL_PAIRS_SELECTOR, i)}, "latest"],
+                [{"to": factory, "data": _index_calldata(ALL_PAIRS_SELECTOR, i)}, block_tag],
             )
             if obs.provider_id != start.provider_id:
                 raise RegistryError("provider changed during pair enumeration")
+            pair_address = _address(obs.result)
+            key = pair_address.lower()
+            if key in seen:
+                raise RegistryError("duplicate pair identity returned by factory")
+            seen.add(key)
             result.append(PairDiscovery(
-                network_id, factory, i, _address(obs.result),
+                network_id, factory, i, pair_address,
                 obs.provider_id, start_block,
             ))
 
@@ -147,15 +163,17 @@ class V2PairEnumerator:
         if not pair.startswith("0x") or len(pair) != 42:
             raise RegistryError("invalid pair address")
         before = self.transport.call(network_id, BLOCK_METHOD)
-        code = self.transport.call(network_id, GET_CODE_METHOD, [pair, "latest"])
+        before_block = parse_hex_block(before.result)
+        block_tag = "0x" + format(before_block, "x")
+        code = self.transport.call(network_id, GET_CODE_METHOD, [pair, block_tag])
         t0 = self.transport.call(
-            network_id, CALL_METHOD, [{"to": pair, "data": TOKEN0_SELECTOR}, "latest"]
+            network_id, CALL_METHOD, [{"to": pair, "data": TOKEN0_SELECTOR}, block_tag]
         )
         t1 = self.transport.call(
-            network_id, CALL_METHOD, [{"to": pair, "data": TOKEN1_SELECTOR}, "latest"]
+            network_id, CALL_METHOD, [{"to": pair, "data": TOKEN1_SELECTOR}, block_tag]
         )
         reserves = self.transport.call(
-            network_id, CALL_METHOD, [{"to": pair, "data": GET_RESERVES_SELECTOR}, "latest"]
+            network_id, CALL_METHOD, [{"to": pair, "data": GET_RESERVES_SELECTOR}, block_tag]
         )
         after = self.transport.call(network_id, BLOCK_METHOD)
 
@@ -163,7 +181,6 @@ class V2PairEnumerator:
         if any(obs.provider_id != before.provider_id for obs in observations):
             raise RegistryError("provider changed during pair-state observation")
 
-        before_block = parse_hex_block(before.result)
         after_block = parse_hex_block(after.result)
         if after_block < before_block:
             raise RegistryError("block number moved backwards")
