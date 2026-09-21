@@ -1478,3 +1478,42 @@ Implemented a runtime-only provider pool contract with deterministic per-network
 The policy layer deliberately performs no network I/O. After a provider switch, callers must revalidate block/state freshness and request provenance rather than assuming state continuity.
 
 Added provider-pool implementation, tests, macro-batch specification and audit. G02 remains ACTIVE / NOT SATURATED; G03-G29 BLOCKED; execution authority NONE; live trading STOP.
+
+
+## UPDATE — G02 MACRO-BATCH 013 / READ-ONLY RPC TRANSPORT + QUORUM
+
+Date: 21 September 2026
+State: 🟡 G02 ACTIVE / NOT SATURATED
+
+Added:
+- `src/ghost_hunter/rpc_transport.py`
+- `tests/test_rpc_transport.py`
+
+### Completed
+- Runtime-supplied provider endpoints are used without embedding authoritative RPC URLs in source.
+- Read-only JSON-RPC request/response contract implemented.
+- Provider failure records health and rotates through the existing fail-closed pool.
+- Invalid JSON-RPC responses fail closed.
+- Multi-provider quorum observation is implemented for deterministic equality checks.
+- Provider disagreement fails closed.
+- The transport performs observation only: no transaction construction, signing, wallet operation or submission.
+
+### Verification boundary
+The new tests use deterministic injected transport fixtures, not live public RPCs. Live RPC connectivity, block-height freshness, cross-provider chain/state identity and on-chain state collection remain unverified.
+
+### Current G02 state
+- Provider pool rotation: IMPLEMENTED
+- Read-only RPC transport: IMPLEMENTED
+- Provider quorum contract: IMPLEMENTED
+- Live RPC connectivity: PENDING
+- Block/state freshness contract: PENDING
+- Post-switch state revalidation/rescan: PENDING
+- Silo market enumeration: PENDING
+- QuickSwap/PancakeSwap pair enumeration: PENDING
+- G02 saturation: NOT SATURATED
+- G03-G29: BLOCKED
+- Execution authority: NONE
+- Live trading: STOP
+
+### Next Macro Objective
+Bind the transport to a runtime freshness contract, then use the read-only substrate to materialize market/pair denominators and current code/liquidity/fee state. Never promote observation into execution authority without all required gates.
