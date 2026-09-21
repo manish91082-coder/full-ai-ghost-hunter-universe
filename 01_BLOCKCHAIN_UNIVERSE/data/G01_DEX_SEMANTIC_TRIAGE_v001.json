@@ -20,9 +20,18 @@
     "Ontology EVM",
     "Polygon zkEVM",
     "EOS EVM",
-    "Neo X"
+    "Neo X",
+    "ADI Network",
+    "GRVT Mainnet",
+    "Lens Chain",
+    "Memento ZK Chain",
+    "OpenZK Mainnet",
+    "Sophon Mainnet",
+    "Zero Network",
+    "ZKcandy",
+    "zkXPLA"
   ],
-  "canonical_promotions": 8,
+  "canonical_promotions": 17,
   "not_promoted": [
     "Bittensor",
     "Osmosis",
