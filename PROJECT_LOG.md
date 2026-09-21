@@ -595,3 +595,26 @@ Created:
 Result: extraction/normalization contract PASS; factual G01 saturation remains open pending current-source execution, full union, verification, exclusions and final denominator.
 
 Live trading STOP.
+
+
+## LOG-0027 — DATA LIFECYCLE / ANTI-DUPLICATION CONTROL LOCK
+
+Date: 21 September 2026
+
+User directive clarified and converted into permanent architecture: preserve historical data, but never allow duplicate current-state registries to accumulate.
+
+Created:
+- 00_GOVERNANCE/DATA_LIFECYCLE_DEDUPLICATION_CONTROL_v1.0.md
+
+Updated governance:
+- NO_DRIFT_SATURATION_CONTROL_CHARTER_v1.0.md
+- MACRO_BATCH_EXECUTION_DOCTRINE.md
+
+Updated G01 current materialized state in place:
+- 01_BLOCKCHAIN_UNIVERSE/data/G01_SOURCE_UNION_REGISTRY_v001.json → schema/version v002, CURRENT_MATERIALIZED_STATE
+
+Rule: evidence/history grows append-only; canonical state is deduplicated and updated in place; Git history preserves previous versions; batch artifacts contain deltas/audits, not full registry copies.
+
+Next: duplicate/identity anomaly audit, then uncovered native + DEX discovery merged into the same canonical state.
+
+Live trading STOP.
