@@ -52,5 +52,6 @@ def test_same_provider_id_on_two_networks_has_independent_health():
     ]
     pool = ProviderPool.from_providers(rows)
     pool.record_failure("shared", "fixture:1", now_tick=10, cooldown_ticks=5)
-    assert pool.select("fixture:1", now_tick=10).provider_id if False else True
+    with pytest.raises(RegistryError):
+        pool.select("fixture:1", now_tick=10)
     assert pool.select("fixture:2", now_tick=10).provider_id == "shared"
