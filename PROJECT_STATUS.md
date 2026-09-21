@@ -706,3 +706,41 @@ Created:
 Full machine-readable DEX extraction + protocol→chain relationship reconciliation + native-source gap join + adversarial missed-network audit.
 
 Live trading remains STOP.
+
+
+## UPDATE — MACRO-BATCH 025 / MACHINE-READABLE DEX EXTRACTION CONTRACT
+
+Date: 21 September 2026
+State: 🟢 Extraction Layer Implemented / G01 Still Not Saturated
+
+Added:
+- 01_BLOCKCHAIN_UNIVERSE/62_G01_MACHINE_READABLE_DEX_EXTRACTION_BATCH_025.md
+- 01_BLOCKCHAIN_UNIVERSE/63_AUDIT_031_G01_MACHINE_READABLE_DEX_EXTRACTION.md
+- src/ghost_hunter/g01_dex_extractor.py
+- tests/test_g01_dex_extractor.py
+
+The DEX discovery surface now has a code-level machine extraction contract for
+protocol × chain relationships. Source/evidence metadata is preserved and
+protocol identity is kept separate from chain identity.
+
+The extractor does not infer production status, flash capability, executable
+trading, liquidity, profitability or authorization.
+
+Repository-wide execution of the new tests is NOT claimed because the current
+GitHub tool surface has no arbitrary command runner.
+
+Current G01 state:
+- current canonical source-union count: 49
+- DEX machine extraction capability: IMPLEMENTED
+- current full DEX payload materialization: PENDING
+- complete protocol × chain relationship denominator: PENDING
+- primary identity/lifecycle verification: PENDING
+- adversarial missed-network audit: PENDING
+- final G01 denominator: PENDING
+- G01 saturation: NOT SATURATED
+- live trading: 🛑 STOP
+
+Next macro objective:
+Materialize the current DEX protocol × chain dataset, join the 49-record union,
+resolve identity/lifecycle with primary evidence, close exclusions/conflicts,
+and run the adversarial missed-network audit.
