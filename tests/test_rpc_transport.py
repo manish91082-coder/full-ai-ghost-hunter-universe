@@ -54,9 +54,9 @@ def test_failure_rotates_provider():
             raise OSError("timeout")
         return Response({"jsonrpc": "2.0", "id": 1, "result": "0x11"})
     transport = RpcTransport(p, opener=opener)
-    with pytest.raises(RegistryError):
-        transport.call("net:1", "eth_blockNumber")
-    assert transport.call("net:1", "eth_blockNumber").provider_id == "p2"
+    observation = transport.call("net:1", "eth_blockNumber")
+    assert observation.provider_id == "p2"
+    assert observation.result == "0x11"
     assert calls == ["https://runtime.invalid/1", "https://runtime.invalid/2"]
 
 
