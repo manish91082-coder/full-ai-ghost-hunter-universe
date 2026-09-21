@@ -68,3 +68,17 @@
 - G02-G29 remain BLOCKED.
 - LIVE TRADING remains STOP.
 - Next: materialize and reconcile the current Cosmos production subset against the existing 57-record source-union.
+
+## 2026-09-21 - Macro-Batch 035
+
+**G01 Cosmos Production Materialization**
+
+- Added reproducible official Cosmos Chain Registry materializer and CI workflow.
+- Pinned upstream tree SHA: 810b0b68e4591078295ccce76205e970b3c002e5.
+- Production filter: status=live AND network_type=mainnet.
+- Native chain semantics preserved; non-production/error states remain explicit.
+- CI run 35574144469 is observed in progress; materialization evidence is not yet accepted.
+- No canonical G01 registry merge performed before evidence audit.
+- G01 remains ACTIVE / NOT SATURATED.
+- G02-G29 remain BLOCKED.
+- LIVE TRADING remains STOP.
