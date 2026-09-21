@@ -545,3 +545,21 @@ G01 global chain universe remains **NOT SATURATED**.
 Normalize the independent source union and begin primary identity/lifecycle verification across the expanded candidate set. Do not advance dependent gates as authoritative.
 
 Live trading remains STOP.
+
+## UPDATE — G01 MACRO-BATCH 019 / SOURCE-UNION NORMALIZATION
+
+Date: 21 September 2026
+State: 🟢 NORMALIZATION + IDENTITY PASS ACCEPTED / G01 NOT SATURATED
+
+Created:
+- 01_BLOCKCHAIN_UNIVERSE/data/G01_SOURCE_UNION_REGISTRY_v001.json
+- 01_BLOCKCHAIN_UNIVERSE/50_G01_SOURCE_UNION_NORMALIZATION_BATCH_019.md
+- 01_BLOCKCHAIN_UNIVERSE/51_AUDIT_025_G01_SOURCE_UNION_NORMALIZATION.md
+
+21 discovery inputs were normalized against the current seed and Morpho reconciliation: 10 confirmed overlaps, 11 remain newly introduced at this join point. This is not a final unique-chain count because DEX-derived and additional native ecosystem unions are still pending.
+
+Primary identity verification materially advanced for Fuel Ignition, EDU Chain, Plume, Xai, Powerloom, Gravity, Berachain, Hedera, Aptos, Sei, Kaia and Injective. Reya, Eclipse and RISE need exact identifier extraction; Lighter, PlayBlock and Starknet remain provisional/partial in this pass.
+
+Next: complete DEX/native-registry source union, identity/lifecycle reconciliation, exclusions, freshness and the deduplicated G01 discovery denominator.
+
+Live trading remains STOP.
