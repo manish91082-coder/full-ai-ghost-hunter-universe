@@ -521,3 +521,27 @@ Created: `00_GOVERNANCE/REPOSITORY_IDENTITY_LOCK_v1.0.md`
 Before every substantive continuation, repository identity must be verified first. If verification fails, work stops rather than switching repositories.
 
 Current primary gate remains G01 Global Blockchain Universe. Live trading remains STOP.
+
+## UPDATE — G01 MACRO-BATCH 018 / GLOBAL CHAIN DISCOVERY EXPANSION
+
+Date: 21 September 2026
+State: 🟢 DISCOVERY EXPANSION ACCEPTED / G01 NOT SATURATED
+
+### Created
+- 01_BLOCKCHAIN_UNIVERSE/48_G01_GLOBAL_CHAIN_DISCOVERY_EXPANSION_BATCH_018.md
+- 01_BLOCKCHAIN_UNIVERSE/49_AUDIT_024_G01_GLOBAL_CHAIN_DISCOVERY_EXPANSION.md
+
+### Fresh discovery coverage
+Independent discovery surfaces were expanded using current DeFiLlama, CoinGecko and L2BEAT evidence. DeFiLlama's DEX-by-chain dataset currently reports 290 chains; CoinGecko documents 100+ supported on-chain networks; L2BEAT provides an independent scaling/activity surface. These are discovery denominators, not executable-chain counts. citeturn0search9turn0search6turn3search8
+
+### New candidates
+21 individually named network candidates were added for subsequent identity/lifecycle verification, including Lighter, RISE, Fuel Ignition, Reya, Abstract, PlayBlock, EDU Chain, Eclipse, Plume Network, Xai, Powerloom, Gravity, Sei, Berachain, Kaia, Hedera, Starknet, Aptos, Sui, Near Protocol and Injective.
+
+### Audit
+Audit 024: **PARTIAL PASS**.
+G01 global chain universe remains **NOT SATURATED**.
+
+### Next
+Normalize the independent source union and begin primary identity/lifecycle verification across the expanded candidate set. Do not advance dependent gates as authoritative.
+
+Live trading remains STOP.
