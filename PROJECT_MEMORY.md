@@ -461,3 +461,12 @@ Uniswap V3 flash, Sky/Dai ERC-3156 and Vat Dai flash mint, ERC-3156 implementati
 ## DURABLE RULE — PRIMARY ADDRESS MATERIALIZATION — 21 September 2026
 
 Primary-source deployment addresses may be promoted into canonical deployment state only with network + contract role + provenance. Address verification does not imply current bytecode identity, capability enablement, liquidity, fee, authorization or execution eligibility. Records without current primary address evidence remain pending rather than inferred.
+## DURABLE RULE — G02 PRIMARY ADDRESS BATCH 005
+
+Date: 21 September 2026
+
+Primary-source deployment addresses may be promoted into the current G02 registry only with explicit network, contract/program role, provenance and current-vs-legacy distinction where applicable. A deployment address never implies runtime code identity, capability enablement, capacity, fee, authorization or execution eligibility.
+
+For Solana programs, program-version transitions and instruction-layout compatibility are part of the runtime verification boundary. For EVM protocols, network remains part of identity even when a contract address is byte-for-byte reused across networks.
+
+Current G02 canonical state after Batch 005: 34 deployment records, 34 unique canonical keys, 0 duplicate keys, 26 primary-source address-verified records, 5 address-pending records. All remain NEVER_FROM_RESEARCH.
