@@ -1694,3 +1694,25 @@ G02 remains ACTIVE / NOT SATURATED.
 G03-G29 remain BLOCKED.
 Execution authority NONE.
 Live trading STOP.
+
+
+## SECTION 54 — EXECUTION VERIFICATION / NO-DRIFT CI CONTROL
+
+Date: 21 September 2026
+
+A concrete CI failure was re-verified from the live GitHub Actions run for current main HEAD `d7b5aa5dd7b15adb03e1dba6c86dfab6cac1a6f1`. G02 machine-state validation passed, but repository test collection failed because `tests/test_reconcile_g01_dex_labels.py` imported a module from `ghost_hunter` that exists only under `scripts/`.
+
+Correction:
+- test import now targets `scripts.reconcile_g01_dex_labels`;
+- data-plane CI now cancels stale in-progress main runs so the newest main state is the authoritative execution target;
+- a new `.github/workflows/project-execution-verifier.yml` runs after `data-plane-ci` completion and fails closed unless the completed run is successful **and** its SHA exactly matches the current `main` HEAD.
+
+Operational rule:
+**No substantive downstream gate advancement is accepted from an unverified/stale CI state. Every macro-cycle must verify current main HEAD → latest data-plane execution → conclusion → SHA match before declaring the cycle complete.**
+
+Current state at this update:
+- G02: ACTIVE / NOT SATURATED
+- G03-G29: BLOCKED
+- execution authority: NONE
+- live trading: STOP
+- CI: NOT YET GREEN after the latest correction commit; fresh execution verification is required.
