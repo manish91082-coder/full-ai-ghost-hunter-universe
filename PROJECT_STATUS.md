@@ -1120,3 +1120,25 @@ Audit 046: PARTIAL PASS. G01 exit remains blocked by the unresolved DEX 419-labe
 
 G02-G29 remain BLOCKED. LIVE TRADING = STOP.
 Next: close material DEX/native-source denominator gaps, then perform formal G01 exit review.
+
+
+## UPDATE - MACRO-BATCH 041 / DEX + NATIVE DENOMINATOR TARGETED CYCLE
+
+Date: 21 September 2026
+State: G01 ACTIVE / NOT SATURATED
+
+The 419-label DEX surface was re-opened only for a bounded high-information reconciliation cycle.
+
+Primary verification promoted three previously unresolved labels:
+- Kava / kava_2222-10 with EVM execution plane eip155:2222
+- opBNB / eip155:204
+- Cardano / cardano:mainnet
+
+Klaytn was deliberately NOT added as a duplicate because primary Kaia documentation states Kaia is the continuation/hard fork of Klaytn with the same chain ID; it is treated as an alias/execution-history relationship to the existing Kaia record.
+
+Current canonical registry: 65 records, 65 unique keys, 0 duplicates; 11 MATCH_EXISTING and 54 NEW_CANDIDATE.
+
+Audit 047: PARTIAL PASS. G01 remains blocked by the unresolved 419-label semantic denominator, incomplete native-source reconciliation and unfrozen global production denominator.
+
+G02-G29 remain BLOCKED. LIVE TRADING = STOP.
+Next: continue bounded reconciliation of material DEX/native-source gaps, then formal G01 exit review.
