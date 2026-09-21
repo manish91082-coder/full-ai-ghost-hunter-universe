@@ -493,3 +493,14 @@ Signature trust-root verification is intentionally still open. Live RPC collecti
 The provider layer now has an explicit deterministic rotation contract. A provider failure places that provider into cooldown; selection moves to another configured provider for the same network. If every provider is unavailable, selection fails closed. Successful providers recover their failure state.
 
 Provider switching does not establish state continuity. Every post-switch observation must independently satisfy freshness, provenance and request-consistency requirements. This rule is essential for later block-by-block hunting and prevents a failed/stale endpoint from silently causing either missed opportunities or unsafe execution.
+
+
+## G02 MACRO-BATCH 013 — READ-ONLY RPC TRANSPORT
+
+Date: 21 September 2026
+
+The runtime substrate now includes a read-only JSON-RPC transport over the external provider pool. The transport validates JSON-RPC responses, records provider failures, rotates through healthy providers, and supports deterministic multi-provider quorum checks.
+
+This layer has no transaction construction, signing or submission capability. RPC observations remain non-authoritative until provider/network identity, block/state freshness, provenance and post-switch revalidation are satisfied.
+
+G02 remains ACTIVE / NOT SATURATED. G03-G29 remain BLOCKED. Live trading remains STOP.
