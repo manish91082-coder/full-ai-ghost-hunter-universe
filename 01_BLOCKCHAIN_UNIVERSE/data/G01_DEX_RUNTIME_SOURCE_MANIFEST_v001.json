@@ -1,0 +1,37 @@
+{
+  "schema_version": "g01.dex_runtime_source.v1",
+  "authority": "discovery_only",
+  "observed_date": "2026-09-21",
+  "sources": [
+    {
+      "source_id": "defillama-free-protocols",
+      "url": "https://api.llama.fi/protocols",
+      "role": "protocol_metadata_and_chain_relationship_discovery",
+      "expected_fields": ["name", "slug", "category", "chains"],
+      "production_status": "NOT_DERIVED"
+    },
+    {
+      "source_id": "defillama-dex-chain-dashboard",
+      "url": "https://defillama.com/dexs/chains",
+      "role": "DEX_chain_discovery_surface",
+      "observed_chain_count": 290,
+      "production_status": "NOT_DERIVED"
+    },
+    {
+      "source_id": "defillama-dex-dashboard",
+      "url": "https://defillama.com/dexs",
+      "role": "DEX_protocol_coverage_discovery",
+      "observed_dex_protocol_count": 794,
+      "production_status": "NOT_DERIVED"
+    }
+  ],
+  "rules": [
+    "The 290-chain dashboard count is a discovery metric, not the canonical blockchain denominator.",
+    "The 794 DEX-protocol count is a discovery metric, not an executable venue denominator.",
+    "Protocol-to-chain observations require identity/lifecycle verification before canonical promotion.",
+    "No flash-liquidity, liquidity-at-size, route, profitability or execution authorization may be inferred from these sources.",
+    "Raw source payloads must be retained with timestamp, source ID, retrieval method and payload hash before canonical merge."
+  ],
+  "materialization_state": "PENDING_EXTERNAL_FETCH",
+  "next_step": "Fetch raw /protocols payload, filter DEX-class records, emit protocol×chain observations, then reconcile against current G01 source union."
+}
