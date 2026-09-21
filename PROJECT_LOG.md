@@ -291,3 +291,10 @@ Implemented the previously identified runtime architecture foundation: external 
 No provider endpoint or authoritative chain/contract/pair universe was embedded. Signature verification remains pending, and no live RPC/on-chain result is claimed because repository workflow status currently exposes no run/status evidence.
 
 G02 remains active and fail-closed.
+
+
+## MACRO-BATCH 019 — PROVIDER POOL ROTATION
+
+Added the fail-closed provider pool contract. Runtime provider identities are selected per network, ordered by health/failure state and configured priority, cooled down after failure, and recovered after success. Empty/all-unavailable conditions fail closed. Network transport remains intentionally outside this policy layer.
+
+This is a runtime architecture increment only. Cross-provider quorum, freshness, live RPC collection and automatic opportunity rescan remain pending.
