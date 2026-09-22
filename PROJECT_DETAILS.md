@@ -681,3 +681,16 @@ project-execution-verifier run 35726273234: completed / SUCCESS.
 Verifier job verify 106740574598: completed / SUCCESS.
 Both workflow runs have head_sha exactly equal to current main SHA.
 Execution authority remains NONE; live trading remains STOP.
+
+## 2026-09-22 — G02 MACRO-BATCH 024 — EXACT-IDENTITY SILO FACTORY SCAN PLAN
+
+- Built machine-readable G02 SiloFactory historical scan plan for the bounded 38 scan identities: 37 known-created factories plus 1 current Optimism deployment candidate.
+- Start-block evidence is scoped to the exact identity (network_id, factory). A deployment block from another factory or network is never reused.
+- 9 scan identities have primary-source Foundry CREATE-receipt block evidence: 8 known-created factories plus the current Optimism deployment candidate.
+- 29 identities are explicitly BLOCKED_MISSING_START_BLOCK. No historical start block was guessed, inferred from list order, or inferred from event/log order.
+- Added fail-closed scan-plan validator and tests, including a regression test for the Sonic/XDC same-address cross-network hazard.
+- Added Audit 075. G02 remains ACTIVE / NOT SATURATED. G03-G29 remain BLOCKED. Execution authority NONE. Live trading STOP.
+- Exact-main data-plane-ci run 35729427229: completed / SUCCESS; data-plane-validation 106751022238: SUCCESS; repository tests completed successfully.
+- Exact-main project-execution-verifier run 35729449791: completed / SUCCESS; verifier job 106751132549: SUCCESS.
+- Verified SHA for this macro-batch: 48256d572fb0f4df1781072228324be9a84887a9.
+- Next blocker: obtain exact historical start-block evidence for the 29 blocked identities, then run strict-current NewSilo enumeration and feed every discovered market into both-vault runtime verification. Do not substitute guessed blocks.
