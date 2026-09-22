@@ -1923,3 +1923,21 @@ Every substantive response must measurably reduce a material blocker or otherwis
 Current active gate remains G02. The highest-value work must continue to reduce G02 saturation gaps while preserving fail-closed safety, provenance, freshness, deterministic validation, exact-SHA verification and execution-authorization boundaries.
 
 Each response must leave a concrete project movement and identify the highest-value remaining blocker. Live trading remains STOP; execution authority remains NONE; G03-G29 remain BLOCKED until prerequisites and saturation criteria are satisfied.
+
+
+## 2026-09-23 — G02 V2 FIXED-SNAPSHOT CONSISTENCY HARDENING
+
+Goal-progress result: reduced a determinism/current-state consistency gap in the V2 observation substrate.
+
+- V2 pair-state materialization now uses one fixed per-factory snapshot block derived from the enumeration postflight block.
+- token0, token1, reserves and runtime-bytecode evidence for a complete factory observation must be bound to that same snapshot block.
+- Provider identity must remain consistent with the factory enumeration provider.
+- Existing freshness validation causes a stale fixed snapshot to fail closed instead of silently mixing blocks.
+- Materialization schema is g02.v2.factory.runtime.observation.v2 with state_consistency=ONE_FIXED_BLOCK_PER_FACTORY.
+- Deterministic regression coverage and Audit 081 were added.
+
+Observation/evidence hardening only. Fee state, callback authenticity, executable liquidity-at-size, profitability and execution authorization remain open.
+
+Current G02 state remains ACTIVE / NOT SATURATED. Exact current-main CI evidence for this commit is not exposed by the available workflow-run observation endpoint, so GREEN is not claimed. Live trading remains STOP; execution authority NONE.
+
+Per-response goal invariant is authoritative through 00_GOVERNANCE/PROJECT_GOAL_PUSH_PER_RESPONSE_INVARIANT_v1.0.md.
