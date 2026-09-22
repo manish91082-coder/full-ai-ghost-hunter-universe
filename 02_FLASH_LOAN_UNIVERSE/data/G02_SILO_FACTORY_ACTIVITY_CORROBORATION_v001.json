@@ -1,0 +1,16 @@
+{
+  "schema_version": "g02.silo.factory.activity.corroboration.v1",
+  "as_of": "2026-09-22",
+  "source_repo": "silo-finance/silo-contracts-v3",
+  "source_commit": "564fcf86f6e64171f2f7f9402d50ad63d2b54c83",
+  "source_path": "silo-core/scripts/withdrawFeesForge/factories.json",
+  "purpose": "SECONDARY_FACTORY_ACTIVITY_CORROBORATION",
+  "authority": "CORROBORATING_ONLY_NO_SCAN_START_AUTHORITY",
+  "record_count": 38,
+  "rules": {
+    "identity_key": "(network_id,factory)",
+    "start_silo_id": "Corroborating operational metadata only; never converted into a block number or SiloFactory ID reconstruction.",
+    "scan_authority": "No record supplies historical scan_start_block_inclusive.",
+    "cross_network": "Same address on Sonic and XDC remains two identities."
+  }
+}
