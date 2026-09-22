@@ -71,7 +71,7 @@ class SiloV3MarketBinder:
                 raise RegistryError("runtime SiloConfig disagrees with factory event")
             if {silo0.silo.lower(), silo1.silo.lower()} != {event.silo0.lower(), event.silo1.lower()}:
                 raise RegistryError("runtime vault identities disagree with factory event")
-            if silo0.provider_id != silo1.provider_id:
+            if silo0.provider_id != silo1.provider_id or silo0.provider_id != observation.completeness.provider_id:
                 raise RegistryError("provider changed across market verification")
             if silo0.network_id != observation.completeness.network_id or silo1.network_id != observation.completeness.network_id:
                 raise RegistryError("runtime verification network mismatch")
