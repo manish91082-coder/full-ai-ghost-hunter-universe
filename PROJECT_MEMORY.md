@@ -714,3 +714,14 @@ Date: 22 September 2026
 The project must maximize useful safe work per `Next` by batching logically related work and parallelizing independent research, denominator, runtime, adversarial, architecture, testing and audit activities. This is an execution-efficiency rule only. It does not relax evidence, provenance, freshness, deterministic simulation, risk/economic gates, fail-closed behavior or exact-SHA verification.
 
 G02 remains the sole unlocked saturation gate and the final objective remains unchanged.
+
+
+## 2026-09-23 — PER-RESPONSE PROJECT-GOAL PUSH INVARIANT
+
+Authoritative governance artifact: `00_GOVERNANCE/PROJECT_GOAL_PUSH_PER_RESPONSE_INVARIANT_v1.0.md`.
+
+Hard rule: every substantive response must measurably move the project toward the FINAL GHOST HUNTER GOAL. The active gate and its highest-value unresolved blocker control prioritization; reporting-only, cosmetic or low-value activity must not displace available safe implementation, verification, denominator, evidence, testing, audit or gap-closure work.
+
+Every `Next` must produce concrete goal-relevant movement, preferably closing multiple logically related blockers in one macro-cycle. When an external dependency blocks runtime observation, independent safe work must still reduce the same goal gap where possible.
+
+This invariant does not relax zero-trust, provenance, freshness, deterministic validation, fail-closed behavior, exact-SHA verification, risk/economic gates or execution authorization. G02 remains the only unlocked saturation gate; execution authority NONE; live trading STOP.

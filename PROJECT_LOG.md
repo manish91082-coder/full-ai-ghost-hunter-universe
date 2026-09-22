@@ -529,3 +529,14 @@ Added `00_GOVERNANCE/MAXIMUM_SAFE_THROUGHPUT_MACRO_BATCH_v2.md` as the explicit 
 This locks macro-batch execution, parallel independent work, CI-wait utilization and coherent subsystem closure while preserving zero-trust evidence, freshness, deterministic validation, fail-closed behavior, exact-SHA verification and execution authorization gates.
 
 This governance change does not claim CI GREEN until exact current-main verification is observed.
+
+
+## 2026-09-23 — PER-RESPONSE PROJECT-GOAL PUSH INVARIANT
+
+Authoritative governance artifact: `00_GOVERNANCE/PROJECT_GOAL_PUSH_PER_RESPONSE_INVARIANT_v1.0.md`.
+
+Hard rule: every substantive response must measurably move the project toward the FINAL GHOST HUNTER GOAL. The active gate and its highest-value unresolved blocker control prioritization; reporting-only, cosmetic or low-value activity must not displace available safe implementation, verification, denominator, evidence, testing, audit or gap-closure work.
+
+Every `Next` must produce concrete goal-relevant movement, preferably closing multiple logically related blockers in one macro-cycle. When an external dependency blocks runtime observation, independent safe work must still reduce the same goal gap where possible.
+
+This invariant does not relax zero-trust, provenance, freshness, deterministic validation, fail-closed behavior, exact-SHA verification, risk/economic gates or execution authorization. G02 remains the only unlocked saturation gate; execution authority NONE; live trading STOP.
