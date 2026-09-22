@@ -615,3 +615,8 @@ Post-change verification is now complete on the exact current main state:
 - verifier confirmed the data-plane run SHA exactly matches current main
 
 No production RPC observation was run. The manual G02 runtime-observation workflow remains ready but requires external GH_PROVIDER_RUNTIME configuration. G02 remains ACTIVE / NOT SATURATED; G03-G29 blocked; execution authority NONE; live trading STOP.
+
+
+## 2026-09-22 — DURABLE RULE — SILO RUNTIME EVIDENCE CHAIN
+
+A Silo V3 API/UI candidate is never execution truth. Runtime verification must establish, at minimum: candidate code identity, SiloConfig linkage, two-vault market membership, asset identity, current liquidity, max flash-loan capacity, fee quote for an explicitly named probe amount, factory identity and freshness/provenance. A successful candidate verification still does not prove executable authorization, implementation authenticity, hook/oracle safety or trade-size liquidity.

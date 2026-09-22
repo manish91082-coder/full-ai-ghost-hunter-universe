@@ -1754,3 +1754,14 @@ Post-change verification is now complete on the exact current main state:
 - verifier confirmed the data-plane run SHA exactly matches current main
 
 No production RPC observation was run. The manual G02 runtime-observation workflow remains ready but requires external GH_PROVIDER_RUNTIME configuration. G02 remains ACTIVE / NOT SATURATED; G03-G29 blocked; execution authority NONE; live trading STOP.
+
+
+## 2026-09-22 — G02 MACRO-BATCH 021 — SILO V3 RUNTIME VERIFICATION BOUNDARY
+
+- Added `src/ghost_hunter/silo_v3_runtime.py` as an observation-only verifier for externally supplied Silo candidates.
+- Verifies Silo/SiloConfig runtime code, two-vault membership, asset, runtime liquidity, max flash-loan capacity, probe-size flash fee and factory identity at a block-pinned snapshot.
+- Provider consistency and freshness remain fail-closed; bytecode is retained as SHA-256 evidence.
+- Deterministic tests were added and exact-main CI plus execution verifier both passed for the implementation commit.
+- No production RPC observation was executed and no permissionless Silo market denominator is claimed complete.
+
+G02 remains ACTIVE / NOT SATURATED. G03-G29 remain BLOCKED. Execution authority NONE. Live trading STOP.

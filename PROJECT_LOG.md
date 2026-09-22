@@ -420,3 +420,8 @@ Post-change verification is now complete on the exact current main state:
 - verifier confirmed the data-plane run SHA exactly matches current main
 
 No production RPC observation was run. The manual G02 runtime-observation workflow remains ready but requires external GH_PROVIDER_RUNTIME configuration. G02 remains ACTIVE / NOT SATURATED; G03-G29 blocked; execution authority NONE; live trading STOP.
+
+
+## 2026-09-22 — MACRO-BATCH 021
+
+Implemented a read-only Silo V3 runtime verification boundary and deterministic tests. The boundary links a candidate Silo to its SiloConfig, verifies the two-vault market relationship, reads asset/liquidity/max-flash-loan/flash-fee/factory state, records bytecode digests, and enforces provider/freshness consistency. Exact-main data-plane CI and project-execution-verifier both completed SUCCESS for the implementation commit. Production RPC observation remains unclaimed; G02 remains ACTIVE / NOT SATURATED.

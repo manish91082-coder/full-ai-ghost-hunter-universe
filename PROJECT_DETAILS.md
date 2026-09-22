@@ -614,3 +614,10 @@ Post-change verification is now complete on the exact current main state:
 - verifier confirmed the data-plane run SHA exactly matches current main
 
 No production RPC observation was run. The manual G02 runtime-observation workflow remains ready but requires external GH_PROVIDER_RUNTIME configuration. G02 remains ACTIVE / NOT SATURATED; G03-G29 blocked; execution authority NONE; live trading STOP.
+
+
+## 2026-09-22 — G02 MACRO-BATCH 021 — SILO V3 RUNTIME VERIFICATION
+
+The Silo runtime boundary consumes externally supplied candidates only. It reads a pinned block snapshot and verifies Silo.config(), SiloConfig.getSilos(), ERC-4626 asset, getLiquidity(), maxFlashLoan(asset), flashFee(asset, probe_amount), factory(), and runtime bytecode digests. It rejects provider changes, stale observations, duplicate vault identities and candidates outside their two-vault market.
+
+This is evidence collection only. It does not enumerate all permissionless Silo markets, grant execution authority, or convert a probe fee into a trade-size economics claim.
