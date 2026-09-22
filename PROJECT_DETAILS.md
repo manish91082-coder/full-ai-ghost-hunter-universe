@@ -694,3 +694,13 @@ Execution authority remains NONE; live trading remains STOP.
 - Exact-main project-execution-verifier run 35729449791: completed / SUCCESS; verifier job 106751132549: SUCCESS.
 - Verified SHA for this macro-batch: 48256d572fb0f4df1781072228324be9a84887a9.
 - Next blocker: obtain exact historical start-block evidence for the 29 blocked identities, then run strict-current NewSilo enumeration and feed every discovered market into both-vault runtime verification. Do not substitute guessed blocks.
+
+
+## 2026-09-22 — G02 MACRO-BATCH 025 — FACTORY ACTIVITY CORROBORATION
+
+- Inspected pinned Silo V3 source commit 564fcf86f6e64171f2f7f9402d50ad63d2b54c83.
+- Materialized secondary operational corroboration from silo-core/scripts/withdrawFeesForge/factories.json for all 38 bounded (network_id,factory) identities, including the current Optimism deployment candidate.
+- The corroboration contains startSiloId metadata, which is useful for identity/activity cross-checking but is explicitly forbidden from being converted into deployment blocks or SiloFactory IDs.
+- Sonic and XDC identical factory addresses remain separate identities.
+- No new historical scan-start block was authorized by this batch. The 29 missing exact deployment-block records therefore remain fail-closed.
+- Added a machine-readable corroboration artifact and validator/test/audit coverage. G02 remains ACTIVE / NOT SATURATED; G03-G29 blocked; execution NONE; live trading STOP.
