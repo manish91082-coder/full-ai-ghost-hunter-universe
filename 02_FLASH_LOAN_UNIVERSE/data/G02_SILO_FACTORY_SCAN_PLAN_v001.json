@@ -1,5 +1,5 @@
 {
-  "schema_version": "g02.silo.factory.scan.plan.v1",
+  "schema_version": "g02.silo.factory.scan.plan.v2",
   "as_of": "2026-09-22",
   "source_commit": "564fcf86f6e64171f2f7f9402d50ad63d2b54c83",
   "source_document": "silo-core/docs/SiloFactoryList.md",
@@ -33,14 +33,14 @@
       "factory": "0x22a3cF6149bFa611bAFc89Fd721918EC3Cf7b581",
       "currentness_state": "OLDER_FACTORY_RETAINED",
       "source_order": 2,
-      "scan_start_block_inclusive": null,
-      "start_block_status": "BLOCKED_MISSING_START_BLOCK",
+      "scan_start_block_inclusive": 0,
+      "start_block_status": "GENESIS_FULL_CHAIN_REQUIRED",
       "start_block_evidence": {
-        "source_repo": "silo-finance/silo-contracts-v3",
-        "source_commit": "564fcf86f6e64171f2f7f9402d50ad63d2b54c83",
-        "source_path": "silo-core/docs/SiloFactoryList.md",
-        "evidence_type": "FACTORY_IDENTITY_ONLY_NO_BLOCK"
-      }
+        "evidence_type": "GENESIS_LOWER_BOUND_NO_DEPLOYMENT_INFERENCE",
+        "deployment_transaction": null,
+        "authority": "FULL_CHAIN_SCAN_BOUNDARY_ONLY"
+      },
+      "range_authority": "GENESIS_TO_CURRENT"
     },
     {
       "factory_id": "SILOFACT-0003",
@@ -68,14 +68,14 @@
       "factory": "0x504B8ca9C664AFe72324388122caBAFb72F9269f",
       "currentness_state": "OLDER_FACTORY_RETAINED",
       "source_order": 2,
-      "scan_start_block_inclusive": null,
-      "start_block_status": "BLOCKED_MISSING_START_BLOCK",
+      "scan_start_block_inclusive": 0,
+      "start_block_status": "GENESIS_FULL_CHAIN_REQUIRED",
       "start_block_evidence": {
-        "source_repo": "silo-finance/silo-contracts-v3",
-        "source_commit": "564fcf86f6e64171f2f7f9402d50ad63d2b54c83",
-        "source_path": "silo-core/docs/SiloFactoryList.md",
-        "evidence_type": "FACTORY_IDENTITY_ONLY_NO_BLOCK"
-      }
+        "evidence_type": "GENESIS_LOWER_BOUND_NO_DEPLOYMENT_INFERENCE",
+        "deployment_transaction": null,
+        "authority": "FULL_CHAIN_SCAN_BOUNDARY_ONLY"
+      },
+      "range_authority": "GENESIS_TO_CURRENT"
     },
     {
       "factory_id": "SILOFACT-0005",
@@ -85,14 +85,14 @@
       "factory": "0x384DC7759d35313F0b567D42bf2f611B285B657C",
       "currentness_state": "OLDER_FACTORY_RETAINED",
       "source_order": 3,
-      "scan_start_block_inclusive": null,
-      "start_block_status": "BLOCKED_MISSING_START_BLOCK",
+      "scan_start_block_inclusive": 0,
+      "start_block_status": "GENESIS_FULL_CHAIN_REQUIRED",
       "start_block_evidence": {
-        "source_repo": "silo-finance/silo-contracts-v3",
-        "source_commit": "564fcf86f6e64171f2f7f9402d50ad63d2b54c83",
-        "source_path": "silo-core/docs/SiloFactoryList.md",
-        "evidence_type": "FACTORY_IDENTITY_ONLY_NO_BLOCK"
-      }
+        "evidence_type": "GENESIS_LOWER_BOUND_NO_DEPLOYMENT_INFERENCE",
+        "deployment_transaction": null,
+        "authority": "FULL_CHAIN_SCAN_BOUNDARY_ONLY"
+      },
+      "range_authority": "GENESIS_TO_CURRENT"
     },
     {
       "factory_id": "SILOFACT-0006",
@@ -102,14 +102,14 @@
       "factory": "0xf7dc975C96B434D436b9bF45E7a45c95F0521442",
       "currentness_state": "OLDER_FACTORY_RETAINED",
       "source_order": 4,
-      "scan_start_block_inclusive": null,
-      "start_block_status": "BLOCKED_MISSING_START_BLOCK",
+      "scan_start_block_inclusive": 0,
+      "start_block_status": "GENESIS_FULL_CHAIN_REQUIRED",
       "start_block_evidence": {
-        "source_repo": "silo-finance/silo-contracts-v3",
-        "source_commit": "564fcf86f6e64171f2f7f9402d50ad63d2b54c83",
-        "source_path": "silo-core/docs/SiloFactoryList.md",
-        "evidence_type": "FACTORY_IDENTITY_ONLY_NO_BLOCK"
-      }
+        "evidence_type": "GENESIS_LOWER_BOUND_NO_DEPLOYMENT_INFERENCE",
+        "deployment_transaction": null,
+        "authority": "FULL_CHAIN_SCAN_BOUNDARY_ONLY"
+      },
+      "range_authority": "GENESIS_TO_CURRENT"
     },
     {
       "factory_id": "SILOFACT-0007",
@@ -119,14 +119,14 @@
       "factory": "0x621Eacb756c7fa8bC0EA33059B881055d1693a33",
       "currentness_state": "OLDER_FACTORY_RETAINED",
       "source_order": 5,
-      "scan_start_block_inclusive": null,
-      "start_block_status": "BLOCKED_MISSING_START_BLOCK",
+      "scan_start_block_inclusive": 0,
+      "start_block_status": "GENESIS_FULL_CHAIN_REQUIRED",
       "start_block_evidence": {
-        "source_repo": "silo-finance/silo-contracts-v3",
-        "source_commit": "564fcf86f6e64171f2f7f9402d50ad63d2b54c83",
-        "source_path": "silo-core/docs/SiloFactoryList.md",
-        "evidence_type": "FACTORY_IDENTITY_ONLY_NO_BLOCK"
-      }
+        "evidence_type": "GENESIS_LOWER_BOUND_NO_DEPLOYMENT_INFERENCE",
+        "deployment_transaction": null,
+        "authority": "FULL_CHAIN_SCAN_BOUNDARY_ONLY"
+      },
+      "range_authority": "GENESIS_TO_CURRENT"
     },
     {
       "factory_id": "SILOFACT-0008",
@@ -136,14 +136,14 @@
       "factory": "0xb720078680Dc65B54568673410aBb81195E08122",
       "currentness_state": "OLDER_FACTORY_RETAINED",
       "source_order": 6,
-      "scan_start_block_inclusive": null,
-      "start_block_status": "BLOCKED_MISSING_START_BLOCK",
+      "scan_start_block_inclusive": 0,
+      "start_block_status": "GENESIS_FULL_CHAIN_REQUIRED",
       "start_block_evidence": {
-        "source_repo": "silo-finance/silo-contracts-v3",
-        "source_commit": "564fcf86f6e64171f2f7f9402d50ad63d2b54c83",
-        "source_path": "silo-core/docs/SiloFactoryList.md",
-        "evidence_type": "FACTORY_IDENTITY_ONLY_NO_BLOCK"
-      }
+        "evidence_type": "GENESIS_LOWER_BOUND_NO_DEPLOYMENT_INFERENCE",
+        "deployment_transaction": null,
+        "authority": "FULL_CHAIN_SCAN_BOUNDARY_ONLY"
+      },
+      "range_authority": "GENESIS_TO_CURRENT"
     },
     {
       "factory_id": "SILOFACT-0009",
@@ -153,14 +153,14 @@
       "factory": "0x44347A91Cf3E9B30F80e2161438E0f10fCeDA0a0",
       "currentness_state": "OLDER_FACTORY_RETAINED",
       "source_order": 7,
-      "scan_start_block_inclusive": null,
-      "start_block_status": "BLOCKED_MISSING_START_BLOCK",
+      "scan_start_block_inclusive": 0,
+      "start_block_status": "GENESIS_FULL_CHAIN_REQUIRED",
       "start_block_evidence": {
-        "source_repo": "silo-finance/silo-contracts-v3",
-        "source_commit": "564fcf86f6e64171f2f7f9402d50ad63d2b54c83",
-        "source_path": "silo-core/docs/SiloFactoryList.md",
-        "evidence_type": "FACTORY_IDENTITY_ONLY_NO_BLOCK"
-      }
+        "evidence_type": "GENESIS_LOWER_BOUND_NO_DEPLOYMENT_INFERENCE",
+        "deployment_transaction": null,
+        "authority": "FULL_CHAIN_SCAN_BOUNDARY_ONLY"
+      },
+      "range_authority": "GENESIS_TO_CURRENT"
     },
     {
       "factory_id": "SILOFACT-0010",
@@ -170,14 +170,14 @@
       "factory": "0x51824653425e40Cd6253B71AcC8Def602A21427f",
       "currentness_state": "OLDER_FACTORY_RETAINED",
       "source_order": 8,
-      "scan_start_block_inclusive": null,
-      "start_block_status": "BLOCKED_MISSING_START_BLOCK",
+      "scan_start_block_inclusive": 0,
+      "start_block_status": "GENESIS_FULL_CHAIN_REQUIRED",
       "start_block_evidence": {
-        "source_repo": "silo-finance/silo-contracts-v3",
-        "source_commit": "564fcf86f6e64171f2f7f9402d50ad63d2b54c83",
-        "source_path": "silo-core/docs/SiloFactoryList.md",
-        "evidence_type": "FACTORY_IDENTITY_ONLY_NO_BLOCK"
-      }
+        "evidence_type": "GENESIS_LOWER_BOUND_NO_DEPLOYMENT_INFERENCE",
+        "deployment_transaction": null,
+        "authority": "FULL_CHAIN_SCAN_BOUNDARY_ONLY"
+      },
+      "range_authority": "GENESIS_TO_CURRENT"
     },
     {
       "factory_id": "SILOFACT-0011",
@@ -187,14 +187,14 @@
       "factory": "0xe376888fD6E5D5Afc12FEa0a8C18f283051c23aD",
       "currentness_state": "OLDER_FACTORY_RETAINED",
       "source_order": 9,
-      "scan_start_block_inclusive": null,
-      "start_block_status": "BLOCKED_MISSING_START_BLOCK",
+      "scan_start_block_inclusive": 0,
+      "start_block_status": "GENESIS_FULL_CHAIN_REQUIRED",
       "start_block_evidence": {
-        "source_repo": "silo-finance/silo-contracts-v3",
-        "source_commit": "564fcf86f6e64171f2f7f9402d50ad63d2b54c83",
-        "source_path": "silo-core/docs/SiloFactoryList.md",
-        "evidence_type": "FACTORY_IDENTITY_ONLY_NO_BLOCK"
-      }
+        "evidence_type": "GENESIS_LOWER_BOUND_NO_DEPLOYMENT_INFERENCE",
+        "deployment_transaction": null,
+        "authority": "FULL_CHAIN_SCAN_BOUNDARY_ONLY"
+      },
+      "range_authority": "GENESIS_TO_CURRENT"
     },
     {
       "factory_id": "SILOFACT-0012",
@@ -204,14 +204,14 @@
       "factory": "0xCb6CcBd979aa167b81411e672050c01826d715EC",
       "currentness_state": "OLDER_FACTORY_RETAINED",
       "source_order": 10,
-      "scan_start_block_inclusive": null,
-      "start_block_status": "BLOCKED_MISSING_START_BLOCK",
+      "scan_start_block_inclusive": 0,
+      "start_block_status": "GENESIS_FULL_CHAIN_REQUIRED",
       "start_block_evidence": {
-        "source_repo": "silo-finance/silo-contracts-v3",
-        "source_commit": "564fcf86f6e64171f2f7f9402d50ad63d2b54c83",
-        "source_path": "silo-core/docs/SiloFactoryList.md",
-        "evidence_type": "FACTORY_IDENTITY_ONLY_NO_BLOCK"
-      }
+        "evidence_type": "GENESIS_LOWER_BOUND_NO_DEPLOYMENT_INFERENCE",
+        "deployment_transaction": null,
+        "authority": "FULL_CHAIN_SCAN_BOUNDARY_ONLY"
+      },
+      "range_authority": "GENESIS_TO_CURRENT"
     },
     {
       "factory_id": "SILOFACT-0013",
@@ -221,14 +221,14 @@
       "factory": "0x8C1b49B1A45d9FD50c5846a6Cd19a5ADaA376B1B",
       "currentness_state": "OLDER_FACTORY_RETAINED",
       "source_order": 11,
-      "scan_start_block_inclusive": null,
-      "start_block_status": "BLOCKED_MISSING_START_BLOCK",
+      "scan_start_block_inclusive": 0,
+      "start_block_status": "GENESIS_FULL_CHAIN_REQUIRED",
       "start_block_evidence": {
-        "source_repo": "silo-finance/silo-contracts-v3",
-        "source_commit": "564fcf86f6e64171f2f7f9402d50ad63d2b54c83",
-        "source_path": "silo-core/docs/SiloFactoryList.md",
-        "evidence_type": "FACTORY_IDENTITY_ONLY_NO_BLOCK"
-      }
+        "evidence_type": "GENESIS_LOWER_BOUND_NO_DEPLOYMENT_INFERENCE",
+        "deployment_transaction": null,
+        "authority": "FULL_CHAIN_SCAN_BOUNDARY_ONLY"
+      },
+      "range_authority": "GENESIS_TO_CURRENT"
     },
     {
       "factory_id": "SILOFACT-0014",
@@ -238,14 +238,14 @@
       "factory": "0xb562b6CdEEE3ec10E4803B8dcfef81a32074e6B5",
       "currentness_state": "OLDER_FACTORY_RETAINED",
       "source_order": 12,
-      "scan_start_block_inclusive": null,
-      "start_block_status": "BLOCKED_MISSING_START_BLOCK",
+      "scan_start_block_inclusive": 0,
+      "start_block_status": "GENESIS_FULL_CHAIN_REQUIRED",
       "start_block_evidence": {
-        "source_repo": "silo-finance/silo-contracts-v3",
-        "source_commit": "564fcf86f6e64171f2f7f9402d50ad63d2b54c83",
-        "source_path": "silo-core/docs/SiloFactoryList.md",
-        "evidence_type": "FACTORY_IDENTITY_ONLY_NO_BLOCK"
-      }
+        "evidence_type": "GENESIS_LOWER_BOUND_NO_DEPLOYMENT_INFERENCE",
+        "deployment_transaction": null,
+        "authority": "FULL_CHAIN_SCAN_BOUNDARY_ONLY"
+      },
+      "range_authority": "GENESIS_TO_CURRENT"
     },
     {
       "factory_id": "SILOFACT-0015",
@@ -255,14 +255,14 @@
       "factory": "0x408822E4E8682413666809b0655161093cd36f2b",
       "currentness_state": "OLDER_FACTORY_RETAINED",
       "source_order": 13,
-      "scan_start_block_inclusive": null,
-      "start_block_status": "BLOCKED_MISSING_START_BLOCK",
+      "scan_start_block_inclusive": 0,
+      "start_block_status": "GENESIS_FULL_CHAIN_REQUIRED",
       "start_block_evidence": {
-        "source_repo": "silo-finance/silo-contracts-v3",
-        "source_commit": "564fcf86f6e64171f2f7f9402d50ad63d2b54c83",
-        "source_path": "silo-core/docs/SiloFactoryList.md",
-        "evidence_type": "FACTORY_IDENTITY_ONLY_NO_BLOCK"
-      }
+        "evidence_type": "GENESIS_LOWER_BOUND_NO_DEPLOYMENT_INFERENCE",
+        "deployment_transaction": null,
+        "authority": "FULL_CHAIN_SCAN_BOUNDARY_ONLY"
+      },
+      "range_authority": "GENESIS_TO_CURRENT"
     },
     {
       "factory_id": "SILOFACT-0016",
@@ -272,14 +272,14 @@
       "factory": "0xFa773e2c7df79B43dc4BCdAe398c5DCA94236BC5",
       "currentness_state": "SOURCE_LIST_NEWEST_POSITION",
       "source_order": 1,
-      "scan_start_block_inclusive": null,
-      "start_block_status": "BLOCKED_MISSING_START_BLOCK",
+      "scan_start_block_inclusive": 0,
+      "start_block_status": "GENESIS_FULL_CHAIN_REQUIRED",
       "start_block_evidence": {
-        "source_repo": "silo-finance/silo-contracts-v3",
-        "source_commit": "564fcf86f6e64171f2f7f9402d50ad63d2b54c83",
-        "source_path": "silo-core/docs/SiloFactoryList.md",
-        "evidence_type": "FACTORY_IDENTITY_ONLY_NO_BLOCK"
-      }
+        "evidence_type": "GENESIS_LOWER_BOUND_NO_DEPLOYMENT_INFERENCE",
+        "deployment_transaction": null,
+        "authority": "FULL_CHAIN_SCAN_BOUNDARY_ONLY"
+      },
+      "range_authority": "GENESIS_TO_CURRENT"
     },
     {
       "factory_id": "SILOFACT-0017",
@@ -289,14 +289,14 @@
       "factory": "0x55a4983949f8a3156Ad483c4003218a7F33D466b",
       "currentness_state": "OLDER_FACTORY_RETAINED",
       "source_order": 2,
-      "scan_start_block_inclusive": null,
-      "start_block_status": "BLOCKED_MISSING_START_BLOCK",
+      "scan_start_block_inclusive": 0,
+      "start_block_status": "GENESIS_FULL_CHAIN_REQUIRED",
       "start_block_evidence": {
-        "source_repo": "silo-finance/silo-contracts-v3",
-        "source_commit": "564fcf86f6e64171f2f7f9402d50ad63d2b54c83",
-        "source_path": "silo-core/docs/SiloFactoryList.md",
-        "evidence_type": "FACTORY_IDENTITY_ONLY_NO_BLOCK"
-      }
+        "evidence_type": "GENESIS_LOWER_BOUND_NO_DEPLOYMENT_INFERENCE",
+        "deployment_transaction": null,
+        "authority": "FULL_CHAIN_SCAN_BOUNDARY_ONLY"
+      },
+      "range_authority": "GENESIS_TO_CURRENT"
     },
     {
       "factory_id": "SILOFACT-0018",
@@ -306,14 +306,14 @@
       "factory": "0xB25255036f210D7E32FC96e25460aB121FF0C25d",
       "currentness_state": "OLDER_FACTORY_RETAINED",
       "source_order": 3,
-      "scan_start_block_inclusive": null,
-      "start_block_status": "BLOCKED_MISSING_START_BLOCK",
+      "scan_start_block_inclusive": 0,
+      "start_block_status": "GENESIS_FULL_CHAIN_REQUIRED",
       "start_block_evidence": {
-        "source_repo": "silo-finance/silo-contracts-v3",
-        "source_commit": "564fcf86f6e64171f2f7f9402d50ad63d2b54c83",
-        "source_path": "silo-core/docs/SiloFactoryList.md",
-        "evidence_type": "FACTORY_IDENTITY_ONLY_NO_BLOCK"
-      }
+        "evidence_type": "GENESIS_LOWER_BOUND_NO_DEPLOYMENT_INFERENCE",
+        "deployment_transaction": null,
+        "authority": "FULL_CHAIN_SCAN_BOUNDARY_ONLY"
+      },
+      "range_authority": "GENESIS_TO_CURRENT"
     },
     {
       "factory_id": "SILOFACT-0019",
@@ -323,14 +323,14 @@
       "factory": "0x047801ED4F53Ad3dc28649ab972b3C949f27505c",
       "currentness_state": "OLDER_FACTORY_RETAINED",
       "source_order": 4,
-      "scan_start_block_inclusive": null,
-      "start_block_status": "BLOCKED_MISSING_START_BLOCK",
+      "scan_start_block_inclusive": 0,
+      "start_block_status": "GENESIS_FULL_CHAIN_REQUIRED",
       "start_block_evidence": {
-        "source_repo": "silo-finance/silo-contracts-v3",
-        "source_commit": "564fcf86f6e64171f2f7f9402d50ad63d2b54c83",
-        "source_path": "silo-core/docs/SiloFactoryList.md",
-        "evidence_type": "FACTORY_IDENTITY_ONLY_NO_BLOCK"
-      }
+        "evidence_type": "GENESIS_LOWER_BOUND_NO_DEPLOYMENT_INFERENCE",
+        "deployment_transaction": null,
+        "authority": "FULL_CHAIN_SCAN_BOUNDARY_ONLY"
+      },
+      "range_authority": "GENESIS_TO_CURRENT"
     },
     {
       "factory_id": "SILOFACT-0020",
@@ -340,14 +340,14 @@
       "factory": "0x4D43E78E669eD90bb125eF161F530E173f03834b",
       "currentness_state": "OLDER_FACTORY_RETAINED",
       "source_order": 5,
-      "scan_start_block_inclusive": null,
-      "start_block_status": "BLOCKED_MISSING_START_BLOCK",
+      "scan_start_block_inclusive": 0,
+      "start_block_status": "GENESIS_FULL_CHAIN_REQUIRED",
       "start_block_evidence": {
-        "source_repo": "silo-finance/silo-contracts-v3",
-        "source_commit": "564fcf86f6e64171f2f7f9402d50ad63d2b54c83",
-        "source_path": "silo-core/docs/SiloFactoryList.md",
-        "evidence_type": "FACTORY_IDENTITY_ONLY_NO_BLOCK"
-      }
+        "evidence_type": "GENESIS_LOWER_BOUND_NO_DEPLOYMENT_INFERENCE",
+        "deployment_transaction": null,
+        "authority": "FULL_CHAIN_SCAN_BOUNDARY_ONLY"
+      },
+      "range_authority": "GENESIS_TO_CURRENT"
     },
     {
       "factory_id": "SILOFACT-0021",
@@ -357,14 +357,14 @@
       "factory": "0x17B0FD3eB9CFbdA5B46A0C896e28b3F0c5a7F61d",
       "currentness_state": "OLDER_FACTORY_RETAINED",
       "source_order": 6,
-      "scan_start_block_inclusive": null,
-      "start_block_status": "BLOCKED_MISSING_START_BLOCK",
+      "scan_start_block_inclusive": 0,
+      "start_block_status": "GENESIS_FULL_CHAIN_REQUIRED",
       "start_block_evidence": {
-        "source_repo": "silo-finance/silo-contracts-v3",
-        "source_commit": "564fcf86f6e64171f2f7f9402d50ad63d2b54c83",
-        "source_path": "silo-core/docs/SiloFactoryList.md",
-        "evidence_type": "FACTORY_IDENTITY_ONLY_NO_BLOCK"
-      }
+        "evidence_type": "GENESIS_LOWER_BOUND_NO_DEPLOYMENT_INFERENCE",
+        "deployment_transaction": null,
+        "authority": "FULL_CHAIN_SCAN_BOUNDARY_ONLY"
+      },
+      "range_authority": "GENESIS_TO_CURRENT"
     },
     {
       "factory_id": "SILOFACT-0022",
@@ -374,14 +374,14 @@
       "factory": "0x01c6dc3bD8B175a9494F00b6D224b14EdC67CD34",
       "currentness_state": "OLDER_FACTORY_RETAINED",
       "source_order": 7,
-      "scan_start_block_inclusive": null,
-      "start_block_status": "BLOCKED_MISSING_START_BLOCK",
+      "scan_start_block_inclusive": 0,
+      "start_block_status": "GENESIS_FULL_CHAIN_REQUIRED",
       "start_block_evidence": {
-        "source_repo": "silo-finance/silo-contracts-v3",
-        "source_commit": "564fcf86f6e64171f2f7f9402d50ad63d2b54c83",
-        "source_path": "silo-core/docs/SiloFactoryList.md",
-        "evidence_type": "FACTORY_IDENTITY_ONLY_NO_BLOCK"
-      }
+        "evidence_type": "GENESIS_LOWER_BOUND_NO_DEPLOYMENT_INFERENCE",
+        "deployment_transaction": null,
+        "authority": "FULL_CHAIN_SCAN_BOUNDARY_ONLY"
+      },
+      "range_authority": "GENESIS_TO_CURRENT"
     },
     {
       "factory_id": "SILOFACT-0023",
@@ -391,14 +391,14 @@
       "factory": "0xb58B331b9cf46c597A34F9e198e8bB9ec5f17ADf",
       "currentness_state": "OLDER_FACTORY_RETAINED",
       "source_order": 8,
-      "scan_start_block_inclusive": null,
-      "start_block_status": "BLOCKED_MISSING_START_BLOCK",
+      "scan_start_block_inclusive": 0,
+      "start_block_status": "GENESIS_FULL_CHAIN_REQUIRED",
       "start_block_evidence": {
-        "source_repo": "silo-finance/silo-contracts-v3",
-        "source_commit": "564fcf86f6e64171f2f7f9402d50ad63d2b54c83",
-        "source_path": "silo-core/docs/SiloFactoryList.md",
-        "evidence_type": "FACTORY_IDENTITY_ONLY_NO_BLOCK"
-      }
+        "evidence_type": "GENESIS_LOWER_BOUND_NO_DEPLOYMENT_INFERENCE",
+        "deployment_transaction": null,
+        "authority": "FULL_CHAIN_SCAN_BOUNDARY_ONLY"
+      },
+      "range_authority": "GENESIS_TO_CURRENT"
     },
     {
       "factory_id": "SILOFACT-0024",
@@ -462,14 +462,14 @@
       "factory": "0x92cECB67Ed267FF98026F814D813fDF3054C6Ff9",
       "currentness_state": "OLDER_FACTORY_RETAINED",
       "source_order": 2,
-      "scan_start_block_inclusive": null,
-      "start_block_status": "BLOCKED_MISSING_START_BLOCK",
+      "scan_start_block_inclusive": 0,
+      "start_block_status": "GENESIS_FULL_CHAIN_REQUIRED",
       "start_block_evidence": {
-        "source_repo": "silo-finance/silo-contracts-v3",
-        "source_commit": "564fcf86f6e64171f2f7f9402d50ad63d2b54c83",
-        "source_path": "silo-core/docs/SiloFactoryList.md",
-        "evidence_type": "FACTORY_IDENTITY_ONLY_NO_BLOCK"
-      }
+        "evidence_type": "GENESIS_LOWER_BOUND_NO_DEPLOYMENT_INFERENCE",
+        "deployment_transaction": null,
+        "authority": "FULL_CHAIN_SCAN_BOUNDARY_ONLY"
+      },
+      "range_authority": "GENESIS_TO_CURRENT"
     },
     {
       "factory_id": "SILOFACT-0028",
@@ -497,14 +497,14 @@
       "factory": "0x4e9dE3a64c911A37f7EB2fCb06D1e68c3cBe9203",
       "currentness_state": "OLDER_FACTORY_RETAINED",
       "source_order": 2,
-      "scan_start_block_inclusive": null,
-      "start_block_status": "BLOCKED_MISSING_START_BLOCK",
+      "scan_start_block_inclusive": 0,
+      "start_block_status": "GENESIS_FULL_CHAIN_REQUIRED",
       "start_block_evidence": {
-        "source_repo": "silo-finance/silo-contracts-v3",
-        "source_commit": "564fcf86f6e64171f2f7f9402d50ad63d2b54c83",
-        "source_path": "silo-core/docs/SiloFactoryList.md",
-        "evidence_type": "FACTORY_IDENTITY_ONLY_NO_BLOCK"
-      }
+        "evidence_type": "GENESIS_LOWER_BOUND_NO_DEPLOYMENT_INFERENCE",
+        "deployment_transaction": null,
+        "authority": "FULL_CHAIN_SCAN_BOUNDARY_ONLY"
+      },
+      "range_authority": "GENESIS_TO_CURRENT"
     },
     {
       "factory_id": "SILOFACT-0030",
@@ -514,14 +514,14 @@
       "factory": "0xa42001D6d2237d2c74108FE360403C4b796B7170",
       "currentness_state": "OLDER_FACTORY_RETAINED",
       "source_order": 3,
-      "scan_start_block_inclusive": null,
-      "start_block_status": "BLOCKED_MISSING_START_BLOCK",
+      "scan_start_block_inclusive": 0,
+      "start_block_status": "GENESIS_FULL_CHAIN_REQUIRED",
       "start_block_evidence": {
-        "source_repo": "silo-finance/silo-contracts-v3",
-        "source_commit": "564fcf86f6e64171f2f7f9402d50ad63d2b54c83",
-        "source_path": "silo-core/docs/SiloFactoryList.md",
-        "evidence_type": "FACTORY_IDENTITY_ONLY_NO_BLOCK"
-      }
+        "evidence_type": "GENESIS_LOWER_BOUND_NO_DEPLOYMENT_INFERENCE",
+        "deployment_transaction": null,
+        "authority": "FULL_CHAIN_SCAN_BOUNDARY_ONLY"
+      },
+      "range_authority": "GENESIS_TO_CURRENT"
     },
     {
       "factory_id": "SILOFACT-0031",
@@ -531,14 +531,14 @@
       "factory": "0xe5b39b0b2173caA82BaEa368952c6183cA2DA3Ac",
       "currentness_state": "SOURCE_LIST_NEWEST_POSITION",
       "source_order": 1,
-      "scan_start_block_inclusive": null,
-      "start_block_status": "BLOCKED_MISSING_START_BLOCK",
+      "scan_start_block_inclusive": 0,
+      "start_block_status": "GENESIS_FULL_CHAIN_REQUIRED",
       "start_block_evidence": {
-        "source_repo": "silo-finance/silo-contracts-v3",
-        "source_commit": "564fcf86f6e64171f2f7f9402d50ad63d2b54c83",
-        "source_path": "silo-core/docs/SiloFactoryList.md",
-        "evidence_type": "FACTORY_IDENTITY_ONLY_NO_BLOCK"
-      }
+        "evidence_type": "GENESIS_LOWER_BOUND_NO_DEPLOYMENT_INFERENCE",
+        "deployment_transaction": null,
+        "authority": "FULL_CHAIN_SCAN_BOUNDARY_ONLY"
+      },
+      "range_authority": "GENESIS_TO_CURRENT"
     },
     {
       "factory_id": "SILOFACT-0032",
@@ -548,14 +548,14 @@
       "factory": "0xD13921239e3832FDC4141FDE544D3D058B529A5D",
       "currentness_state": "SOURCE_LIST_NEWEST_POSITION",
       "source_order": 1,
-      "scan_start_block_inclusive": null,
-      "start_block_status": "BLOCKED_MISSING_START_BLOCK",
+      "scan_start_block_inclusive": 0,
+      "start_block_status": "GENESIS_FULL_CHAIN_REQUIRED",
       "start_block_evidence": {
-        "source_repo": "silo-finance/silo-contracts-v3",
-        "source_commit": "564fcf86f6e64171f2f7f9402d50ad63d2b54c83",
-        "source_path": "silo-core/docs/SiloFactoryList.md",
-        "evidence_type": "FACTORY_IDENTITY_ONLY_NO_BLOCK"
-      }
+        "evidence_type": "GENESIS_LOWER_BOUND_NO_DEPLOYMENT_INFERENCE",
+        "deployment_transaction": null,
+        "authority": "FULL_CHAIN_SCAN_BOUNDARY_ONLY"
+      },
+      "range_authority": "GENESIS_TO_CURRENT"
     },
     {
       "factory_id": "SILOFACT-0033",
@@ -583,14 +583,14 @@
       "factory": "0xD2bf5845Ebc4d2b7966dD20Ad59Cb620F355A235",
       "currentness_state": "OLDER_FACTORY_RETAINED",
       "source_order": 2,
-      "scan_start_block_inclusive": null,
-      "start_block_status": "BLOCKED_MISSING_START_BLOCK",
+      "scan_start_block_inclusive": 0,
+      "start_block_status": "GENESIS_FULL_CHAIN_REQUIRED",
       "start_block_evidence": {
-        "source_repo": "silo-finance/silo-contracts-v3",
-        "source_commit": "564fcf86f6e64171f2f7f9402d50ad63d2b54c83",
-        "source_path": "silo-core/docs/SiloFactoryList.md",
-        "evidence_type": "FACTORY_IDENTITY_ONLY_NO_BLOCK"
-      }
+        "evidence_type": "GENESIS_LOWER_BOUND_NO_DEPLOYMENT_INFERENCE",
+        "deployment_transaction": null,
+        "authority": "FULL_CHAIN_SCAN_BOUNDARY_ONLY"
+      },
+      "range_authority": "GENESIS_TO_CURRENT"
     },
     {
       "factory_id": "SILOFACT-0035",
@@ -600,14 +600,14 @@
       "factory": "0x95a7bC57c738C7f64103B93D04f49cbCa566afFD",
       "currentness_state": "SOURCE_LIST_NEWEST_POSITION",
       "source_order": 1,
-      "scan_start_block_inclusive": null,
-      "start_block_status": "BLOCKED_MISSING_START_BLOCK",
+      "scan_start_block_inclusive": 0,
+      "start_block_status": "GENESIS_FULL_CHAIN_REQUIRED",
       "start_block_evidence": {
-        "source_repo": "silo-finance/silo-contracts-v3",
-        "source_commit": "564fcf86f6e64171f2f7f9402d50ad63d2b54c83",
-        "source_path": "silo-core/docs/SiloFactoryList.md",
-        "evidence_type": "FACTORY_IDENTITY_ONLY_NO_BLOCK"
-      }
+        "evidence_type": "GENESIS_LOWER_BOUND_NO_DEPLOYMENT_INFERENCE",
+        "deployment_transaction": null,
+        "authority": "FULL_CHAIN_SCAN_BOUNDARY_ONLY"
+      },
+      "range_authority": "GENESIS_TO_CURRENT"
     },
     {
       "factory_id": "SILOFACT-0036",
@@ -635,14 +635,14 @@
       "factory": "0xf81d90DF1B63d48536E78564d24d5DD8F2BE58aD",
       "currentness_state": "SOURCE_LIST_NEWEST_POSITION",
       "source_order": 1,
-      "scan_start_block_inclusive": null,
-      "start_block_status": "BLOCKED_MISSING_START_BLOCK",
+      "scan_start_block_inclusive": 0,
+      "start_block_status": "GENESIS_FULL_CHAIN_REQUIRED",
       "start_block_evidence": {
-        "source_repo": "silo-finance/silo-contracts-v3",
-        "source_commit": "564fcf86f6e64171f2f7f9402d50ad63d2b54c83",
-        "source_path": "silo-core/docs/SiloFactoryList.md",
-        "evidence_type": "FACTORY_IDENTITY_ONLY_NO_BLOCK"
-      }
+        "evidence_type": "GENESIS_LOWER_BOUND_NO_DEPLOYMENT_INFERENCE",
+        "deployment_transaction": null,
+        "authority": "FULL_CHAIN_SCAN_BOUNDARY_ONLY"
+      },
+      "range_authority": "GENESIS_TO_CURRENT"
     },
     {
       "factory_id": "SILOFACT-CANDIDATE-OPTIMISM-CURRENT-001",
@@ -670,5 +670,6 @@
     "event_rule": "Scan NewSilo topic only; never infer SiloFactory IDs from event/log ordering.",
     "runtime_rule": "Every discovered market must pass both-vault Silo V3 runtime verification before runtime-observed classification.",
     "authorization_rule": "No scan-plan record creates execution authority."
-  }
+  },
+  "range_policy": "GENESIS_FULL_CHAIN_REQUIRED starts at block 0. Block 0 is a mathematical scan lower bound only, never a deployment-block claim."
 }
