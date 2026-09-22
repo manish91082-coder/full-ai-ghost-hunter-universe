@@ -520,3 +520,12 @@ Execution authority remains NONE; live trading remains STOP.
 - Sonic and XDC identical factory addresses remain separate identities.
 - No new historical scan-start block was authorized by this batch. The 29 missing exact deployment-block records therefore remain fail-closed.
 - Added a machine-readable corroboration artifact and validator/test/audit coverage. G02 remains ACTIVE / NOT SATURATED; G03-G29 blocked; execution NONE; live trading STOP.
+
+
+## 2026-09-22 - THROUGHPUT GOVERNANCE v2
+
+Added `00_GOVERNANCE/MAXIMUM_SAFE_THROUGHPUT_MACRO_BATCH_v2.md` as the explicit permanent throughput-control artifact.
+
+This locks macro-batch execution, parallel independent work, CI-wait utilization and coherent subsystem closure while preserving zero-trust evidence, freshness, deterministic validation, fail-closed behavior, exact-SHA verification and execution authorization gates.
+
+This governance change does not claim CI GREEN until exact current-main verification is observed.
