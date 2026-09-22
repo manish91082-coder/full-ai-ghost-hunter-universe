@@ -158,11 +158,31 @@ class V2PairEnumerator:
         return result
 
     def read_pair_state(self, network_id: str, pair: str) -> PairState:
-        if not pair.startswith("0x") or len(pair) != 42:
-            raise RegistryError("invalid pair address")
         before = self.transport.call(network_id, BLOCK_METHOD)
         before_block = parse_hex_block(before.result)
-        block_tag = "0x" + format(before_block, "x")
+        return self.read_pair_state_at_block(network_id, pair, before_block, provider_id=before.provider_id)
+
+    def read_pair_state_at_block(
+        self,
+        network_id: str,
+        pair: str,
+        snapshot_block: int,
+        *,
+        provider_id: str | None = None,
+    ) -> PairState:
+        if not pair.startswith("0x") or len(pair) != 42:
+            raise RegistryError("invalid pair address")
+        if snapshot_block < 0:
+            raise RegistryError("snapshot block cannot be negative")
+
+        before = self.transport.call(network_id, BLOCK_METHOD)
+        before_block = parse_hex_block(before.result)
+        if snapshot_block > before_block:
+            raise RegistryError("snapshot block is ahead of provider head")
+        if provider_id is not None and before.provider_id != provider_id:
+            raise RegistryError("provider changed before fixed-snapshot state observation")
+
+        block_tag = "0x" + format(snapshot_block, "x")
         code = self.transport.call(network_id, GET_CODE_METHOD, [pair, block_tag])
         t0 = self.transport.call(
             network_id, CALL_METHOD, [{"to": pair, "data": TOKEN0_SELECTOR}, block_tag]
@@ -176,20 +196,28 @@ class V2PairEnumerator:
         after = self.transport.call(network_id, BLOCK_METHOD)
 
         observations = (code, t0, t1, reserves, after)
-        if any(obs.provider_id != before.provider_id for obs in observations):
-            raise RegistryError("provider changed during pair-state observation")
+        selected_provider = before.provider_id
+        if any(obs.provider_id != selected_provider for obs in observations):
+            raise RegistryError("provider changed during fixed-snapshot pair-state observation")
+        if provider_id is not None and selected_provider != provider_id:
+            raise RegistryError("provider identity mismatch")
 
         after_block = parse_hex_block(after.result)
-        if after_block < before_block:
-            raise RegistryError("block number moved backwards")
-        validate_block_numbers(before_block, after_block, self.freshness)
+        if after_block < snapshot_block:
+            raise RegistryError("provider head moved backwards")
+        validate_block_numbers(snapshot_block, after_block, self.freshness)
 
         words = _word(reserves.result)
         if len(words) < 128:
             raise RegistryError("invalid getReserves ABI result")
 
         return PairState(
-            pair, _address(t0.result), _address(t1.result),
-            int(words[:64], 16), int(words[64:128], 16),
-            after_block, before.provider_id, _bytecode_sha256(code.result),
+            pair,
+            _address(t0.result),
+            _address(t1.result),
+            int(words[:64], 16),
+            int(words[64:128], 16),
+            snapshot_block,
+            selected_provider,
+            _bytecode_sha256(code.result),
         )
