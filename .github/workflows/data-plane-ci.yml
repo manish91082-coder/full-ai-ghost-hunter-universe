@@ -1,0 +1,51 @@
+name: data-plane-ci
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+
+concurrency:
+  group: data-plane-ci-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  data-plane-validation:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout authoritative state
+        uses: actions/checkout@v4
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Validate G02 machine-readable state
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          root = Path(".")
+          m = json.loads((root/"02_FLASH_LOAN_UNIVERSE/data/G02_ATOMIC_LIQUIDITY_MECHANISM_REGISTRY_v001.json").read_text())
+          d = json.loads((root/"02_FLASH_LOAN_UNIVERSE/data/G02_ATOMIC_CAPITAL_DEPLOYMENT_REGISTRY_v001.json").read_text())
+          assert len(m["records"]) == m["counts"]["total"]
+          assert len({r["id"] for r in m["records"]}) == len(m["records"])
+          assert d["records"]
+          keys = []
+          for r in d["records"]:
+              assert r["execution_eligibility"] == "NEVER_FROM_RESEARCH"
+              keys.append("|".join(str(r.get(k)) for k in ("mechanism_id","network_id","market_variant","contract_role","contract_or_program")))
+          assert len(keys) == len(set(keys))
+          print("G02 machine-state validation: PASS")
+          print("mechanisms:", len(m["records"]))
+          print("deployments:", len(d["records"]))
+          PY
+      - name: Install test dependency
+        run: python -m pip install --disable-pip-version-check pytest
+      - name: Run repository tests
+        env:
+          PYTHONPATH: src
+        run: python -m pytest -q

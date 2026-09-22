@@ -1,0 +1,175 @@
+{
+  "schema_version": "g02.silo.factory.deployment.reconciliation.v1",
+  "as_of": "2026-09-22",
+  "network_count": 13,
+  "matched_network_count": 12,
+  "mismatch_network_count": 1,
+  "known_created_factory_count": 37,
+  "current_deployment_candidate_count": 1,
+  "reconciled_scan_identity_upper_bound": 38,
+  "records": [
+    {
+      "network_id": "eip155:1",
+      "chain": "mainnet",
+      "chain_id": 1,
+      "address": "0x1DAb4A310447185144467076b116DAC7aec3b48F",
+      "source_path": "silo-core/deployments/mainnet/SiloFactory.sol.json",
+      "source_ref": "master",
+      "source_commit": "9476ae754e3f5a06c665a4a5021cb25235da700a",
+      "pinned_factory_list_newest": "0x1DAb4A310447185144467076b116DAC7aec3b48F",
+      "matches_pinned_factory_list_newest": true,
+      "classification": "MATCH"
+    },
+    {
+      "network_id": "eip155:42161",
+      "chain": "arbitrum_one",
+      "chain_id": 42161,
+      "address": "0xAFd8F792cb025A76C4916652CfC8e20eee3b6fe2",
+      "source_path": "silo-core/deployments/arbitrum_one/SiloFactory.sol.json",
+      "source_ref": "master",
+      "source_commit": "9476ae754e3f5a06c665a4a5021cb25235da700a",
+      "pinned_factory_list_newest": "0xAFd8F792cb025A76C4916652CfC8e20eee3b6fe2",
+      "matches_pinned_factory_list_newest": true,
+      "classification": "MATCH"
+    },
+    {
+      "network_id": "eip155:10",
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x8ab5D81d342f14e594c65a6B33582b57e78E4a9d",
+      "source_path": "silo-core/deployments/optimism/SiloFactory.sol.json",
+      "source_ref": "master",
+      "source_commit": "9476ae754e3f5a06c665a4a5021cb25235da700a",
+      "pinned_factory_list_newest": "0xFa773e2c7df79B43dc4BCdAe398c5DCA94236BC5",
+      "matches_pinned_factory_list_newest": false,
+      "classification": "CURRENT_DEPLOYMENT_DIFFERS"
+    },
+    {
+      "network_id": "eip155:8453",
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xeB3C9fcE37A355df8f4a01CdaFA75b370607a21f",
+      "source_path": "silo-core/deployments/base/SiloFactory.sol.json",
+      "source_ref": "master",
+      "source_commit": "9476ae754e3f5a06c665a4a5021cb25235da700a",
+      "pinned_factory_list_newest": "0xeB3C9fcE37A355df8f4a01CdaFA75b370607a21f",
+      "matches_pinned_factory_list_newest": true,
+      "classification": "MATCH"
+    },
+    {
+      "network_id": "eip155:56",
+      "chain": "bnb",
+      "chain_id": 56,
+      "address": "0x977e9b368E5aBEe020B5096A03cE6f78cb3439cf",
+      "source_path": "silo-core/deployments/bnb/SiloFactory.sol.json",
+      "source_ref": "master",
+      "source_commit": "9476ae754e3f5a06c665a4a5021cb25235da700a",
+      "pinned_factory_list_newest": "0x977e9b368E5aBEe020B5096A03cE6f78cb3439cf",
+      "matches_pinned_factory_list_newest": true,
+      "classification": "MATCH"
+    },
+    {
+      "network_id": "eip155:43114",
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x9e64f0CD206cce2Da5dE08E7F482D62F57013D0e",
+      "source_path": "silo-core/deployments/avalanche/SiloFactory.sol.json",
+      "source_ref": "master",
+      "source_commit": "9476ae754e3f5a06c665a4a5021cb25235da700a",
+      "pinned_factory_list_newest": "0x9e64f0CD206cce2Da5dE08E7F482D62F57013D0e",
+      "matches_pinned_factory_list_newest": true,
+      "classification": "MATCH"
+    },
+    {
+      "network_id": "eip155:146",
+      "chain": "sonic",
+      "chain_id": 146,
+      "address": "0xf81d90DF1B63d48536E78564d24d5DD8F2BE58aD",
+      "source_path": "silo-core/deployments/sonic/SiloFactory.sol.json",
+      "source_ref": "master",
+      "source_commit": "9476ae754e3f5a06c665a4a5021cb25235da700a",
+      "pinned_factory_list_newest": "0xf81d90DF1B63d48536E78564d24d5DD8F2BE58aD",
+      "matches_pinned_factory_list_newest": true,
+      "classification": "MATCH"
+    },
+    {
+      "network_id": "eip155:5000",
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0xe5b39b0b2173caA82BaEa368952c6183cA2DA3Ac",
+      "source_path": "silo-core/deployments/mantle/SiloFactory.sol.json",
+      "source_ref": "master",
+      "source_commit": "9476ae754e3f5a06c665a4a5021cb25235da700a",
+      "pinned_factory_list_newest": "0xe5b39b0b2173caA82BaEa368952c6183cA2DA3Ac",
+      "matches_pinned_factory_list_newest": true,
+      "classification": "MATCH"
+    },
+    {
+      "network_id": "eip155:57073",
+      "chain": "ink",
+      "chain_id": 57073,
+      "address": "0xD13921239e3832FDC4141FDE544D3D058B529A5D",
+      "source_path": "silo-core/deployments/ink/SiloFactory.sol.json",
+      "source_ref": "master",
+      "source_commit": "9476ae754e3f5a06c665a4a5021cb25235da700a",
+      "pinned_factory_list_newest": "0xD13921239e3832FDC4141FDE544D3D058B529A5D",
+      "matches_pinned_factory_list_newest": true,
+      "classification": "MATCH"
+    },
+    {
+      "network_id": "eip155:1776",
+      "chain": "injective",
+      "chain_id": 1776,
+      "address": "0x39021662EF7679845E6851E38E01912f556A861f",
+      "source_path": "silo-core/deployments/injective/SiloFactory.sol.json",
+      "source_ref": "master",
+      "source_commit": "9476ae754e3f5a06c665a4a5021cb25235da700a",
+      "pinned_factory_list_newest": "0x39021662EF7679845E6851E38E01912f556A861f",
+      "matches_pinned_factory_list_newest": true,
+      "classification": "MATCH"
+    },
+    {
+      "network_id": "eip155:4326",
+      "chain": "megaeth",
+      "chain_id": 4326,
+      "address": "0x95a7bC57c738C7f64103B93D04f49cbCa566afFD",
+      "source_path": "silo-core/deployments/megaeth/SiloFactory.sol.json",
+      "source_ref": "master",
+      "source_commit": "9476ae754e3f5a06c665a4a5021cb25235da700a",
+      "pinned_factory_list_newest": "0x95a7bC57c738C7f64103B93D04f49cbCa566afFD",
+      "matches_pinned_factory_list_newest": true,
+      "classification": "MATCH"
+    },
+    {
+      "network_id": "eip155:196",
+      "chain": "okx",
+      "chain_id": 196,
+      "address": "0x650b50E16A703e53A7944CCad513ad21670F0D09",
+      "source_path": "silo-core/deployments/okx/SiloFactory.sol.json",
+      "source_ref": "master",
+      "source_commit": "9476ae754e3f5a06c665a4a5021cb25235da700a",
+      "pinned_factory_list_newest": "0x650b50E16A703e53A7944CCad513ad21670F0D09",
+      "matches_pinned_factory_list_newest": true,
+      "classification": "MATCH"
+    },
+    {
+      "network_id": "eip155:50",
+      "chain": "xdc",
+      "chain_id": 50,
+      "address": "0xf81d90DF1B63d48536E78564d24d5DD8F2BE58aD",
+      "source_path": "silo-core/deployments/xdc/SiloFactory.sol.json",
+      "source_ref": "master",
+      "source_commit": "9476ae754e3f5a06c665a4a5021cb25235da700a",
+      "pinned_factory_list_newest": "0xf81d90DF1B63d48536E78564d24d5DD8F2BE58aD",
+      "matches_pinned_factory_list_newest": true,
+      "classification": "MATCH"
+    }
+  ],
+  "candidates": [
+    {
+      "network_id": "eip155:10",
+      "address": "0x8ab5D81d342f14e594c65a6B33582b57e78E4a9d",
+      "status": "CANDIDATE_REQUIRES_HISTORICAL_EVENT_SCAN_AND_RUNTIME_VALIDATION"
+    }
+  ]
+}

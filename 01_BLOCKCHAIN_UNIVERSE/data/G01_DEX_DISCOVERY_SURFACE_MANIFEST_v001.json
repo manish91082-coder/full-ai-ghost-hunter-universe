@@ -1,0 +1,58 @@
+{
+  "schema_version": "g01.dex_discovery_surface.v1",
+  "source_id": "defillama-dex-chains",
+  "source_class": "S3_STRUCTURED_DISCOVERY_SURFACE",
+  "source_url": "https://defillama.com/dexs/chains",
+  "observation_date": "2026-09-21",
+  "observed_metrics": {
+    "dex_chain_surface_count": 290,
+    "dex_protocol_coverage_count": 794
+  },
+  "authority": "discovery_only",
+  "production_denominator_rule": "Do not use dashboard counts as canonical production-chain count. Extract named chain candidates, normalize identity, deduplicate against current canonical state, then primary-verify lifecycle and execution plane.",
+  "extraction_contract": {
+    "capture_all_available_named_chain_rows": true,
+    "capture_protocol_to_chain_relationships": true,
+    "preserve_source_name": true,
+    "normalize_aliases": false,
+    "infer_chain_identity": false,
+    "infer_flash_capability": false,
+    "infer_executable_trading": false,
+    "exclude_testnets_only_after_identity_verification": true,
+    "machine_readable_protocol_endpoint": "/protocols",
+    "machine_readable_chain_surface_endpoint": "/chains",
+    "relationship_output": "protocol × chain observation",
+    "identity_resolution": "downstream primary-evidence gate"
+  },
+  "observed_uncovered_candidates": [
+    "Spark",
+    "Native"
+  ],
+  "already_present_examples": [
+    "Solana",
+    "Ethereum",
+    "Robinhood Chain",
+    "BSC",
+    "Base",
+    "Hyperliquid L1",
+    "Near",
+    "Arbitrum",
+    "Polygon",
+    "Avalanche",
+    "Monad",
+    "Arc",
+    "X Layer",
+    "Sui",
+    "OP Mainnet",
+    "Tron",
+    "Starknet",
+    "Unichain"
+  ],
+  "limitations": [
+    "Rendered dashboard is a discovery surface, not a complete machine-readable canonical dataset in this artifact.",
+    "Some DEX labels may be protocol/venue names rather than independent chains and require relationship-level classification.",
+    "Cross-chain protocols such as Chainflip must not be converted into a chain record merely because they operate across chains."
+  ],
+  "last_contract_update": "2026-09-21",
+  "record_count": 49
+}

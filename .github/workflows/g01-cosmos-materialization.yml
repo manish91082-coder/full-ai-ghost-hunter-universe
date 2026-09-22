@@ -1,0 +1,29 @@
+name: G01 Cosmos Native Materialization
+
+on:
+  push:
+    paths:
+      - "scripts/materialize_g01_cosmos.py"
+      - "01_BLOCKCHAIN_UNIVERSE/data/G01_NATIVE_RECONCILIATION_MANIFEST_v001.json"
+      - ".github/workflows/g01-cosmos-materialization.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  materialize:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout project
+        uses: actions/checkout@v4
+      - name: Materialize Cosmos production subset
+        env:
+          COSMOS_TREE_SHA: 810b0b68e4591078295ccce76205e970b3c002e5
+        run: |
+          python3 scripts/materialize_g01_cosmos.py
+      - name: Upload materialization evidence
+        uses: actions/upload-artifact@v4
+        with:
+          name: g01-cosmos-materialization
+          path: artifacts/g01_cosmos/

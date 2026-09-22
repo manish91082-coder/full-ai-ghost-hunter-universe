@@ -1,0 +1,43 @@
+{
+  "schema_version": "g02.v2.factory.runtime.config.v1",
+  "revision": 1,
+  "canonical_role": "EXTERNAL_RUNTIME_FACTORY_INPUT",
+  "execution_authority": "NONE",
+  "safety_rule": "Factory identities are inputs for read-only observation only. They do not authorize execution or imply current pair liquidity.",
+  "records": [
+    {
+      "id": "V2FACT-0001",
+      "protocol": "QuickSwap",
+      "protocol_version": "V2",
+      "network_id": "eip155:137",
+      "venue_variant": "Polygon POS V2",
+      "factory": "0x5757371414417b8C6CAad45bAeF941aBc7d3Ab32",
+      "router": "0xa5E0829CaCEd8fFDD4De3c43696c57F7D7A678ff",
+      "identity_state": "PRIMARY_SOURCE_DEPLOYMENT_VERIFIED",
+      "pair_enumeration_method": "allPairsLength_plus_allPairs",
+      "pair_state_methods": ["token0", "token1", "getReserves", "eth_getCode"],
+      "runtime_state": "REQUIRED",
+      "provenance": [
+        "https://docs.quickswap.exchange/overview/contracts-and-addresses",
+        "https://docs.quickswap.exchange/technical-reference/core-concepts/flash-swaps"
+      ]
+    },
+    {
+      "id": "V2FACT-0002",
+      "protocol": "PancakeSwap",
+      "protocol_version": "V2",
+      "network_id": "eip155:56",
+      "venue_variant": "BNB Smart Chain V2",
+      "factory": "0xcA143Ce32Fe78f1f7019d7d551a6402fC5350c73",
+      "router": "0x10ED43C718714eb63d5aA57B78B54704E256024E",
+      "identity_state": "PRIMARY_SOURCE_DEPLOYMENT_VERIFIED",
+      "pair_enumeration_method": "allPairsLength_plus_allPairs",
+      "pair_state_methods": ["token0", "token1", "getReserves", "eth_getCode"],
+      "runtime_state": "REQUIRED",
+      "provenance": [
+        "https://docs.pancakeswap.finance/italian/code/smart-contracts/pancakeswap-exchange/factory-v2",
+        "https://docs.pancakeswap.finance/italian/code/smart-contracts/pancakeswap-exchange/router-v2"
+      ]
+    }
+  ]
+}
