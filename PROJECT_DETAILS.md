@@ -704,3 +704,12 @@ Execution authority remains NONE; live trading remains STOP.
 - Sonic and XDC identical factory addresses remain separate identities.
 - No new historical scan-start block was authorized by this batch. The 29 missing exact deployment-block records therefore remain fail-closed.
 - Added a machine-readable corroboration artifact and validator/test/audit coverage. G02 remains ACTIVE / NOT SATURATED; G03-G29 blocked; execution NONE; live trading STOP.
+
+
+## THROUGHPUT CONTROL v2 - 22 September 2026
+
+Authoritative throughput artifact: `00_GOVERNANCE/MAXIMUM_SAFE_THROUGHPUT_MACRO_BATCH_v2.md`.
+
+Operating intent: reduce conversational latency and increase engineering throughput through macro-batching and parallel independent work while preserving every safety and verification invariant. A `Next` should close the maximum logically related safe subsystem slice available, rather than deliberately creating one-file/one-test turns.
+
+No downstream gate is opened by throughput optimization. G02 saturation remains the controlling objective.
