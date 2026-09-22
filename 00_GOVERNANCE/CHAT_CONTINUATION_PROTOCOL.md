@@ -81,3 +81,19 @@ New permanent control artifact: `00_GOVERNANCE/REPOSITORY_IDENTITY_LOCK_v1.0.md`
 If canonical repository verification fails, project work must STOP. Do not guess, switch, or write to another similarly named repository.
 
 All future chat threads inherit the same canonical repository identity.
+
+
+## UPDATE — PER-RESPONSE PROJECT-GOAL PROGRESS LOCK v1.0
+
+Date: 23 September 2026
+
+New permanent control artifact: `00_GOVERNANCE/PROJECT_GOAL_PUSH_PER_RESPONSE_INVARIANT_v1.0.md`
+
+New hard rule:
+**Every substantive response must push the project measurably toward the FINAL GOAL.**
+
+A response is not successful merely because it reports activity. The active gate, highest-value gap and concrete goal-relevant movement must control the response.
+
+This rule does not permit safety shortcuts. Evidence, provenance, freshness, deterministic validation, fail-closed behavior, exact-SHA verification, risk/economic gates and execution authorization remain mandatory.
+
+Live trading remains STOP.
