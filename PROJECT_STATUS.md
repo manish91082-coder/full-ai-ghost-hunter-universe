@@ -1803,3 +1803,28 @@ A new chat thread or model must read this rule, `00_GOVERNANCE/CHAT_CONTINUATION
 
 ### Safety remains unchanged
 Parallelism never bypasses evidence, deterministic simulation, risk/economic gates, provenance, freshness, fail-closed behavior or execution authorization. Live trading remains STOP until all required gates pass.
+
+
+## UPDATE — G02 / SILO FACTORY ENUMERATION + MARKET BINDING — 22 September 2026
+
+**State:** 🟢 BOUNDED SUBSYSTEM PASS / G02 CONTINUE
+
+Implemented the SiloFactory historical `NewSilo` enumeration boundary and fail-closed binding of every discovered market to the existing Silo V3 runtime verifier.
+
+- Chunked historical `eth_getLogs` enumeration.
+- Strict-current snapshot and freshness evidence.
+- Provider consistency.
+- Duplicate market identity rejection.
+- No inference of SiloFactory IDs from event/log order.
+- Every enumerated market is required to pass runtime verification for both vaults.
+- Runtime/event SiloConfig, vault identity, network and provider identities must agree.
+- Incomplete snapshots cannot become runtime-observed markets.
+
+Exact current-main verification:
+- HEAD: `58afea8aa9773787658b7bf38f2930768794453d`
+- data-plane-ci: `35720727371` = SUCCESS
+- project-execution-verifier: `35720764207` = SUCCESS
+
+G02 remains ACTIVE / NOT SATURATED. G03-G29 remain BLOCKED. Execution authority NONE. Live trading STOP.
+
+Next macro objective: close the SiloFactory identity/deployment denominator and reconcile historical markets, while continuing V2 executable-market denominator and adversarial gap closure.
