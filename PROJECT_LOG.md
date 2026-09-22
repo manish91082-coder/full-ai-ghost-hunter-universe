@@ -399,3 +399,13 @@ The verifier now requires successful data-plane execution for the exact current 
 - Verifier also exposed GitHub Actions REST propagation lag; retry logic was added so temporary API visibility does not masquerade as completion.
 - Added fail-closed G02 V2 runtime materializer and manual runtime-observation workflow using external GH_PROVIDER_RUNTIME.
 - G02 remains ACTIVE / NOT SATURATED; G03-G29 BLOCKED; execution NONE; live trading STOP.
+
+## 2026-09-22 — G02 MACRO-BATCH 020 — FACTORY CODE IDENTITY HARDENING + SILO RUNTIME BOUNDARY PREPARATION
+
+- Re-verified authoritative `main` before change: `89ac75f31109a5178b28884ca896bf55990df188` with exact-main `data-plane-ci` and `project-execution-verifier` both SUCCESS.
+- Strengthened the generic V2 enumeration boundary so the external factory itself must expose non-empty runtime bytecode at the captured opening block before pair enumeration is accepted.
+- Factory runtime bytes now receive a SHA-256 evidence digest and are recorded in `EnumerationCompleteness` and the runtime materialization artifact.
+- This closes a deployment-identity-to-runtime-code gap without treating code presence as fee, liquidity, callback authenticity, authorization or execution authority.
+- Fresh primary-source Silo V3 review reconfirms that markets are permissionless, each market consists of two ERC-4626 silos, and SiloConfig exposes the two-silo relationship. API/UI discovery therefore remains a candidate source, not a complete market denominator or execution authority.
+- G02 remains ACTIVE / NOT SATURATED. G03-G29 remain BLOCKED. Execution authority NONE. Live trading STOP.
+- Production RPC observation is still NOT CLAIMED because no external `GH_PROVIDER_RUNTIME` observation artifact has been produced on `main`.

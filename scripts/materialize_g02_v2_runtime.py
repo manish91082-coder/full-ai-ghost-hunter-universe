@@ -74,6 +74,7 @@ def main() -> int:
             "factory": factory,
             "router": record["router"],
             "provider_id": completeness.provider_id,
+            "factory_bytecode_sha256": completeness.factory_bytecode_sha256,
             "start_block": completeness.start_block,
             "end_block": completeness.end_block,
             "factory_reported_count": completeness.factory_reported_count,

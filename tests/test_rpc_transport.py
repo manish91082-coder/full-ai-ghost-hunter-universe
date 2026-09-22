@@ -100,7 +100,9 @@ def test_v2_pair_enumerator_requires_provider_consistency_and_records_completene
 
     def opener(request, timeout):
         body = request.data.decode()
-        if "574f2ba3" in body:
+        if "eth_getCode" in body:
+            result = "0x60016000"
+        elif "574f2ba3" in body:
             result = "0x" + "1".zfill(64)
         elif "1e3dd18b" in body:
             result = "0x" + "0"*24 + "1234567890abcdef1234567890abcdef12345678"
@@ -120,6 +122,7 @@ def test_v2_pair_enumerator_requires_provider_consistency_and_records_completene
     assert enumerator.last_completeness.start_block == 32
     assert enumerator.last_completeness.end_block == 32
     assert enumerator.last_completeness.provider_id == "p1"
+    assert len(enumerator.last_completeness.factory_bytecode_sha256) == 64
 
 
 def test_v2_pair_state_observes_code_and_records_digest():

@@ -51,6 +51,7 @@ class EnumerationCompleteness:
     start_block: int
     end_block: int
     provider_id: str
+    factory_bytecode_sha256: str
 
 def _word(value: str) -> str:
     if not isinstance(value, str) or not value.startswith("0x"):
@@ -110,15 +111,19 @@ class V2PairEnumerator:
         start = self.transport.call(network_id, BLOCK_METHOD)
         start_block = parse_hex_block(start.result)
         block_tag = "0x" + format(start_block, "x")
+        factory_code = self.transport.call(
+            network_id, GET_CODE_METHOD, [factory, block_tag]
+        )
         count_obs = self.transport.call(
             network_id, CALL_METHOD,
             [{"to": factory, "data": ALL_PAIRS_LENGTH_SELECTOR}, block_tag],
         )
+        if factory_code.provider_id != start.provider_id or count_obs.provider_id != start.provider_id:
+            raise RegistryError("provider changed during enumeration preflight")
+        factory_code_sha256 = _bytecode_sha256(factory_code.result)
         count = _uint(count_obs.result)
         if count > max_pairs:
             raise RegistryError("pair universe exceeds configured safety bound")
-        if count_obs.provider_id != start.provider_id:
-            raise RegistryError("provider changed during enumeration preflight")
         result: list[PairDiscovery] = []
         seen: set[str] = set()
         for i in range(count):
@@ -148,7 +153,7 @@ class V2PairEnumerator:
 
         self._last_completeness = EnumerationCompleteness(
             network_id, factory, count, len(result),
-            start_block, end_block, start.provider_id,
+            start_block, end_block, start.provider_id, factory_code_sha256,
         )
         return result
 
