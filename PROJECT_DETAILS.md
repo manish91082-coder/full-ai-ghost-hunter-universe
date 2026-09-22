@@ -671,3 +671,13 @@ Updated ALU-0016 in place to reference the 37/13 factory identity denominator.
 Added Audit 073: bounded factory-identity denominator PASS / G02 CONTINUE.
 37 is a primary-source bounded denominator, not a permanent global completeness claim. Production event ranges, runtime state, code authenticity, authorization/hooks/oracles, liquidity-at-size, current fees and adversarial denominator closure remain open.
 Execution authority remains NONE; live trading remains STOP.
+
+## POST-CHANGE EXACT-SHA VERIFICATION — 22 September 2026
+
+Current main SHA: 2d8d9379c1f3267d10e02c7a00b66386d5140a3b
+data-plane-ci run 35726250434: completed / SUCCESS.
+data-plane job data-plane-validation 106740492243: completed / SUCCESS; all listed steps completed successfully, including G02 machine-readable state validation and repository tests.
+project-execution-verifier run 35726273234: completed / SUCCESS.
+Verifier job verify 106740574598: completed / SUCCESS.
+Both workflow runs have head_sha exactly equal to current main SHA.
+Execution authority remains NONE; live trading remains STOP.
