@@ -1,0 +1,91 @@
+{
+  "schema_version": "g02.silo.factory.deployment.block.evidence.v1",
+  "as_of": "2026-09-22",
+  "source_repo": "silo-finance/silo-contracts-v3",
+  "source_commit": "564fcf86f6e64171f2f7f9402d50ad63d2b54c83",
+  "evidence_type": "PINNED_FOUNDRY_BROADCAST_CREATE_RECEIPT",
+  "authority": "HISTORICAL_SCAN_LOWER_BOUND_FOR_EXACT_FACTORY_ONLY",
+  "records": [
+    {
+      "network_id": "eip155:1",
+      "factory": "0x1DAb4A310447185144467076b116DAC7aec3b48F",
+      "deployment_block": 24527218,
+      "create_tx_hash": "0x87025eb9c38d7787098b53057f12d71cbd7b1408d6c6edda939e47c81e76f31a"
+    },
+    {
+      "network_id": "eip155:42161",
+      "factory": "0xAFd8F792cb025A76C4916652CfC8e20eee3b6fe2",
+      "deployment_block": 435460074,
+      "create_tx_hash": "0x8a99339e0fbdaf768c740e111a89c7d329059caf43173b5fa5827570b8f63847"
+    },
+    {
+      "network_id": "eip155:10",
+      "factory": "0x8ab5D81d342f14e594c65a6B33582b57e78E4a9d",
+      "deployment_block": 148172013,
+      "create_tx_hash": "0x8dba9c8b546e2fda3c8480e0e195addf30be4d0897c07eb638003d749e7f5e33"
+    },
+    {
+      "network_id": "eip155:8453",
+      "factory": "0xeB3C9fcE37A355df8f4a01CdaFA75b370607a21f",
+      "deployment_block": 42579557,
+      "create_tx_hash": "0x222887991654628902bf33092c30b3cc81877a81e068941b3ad9e7bc744ea4a2"
+    },
+    {
+      "network_id": "eip155:56",
+      "factory": "0x977e9b368E5aBEe020B5096A03cE6f78cb3439cf",
+      "deployment_block": 83097522,
+      "create_tx_hash": "0xd8831af8a5387cb35c464c19698081b32d45a11828286e217a3782132ab3f8c4"
+    },
+    {
+      "network_id": "eip155:43114",
+      "factory": "0x9e64f0CD206cce2Da5dE08E7F482D62F57013D0e",
+      "deployment_block": 78875406,
+      "create_tx_hash": "0x4add2bf5164ab41699bd019654d90508c63873ad37da1975dc88e001adbb15ec"
+    },
+    {
+      "network_id": "eip155:146",
+      "factory": "0xf81d90DF1B63d48536E78564d24d5DD8F2BE58aD",
+      "deployment_block": 63632954,
+      "create_tx_hash": "0x1b1716b24a701ea3629a9b4e894b7cc32374b39e252dacad0e89130ab6459f26"
+    },
+    {
+      "network_id": "eip155:1776",
+      "factory": "0x39021662EF7679845E6851E38E01912f556A861f",
+      "deployment_block": 155660036,
+      "create_tx_hash": "0xaca980444dbb83478170bcffab283dc052cfc90806fd647aa153b38643c11aa7"
+    },
+    {
+      "network_id": "eip155:196",
+      "factory": "0x650b50E16A703e53A7944CCad513ad21670F0D09",
+      "deployment_block": 53173294,
+      "create_tx_hash": "0x5da68b0fa2611e9961e7227017b000c32889538f62e30fa42eba4809e913f853"
+    }
+  ],
+  "blocked": [
+    {
+      "network_id": "eip155:5000",
+      "factory": "0xe5b39b0b2173caA82BaEa368952c6183cA2DA3Ac",
+      "reason": "NO_SiloFactoryDeploy_BROADCAST_AT_PINNED_COMMIT"
+    },
+    {
+      "network_id": "eip155:57073",
+      "factory": "0xD13921239e3832FDC4141FDE544D3D058B529A5D",
+      "reason": "NO_SiloFactoryDeploy_BROADCAST_AT_PINNED_COMMIT"
+    },
+    {
+      "network_id": "eip155:4326",
+      "factory": "0x95a7bC57c738C7f64103B93D04f49cbCa566afFD",
+      "reason": "NO_SiloFactoryDeploy_BROADCAST_AT_PINNED_COMMIT"
+    },
+    {
+      "network_id": "eip155:50",
+      "factory": "0xf81d90DF1B63d48536E78564d24d5DD8F2BE58aD",
+      "reason": "NO_SiloFactoryDeploy_BROADCAST_AT_PINNED_COMMIT"
+    }
+  ],
+  "rules": {
+    "create_receipt_required": "A deployment block is authorized only when a pinned broadcast contains a successful CREATE transaction for contractName SiloFactory and a matching successful receipt contractAddress.",
+    "scan_lower_bound": "deployment_block is eligible as the earliest historical scan lower bound for that exact factory identity, subject to later runtime/provider completeness checks.",
+    "no_inference": "No block is inferred from startSiloId, deployment file order, log order, timestamps, or unrelated contract broadcasts."
+  }
+}
