@@ -1898,3 +1898,17 @@ The implementation commit is 822ee64d44e6919434e6bb21b80b27681774330e. This stat
 - Production RPC is not claimed without actual GH_PROVIDER_RUNTIME execution.
 - Implementation commit: d6bd4bff33d7e4294e3a9547d5ebb581bd8ef510.
 - G02 remains ACTIVE / NOT SATURATED. G03-G29 remain BLOCKED. Execution authority NONE. Live trading STOP.
+
+
+## 2026-09-22 - THROUGHPUT GOVERNANCE v2 LOCK
+
+The maximum-safe macro-batch operating mode is now explicitly locked in `00_GOVERNANCE/MAXIMUM_SAFE_THROUGHPUT_MACRO_BATCH_v2.md`.
+
+- One `Next` is one bounded macro-cycle, not a micro-task.
+- Independent discovery, denominator analysis, runtime validation, adversarial review, architecture, testing and audit preparation proceed in parallel where dependencies permit.
+- CI waiting time is used for independent work, not idle time.
+- Prefer coherent subsystem closure per Next.
+- Exact-SHA verification, fail-closed behavior, provenance, freshness, risk/economic gates and execution authorization remain unchanged.
+- G02 remains the only unlocked saturation gate.
+
+Current main after governance update is pending authoritative CI verification; queued/unknown is not GREEN.
