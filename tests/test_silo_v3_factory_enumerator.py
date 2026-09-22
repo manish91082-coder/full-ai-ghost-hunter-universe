@@ -45,7 +45,7 @@ def test_silo_factory_enumerator_decodes_event_and_requires_current_snapshot():
             result = "0x20"
         elif "eth_getLogs" in body:
             result = [{
-                "topics": [topic0, _word(factory), _word("0x" + "1" * 40), _word("0x" + "2" * 40)],
+                "topics": [topic0, "0x" + _word(factory), "0x" + _word("0x" + "1" * 40), "0x" + _word("0x" + "2" * 40)],
                 "data": "0x" + _word(silo0) + _word(silo1) + _word(config),
                 "blockNumber": "0x20",
                 "transactionHash": "0x" + "b" * 64,
@@ -76,7 +76,7 @@ def test_silo_factory_enumerator_rejects_duplicate_market_identity():
     topic0 = "0x" + "a" * 64
     factory = "0x" + "8" * 40
     event = {
-        "topics": [topic0, _word("0x" + "1" * 40), _word("0x" + "2" * 40), _word("0x" + "3" * 40)],
+        "topics": [topic0, "0x" + _word("0x" + "1" * 40), "0x" + _word("0x" + "2" * 40), "0x" + _word("0x" + "3" * 40)],
         "data": "0x" + _word("0x" + "4" * 40) + _word("0x" + "5" * 40) + _word("0x" + "6" * 40),
         "blockNumber": "0x20",
         "transactionHash": "0x" + "b" * 64,
