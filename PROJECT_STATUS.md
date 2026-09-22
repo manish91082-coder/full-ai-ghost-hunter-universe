@@ -1889,3 +1889,12 @@ Execution authority remains NONE; live trading remains STOP.
 ## POST-CHANGE VERIFICATION — PENDING FOR CURRENT MAIN
 
 The implementation commit is 822ee64d44e6919434e6bb21b80b27681774330e. This status update is the trigger commit for the authoritative CI handshake. Do not mark this macro-batch GREEN until data-plane-ci and exact-SHA project-execution-verifier both complete SUCCESS against the final main HEAD.
+
+
+## 2026-09-22 — G02 MACRO-BATCH 027 — V2 FACTORY RUNTIME MATERIALIZER
+
+- Added fail-closed V2 factory runtime materializer for the configured QuickSwap V2 Polygon and PancakeSwap V2 BNB Smart Chain observation inputs.
+- Materialization requires complete factory-reported pair enumeration plus token0/token1/reserves/runtime-bytecode observation for every returned pair.
+- Production RPC is not claimed without actual GH_PROVIDER_RUNTIME execution.
+- Implementation commit: d6bd4bff33d7e4294e3a9547d5ebb581bd8ef510.
+- G02 remains ACTIVE / NOT SATURATED. G03-G29 remain BLOCKED. Execution authority NONE. Live trading STOP.
