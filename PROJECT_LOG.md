@@ -463,3 +463,15 @@ A new chat thread or model must read this rule, `00_GOVERNANCE/CHAT_CONTINUATION
 
 ### Safety remains unchanged
 Parallelism never bypasses evidence, deterministic simulation, risk/economic gates, provenance, freshness, fail-closed behavior or execution authorization. Live trading remains STOP until all required gates pass.
+
+
+## 2026-09-22 — G02 Silo Factory Enumeration + Market Binding
+
+- Implemented read-only historical NewSilo event enumeration with strict-current completeness and provider/freshness controls.
+- Explicitly rejected the incorrect assumption that event/log order can reconstruct SiloFactory IDs.
+- Added fail-closed binding from every enumerated market to both Silo vault runtime verifications.
+- Binding rejects event/runtime SiloConfig mismatch, vault mismatch, network mismatch, provider mismatch and incomplete snapshots.
+- Exact current main SHA: 58afea8aa977378765a59866472300ad6d053dbfc.
+- data-plane-ci run 35720727371: SUCCESS.
+- project-execution-verifier run 35720764207: SUCCESS.
+- G02 remains ACTIVE / NOT SATURATED; G03-G29 blocked; live trading STOP.
