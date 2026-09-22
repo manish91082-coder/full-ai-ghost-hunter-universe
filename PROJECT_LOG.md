@@ -409,3 +409,14 @@ The verifier now requires successful data-plane execution for the exact current 
 - Fresh primary-source Silo V3 review reconfirms that markets are permissionless, each market consists of two ERC-4626 silos, and SiloConfig exposes the two-silo relationship. API/UI discovery therefore remains a candidate source, not a complete market denominator or execution authority.
 - G02 remains ACTIVE / NOT SATURATED. G03-G29 remain BLOCKED. Execution authority NONE. Live trading STOP.
 - Production RPC observation is still NOT CLAIMED because no external `GH_PROVIDER_RUNTIME` observation artifact has been produced on `main`.
+
+## 2026-09-22 — MACRO-BATCH 020 VERIFICATION CLOSURE
+
+Post-change verification is now complete on the exact current main state:
+- main SHA: 477d7e2200dfa14a4f332e753d8975252da2263a
+- data-plane-ci run 35685168028: completed / SUCCESS
+- repository tests: 50 passed, 0 failed
+- project-execution-verifier run 35685183477: completed / SUCCESS
+- verifier confirmed the data-plane run SHA exactly matches current main
+
+No production RPC observation was run. The manual G02 runtime-observation workflow remains ready but requires external GH_PROVIDER_RUNTIME configuration. G02 remains ACTIVE / NOT SATURATED; G03-G29 blocked; execution authority NONE; live trading STOP.
