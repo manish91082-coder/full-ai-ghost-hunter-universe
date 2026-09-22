@@ -1912,3 +1912,14 @@ The maximum-safe macro-batch operating mode is now explicitly locked in `00_GOVE
 - G02 remains the only unlocked saturation gate.
 
 Current main after governance update is pending authoritative CI verification; queued/unknown is not GREEN.
+
+
+## 2026-09-23 — PER-RESPONSE PROJECT-GOAL PUSH LOCK
+
+Permanent invariant synchronized from `00_GOVERNANCE/PROJECT_GOAL_PUSH_PER_RESPONSE_INVARIANT_v1.0.md`.
+
+Every substantive response must measurably reduce a material blocker or otherwise advance evidence-backed progress toward the FINAL GHOST HUNTER GOAL. Reporting-only or cosmetic activity is insufficient when higher-value safe implementation, verification, denominator, evidence, testing, audit or gap-closure work is available.
+
+Current active gate remains G02. The highest-value work must continue to reduce G02 saturation gaps while preserving fail-closed safety, provenance, freshness, deterministic validation, exact-SHA verification and execution-authorization boundaries.
+
+Each response must leave a concrete project movement and identify the highest-value remaining blocker. Live trading remains STOP; execution authority remains NONE; G03-G29 remain BLOCKED until prerequisites and saturation criteria are satisfied.
