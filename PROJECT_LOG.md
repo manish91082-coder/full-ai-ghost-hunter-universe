@@ -425,3 +425,41 @@ No production RPC observation was run. The manual G02 runtime-observation workfl
 ## 2026-09-22 — MACRO-BATCH 021
 
 Implemented a read-only Silo V3 runtime verification boundary and deterministic tests. The boundary links a candidate Silo to its SiloConfig, verifies the two-vault market relationship, reads asset/liquidity/max-flash-loan/flash-fee/factory state, records bytecode digests, and enforces provider/freshness consistency. Exact-main data-plane CI and project-execution-verifier both completed SUCCESS for the implementation commit. Production RPC observation remains unclaimed; G02 remains ACTIVE / NOT SATURATED.
+
+
+## DURABLE RULE — MAXIMUM-SAFE THROUGHPUT / MACRO-BATCH OPERATING MODE
+
+Date: 22 September 2026
+
+This is a permanent project execution rule and must survive chat-thread limits and model handoffs.
+
+### Core principle
+Use the available AI reasoning, repository automation, GitHub Actions and parallel analysis capacity for maximum useful safe throughput. Do not intentionally serialize independent intellectual work into tiny conversational tasks.
+
+### Every "Next" means one bounded macro-cycle
+INSPECT → VERIFY → DECIDE → PARALLEL DISCOVERY/REASONING/AUDIT/DESIGN → ONE COHERENT IMPLEMENTATION BATCH → TEST → AUDIT → GAP ANALYSIS → TARGETED DISCOVERY → RETEST → REAUDIT → SATURATION/EXIT REVIEW → FREEZE OR CONTINUE.
+
+### Parallelism rule
+Independent research, denominator analysis, adversarial review, architecture design, test design and documentation planning should proceed in parallel where dependencies permit. CI waiting time must not be used as idle intellectual time. Do not stack unsafe or dependency-conflicting repository writes merely to appear busy.
+
+### GitHub execution rule
+GitHub LIVE `main` is the source of truth. After every repository change, verify:
+1. current `main` HEAD SHA;
+2. `data-plane-ci` for that exact SHA;
+3. completed terminal job/step result and SUCCESS conclusion;
+4. `head_sha == current main HEAD`;
+5. exact-SHA `project-execution-verifier` completed and SUCCESS.
+
+Queued, pending, in_progress, cancelled, failed, stale or old-SHA GREEN is NOT GREEN.
+
+### Throughput rule
+Prefer one complete subsystem/closure objective per Next over one-file or one-test micro-batches. Maximize useful work per execution window while preserving deterministic boundaries, zero-trust evidence, fail-closed safety and exact verification.
+
+### No-drift rule
+The final Ghost Hunter objective remains the controlling objective. Do not open downstream gates merely because partial components exist. G02 must reach its evidence-backed saturation/exit criteria before G03 opens.
+
+### Handoff rule
+A new chat thread or model must read this rule, `00_GOVERNANCE/CHAT_CONTINUATION_PROTOCOL.md`, `PROJECT_STATUS.md`, `PROJECT_MEMORY.md`, `PROJECT_DETAILS.md`, `PROJECT_LOG.md`, and the latest authoritative GitHub `main` state before substantive work. Never guess the repository, SHA, gate or prior decision.
+
+### Safety remains unchanged
+Parallelism never bypasses evidence, deterministic simulation, risk/economic gates, provenance, freshness, fail-closed behavior or execution authorization. Live trading remains STOP until all required gates pass.
