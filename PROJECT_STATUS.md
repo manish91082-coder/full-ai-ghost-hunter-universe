@@ -1873,3 +1873,19 @@ Execution authority remains NONE; live trading remains STOP.
 - Sonic and XDC identical factory addresses remain separate identities.
 - No new historical scan-start block was authorized by this batch. The 29 missing exact deployment-block records therefore remain fail-closed.
 - Added a machine-readable corroboration artifact and validator/test/audit coverage. G02 remains ACTIVE / NOT SATURATED; G03-G29 blocked; execution NONE; live trading STOP.
+
+
+## 2026-09-22 — G02 MACRO-BATCH 026 — FAIL-CLOSED SILO FACTORY RUNTIME MATERIALIZER
+
+- Authoritative main before batch: 4bcf37ed7ad97d642d10e3ed9e35031734bcabb2.
+- Added src/ghost_hunter/silo_v3_factory_materializer.py for bounded 38-identity read-only materialization.
+- Added scripts/materialize_g02_silo_factory_runtime.py using external GH_PROVIDER_RUNTIME only.
+- Added tests/test_silo_v3_factory_materializer.py and Audit 079.
+- Pinned NewSilo topic0: 0x3d6b896c73b628ec6ba0bdfe3cdee1356ea2af31af2a97bbd6b532ca6fa00acb.
+- Partial/failed factory observations are explicitly INCOMPLETE and cannot become a complete denominator.
+- Production RPC observation is NOT claimed. It requires external GH_PROVIDER_RUNTIME and actual materializer execution.
+- G02 remains ACTIVE / NOT SATURATED. G03-G29 remain BLOCKED. Execution authority NONE. Live trading STOP.
+
+## POST-CHANGE VERIFICATION — PENDING FOR CURRENT MAIN
+
+The implementation commit is 822ee64d44e6919434e6bb21b80b27681774330e. This status update is the trigger commit for the authoritative CI handshake. Do not mark this macro-batch GREEN until data-plane-ci and exact-SHA project-execution-verifier both complete SUCCESS against the final main HEAD.
