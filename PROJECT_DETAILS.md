@@ -659,3 +659,15 @@ A new chat thread or model must read this rule, `00_GOVERNANCE/CHAT_CONTINUATION
 
 ### Safety remains unchanged
 Parallelism never bypasses evidence, deterministic simulation, risk/economic gates, provenance, freshness, fail-closed behavior or execution authorization. Live trading remains STOP until all required gates pass.
+
+
+## 2026-09-22 — G02 MACRO-BATCH 023 — SILO FACTORY IDENTITY DENOMINATOR
+
+Re-verified authoritative main before implementation: e6f5356ac5f77b143ce7bf76627e3378267cb4d5.
+Inspected Silo primary SiloFactoryList.md at source commit 564fcf86f6e64171f2f7f9402d50ad63d2b54c83.
+Materialized 37 known SiloFactory identities across 13 EVM networks into 02_FLASH_LOAN_UNIVERSE/data/G02_SILO_FACTORY_REGISTRY_v001.json.
+Added a fail-closed registry loader and explicit scan-plan boundary. Every factory requires a caller-supplied historical start block; missing or extra start-block keys are rejected.
+Updated ALU-0016 in place to reference the 37/13 factory identity denominator.
+Added Audit 073: bounded factory-identity denominator PASS / G02 CONTINUE.
+37 is a primary-source bounded denominator, not a permanent global completeness claim. Production event ranges, runtime state, code authenticity, authorization/hooks/oracles, liquidity-at-size, current fees and adversarial denominator closure remain open.
+Execution authority remains NONE; live trading remains STOP.

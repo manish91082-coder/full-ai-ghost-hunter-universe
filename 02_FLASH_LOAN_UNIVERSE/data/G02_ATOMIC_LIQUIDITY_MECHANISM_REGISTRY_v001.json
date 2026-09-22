@@ -1,6 +1,6 @@
 {
   "schema_version": "g02.atomic.liquidity.registry.v1",
-  "as_of": "2026-09-21",
+  "as_of": "2026-09-22",
   "canonical_role": "CURRENT_MATERIALIZED_STATE",
   "authority": "G02_PRIMARY_MECHANISM_DISCOVERY",
   "execution_rule": "Research registry is externalized data. Runtime execution must read verified current registry/state and never hardcode authoritative deployment/fee/capacity data.",
@@ -336,9 +336,19 @@
             "implementation": "0x2C7E816323B2E3894EB98d53B2cbec659aE26441",
             "factory": "0x92cECB67Ed267FF98026F814D813fDF3054C6Ff9"
           }
+        },
+        "factory_identity_denominator": {
+          "source": "https://github.com/silo-finance/silo-contracts-v3/blob/develop/silo-core/docs/SiloFactoryList.md",
+          "source_commit": "564fcf86f6e64171f2f7f9402d50ad63d2b54c83",
+          "network_count": 13,
+          "factory_count": 37,
+          "scope": "KNOWN_FACTORIES_PER_CHAIN_THAT_HAVE_CREATED_AT_LEAST_ONE_SILO",
+          "historical_start_blocks": "NOT_INFERRED"
         }
       },
-      "market_denominator_status": "OPEN"
+      "market_denominator_status": "OPEN",
+      "factory_identity_denominator_status": "PRIMARY_SOURCE_MATERIALIZED_37_FACTORIES_13_NETWORKS",
+      "factory_registry_ref": "02_FLASH_LOAN_UNIVERSE/data/G02_SILO_FACTORY_REGISTRY_v001.json"
     },
     {
       "id": "ALU-0017",
@@ -454,7 +464,7 @@
     "discovery_family": 1
   },
   "downstream_rule": "Mechanism evidence never authorizes execution. Deployment, current state, liquidity-at-size, route, simulation, risk and economics remain separate gates.",
-  "revision": 5,
+  "revision": 6,
   "execution_authority": "NONE",
   "adversarial_discovery_batch": "G02_ADVERSARIAL_DENOMINATOR_BATCH_007",
   "batch_009": "Silo V3 and QuickSwap V2 deployment denominator materialization"
