@@ -232,3 +232,86 @@ def test_silo_market_discovery_fails_closed_on_duplicate_identity():
     }
     with pytest.raises(RegistryError):
         parse_market_candidates(payload, provenance="https://api-v3.silo.finance")
+
+
+def test_silo_v3_runtime_verifier_closes_two_vault_and_liquidity_fee_boundary():
+    from ghost_hunter.silo_v3_runtime import SiloV3RuntimeVerifier
+    from ghost_hunter.runtime_freshness import FreshnessPolicy
+
+    p = pool()
+    silo = "0x" + "3"*40
+    config = "0x" + "4"*40
+    silo1 = "0x" + "5"*40
+    asset = "0x" + "6"*40
+    factory = "0x" + "7"*40
+
+    def word(address):
+        return "0"*24 + address[2:]
+
+    def opener(request, timeout):
+        body = request.data.decode()
+        if "eth_blockNumber" in body:
+            result = "0x20"
+        elif "79502c55" in body:
+            result = "0x" + word(config)
+        elif "aecc90cb" in body:
+            result = "0x" + word(silo) + word(silo1)
+        elif "38d52e0f" in body:
+            result = "0x" + word(asset)
+        elif "0910a510" in body:
+            result = "0x" + "64".zfill(64)
+        elif "613255ab" in body:
+            result = "0x" + "32".zfill(64)
+        elif "d9d98ce4" in body:
+            result = "0x" + "1".zfill(64)
+        elif "c45a0155" in body:
+            result = "0x" + word(factory)
+        elif "eth_getCode" in body:
+            result = "0x60016000"
+        else:
+            raise AssertionError(body)
+        return Response({"jsonrpc": "2.0", "id": 1, "result": result})
+
+    state = SiloV3RuntimeVerifier(
+        RpcTransport(p, opener=opener), FreshnessPolicy()
+    ).verify("net:1", silo, flash_fee_probe_amount=1)
+
+    assert state.config.lower() == config
+    assert state.silo1.lower() == silo1
+    assert state.asset.lower() == asset
+    assert state.liquidity == 100
+    assert state.max_flash_loan == 50
+    assert state.flash_fee == 1
+    assert state.factory.lower() == factory
+    assert len(state.silo_bytecode_sha256) == 64
+
+
+def test_silo_v3_runtime_verifier_rejects_wrong_market_membership():
+    from ghost_hunter.silo_v3_runtime import SiloV3RuntimeVerifier
+    from ghost_hunter.runtime_freshness import FreshnessPolicy
+
+    p = pool()
+    silo = "0x" + "3"*40
+    config = "0x" + "4"*40
+
+    def word(address):
+        return "0"*24 + address[2:]
+
+    def opener(request, timeout):
+        body = request.data.decode()
+        if "eth_blockNumber" in body:
+            result = "0x20"
+        elif "79502c55" in body:
+            result = "0x" + word(config)
+        elif "aecc90cb" in body:
+            result = "0x" + word("0x"+"5"*40) + word("0x"+"6"*40)
+        elif "eth_getCode" in body:
+            result = "0x60016000"
+        else:
+            result = "0x" + "1".zfill(64)
+        return Response({"jsonrpc": "2.0", "id": 1, "result": result})
+
+    with pytest.raises(RegistryError):
+        SiloV3RuntimeVerifier(
+            RpcTransport(p, opener=opener), FreshnessPolicy()
+        ).verify("net:1", silo)
